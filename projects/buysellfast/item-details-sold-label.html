@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Buy Sell Fast</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- JavaScripts -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src='js/bootstrap.js'></script>
+
+
+  <script src="js/transition.js"></script>
+  <script src="js/bootstrap-touch-carousel.js"></script>
+
+  <script type="text/javascript">
+  $(function(){
+    $('#ItemCarousel').carousel();
+  })
+</script>
+
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="top-bar-logo">
+      <a href="/">
+        <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+    </div>
+
+    <!-- Cart on the top bar -->
+    <div class="top-bar-cart">
+      <a href="#">
+        <span class="top-bar-cart-items">95</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="nav-buy">
+              <span class="nav-name">Buy</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-explore">
+              <span class="nav-name">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-sell">
+              <span class="nav-name">Sell</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-contacts">
+              <span class="nav-name">Contacts</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-messages">
+              <span class="nav-name">Messages</span>
+              <span class="nav-quantity">89</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-reports">
+              <span class="nav-name">Reports</span>
+            </a>
+          </li>
+          <li  class="active">
+            <a href="#" class="nav-settings">
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ./navbar -->
+
+  <div id="page-content">
+
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="breadcrumbs-wrap">
+        <div class="back-link">
+          <a href="#">Back</a>
+        </div>
+        <div class="page-title icon-item-details">
+          <span>Item Details</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item Name -->
+    <div class="item-title">
+      <div class="item-title-icon"></div>
+      <div class="item-title-title">Red Converse Shoes</div>
+    </div>
+
+    <!-- Container -->
+    <div class="container-fluid  item-details">
+      <div class="row">
+
+        <!-- Item photos -->
+
+<!-- 
+
+     You can see below   div class="carousel-SMALL-screens" 
+                     and div class="carousel-BIG-screens" 
+
+They have the same pictures inside, but we need them two, 
+because on SMALL MOBILE screens pictures are like SLIDER,
+and for BIG SCREENS picture has plain view without slider.
+
+              -->
+
+        <div class="carousel-small-screens">
+          <div id="ItemCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#ItemCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#ItemCarousel" data-slide-to="1"></li>
+              <li data-target="#ItemCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="thumbnail center-block">
+                  <span class="item-details-img" style="background-image: url(images/example-car1.jpg)"></span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="thumbnail center-block">
+                  <span class="item-details-img" style="background-image: url(images/example-car2.jpg)"></span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="thumbnail center-block">
+                  <span class="item-details-img" style="background-image: url(images/example-car3.jpg)"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-big-screens">
+          <div class="col-lg-4 col-sm-4 col-xs-12">
+            <div class="thumbnail center-block">
+              <span class="item-details-img" style="background-image: url(images/example-car1.jpg)"></span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-4 col-xs-12">
+            <div class="thumbnail">
+              <span class="item-details-img" style="background-image: url(images/example-car2.jpg)"></span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-4 col-xs-12">
+            <div class="thumbnail">
+              <span class="item-details-img" style="background-image: url(images/example-car3.jpg)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--/row --> </div>
+    <!-- end container -->
+
+    <!-- Item actions -->
+    <div class="item-actions-wrap">
+      <div class="item-actions">
+        <div class="item-action">
+          <a class="add-to-cart" href="#">Add to cart</a>
+        </div>
+        <div class="item-action">
+          <a class="tell-friend" href="#">Tell a Friend</a>
+        </div>
+        <div class="item-action">
+          <a class="post-wall" href="#">Post on my Wall</a>
+        </div>
+        <div class="item-action">
+          <a class="post-fb" href="#">Post to Facebook</a>
+        </div>
+        <div class="item-action">
+          <a class="visit-store" href="#">Visit Store</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item price and other info -->
+    <div class="item-infos-wrap list-search-results">
+      <div class="item-infos">
+
+<span class="list-block-prices">
+                <span class="list-row-price ">
+                  <span class="explore-item-price new-price">
+                    <span class="icon-new-price"></span> <b>CAD</b>
+                    <span>
+                      $ 160000 <i>.90</i>
+                    </span>
+                  </span>
+                </span>
+                <span class="list-row-price ">
+                  <span class="explore-item-price old-price"> <b>CAD</b>
+                    <span>
+                      $ 160000 <i>.90</i>
+                    </span>
+                  </span>
+                </span>
+              </span>
+        <div class="item-info item-info-desc">
+          <a href="#"></a>
+        </div>
+        <div class="item-info item-info-i">
+          <a href="#"></a>
+        </div>
+        <div class="item-info item-info-heart">
+          <a href="#"></a>
+        </div>
+        <div class="item-info-chat seller-offline">
+          <a href="#">
+            <span>Chat with Seller</span>
+          </a>
+        </div>
+<!-- If seller is offline, so use next constuction instead previous -->
+<!--      
+        <div class="item-info-chat seller-offline">
+          <a href="#">
+            <span>Chat with Seller</span>
+          </a>
+        </div> 
+        -->
+      </div>
+    </div>
+
+
+<!-- WARNING MESSAGE -->
+<div class="warning-message">
+  This item is no longer for sale
+</div>
+
+
+    <div class="ext-infos-wrap">
+      <!--Item extended info -->
+      <div class="ext-info ext-info-store">
+        <div class="ext-info-icon"></div>
+        <div class="ext-info-title">Store</div>
+        <div class="ext-info-points">:</div>
+        <div class="ext-info-text">Tom's shoes Store</div>
+      </div>
+      <!--Item extended info -->
+      <div class="ext-info ext-info-location">
+        <div class="ext-info-icon"></div>
+        <div class="ext-info-title">Location</div>
+        <div class="ext-info-points">:</div>
+        <div class="ext-info-text">Ottawa, Ontario, Canada</div>
+      </div>
+      <!--Item extended info -->
+      <div class="ext-info ext-info-postedon">
+        <div class="ext-info-icon"></div>
+        <div class="ext-info-title">Posted On</div>
+        <div class="ext-info-points">:</div>
+        <div class="ext-info-text"><div class="sold-label"></div></div>
+      </div>
+      <!--Item extended info -->
+      <div class="ext-info ext-info-container">
+        <div class="ext-info-icon"></div>
+        <div class="ext-info-title">Container</div>
+        <div class="ext-info-points">:</div>
+        <div class="ext-info-text">Unit</div>
+      </div>
+      <!--Item extended info -->
+      <div class="ext-info ext-info-category">
+        <div class="ext-info-icon"></div>
+        <div class="ext-info-title">Category</div>
+        <div class="ext-info-points">:</div>
+        <div class="ext-info-text">Clothing</div>
+      </div>
+      <!--Item extended info -->
+      <div class="ext-info ext-info-condition">
+        <div class="ext-info-icon"></div>
+        <div class="ext-info-title">Condition</div>
+        <div class="ext-info-points">:</div>
+        <div class="ext-info-text">Used</div>
+      </div>
+    </div>
+
+  </div>
+  <!-- ./page-content -->
+
+</body>
+</html>

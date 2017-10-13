@@ -1,0 +1,535 @@
+.emailSenderForm{
+    margin-left: 2em;
+    margin-right: 5em;
+}
+
+#logoUploadSubmit {
+    background-color: #213246; 
+    color: #fff;
+}
+
+#logoUploadInput {
+    height: 50px;
+    border: none;
+}
+
+.left { 
+    float: left;
+}
+
+.right { 
+    float: right;
+}
+
+.signup {  
+    background:#fff; 
+    max-width:500px;
+    margin:0 auto; 
+    padding:1px 15px 15px 15px; 
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.3);
+    box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.3); 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    border-radius: 3px; 
+}
+.signup-footer {
+  margin:0 auto;
+  max-width:500px;
+  padding-top:15px;
+  font-size:11px;
+}
+.signup-footer p {
+  text-align:center;
+}
+
+.login {  
+    background:#fff; 
+    max-width:350px;
+    margin:0 auto; 
+    padding:1px 15px 15px 15px; 
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.3);
+    box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.3); 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    border-radius: 3px; 
+}
+.login-footer {
+  margin:0 auto;
+  max-width:350px;
+  padding-top:15px;
+  font-size:11px;
+}
+.login-footer p {
+  text-align:center;
+}
+
+.error-field {
+	border: 2px solid #e74c3c;
+}
+.error {
+	color: #e74c3c;
+}
+.success {
+	color: #5cb85c;
+}
+
+#admin_merchant_edit #left_table {
+    padding-left: 6px;
+}
+
+#admin_merchant_edit .align_right {
+    text-align: right;
+
+}
+
+#admin_merchant_edit {
+    font-size: 13px !important;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.need_border {
+    border: 1px solid black;
+}
+
+#admin_merchant_edit .no_padding {
+    padding:0;
+}
+
+#admin_merchant_edit #left_div {
+    width: 350px;
+    height: 600px;
+}
+
+.border_bottom {
+    border-bottom: 1px solid black;
+}
+
+#admin_merchant_edit .header {
+    height: 30px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-top: 7px;
+}
+
+.left_divs {
+    border: 1px solid black;
+    margin-top: 10px;
+
+    width: 350px;
+    height: 200px;
+}
+
+#admin_merchant_edit .avatar {
+    margin-bottom: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+
+#right_div table {
+    width: 350px;
+}
+
+#admin_merchant_edit .common_padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.table1 {
+    width: 330px;
+}
+
+#admin_merchant_edit .right_text {
+    padding-right: 10px;
+    font-weight: 100;
+}
+
+#admin_merchant_edit .left2_div {
+    height: 140px;
+}
+
+#admin_merchant_edit .last_left {
+    height: 220px;
+}
+
+#admin_merchant_edit .bottom_margin {
+    margin-bottom: 10px;
+}
+
+#right_div {
+    margin-left: 5px;
+    width: 230px;
+}
+
+#admin_merchant_edit #main_right_div {
+    height: 580px;
+    border: 1px solid black;
+    margin-top: 10px;
+    width: 710px;
+    margin-left: 20px;
+}
+
+#admin_merchant_edit input , #admin_merchant_edit select , #admin_merchant_edit textarea{
+    font-size: 12px;
+}
+
+#admin_merchant_edit .form_table tr td{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#admin_merchant_edit .need_padding {
+    padding-top: 15px;
+}
+
+#right_div .first_row {
+    width: inherit;
+}
+
+.planTitle{
+    font: bold 16px/16px Arial,Helvetica,sans-serif;
+    position: relative;
+    width: 100%;
+    top: 0;
+    background-color: #F2F2F2;
+    text-align: center;
+    border: 1px solid #272727;
+    border-right-width: 0;
+}
+
+.planTitle p{
+    margin-top: 12px;
+}
+
+.priceTitle{
+    position: absolute;
+    display: block;
+    /*height: 100px;*/
+    width: 100%;
+    text-align: center;
+}
+
+.subscribeButton{
+    width: 100%;
+    position: absolute;
+    vertical-align : bottom;
+    bottom: 0;
+    background-color: #F2F2F2;
+    border: 1px solid #CCCCCC;
+    border-top-width: 2px;
+    border-right-width: 0
+}
+
+#tablePlans{
+    width:100%;
+    table-layout:fixed;
+    border: 1px solid black;
+    margin-top: 0;
+    clear: none;
+    float: left;
+}
+
+#tablePlans td {
+    border-collapse: collapse;
+    border: 1px solid #CCCCCC;
+}
+
+#tablePlans td{
+    position: relative;
+    padding: 0;
+}
+
+#tableTransactions{
+    width:100%;
+    table-layout:fixed;
+    border: 1px solid black;
+    border-collapse: inherit;
+}
+
+#tableTransactions td{
+    border-collapse: inherit;
+}
+
+.priceText p{
+    font-family:Arial;
+    font-weight:normal;
+    font-style:normal;
+    text-decoration:none;
+    color:#333333;
+
+}
+
+.priceText-high {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.priceText-bottom{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.priceText-high p{
+    font-size:20px;
+    line-height: 1.5;
+}
+
+.priceText-bottom p{
+    font-size:16px;
+    line-height: 1.5;
+}
+
+.priceTitle p{
+    margin-top: 15px;
+    font: bold 36px/36px Arial,Helvetica,sans-serif;
+}
+
+.subscribeButton .subscribe{
+    background-color: #FFFFFF;
+    font: 16px/16px Arial,Helvetica,sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    margin: 5px auto;
+    /*width: 230px;*/
+    text-align: center;
+    height: 35px;
+}
+
+.priceOptions p{
+    font: bold 13px/13px Arial,Helvetica,sans-serif;
+    font-style:normal;
+    text-decoration:none;
+    color:#333333;
+    margin: 20px auto;
+    margin-left: 10px;
+}
+
+
+.priceOptions{
+    font: 13px/13px Arial,Helvetica,sans-serif;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.currentPlan{
+    font: 16px/16px Arial,Helvetica,sans-serif;
+    margin: 5px auto;
+    width: 230px;
+    text-align: center;
+    height: 35px;
+}
+
+.inputBlock{
+    position: relative;
+    float: right;
+}
+
+.input_1{
+    border: 1px solid black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;
+    margin-left: 355px;
+    align-content: stretch;
+    width: 34%;
+    border-right-width: 0;
+}
+
+.input_2{
+    border: 1px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F2F2F2;
+    float: left;
+    align-content: stretch;
+    width: 34%
+}
+
+.emailLink{
+    font: 13px/13px Arial,Helvetica,sans-serif;
+    font-weight:normal;
+    font-style:italic;
+    text-decoration:none;
+    color:#333333;
+}
+
+.cancelSubs{
+    font: 12px/12px Arial,Helvetica,sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    text-decoration:underline;
+    color:#333333;
+}
+
+.titleBilling{
+    font: bold 16px/16px Arial,Helvetica,sans-serif;
+    font-style:normal;
+    text-decoration:none;
+    color:#333333;
+}
+
+.modalText{
+    font: 14px/14px Arial,Helvetica,sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    text-decoration:none;
+    color:#333333;
+}
+
+.modalText ul{
+    padding-left: 15px;
+}
+
+.modalText li{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#u251{
+    color: #000000;
+    font-family: "Arial";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 197px;
+}
+
+#u252{
+    color: #000000;
+    font-family: "Arial";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 149px;
+}
+
+#chooseOption{
+    margin: 10px;
+}
+
+#chooseOption hr{
+    font: 13px/13px Arial,Helvetica,sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    text-decoration:none;
+    color:#333333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000000;
+    background-color: #333333;
+}
+
+#updateSubscr {
+    color: #000000;
+    font-family: "Arial";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    height: 38px;
+    left: 79px;
+    text-align: center;
+    text-decoration: none;
+    width: 168px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.u237 {
+    color: #000000;
+    font-family: "Arial";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    height: 38px;
+    left: 275px;
+    text-align: center;
+    text-decoration: none;
+    width: 228px;
+}
+
+#u7{
+    width: 115px;
+    height: 25px;
+    background: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 4;
+    margin-left: 50px;
+}
+
+.table-responsive a{
+    color: #000000;
+    text-decoration: underline;
+}
+
+.transaction_link{
+    font: 13px/13px Arial,Helvetica,sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    color:#0000FF;
+    text-decoration: underline;
+}
+
+.mostPopular{
+    height: 45px;
+    text-align: center;
+    border: 1px solid black;
+    display: inline-block;
+    margin-left: 609px;
+    margin-bottom: -1px;
+    border-bottom-width: 0;
+    width: 258px;
+    background-color: #717171;
+    margin-top: 50px;
+    font: 16px/16px Arial,Helvetica,sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    color:#FFFFFF;
+}
+
+.priceOptions p{
+    float: left;
+}
+
+.priceOptions .infCirc{
+    width: 5%;
+    display: inline;
+    padding-bottom: 10px;
+    margin-top: 7px;
+    float: right;
+    margin-right: 7px;
+}
+
+.chooseTerm{
+    margin-top: 20px;
+    width: 366px;
+    display: block;
+    margin-bottom: -30px;
+}
+
+
+
+
+

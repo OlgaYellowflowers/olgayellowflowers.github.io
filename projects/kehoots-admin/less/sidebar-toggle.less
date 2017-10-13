@@ -1,0 +1,41 @@
+.main-admin-panel { margin-left: 210px; padding-bottom: 70px; }
+.admin-sidebar { font-size: @navFontSize; background-color: @navColor; width: 210px; min-height: 100%; color: @navLinkColor; padding-bottom: 40px; position: absolute; top: 0; left: 0; border-top: 10px @navColorMenu solid; }
+.navbar-button { display: block; clear: both; width: 100%; }
+.admin-sidebar-responsive-collapse { left: -230px; }
+.main-admin-panel-responsive-collapse { margin-left: 0px; }
+.small-user-info { margin: 25px 15px; }
+.small-user-info-userpic { float: left; }
+.small-user-info-userpic img { border-radius: 50%; }
+.small-user-info-name, .small-user-info-address, .small-user-info-link { margin: 0 0 1px 65px; }
+.small-user-info-link a { color: #fff; text-decoration: underline !important;
+    &:hover { color: #fff; text-decoration: none !important; }
+}
+.nav-side-menu { overflow: auto; }
+.nav-side-menu .brand { background-color: transparent; line-height: 50px; display: block; text-align: center; font-size: 14px; }
+.nav-side-menu .toggle-btn { display: none; }
+.nav-side-menu ul, .nav-side-menu li { list-style: none; padding: 0px; margin: 0px; line-height: 35px; cursor: pointer; }
+.nav-side-menu ul .active, .nav-side-menu li .active { background-color: @navColorMenu; }
+.nav-side-menu ul .sub-menu li.active, .nav-side-menu li .sub-menu li.active { color: @navLinkColor; }
+.nav-side-menu ul .sub-menu li.active a, .nav-side-menu li .sub-menu li.active a { color: @navLinkColor; }
+.nav-side-menu ul .sub-menu li, .nav-side-menu li .sub-menu li { background-color: @navColor; border: none; line-height: 40px; height: 40px; border-bottom: 1px solid @navColorMenu; margin-left: 0px; }
+.nav-side-menu ul .sub-menu li:hover, .nav-side-menu li .sub-menu li:hover { background-color: darken(@navColorMenu, 20%); }
+.sub-menu li { padding-left: 15px; border-bottom: 1px solid @navColorMenu; }
+.nav-side-menu a { text-decoration: none; color: @navLinkColor !important; outline: 0 !important; }
+.nav-side-menu li:hover { background-color: darken(@navColorMenu, 20%); -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease; }
+.menu-content > li { text-align: center; background: @navColorMenu; line-height: 32px; height: 32px; margin-top: 32px;
+    &:first-child { margin-top: 0; }
+}
+.menu-content > li.collapsed { }
+.menu-content .sub-menu li { background: url('@{imagePath}arrow-right-white.png') 95% center no-repeat; padding-right: 5%; }
+@media (max-width:767px) {
+    .nav-side-menu { position: relative; margin-bottom: 10px; width: 100%; }
+    .nav-side-menu .toggle-btn { display: block; cursor: pointer; position: absolute; right: 10px; top: 10px; z-index: 1000 !important; padding: 3px; background-color: #ffffff; color: #000; width: 40px; text-align: center; }
+}
+@media (min-width:767px) {
+    .nav-side-menu .menu-list .menu-content { display: block; }
+}
+.sidebar-toggle .icon-bar { background-color: @navColor; }
+.sidebar-toggle { float: left; color: #000; background: url('@{imagePath}toggle-btn.png') 15px 15px no-repeat transparent; border: 0 none; width: 45px; height: 45px; margin: 0px; color: @navColorMenu;
+    &:active, &:hover { outline: 0; opacity: 0.8; }
+}
+.sidebar-box { padding: 30px 20px; }

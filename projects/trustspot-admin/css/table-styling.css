@@ -1,0 +1,50 @@
+.sorting_asc,
+.sorting_desc {
+	position: relative;
+}
+.sorting_asc:after {
+	content: "\f0de";
+	font: normal normal normal 14px/1 FontAwesome;
+	padding: 6px 0 5px 10px;
+	position: absolute;
+}
+.sorting_desc:after {
+	content: "\f0dd";
+	font: normal normal normal 14px/1 FontAwesome;
+	padding: 6px 0 5px 10px;
+	position: absolute;
+}
+.table-styled.table-striped > tbody > tr {
+	background-color: #e8edf4
+}
+.table-styled.table-striped > tbody > tr:nth-of-type(2n+1) {
+	background-color: #f2f6fa;
+}
+.table-styled th {
+	background-color: #e3eaf3;
+	color: #4c637b;
+	font-family: 'ProximaNova-Bold';
+	font-weight: normal;
+	font-size: 13px;
+		border: 0 none !important;
+
+}
+
+.table-styled td {
+	color: #4c637b;
+	font-family: 'ProximaNova-Regular';
+	border: 0 none !important;
+}
+.table-styled .fa-star {
+	font-size: 20px;
+}
+.table-styled a {
+	color: #33577b;
+
+}
+.table-styled a:hover, .table-styled a:focus {
+color: #4c637b;
+}
+.table-styled a.btn, .table-styled a.btn:hover, .table-styled a.btn:focus {
+	color: #fff;
+}

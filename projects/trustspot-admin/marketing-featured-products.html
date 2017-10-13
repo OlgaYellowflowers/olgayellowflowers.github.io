@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Featured Products</title>
+
+	<link href="fonts/fonts.css" rel="stylesheet" />
+	<link href="css/bootstrap.css" rel="stylesheet" />
+
+	<script type='text/javascript' src='js/jquery-1.11.3.js'></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+
+	<!-- Admin stylesheet -->
+	<link href="css/starReviewsAdmin.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="css/c3.css" rel="stylesheet" type="text/css"/>
+	<!-- Merchant Dashboard Theme-->
+	<link href="css/dashboard.css" rel="stylesheet">
+
+	<!--  css -->
+	<link href="css/bootstrap-fileinput.css" rel="stylesheet" />
+	<link href="css/bootstrap-select.css" rel="stylesheet" />
+	<link href="css/table-styling.css" rel="stylesheet">
+	<link href="css/override-your-styles.css" rel="stylesheet">
+	<link href="css/styledash-additional.css" rel="stylesheet">
+
+	<!--  js -->
+	<script type='text/javascript' src='js/bootstrap.file-input.js'></script>
+	<script type='text/javascript' src='js/bootstrap-select.min.js'></script>
+	<script type='text/javascript' src='js/scripts-marketing.js'></script>
+
+</head>
+
+<body>
+
+	<div class="content">
+		<div class="page-header">
+			<h2>Featured Products</h2>
+		</div>
+		<div class="error"></div>
+		<div>
+			<p>
+				With Featured Products, you can easily upsell certain items to your visitors and reviewers, further giving the chance for them to purchase additional merchandise from you. This is a great and simple way to increase site conversions from within your Store Page, Review Form and Follow up Email.
+			</p>
+		</div>
+
+		<div class="panel panel-default panel-toggle chart-wrap">
+			<div class="panel-heading clearfix chart-panel">
+				<h3 class="panel-title pull-left chart-title"> <i class="fa fa-file-o"></i>
+					CREATE NEW PRODUCT
+				</h3>
+				<button class="btn-panel-arrow"> <i class="fa fa-angle-up"></i>
+				</button>
+			</div>
+			<div class="panel-body  wrapper-inner-lg">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="control-label col-sm-2">Name:</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" placeholder="Name of your product"></div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">Price:</label>
+						<div class="col-sm-2">
+							<input type="text" class="form-control" placeholder="$0.00"></div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">Link:</label>
+						<div class="col-sm-8">
+							<input type="url" class="form-control" placeholder="Link of your product"></div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">Image:</label>
+						<div class="col-sm-8 upload-img">
+							<div class="pull-left">
+								<div class="logo-preview-block img-thumbnail">
+									<div class="logo-preview-block-empty">Product Image</div>
+								</div>
+
+								<!-- Here is product preview block with image inside, uncomment and use this block instead previous block when you put image inside
+							-->
+								<!-- <div class="logo-preview-block img-thumbnail">
+								<div class="logo-preview-block-img">
+									<img src="img/image-example.jpg" height="175" width="125"></div>
+							</div>
+							-->
+						</div>
+						<div class="pull-left wrapper-inner-sm">
+							<div class="logo-preview-controls">
+								<input type="file" class="input-file-styled btn btn-primary " data-filename-placement="outside" title="Upload Image">
+								<div class="logo-preview-controls-text">Recommend 125 x 175</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-8 text-center">
+						<button type="submit" class="btn btn-lg btn-success">CREATE</button>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+	<div class="panel panel-default panel-toggle chart-wrap">
+		<div class="panel-heading clearfix chart-panel">
+			<h3 class="panel-title pull-left chart-title">
+				<i class="fa fa-list"></i>
+				PRODUCT LIST
+			</h3>
+			<button class="btn-panel-arrow">
+				<i class="fa fa-angle-up"></i>
+			</button>
+		</div>
+		<div class="panel-body  wrapper-inner-lg">
+
+			<p>
+				You can display a maximum of 3 featured products at any one time. You can also easily set products to be active or not active depending on your promotion.
+			</p>
+
+			<div class="form-inline form-styled pull-right no-footer">
+
+				<div class="form-group">
+					<label>Filter</label>
+					<select class="selectpicker select-styled">
+
+						<option>All</option>
+						<option>Active</option>
+						<option>Product Name</option>
+						<option>Price</option>
+
+					</select>
+				</div>
+
+				<div class="form-group">
+					<!-- Search input -->
+					<div id="reviews_filter" class="input-group">
+						<div class="input-group-btn">
+							<button class="btn btn-styled" type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</div>
+						<input type="search" class="form-control" placeholder="Search"  aria-controls="reviews"></div>
+				</div>
+			</div>
+
+			<table id="reviews" class="table table-striped table-styled no-footer" >
+				<thead>
+					<tr>
+						<th style="width: 10%">Active</th>
+						<th style="width: 45%">Product name</th>
+						<th style="width: 15%">Price</th>
+						<th style="width: 15%">Clicks</th>
+						<th style="width: 15%">Actions</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+				<!-- ONE PRODUCT ITEM ROW -->
+					<tr class="tablelist-item-tr">
+						<td class="tablelist-item-checkbox">
+							<div class="checkbox-styled">
+								<input type="checkbox" value="None" id="checkbox1" name="check" checked="checked">
+								<label for="checkbox1"></label>
+							</div>
+						</td>
+						<td class="tablelist-item-name tablelist-item-editable">
+							<span>Battlefield 4: Max Edition Pack #29</span>
+							<input type="text"></td>
+						<td class="tablelist-item-price tablelist-item-editable">
+							<div class="pull-left">$</div>
+							<span>39.95</span>
+							<input type="text">
+						</td>
+						<!-- Popup window with clicks list -->
+						<td class="tablelist-item-clicks popup-simple">
+							<div class="popup-window pull-left" data-placement='right'>
+								<span title='Show Clicks List in popup window' class="btn-popup">129</span>
+							</div>
+							<div class="popup-content hide">
+								<div class="pull-left">Store Page:</div>
+								<div class="pull-right">90 (85%)</div>
+								<div class="clearfix"></div>
+								<div class="pull-left">Review Form:</div>
+								<div class="pull-right">5 (2%)</div>
+								<div class="clearfix"></div>
+								<div class="pull-left spacer-after">Follow up Email:</div>
+								<div class="pull-right">25 (13%)</div>
+								<div class="clearfix"></div>
+							</div>
+
+						</td>
+						<td class="tablelist-item-actions">
+							<div class="tablelist-item-buttons">
+
+
+									<!-- Full editing button which opens modal window -->
+									<span data-toggle="modal" data-target="#modal1" class="tablelist-item-full-btn">Edit</span>
+									<!-- Modal -->
+									<div id="modal1" class="modal fade" role="dialog">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title">Edit Product</h4>
+												</div>
+												<div class="modal-body">
+													<form class="form-horizontal">
+														<div class="form-group">
+															<label class="control-label col-sm-2">Name:</label>
+															<div class="col-sm-8">
+																<input type="text" class="form-control" placeholder="Name of your product"></div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-sm-2">Price:</label>
+															<div class="col-sm-2">
+																<input type="text" class="form-control" placeholder="$0.00"></div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-sm-2">Link:</label>
+															<div class="col-sm-8">
+																<input type="url" class="form-control" placeholder="Link of your product"></div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-sm-2">Image:</label>
+															<div class="col-sm-8 upload-img">
+																<div class="pull-left">
+																	<div class="logo-preview-block img-thumbnail">
+																		<div class="logo-preview-block-empty">Product Image</div>
+																	</div>
+
+																	<!-- Here is product preview block with image inside, uncomment and use this block instead previous block when you put image inside
+							-->
+																	<!-- <div class="logo-preview-block img-thumbnail">
+																	<div class="logo-preview-block-img">
+																		<img src="img/image-example.jpg" height="175" width="125"></div>
+																</div>
+																-->
+															</div>
+															<div class="pull-left wrapper-inner-sm">
+																<div class="logo-preview-controls">
+																	<input type="file" class="input-file-styled btn btn-primary " data-filename-placement="outside" title="Upload Image">
+																	<div class="logo-preview-controls-text">Recommend 125 x 175</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="form-group">
+														<div class="col-sm-offset-2 col-sm-8 text-center">
+															<button type="submit" class="btn btn-lg btn-success">Save</button>
+															<button type="submit" class="btn btn-lg btn-danger">Delete</button>
+															<button type="button" class="btn btn-lg btn-lightblue" data-dismiss="modal">Close</button>
+
+														</div>
+													</div>
+
+												</form>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- End modal -->
+
+
+
+					</td>
+				</tr>
+
+				<!-- ONE PRODUCT ITEM ROW -->
+					<tr class="tablelist-item-tr">
+						<td class="tablelist-item-checkbox">
+							<div class="checkbox-styled">
+								<input type="checkbox" value="None" id="checkbox1" name="check" checked="checked">
+								<label for="checkbox1"></label>
+							</div>
+						</td>
+						<td class="tablelist-item-name tablelist-item-editable">
+							<span>Battlefield 4: Max Edition Pack #29</span>
+							<input type="text"></td>
+						<td class="tablelist-item-price tablelist-item-editable">
+							<div class="pull-left">$</div>
+							<span>39.95</span>
+							<input type="text">
+						</td>
+						<!-- Popup window with clicks list -->
+						<td class="tablelist-item-clicks popup-simple">
+							<div class="popup-window pull-left" data-placement='right'>
+								<span title='Show Clicks List in popup window' class="btn-popup">129</span>
+							</div>
+							<div class="popup-content hide">
+								<div class="pull-left">Store Page:</div>
+								<div class="pull-right">90 (85%)</div>
+								<div class="clearfix"></div>
+								<div class="pull-left">Review Form:</div>
+								<div class="pull-right">5 (2%)</div>
+								<div class="clearfix"></div>
+								<div class="pull-left spacer-after">Follow up Email:</div>
+								<div class="pull-right">25 (13%)</div>
+								<div class="clearfix"></div>
+							</div>
+
+						</td>
+						<td class="tablelist-item-actions">
+							<div class="tablelist-item-buttons">
+
+
+									<!-- Full editing button which opens modal window -->
+									<span data-toggle="modal" data-target="#modal1" class="tablelist-item-full-btn">Edit</span>
+									<!-- Modal -->
+									<div id="modal1" class="modal fade" role="dialog">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title">Edit Product</h4>
+												</div>
+												<div class="modal-body">
+													<form class="form-horizontal">
+														<div class="form-group">
+															<label class="control-label col-sm-2">Name:</label>
+															<div class="col-sm-8">
+																<input type="text" class="form-control" placeholder="Name of your product"></div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-sm-2">Price:</label>
+															<div class="col-sm-2">
+																<input type="text" class="form-control" placeholder="$0.00"></div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-sm-2">Link:</label>
+															<div class="col-sm-8">
+																<input type="url" class="form-control" placeholder="Link of your product"></div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-sm-2">Image:</label>
+															<div class="col-sm-8 upload-img">
+																<div class="pull-left">
+																	<div class="logo-preview-block img-thumbnail">
+																		<div class="logo-preview-block-empty">Product Image</div>
+																	</div>
+
+																	<!-- Here is product preview block with image inside, uncomment and use this block instead previous block when you put image inside
+							-->
+																	<!-- <div class="logo-preview-block img-thumbnail">
+																	<div class="logo-preview-block-img">
+																		<img src="img/image-example.jpg" height="175" width="125"></div>
+																</div>
+																-->
+															</div>
+															<div class="pull-left wrapper-inner-sm">
+																<div class="logo-preview-controls">
+																	<input type="file" class="input-file-styled btn btn-primary " data-filename-placement="outside" title="Upload Image">
+																	<div class="logo-preview-controls-text">Recommend 125 x 175</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="form-group">
+														<div class="col-sm-offset-2 col-sm-8 text-center">
+															<button type="submit" class="btn btn-lg btn-success">Save</button>
+															<button type="submit" class="btn btn-lg btn-danger">Delete</button>
+															<button type="button" class="btn btn-lg btn-lightblue" data-dismiss="modal">Close</button>
+
+														</div>
+													</div>
+
+												</form>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- End modal -->
+
+
+
+					</td>
+				</tr>
+
+
+
+
+
+			</tbody>
+
+		</table>
+
+		<div class="wrapper-outer-lg text-center">
+			<button type="submit" class="btn btn-lg btn-primary">Save</button>
+		</div>
+
+	</div>
+
+</div>
+
+<div class="panel panel-default panel-toggle chart-wrap">
+	<div class="panel-heading clearfix chart-panel">
+		<h3 class="panel-title pull-left chart-title">
+			<i class="fa fa-eye"></i>
+			DISPLAY OPTIONS
+		</h3>
+		<button class="btn-panel-arrow">
+			<i class="fa fa-angle-up"></i>
+		</button>
+	</div>
+	<div class="panel-body  wrapper-inner-lg">
+		<p>
+			Select from the following options where you would like to display your featured products. You can also preview each option before saving.
+		</p>
+
+		<div class="form-group checkbox-block width-lg-mega">
+			<div class="checkbox-styled pull-left spacer-after">
+				<input type="checkbox" name="check" id="checkbox_1" value="None">
+				<label for="checkbox_1"></label>
+			</div>
+			<div class="checkbox-label no-margin"> <b>Display on Store Page</b>
+			</div>
+			<div class="pull-right">
+				<!-- Popup window with Preview -->
+				<div class="popup-option-preview popup-simple">
+					<div class="popup-window pull-left" data-placement='right'>
+						<span title='Look at the preview in the popup window' class="btn-popup">Preview</span>
+					</div>
+					<div class="popup-content hide">Here goes html of preview</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group checkbox-block width-lg-mega">
+			<div class="checkbox-styled pull-left spacer-after">
+				<input type="checkbox" name="check" id="checkbox_2" value="None">
+				<label for="checkbox_2"></label>
+			</div>
+			<div class="checkbox-label no-margin"> <b>Display on Review Email</b>
+			</div>
+			<div class="pull-right">
+				<!-- Popup window with Preview -->
+				<div class="popup-option-preview popup-simple">
+					<div class="popup-window pull-left" data-placement='right'>
+						<span title='Look at the preview in the popup window' class="btn-popup">Preview</span>
+					</div>
+					<div class="popup-content hide">Here goes html of preview</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group checkbox-block width-lg-mega">
+			<div class="checkbox-styled pull-left spacer-after">
+				<input type="checkbox" name="check" id="checkbox_3" value="None">
+				<label for="checkbox_3"></label>
+			</div>
+			<div class="checkbox-label no-margin">
+				<b>Display on Follow up Email</b>
+			</div>
+			<div class="pull-right">
+				<!-- Popup window with Preview -->
+				<div class="popup-option-preview popup-simple">
+					<div class="popup-window pull-left" data-placement='right'>
+						<span title='Look at the preview in the popup window' class="btn-popup">Preview</span>
+					</div>
+					<div class="popup-content hide">Here goes html of preview</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group checkbox-block width-lg-mega">
+			<div class="checkbox-styled pull-left spacer-after">
+				<input type="checkbox" name="check" id="checkbox_4" value="None">
+				<label for="checkbox_4"></label>
+			</div>
+			<div class="checkbox-label no-margin">
+				<b>Display on Review Form</b>
+			</div>
+			<div class="pull-right">
+				<!-- Popup window with Preview -->
+				<div class="popup-option-preview popup-simple">
+					<div class="popup-window pull-left" data-placement='right'>
+						<span title='Look at the preview in the popup window' class="btn-popup">Preview</span>
+					</div>
+					<div class="popup-content hide">Here goes html of preview</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-12">
+			<div class="wrapper-outer-lg text-center">
+				<button class="btn btn-lg btn-primary" type="submit">Save</button>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+</div>
+</body>
+</html>

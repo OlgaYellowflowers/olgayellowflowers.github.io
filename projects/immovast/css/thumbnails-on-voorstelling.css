@@ -1,0 +1,26 @@
+.item-thumbnails {
+    overflow: hidden;
+    margin: 10px 0;
+}
+.item-thumbnail {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    height: 70px;
+    padding: 5px;
+    text-align: center;
+    width: 70px;
+    float: left;
+    margin: 0 5px 5px 0;
+}
+.item-thumbnail:hover,
+.item-thumbnail:focus {
+    border-color: #a51316;
+}
+.item-thumbnail img {
+    display: block;
+    height: 58px;
+    width: 58px;
+}

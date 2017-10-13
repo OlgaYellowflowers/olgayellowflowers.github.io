@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+
+<!-- language Dutch -->
+<html lang="nl">
+  <!-- When language is changing, so change also "lang" attribute - it is good for search engines
+language English: <html lang="en">
+  language French:
+  <html lang="fr">
+    -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Immovast</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- CSS -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css"></head>
+<body>
+
+    <!-- Navbar begin -->
+    <nav class="navbar navbar-default">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand visible-xs" href="#"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+
+        <div class="navbar-first-line">
+          <div class="container">
+            <a class="navbar-brand hidden-xs" href="#"></a>
+            <ul class="nav navbar-nav navbar-right nav-lang">
+              <li class="active">
+                <a href="#">NL</a>
+              </li>
+              <li>
+                <a href="#">EN</a>
+              </li>
+              <li>
+                <a href="#">FR</a>
+              </li>
+            </ul>
+            <p class="navbar-text hidden-xs">113798 panden in België</p>
+          </div>
+        </div>
+        <div class="navbar-second-line">
+          <div class="container">
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="#">
+                  Immo Te Koop
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">Immo Te Huur</a>
+              </li>
+              <li>
+                <a href="#">Makelaars</a>
+              </li>
+              <li>
+                <a href="#">Adverteren</a>
+              </li>
+              <li>
+                <a href="#">Media</a>
+              </li>
+              <li>
+                <a href="#">Mijn ImmoVast</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Breadcrumbs begin -->
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="#">Some page</a>
+            <a href="#">Some sub page</a>
+            <span>Title of the current page</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Breadcrumbs end -->
+
+    <!-- #main-wrapper begin -->
+    <div id="main-wrapper">
+
+      <!-- Tabs begin -->
+      <div class="container monkey-container">
+        <div class="monkey-mascot"></div>
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- Tabs menu -->
+
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a data-toggle="tab" href="#tab1">Te coop</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#tab2">Te huur</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#tab3">Nieuwbouw</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#tab4">Bedrijf</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#tab5">Buitenland</a>
+              </li>
+
+            </ul>
+
+            <div class="tab-content">
+
+              <!-- Content of first tab begin-->
+              <div id="tab1" class="tab-pane fade in active">
+
+                <!-- Search property begin -->
+                <div class="row">
+                  <div class="search-property">
+                    <form name="getdata1" action="http://www.immovast.be/immovast/immo.php" method="get">
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label for="searchinput" class="control-label">
+                            Plaats of regio - bijv. <b>Gent</b>
+                          </label>
+                          <div>
+                            <input type="search" class="form-control input-lg" placeholder="Gemeente of Stad" name="city_or_postcode" id="city_or_postcode" autocomplete="off"></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-group">
+                          <div class="as-label-margin">
+                            <select class="form-control input-lg" id="distance" name="distance">
+                              <option value="1">+ 1 km</option>
+                              <option value="2">+ 2 km</option>
+                              <option selected="selected" value="5">+ 5 km</option>
+                              <option value="10">+ 10 km</option>
+                              <option value="15">+ 15 km</option>
+                              <option value="20">+ 20 km</option>
+                              <option value="25">+ 25 km</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-group">
+                          <label for="selectbasic" class="control-label">Prijsklasse - van</label>
+                          <div>
+                            <select class="form-control input-lg" name="min_price" id="selec">
+                              <option value="50000">€ 50.000</option>
+                              <option value="75000">€ 75.000</option>
+                              <option value="100000">€ 100.000</option>
+                              <option selected="selected" value="125000">€ 125.000</option>
+                              <option value="150000">€ 150.000</option>
+                              <option value="175000">€ 175.000</option>
+                              <option value="200000">€ 200.000</option>
+                              <option value="225000">€ 225.000</option>
+                              <option value="250000">€ 250.000</option>
+                              <option value="275000">€ 275.000</option>
+                              <option value="300000">€ 300.000</option>
+                              <option value="325000">€ 325.000</option>
+                              <option value="350000">€ 350.000</option>
+                              <option value="375000">€ 375.000</option>
+                              <option value="400000">€ 400.000</option>
+                              <option value="450000">€ 450.000</option>
+                              <option value="500000">€ 500.000</option>
+                              <option value="550000">€ 550.000</option>
+                              <option value="600000">€ 600.000</option>
+                              <option value="650000">€ 650.000</option>
+                              <option value="700000">€ 700.000</option>
+                              <option value="750000">€ 750.000</option>
+                              <option value="800000">€ 800.000</option>
+                              <option value="900000">€ 900.000</option>
+                              <option value="1000000">€ 1.000.000</option>
+                              <option value="1250000">€ 1.250.000</option>
+                              <option value="1500000">€ 1.500.000</option>
+                              <option value="2000000">€ 2.000.000</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-group">
+                          <label for="selectbasic" class="control-label">Prijsklasse - tot</label>
+                          <div>
+                            <select class="form-control input-lg" name="max_price" id="select">
+                              <option value="75000">€ 75.000</option>
+                              <option value="100000">€ 100.000</option>
+                              <option value="125000">€ 125.000</option>
+                              <option value="150000">€ 150.000</option>
+                              <option value="175000">€ 175.000</option>
+                              <option value="200000">€ 200.000</option>
+                              <option value="225000">€ 225.000</option>
+                              <option value="250000">€ 250.000</option>
+                              <option value="275000">€ 275.000</option>
+                              <option value="300000">€ 300.000</option>
+                              <option value="325000">€ 325.000</option>
+                              <option value="350000">€ 350.000</option>
+                              <option value="375000">€ 375.000</option>
+                              <option value="400000">€ 400.000</option>
+                              <option value="450000">€ 450.000</option>
+                              <option value="500000">€ 500.000</option>
+                              <option selected="selected" value="550000">€ 550.000</option>
+                              <option value="600000">€ 600.000</option>
+                              <option value="650000">€ 650.000</option>
+                              <option value="700000">€ 700.000</option>
+                              <option value="750000">€ 750.000</option>
+                              <option value="800000">€ 800.000</option>
+                              <option value="900000">€ 900.000</option>
+                              <option value="1000000">€ 1.000.000</option>
+                              <option value="1250000">€ 1.250.000</option>
+                              <option value="1500000">€ 1.500.000</option>
+                              <option value="2000000">€ 2.000.000</option>
+                              <option value="3000000">€ 3.000.000</option>
+                              <option value="4000000">€ 4.000.000</option>
+                              <option value="5000000">€ 5.000.000</option>
+                              <option value="">€ 5.000.000+</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 as-label-margin">
+                        <div class="form-group">
+                          <button onclick="return validate();" class="btn btn-primary width100" name="singlebutton">Zoeken</button>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <ul class="additional-links">
+                          <li>
+                            <a title="Uitgebreid zoeken" href="http://www.immovast.be/uitgebreid/">Uitgebreid zoeken</a>
+                          </li>
+                          <li>
+                            <a title="Adres" href="http://www.immovast.be/straatadres/">Specifiek Adres</a>
+                          </li>
+                          <li>
+                            <a title="Kaart" href="http://www.immovast.be/immokaart/">Kaart</a>
+                          </li>
+                          <li>
+                            <a title="Referentie" href="http://www.immovast.be/referentie/">Referentie</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+                <!-- Search property end -->
+
+                <!-- Carousel with houses begin -->
+
+                <div class="carousel-houses">
+
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="houses-block bordered-block">
+                        <div class="title-underlined">Koopwoningen in België</div>
+                        <div class="houses-block-items">
+                          <div class="owl-wrapper">
+                            <div id="owl-1" class="owl-carousel owl-theme">
+                              <div class="item">
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                  <a href="#" itemprop="url">
+                                    <span class="houses-img">
+                                      <img alt="" src="http://www.immovast.be/vastgoedfotos//MB202266/MB202266_118635671556711.jpg" itemprop="image"></span>
+                                    <span itemprop="availableAtOrFrom" itemscope itemtype="http://schema.org/Place">
+                                      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span class="houses-adr" itemprop="addressLocality">Location 1</span>
+                                      </span>
+                                    </span>
+                                    <span class="houses-price">
+                                      €
+                                      <span  itemprop="price">120.000</span>
+                                    </span>
+                                    <meta itemprop="priceCurrency" content="EUR" />
+                                  </a>
+                                </span>
+                              </div>
+                              <div class="item">
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                  <a href="#" itemprop="url">
+                                    <span class="houses-img">
+                                      <img alt="" src="http://www.immovast.be/vastgoedfotos//MB202266/MB202266_118635671556711.jpg" itemprop="image"></span>
+                                    <span itemprop="availableAtOrFrom" itemscope itemtype="http://schema.org/Place">
+                                      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span class="houses-adr" itemprop="addressLocality">Location 1</span>
+                                      </span>
+                                    </span>
+                                    <span class="houses-price">
+                                      €
+                                      <span  itemprop="price">120.000</span>
+                                    </span>
+                                    <meta itemprop="priceCurrency" content="EUR" />
+                                  </a>
+                                </span>
+                              </div>
+                              <div class="item">
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                  <a href="#" itemprop="url">
+                                    <span class="houses-img">
+                                      <img alt="" src="http://www.immovast.be/vastgoedfotos/MB201400/MB201400_192225086115980.jpg" itemprop="image"></span>
+                                    <span itemprop="availableAtOrFrom" itemscope itemtype="http://schema.org/Place">
+                                      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span class="houses-adr" itemprop="addressLocality">Location 1</span>
+                                      </span>
+                                    </span>
+                                    <span class="houses-price">
+                                      €
+                                      <span  itemprop="price">120.000</span>
+                                    </span>
+                                    <meta itemprop="priceCurrency" content="EUR" />
+                                  </a>
+                                </span>
+                              </div>
+                              <div class="item">
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                  <a href="#" itemprop="url">
+                                    <span class="houses-img">
+                                      <img alt="" src="http://www.immovast.be/vastgoedfotos//MB202266/MB202266_118635671556711.jpg" itemprop="image"></span>
+                                    <span itemprop="availableAtOrFrom" itemscope itemtype="http://schema.org/Place">
+                                      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span class="houses-adr" itemprop="addressLocality">Location 1</span>
+                                      </span>
+                                    </span>
+                                    <span class="houses-price">
+                                      €
+                                      <span  itemprop="price">120.000</span>
+                                    </span>
+                                    <meta itemprop="priceCurrency" content="EUR" />
+                                  </a>
+                                </span>
+                              </div>
+                              <div class="item">
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                  <a href="#" itemprop="url">
+                                    <span class="houses-img">
+                                      <img alt="" src="http://www.immovast.be/vastgoedfotos/MB201400/MB201400_192225086115980.jpg" itemprop="image"></span>
+                                    <span itemprop="availableAtOrFrom" itemscope itemtype="http://schema.org/Place">
+                                      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span class="houses-adr" itemprop="addressLocality">Location 1</span>
+                                      </span>
+                                    </span>
+                                    <span class="houses-price">
+                                      €
+                                      <span  itemprop="price">120.000</span>
+                                    </span>
+                                    <meta itemprop="priceCurrency" content="EUR" />
+                                  </a>
+                                </span>
+                              </div>
+                              <div class="item">
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                  <a href="#" itemprop="url">
+                                    <span class="houses-img">
+                                      <img alt="" src="http://www.immovast.be/vastgoedfotos//MB202266/MB202266_118635671556711.jpg" itemprop="image"></span>
+                                    <span itemprop="availableAtOrFrom" itemscope itemtype="http://schema.org/Place">
+                                      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span class="houses-adr" itemprop="addressLocality">Location 1</span>
+                                      </span>
+                                    </span>
+                                    <span class="houses-price">
+                                      €
+                                      <span  itemprop="price">120.000</span>
+                                    </span>
+                                    <meta itemprop="priceCurrency" content="EUR" />
+                                  </a>
+                                </span>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Carousel with houses end -->
+
+                <!-- Block with maps, companies and video - begin -->
+
+                <div class="row">
+                  <div class="col-md-5 ">
+                    <!-- Maps begin -->
+                    <div class="maps-block bordered-block equalHeightsBlock1">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="title-underlined">Immo Te Koop zoeken op kaart</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="estate-content">
+                            <div class="maps-block-big-img">
+                              <a title="3D maps" href="http://www.immovast.be/immokaart/">
+                                <img alt="Immo Belgie" class="img-responsive" src="http://www.immovast.be/images/map.jpg"></a>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="maps-block-small-img">
+                            <a title="3D maps"  href="http://www.immovast.be/kaart/immokaart.php?city=556">
+                              <img class="img-responsive" alt="Immo Gent" src="http://www.immovast.be/images/thumb-map-gent.jpg">
+                              <span class="label">Gent</span>
+                            </a>
+                          </div>
+                          <div class="maps-block-small-img">
+                            <a title="3D maps"  href="http://www.immovast.be/kaart/immokaart.php?city=56">
+                              <img alt="Immo Antwerpen" class="img-responsive" src="http://www.immovast.be/images/thumb-map-antwerpen.jpg">
+                              <span class="label">Antwerpen</span>
+                            </a>
+                          </div>
+                          <div class="maps-block-small-img">
+                            <a title="3D maps" href="http://www.immovast.be/kaart/immokaart.php?city=1394">
+                              <img alt="Immo Hasselt" class="img-responsive" src="http://www.immovast.be/images/thumb-map-hasselt.jpg">
+                              <span class="label">Hasselt</span>
+                            </a>
+                          </div>
+                          <div class="maps-block-small-img">
+                            <a title="3D maps" href="http://www.immovast.be/kaart/immokaart.php?city=542">
+                              <img alt="Immo Brussel" class="img-responsive" src="http://www.immovast.be/images/thumb-map-brussel.jpg">
+                              <span class="label">Brussel</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <ul class="additional-links">
+                            <li>
+                              <a href="http://www.immovast.be/immokaart/">Bekijk meer Plaatsen</a>
+                            </li>
+                            <li>
+                              <a href="http://www.immovast.be/uitgebreid/">Uitgebreid Zoeken in Lijst</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Maps end --> </div>
+
+                  <div class="col-md-7">
+                    <div class="video-block bordered-block equalHeightsBlock2">
+
+                      <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZHOowrvkEMY" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                      <div class="video-description">Here is video description.</div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Carousel with companies begin -->
+
+                <div class="carousel-companies">
+
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="companies-block bordered-block">
+                        <div class="title-underlined">Koopwoningen in België</div>
+                        <div class="companies-block-items">
+                          <div class="owl-wrapper">
+                            <div id="owl-2" class="owl-carousel owl-theme">
+                              <div class="item">
+                                <span  itemscope itemtype="http://schema.org/RealEstateAgent">
+                                  <a href="#" itemprop="url">
+                                    <span class="companies-img">
+                                      <img alt="" src="http://www.immovast.be/makelaarsfotos/MB85157/mechelswoonburo_small.jpg" itemprop="logo"></span>
+                                  </a>
+                                </span>
+                              </div>
+                              <div class="item">
+                                <span  itemscope itemtype="http://schema.org/RealEstateAgent">
+                                  <a href="#" itemprop="url">
+                                    <span class="companies-img">
+                                      <img alt="" src="http://www.immovast.be/makelaarsfotos/MB85157/mechelswoonburo_small.jpg" itemprop="logo"></span>
+                                  </a>
+                                </span>
+                              </div>
+                              <div class="item">
+                                <span  itemscope itemtype="http://schema.org/RealEstateAgent">
+                                  <a href="#" itemprop="url">
+                                    <span class="companies-img">
+                                      <img alt="" src="http://www.immovast.be/makelaarsfotos/MB129/immo-mac.jpg" itemprop="logo"></span>
+                                  </a>
+                                </span>
+                              </div>
+                              <div class="item">
+                                <span  itemscope itemtype="http://schema.org/RealEstateAgent">
+                                  <a href="#" itemprop="url">
+                                    <span class="companies-img">
+                                      <img alt="" src="http://www.immovast.be/makelaarsfotos/MB85157/mechelswoonburo_small.jpg" itemprop="logo"></span>
+                                  </a>
+                                </span>
+                              </div>
+                              <div class="item">
+                                <span  itemscope itemtype="http://schema.org/RealEstateAgent">
+                                  <a href="#" itemprop="url">
+                                    <span class="companies-img">
+                                      <img alt="" src="http://www.immovast.be/makelaarsfotos/MB129/immo-mac.jpg" itemprop="logo"></span>
+                                  </a>
+                                </span>
+                              </div>
+                              <div class="item">
+                                <span  itemscope itemtype="http://schema.org/RealEstateAgent">
+                                  <a href="#" itemprop="url">
+                                    <span class="companies-img">
+                                      <img alt="" src="http://www.immovast.be/makelaarsfotos/MB85157/mechelswoonburo_small.jpg" itemprop="logo"></span>
+                                  </a>
+                                </span>
+                              </div>
+                              <div class="item">
+                                <span  itemscope itemtype="http://schema.org/RealEstateAgent">
+                                  <a href="#" itemprop="url">
+                                    <span class="companies-img">
+                                      <img alt="" src="http://www.immovast.be/makelaarsfotos/MB85157/mechelswoonburo_small.jpg" itemprop="logo"></span>
+                                  </a>
+                                </span>
+                              </div>
+                              <div class="item">
+                                <span  itemscope itemtype="http://schema.org/RealEstateAgent">
+                                  <a href="#" itemprop="url">
+                                    <span class="companies-img">
+                                      <img alt="" src="http://www.immovast.be/makelaarsfotos/MB85157/mechelswoonburo_small.jpg" itemprop="logo"></span>
+                                  </a>
+                                </span>
+                              </div>
+                              <div class="item">
+                                <span  itemscope itemtype="http://schema.org/RealEstateAgent">
+                                  <a href="#" itemprop="url">
+                                    <span class="companies-img">
+                                      <img alt="" src="http://www.immovast.be/makelaarsfotos/MB85157/mechelswoonburo_small.jpg" itemprop="logo"></span>
+                                  </a>
+                                </span>
+                              </div>
+                              <div class="item">
+                                <span  itemscope itemtype="http://schema.org/RealEstateAgent">
+                                  <a href="#" itemprop="url">
+                                    <span class="companies-img">
+                                      <img alt="" src="http://www.immovast.be/makelaarsfotos/MB85157/mechelswoonburo_small.jpg" itemprop="logo"></span>
+                                  </a>
+                                </span>
+                              </div>
+                              <div class="item">
+                                <span  itemscope itemtype="http://schema.org/RealEstateAgent">
+                                  <a href="#" itemprop="url">
+                                    <span class="companies-img">
+                                      <img alt="" src="http://www.immovast.be/makelaarsfotos/MB85157/mechelswoonburo_small.jpg" itemprop="logo"></span>
+                                  </a>
+                                </span>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Carousel with companies end -->
+
+                <!-- Block with maps, companies and video - begin -->
+
+                <!--  --> </div>
+              <!-- Content of first tab end -->
+
+              <div id="tab2" class="tab-pane  fade ">
+                <h3>Menu 1</h3>
+                <p>Some content in menu 1.</p>
+              </div>
+              <div id="tab3" class="tab-pane  fade ">
+                <h3>Menu 2</h3>
+                <p>Some content in menu 2.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Tabs end -->
+
+      <!--  --> </div>
+    <!-- #main-wrapper end -->
+
+    <!-- FOOTER begin -->
+
+    <footer class="page-footer">
+      <div class="page-footer-line bg-lighter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <h3 title="Immo Te Koop">Immo Te Koop</h3>
+              <ul>
+                <li>
+                  <a title="Huis Te Koop" href="http://www.immovast.be/immovast/immo.php?proptype=Sale&amp;type=Sale&amp;category=Huis">Huizen</a>
+                </li>
+                <li>
+                  <a title="Appartement Te Koop" href="http://www.immovast.be/immovast/immo.php?proptype=Sale&amp;type=Sale&amp;category=Appartement">Appartementen</a>
+                </li>
+                <li>
+                  <a title="Villa Te Koop" href="http://www.immovast.be/immovast/immo.php?proptype=Sale&amp;type=Sale&amp;category=Villa">Villas</a>
+                </li>
+                <li>
+                  <a title="Studio Te Koop" href="http://www.immovast.be/immovast/immo.php?proptype=Sale&amp;type=Sale&amp;category=Studio">Studios</a>
+                </li>
+                <li>
+                  <a title="Bouwgrond Te Koop" href="http://www.immovast.be/immovast/immo.php?proptype=Sale&amp;type=Sale&amp;category=Grond">Bouwgronden</a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <h3 title="Immo Te Huur">Immo Te Huur</h3>
+              <ul>
+                <li>
+                  <a title="Huis Te Huur" href="http://www.immovast.be/immovast/immohuur.php?proptype=Rent&amp;type=Rent&amp;category=Huis">Huis</a>
+                </li>
+                <li>
+                  <a title="Appartement Te Huur" href="http://www.immovast.be/immovast/immohuur.php?proptype=Rent&amp;type=Rent&amp;category=Appartement">Appartementen</a>
+                </li>
+                <li>
+                  <a title="Villa Te Huur" href="http://www.immovast.be/immovast/immohuur.php?proptype=Rent&amp;type=Rent&amp;category=Villa">Villas</a>
+                </li>
+                <li>
+                  <a title="Studio Te Huur" href="http://www.immovast.be/immovast/immohuur.php?proptype=Rent&amp;type=Rent&amp;category=Studio">Studios</a>
+                </li>
+                <li>
+                  <a title="Kantoor Te Huur" href="http://www.immovast.be/immovast/immohuur.php?proptype=Rent&amp;type=Rent&amp;category=Kantoor">Kantoren</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <h3 title="Immobilien">Immobilien</h3>
+              <ul>
+                <li>
+                  <a title="Immo Belgie" href="http://www.immovast.be/immovast/immo.php">Immo Belgie</a>
+                </li>
+                <li>
+                  <a title="Kantoren Te Koop" href="http://www.immovast.be/immovast/immo.php?proptype=Sale&amp;type=Sale&amp;category=Kantoor">Kantoren Te Koop</a>
+                </li>
+                <li>
+                  <a title="Nieuwbouw Te Koop" href="http://www.immovast.be/immovast/immonieuwbouw.php">Nieuwbouw Te Koop</a>
+                </li>
+                <li>
+                  <a title="Immobilien Te Koop" href="http://www.immovast.be/koop/immo/immobilien/">Immobilien Te Koop</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/immovast/immo.php?proptype=Sale&amp;type=Sale&amp;category=Opbrengsteigendom">Opbrengsteigendom</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <h3 title="Te Koop">Te Koop</h3>
+              <ul>
+                <li>
+                  <a href="http://www.immovast.be/belgie/immobilien/vastgoed/" title="Vastgoed Te Koop">Vastgoed Te Koop</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/immo/" title="Immo Te Koop">Immo Te Koop</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/immobilien/" title="Immobilien Te Koop">Immobilien Te Koop</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/nieuwbouw/" title="Nieuwbouw Te Koop">Nieuwbouw Te Koop</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/koop/immo/immobilien/" title="Herverkoop">Herverkoop</a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <h3 title="Te Huur">Vastgoed</h3>
+              <ul>
+                <li>
+                  <a href="http://www.immovast.be/uitgebreid/" title="Immo Zoeken">Immo Zoeken</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/vakantieverhuur/" title="Vakantieverhuur">Vakantieverhuur</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/bedrijfsvastgoed/commercieel/vastgoed/" title="Bedrijfsvastgoed">Bedrijfsvastgoed</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/buitenland/" title="Immo in Buitenland">Immo in Buitenland</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/straatadres/" title="Immo zoeken op Adres">Zoeken op Adres</a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <h3 title="Appartementen">Appartementen</h3>
+              <ul>
+                <li>
+                  <a href="http://www.immovast.be/immovast/immohuur.php?proptype=Sale&amp;type=Sale&amp;category=Appartement" title="Appartement Te Koop">Appartement Te Koop</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/immovast/immo.php?proptype=Sale&amp;type=Sale&amp;category=Studio" title="Studio Te Koop">Studio Te Koop</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/nieuwbouw/" title="Op Plan Te Koop">Op Plan Te Koop</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/immo/" title="Huis Te Koop">Huis Te Koop</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/immobilien/" title="Herenhuis Te Koop">Herenhuis Te Koop</a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer-line  bg-darker">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3>Populaire Zoekopdrachten</h3>
+              <ul class="ul-inline">
+                <li>
+                  <a title="Te Koop Brussel" href="http://www.immovast.be/immo/brussel">Te Koop Brussel</a>
+                </li>
+                <li>
+                  <a title="Te Koop Gent" href="http://www.immovast.be/immo/gent">Te Koop Gent</a>
+                </li>
+                <li>
+                  <a title="Te Koop Antwerpen" href="http://www.immovast.be/immo/antwerpen">Te Koop Antwerpen</a>
+                </li>
+                <li>
+                  <a title="Te Koop Leuven" href="http://www.immovast.be/immo/leuven">Te Koop Leuven</a>
+                </li>
+                <li>
+                  <a title="Te Koop Aalst" href="http://www.immovast.be/immo/aalst">Te Koop Aalst</a>
+                </li>
+                <li>
+                  <a title="Te Koop Dendermonde" href="http://www.immovast.be/immo/dendermonde">Te Koop Dendermonde</a>
+                </li>
+                <li>
+                  <a title="Te Koop Mechelen" href="http://www.immovast.be/immo/mechelen">Te Koop Mechelen</a>
+                </li>
+                <li>
+                  <a title="Te Koop Sint-Niklaas" href="http://www.immovast.be/immo/sint-niklaas">Te Koop Sint-Niklaas</a>
+                </li>
+                <li>
+                  <a title="Te Koop Limburg" href="http://www.immovast.be/limburg/">Te Koop Limburg</a>
+                </li>
+                <li>
+                  <a title="Te Koop Oost-Vlaanderen" href="http://immovast.be/oost-vlaanderen/">Te Koop Oost-Vlaanderen</a>
+                </li>
+                <li>
+                  <a title="Te Koop Brugge" href="http://www.immovast.be/immo/brugge">Te Koop Brugge</a>
+                </li>
+                <li>
+                  <a title="Te Koop Oostende" href="http://www.immovast.be/immo/oostende">Te Koop Oostende</a>
+                </li>
+                <li>
+                  <a title="Te Koop Knokke-Heist" href="http://www.immovast.be/immo/knokke-heist">Te Koop Knokke-Heist</a>
+                </li>
+                <li>
+                  <a title="Te Koop Kortrijk" href="http://www.immovast.be/immo/kortrijk">Te Koop Kortrijk</a>
+                </li>
+                <li>
+                  <a title="Te Koop West-Vlaanderen" href="http://www.immovast.be/west-vlaanderen/">Te Koop West-Vlaanderen</a>
+                </li>
+                <li>
+                  <a title="Te Koop Veurne" href="http://www.immovast.be/immo/veurne">Te Koop Veurne</a>
+                </li>
+                <li>
+                  <a title="Te Koop Geel" href="http://www.immovast.be/immo/geel">Te Koop Geel</a>
+                </li>
+                <li>
+                  <a title="Te Koop Geraardsbergen" href="http://www.immovast.be/immo/geraardsbergen">Te Koop Geraardsbergen</a>
+                </li>
+                <li>
+                  <a title="Te Koop Tongeren" href="http://www.immovast.be/immo/tongeren">Te Koop Tongeren</a>
+                </li>
+                <li>
+                  <a title="Te Koop Hasselt" href="http://www.immovast.be/immo/hasselt">Te Koop Hasselt</a>
+                </li>
+                <li>
+                  <a title="Te Koop Tielt" href="http://www.immovast.be/immo/tielt">Te Koop Tielt</a>
+                </li>
+                <li>
+                  <a title="Te Koop Genk" href="http://www.immovast.be/immo/genk">Te Koop Genk</a>
+                </li>
+                <li>
+                  <a title="Te Koop Vilvoorde" href="http://www.immovast.be/immo/vilvoorde">Te Koop Vilvoorde</a>
+                </li>
+                <li>
+                  <a title="Te Koop Vlaams-Brabant" href="http://www.immovast.be/vlaams-brabant/">Te Koop Vlaams-Brabant</a>
+                </li>
+                <li class="last">
+                  <a title="Te Koop Roeselare" href="http://www.immovast.be/immo/roeselare">Te Koop Roeselare</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer-line  bg-contrast block-ul-inlines">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <h3 title="Immo Zoeken">Immo Zoeken</h3>
+            </div>
+            <div class="col-sm-9">
+              <ul class="ul-inline">
+                <li>
+                  <a href="http://www.immovast.be/koop/immo/immobilien/" title="Te Koop">Te Koop</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/huur/immo/immobilien/" title="Te Huur">Te Huur</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/nieuwbouw/" title="Nieuwbouw">Nieuwbouw</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/bedrijfsvastgoed/commercieel/vastgoed/" title="Bedrijfsvastgoed">Bedrijfsvastgoed</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/veilingen/" title="Veilingen">Veilingen</a>
+                </li>
+                <li class="last">
+                  <a href="http://www.immovast.be/buitenland/" title="Buitenland">Buitenland</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <h3 title="Makelaars">Voor Makelaars</h3>
+            </div>
+            <div class="col-sm-9">
+              <ul class="ul-inline">
+                <li>
+                  <a href="http://www.immovast.be/advertenties/immo/" title="Adverteren op ImmoVast">Adverteren op ImmoVast</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/adverteren.php#1">ImmoVast Basisplaatsing</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/adverteren.php#2" title="iPad Makelaar Pro">iPad Makelaar Pro</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/adverteren.php#3">ImmoVast Spidering</a>
+                </li>
+                <li class="last">
+                  <a href="http://www.immovast.be/adverteren.php#4">ImmoVast Bannering</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <h3 title="Over ImmoVast">Over ImmoVast</h3>
+            </div>
+            <div class="col-sm-9">
+              <ul class="ul-inline">
+                <li>
+                  <a href="http://www.immovast.be/overimmovast/">Over ImmoVast</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/overhetbiv/">Over BIV</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/vastgoed/">De Voordelen</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/vastgoedvragen/">Veelgestelde Vragen</a>
+                </li>
+                <li>
+                  <a href="http://www.immovast.be/contacteerimmovast/">Contact</a>
+                </li>
+                <li class="last">
+                  <a href="http://www.facebook.com/immovast/" target="_blank">ImmoVast op Facebook</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER end -->
+
+    <!--  JavaScript Files -->
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+
+  </html>

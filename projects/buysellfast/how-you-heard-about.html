@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Buy Sell Fast</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="css/jquery.selectBoxIt.css" />
+
+  <!-- JavaScripts -->
+
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/jquery-ui-1.10.3.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.selectBoxIt.min.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="top-bar-logo">
+      <a href="/">
+        <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+    </div>
+
+    <!-- Cart on the top bar -->
+    <div class="top-bar-cart">
+      <a href="#">
+        <span class="top-bar-cart-items">95</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="nav-buy">
+              <span class="nav-name">Buy</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-explore">
+              <span class="nav-name">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-sell">
+              <span class="nav-name">Sell</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-contacts">
+              <span class="nav-name">Contacts</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-messages">
+              <span class="nav-name">Messages</span>
+              <span class="nav-quantity">89</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-reports">
+              <span class="nav-name">Reports</span>
+            </a>
+          </li>
+          <li  class="active">
+            <a href="#" class="nav-settings">
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ./navbar -->
+
+  <div id="page-content">
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="breadcrumbs-wrap">
+        <div class="back-link">
+          <a href="#">Back</a>
+        </div>
+        <div class="page-title icon-info">
+          <span>Tell us</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grey-bg">
+      <div class="tell-us">
+
+        <div class="text-center wrapper30">
+          <img src="images/Hear.png" height="75" width="116" alt="Tell Us"></div>
+        <div class="text-center wrapper30">
+          <div class="darkgrey-text">Please tell us how you heard about BuySellFast</div>
+        </div>
+
+        <div class="tell-us-select">
+          <select id="tell-us-select" name="project" data-testing="2">
+            <option selected="selected" value="0">Please Select One</option>
+            <option value="Other">Other</option>
+            <option value="University Campus">University Campus</option>
+            <option value="Internet">Internet</option>
+            <option value="Media">Media</option>
+          </select>
+
+        </div>
+
+      </div>
+
+      <div class="center-block">
+        <button class="btn btn-primary " type="submit">OK</button>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- ./page-content -->
+
+<script>
+  // Selects styling
+  $("select").selectBoxIt();
+</script>
+
+</body>
+</html>

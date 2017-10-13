@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Login</title>
+
+	<link href="fonts/fonts.css" rel="stylesheet" />
+	<link href="css/bootstrap.css" rel="stylesheet" />
+
+	<script type='text/javascript' src='js/jquery-1.11.3.js'></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+
+	<!-- Admin stylesheet -->
+	<link href="css/starReviewsAdmin.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="css/c3.css" rel="stylesheet" type="text/css"/>
+	<!-- Merchant Dashboard Theme-->
+	<link href="css/dashboard.css" rel="stylesheet">
+
+
+
+	<!--  css -->
+	<link href="css/override-your-styles.css" rel="stylesheet">
+	<link href="css/styledash-additional.css" rel="stylesheet">
+
+	<!--  js -->
+	<script type='text/javascript' src='js/scripts-login.js'></script>
+
+
+</head>
+<body class="bg-lightblue">
+
+	<!-- Trigger the modal with a button -->
+	<button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#RegisterModal">Login / sign in</button>
+	<!-- Modal -->
+	<div id="RegisterModal" class="modal fade modal-login" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="modal-login-title">Login to your TrustSpot account</div>
+					<div class="modal-signup-title">Create account</div>
+
+				</div>
+				<div class="modal-body">
+
+					<!-- Normal login -begin -->
+					<form>
+
+						<div class="modal-login-login">
+							<button class="btn-lg-facebook">
+								<div class="btn-lg-facebook-icon"> <i class="fa fa-facebook"></i>
+								</div>
+								<div class="btn-lg-facebook-text">Login with Facebook</div>
+							</button>
+							<button class="btn-lg-twitter">
+								<div class="btn-lg-twitter-icon"> <i class="fa fa-twitter"></i>
+								</div>
+								<div class="btn-lg-twitter-text">Login with Twitter</div>
+							</button>
+							<div class="input-wrap pull-left">
+								<input type="email"  placeholder="Email Address" class="modal-login-input">
+							</div>
+							<div class="input-wrap  pull-right">
+								<input type="password"  placeholder="Password" class="modal-login-input"></div>
+
+							<div class="modal-login-login-fade"></div>
+							<input type="submit" value="LOGIN" class="btn btn-green modal-login-login-btn"></div>
+					</form>
+					<!-- Normal login -end -->
+
+					<!-- Forgot password -begin -->
+					<form>
+
+						<div class="btn-forgot-pass">Forgot your password?</div>
+						<div class="modal-login-forgot">
+							<div class="input-wrap  pull-left">
+								<input type="email"  placeholder="Email Address" class="modal-login-forgot-input">
+							</div>
+							<input type="submit" value="SEND" class="pull-left btn btn-green modal-login-forgot-btn">
+							<div class="modal-login-forgot-close">CANCEL</div>
+						</div>
+					</form>
+					<!-- Forgot password -end -->
+
+					<!-- Create account -begin -->
+					<form>
+						<div class="modal-login-signup">
+							<button class="btn-lg-facebook">
+								<div class="btn-lg-facebook-icon">
+									<i class="fa fa-facebook"></i>
+								</div>
+								<div class="btn-lg-facebook-text">Connect with Facebook</div>
+							</button>
+							<button class="btn-lg-twitter">
+								<div class="btn-lg-twitter-icon">
+									<i class="fa fa-twitter"></i>
+								</div>
+								<div class="btn-lg-twitter-text">Connect with Twitter</div>
+							</button>
+
+							<div class="input-wrap pull-left">
+								<input type="email"  placeholder="Email Address" class="modal-login-input "></div>
+							<div class="input-wrap pull-right ">
+								<input type="password"   placeholder="Password" class="modal-login-input"></div>
+							<p>
+								Creating an account, you agree to our
+								<a href="#" target="_blank">Terms of Use</a>
+								and
+								<a href="#" target="_blank">Privacy Policy</a>
+							</p>
+							<input type="submit" value="CREATE ACCOUNT" class="btn btn-green modal-login-signup-btn">
+							<div class="btn-login-wrap">
+								<span class="link-login">Login</span>
+								to your TrustSpot account
+							</div>
+						</div>
+						<div class="btn-signup-wrap">
+							Don't have an account?
+							<span class="btn-signup">Signup Free!</span>
+						</div>
+					</form>
+					<!-- Create account -end -->
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

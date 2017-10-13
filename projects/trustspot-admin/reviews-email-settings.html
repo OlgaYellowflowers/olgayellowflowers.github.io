@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Settings</title>
+
+	<link href="fonts/fonts.css" rel="stylesheet" />
+	<link href="css/bootstrap.css" rel="stylesheet" />
+
+	<script type='text/javascript' src='js/jquery-1.11.3.js'></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+
+	<!-- Admin stylesheet -->
+	<link href="css/starReviewsAdmin.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="css/c3.css" rel="stylesheet" type="text/css"/>
+	<!-- Merchant Dashboard Theme-->
+	<link href="css/dashboard.css" rel="stylesheet">
+
+	<!-- 
+	New css made by me
+	 Hi, Larry :) 
+	 -->
+	<!-- I made separate css files, I am not sure whether you use LESS or SCCS, or plain CSS, 
+so I made just separated css files -->
+	<link href="css/bootstrap-colorpicker.css" rel="stylesheet" />
+	
+	<link href="css/bootstrap-fileinput.css" rel="stylesheet" />
+	<link href="css/bootstrap-select.css" rel="stylesheet" />
+	<link href="css/table-styling.css" rel="stylesheet">
+	<link href="css/override-your-styles.css" rel="stylesheet">
+	<link href="css/styledash-additional.css" rel="stylesheet">
+
+	<!-- New js files  -->
+	<script type='text/javascript' src='js/bootstrap-colorpicker.min.js'></script>
+	<script type='text/javascript' src='js/bootstrap.file-input.js'></script>
+	<script type='text/javascript' src='js/bootstrap-select.min.js'></script>
+	<script type='text/javascript' src='js/scripts.js'></script>
+
+</head>
+
+<body>
+
+	<div class="content">
+
+		<div class="page-header">
+			<h2>Settings</h2>
+		</div>
+		<div class="error"></div>
+		<div>
+			<p>
+				The settings area allows you to make changes that will affect all of your emails in one area.
+			</p>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="panel panel-default panel-toggle chart-wrap">
+					<div class="panel-heading clearfix chart-panel">
+						<h3 class="panel-title pull-left chart-title"> <i class="fa fa-cog"></i>
+							EMAIL SETTINGS
+						</h3>
+						<button class="btn-panel-arrow"> <i class="fa fa-angle-up"></i>
+						</button>
+					</div>
+					<div class="panel-body  wrapper-inner-lg">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="control-label col-sm-2">Logo:</label>
+								<div class="col-sm-10">
+									<div class="pull-left">
+										<img src="img/logo.png" class="img-email-logo img-thumbnail"></div>
+									<div class="pull-left img-pic-links">
+										<a class="link-text" href="#">Change image</a>
+										|
+										<a  class="link-text" href="#">Remove</a>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2">From email:</label>
+								<div class="col-sm-10 form-inline">
+									<input type="email" value="support@digitalgamesales.com" class="form-control input-stable-width">
+									<a class="link-text" href="#" data-toggle="tooltip" data-placement="right" title="Here is going a small tooltip. Here is going a small tooltip.">
+										<i class="fa fa-info-circle"></i>
+									</a>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2">From name:</label>
+								<div class="col-sm-10 form-inline">
+									<input type="email" value="DigitalGameSales" class="form-control input-stable-width">
+									<a class="link-text" href="#" data-toggle="tooltip" data-placement="right" title="Here is going a small tooltip. Here is going a small tooltip.">
+										<i class="fa fa-info-circle"></i>
+									</a>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2">Reply email:</label>
+								<div class="col-sm-10 form-inline">
+									<input type="email" value="support@digitalgamesales.com" class="form-control input-stable-width">
+									<a class="link-text" href="#" data-toggle="tooltip" data-placement="right" title="Here is going a small tooltip. Here is going a small tooltip.">
+										<i class="fa fa-info-circle"></i>
+									</a>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<button class="btn btn-success" type="submit">Save</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="panel panel-default panel-toggle chart-wrap">
+					<div class="panel-heading clearfix chart-panel">
+						<h3 class="panel-title pull-left chart-title">
+							<i class="fa fa-newspaper-o"></i>
+							EMAIL DESIGN
+						</h3>
+						<button class="btn-panel-arrow">
+							<i class="fa fa-angle-up"></i>
+						</button>
+					</div>
+					<div class="panel-body wrapper-inner-lg">
+						<form class="form-horizontal">
+
+							<div class="form-group">
+								<div class="col-sm-2">
+									<div class="input-group colorpicker-init colorpicker-component ">
+										<input type="text" value="#00AABB" class="form-control"/>
+										<span class="input-group-addon">
+											<i></i>
+										</span>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="input-group colorpicker-init colorpicker-component ">
+										<input type="text" value="#ffbbcc" class="form-control"/>
+										<span class="input-group-addon">
+											<i></i>
+										</span>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="input-group colorpicker-init colorpicker-component ">
+										<input type="text" value="#000000" class="form-control"/>
+										<span class="input-group-addon">
+											<i></i>
+										</span>
+									</div>
+								</div>
+						
+								<div class="col-sm-4">
+									<select class="form-control selectpicker" data-width="100%">
+
+										<option>Font</option>
+										<option>Font1</option>
+										<option>Font2</option>
+										<option>Font3</option>
+
+									</select>
+								</div>
+							</div>
+						</form>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="well well-lg">
+									<div class="row">
+										<div class="col-sm-8 col-sm-offset-2">
+											<div class="box-preview-logo">
+												<img width="292" height="66" src="img/logo.png"></div>
+											<div class="box-preview-top">
+												<div class="row">
+													<div class="col-sm-7">
+														<h2>Hello, (customer_name)</h2>
+													</div>
+													<div class="col-sm-5 text-right">
+														<i class="fa fa-star fa-2x yellow"></i>
+														<i class="fa fa-star fa-2x yellow"></i>
+														<i class="fa fa-star fa-2x yellow"></i>
+														<i class="fa fa-star fa-2x lightgrey"></i>
+														<i class="fa fa-star fa-2x lightgrey"></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="box-preview-body">
+
+												<p>
+													You've recently completed a purchase on our site (store_name). We'd love to get your feedback on your experience shopping with us!
+												</p>
+												<p class="text-center wrapper-inner-md">
+													<button class="btn btn-lg btn-primary" disabled="disabled">Leave a review</button>
+												</p>
+												<p>
+													We sincerely apperciate the time you've taken to review our business.
+												</p>
+												<p>
+													Thank you,
+													<br>(store_name)</p>
+											</div>
+
+										</div>
+									</div>
+									
+								</div>
+
+								<div class="row">
+										<div class="col-md-12 text-center ">
+											<!-- Trigger the modal with a button -->
+											<button data-target="#ModalSendTestEmail1" data-toggle="modal" class="btn btn-lg btn-default" type="button">Send test email</button>
+											<!-- Modal -->
+											<div role="dialog" class="modal fade" id="ModalSendTestEmail1">
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div class="modal-header">
+															<button data-dismiss="modal" class="close" type="button">×</button>
+															<h4 class="modal-title">Test email sent</h4>
+														</div>
+														<div class="modal-body">
+															<p>Your test email was successfully sent to (account-email)!</p>
+														</div>
+														<div class="modal-footer">
+															<button data-dismiss="modal" class="btn btn-primary center-block" type="button">Ok</button>
+														</div>
+													</div>
+
+												</div>
+											</div>
+
+											<!-- Trigger the modal with a button -->
+											<button data-target="#SaveEmail1" data-toggle="modal" class="btn btn-lg btn-success" type="button">Save</button>
+											<!-- Modal -->
+											<div role="dialog" class="modal fade" id="SaveEmail1">
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div class="modal-header">
+															<button data-dismiss="modal" class="close" type="button">×</button>
+															<h4 class="modal-title">Email saved</h4>
+														</div>
+														<div class="modal-body">
+															<p>Your email was successfully saved</p>
+														</div>
+														<div class="modal-footer">
+															<button data-dismiss="modal" class="btn btn-primary center-block" type="button">Ok</button>
+														</div>
+													</div>
+
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default panel-toggle chart-wrap">
+					<div class="panel-heading clearfix chart-panel">
+						<h3 class="panel-title pull-left chart-title">
+							<i class="fa fa-bars"></i>
+							RESTRICTED EMAIL LIST
+						</h3>
+						<button class="btn-panel-arrow">
+							<i class="fa fa-angle-up"></i>
+						</button>
+					</div>
+					<div class="panel-body  wrapper-inner-lg">
+						<p >
+							The restricted email list allows you to individually add customer emails who are excluded from recieving your review request emails.
+						</p>
+						<form class="form-horizontal wrapper-inner-sm">
+							<label class="control-label col-sm-1">Email:</label>
+							<div class="col-sm-4">
+								<input type="text" placeholder="Enter Customer Email" class="form-control"></div>
+							<div class="col-sm-4">
+								<input type="submit" value="Add" class="btn btn-primary"></div>
+						</form>
+
+						<form class="form-inline pull-right wrapper-inner-lg">
+							<div class="form-group">
+								<label>Date</label>
+							</div>
+							<div class="form-group">
+								<select class="form-control selectpicker" data-width="auto">
+
+									<option>All</option>
+									<option>Last 7 days</option>
+									<option>Last 30 days</option>
+									<option>Last 12 months</option>
+
+								</select>
+							</div>
+
+							<div class="form-group">
+								<a href="#" class="btn btn-info" role="button">Export to CSV</a>
+							</div>
+						</form>
+
+						<!-- Table with invited customers-->
+						<table class="table table-striped table-styled">
+							<thead>
+								<tr>
+									<th style="width: 250px;">DATE ADDED</th>
+									<th>CUSTOMER EMAIL</th>
+									<th style="width: 160px;">ACTIONS</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>05/10/2015</td>
+									<td>mama@mama.com</td>
+									<td>
+										<a href="#" class="btn btn-warning ">Remove</a>
+									</td>
+								</tr>
+								<tr>
+									<td>05/10/2015</td>
+									<td>mama@mama.com</td>
+									<td>
+										<a href="#" class="btn btn-warning ">Remove</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div id="reviews_paginate" class="dataTables_paginate paging_bootstrap pagination">
+							<ul class="pagination">
+								<li class="prev disabled">
+									<a href="#">← Previous</a>
+								</li>
+								<li class="active">
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li class="next">
+									<a href="#">Next →</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="panel panel-default panel-toggle chart-wrap">
+					<div class="panel-heading clearfix chart-panel">
+						<h3 class="panel-title pull-left chart-title">
+							<i class="fa fa-heart"></i>
+							FEATURED PRODUCTS
+						</h3>
+						<button class="btn-panel-arrow">
+							<i class="fa fa-angle-up"></i>
+						</button>
+					</div>
+					<div class="panel-body  wrapper-inner-lg">
+						<p>
+							Display two featured products on every review request that is emailed to your customers. This is a great way to promote your content and increase sales.
+						</p>
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="control-label col-sm-2">Enable:</label>
+								<div class="col-sm-10">
+									<div class="checkbox-styled">
+										<input type="checkbox" value="None" id="checkbox1" name="check" checked="checked" />
+										<label for="checkbox1"></label>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="control-label col-sm-2">Featured Title:</label>
+								<div class="col-sm-10 form-inline">
+									<input type="text" placeholder="Featured Products" class="form-control input-stable-width">
+									<a class="link-text" href="#" data-toggle="tooltip" data-placement="right" title="Here is going a small tooltip. Here is going a small tooltip.">
+										<i class="fa fa-info-circle"></i>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix">
+
+								<h3 class="col-sm-3 col-sm-offset-2">Product 1 of 2</h3>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2">Name:</label>
+								<div class="col-sm-10 form-inline">
+									<input type="text" placeholder="Name of your product" class="form-control input-stable-width">
+									<a class="link-text" href="#" data-toggle="tooltip" data-placement="right" title="Here is going a small tooltip. Here is going a small tooltip.">
+										<i class="fa fa-info-circle"></i>
+									</a>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2">Price:</label>
+								<div class="col-sm-10 form-inline">
+									<input type="text" placeholder="$0.00" class="form-control input-stable-width">
+									<a class="link-text" href="#" data-toggle="tooltip" data-placement="right" title="Here is going a small tooltip. Here is going a small tooltip.">
+										<i class="fa fa-info-circle"></i>
+									</a>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2">Link:</label>
+								<div class="col-sm-10 form-inline">
+									<input type="url" placeholder="Link to your product" class="form-control input-stable-width">
+									<a class="link-text" href="#" data-toggle="tooltip" data-placement="right" title="Here is going a small tooltip. Here is going a small tooltip.">
+										<i class="fa fa-info-circle"></i>
+									</a>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="control-label col-sm-2">Image:</label>
+								<div class="col-sm-10">
+									<div class="pull-left">
+										<img src="img/logo.png" class="img-email-logo img-thumbnail"></div>
+									<div class="pull-left img-pic-links">
+										<a class="link-text" href="#">Change image</a>
+										|
+										<a  class="link-text" href="#">Remove</a>
+										<div class="text-sm">Recommend 125x150</div>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix">
+
+								<h3 class="col-sm-3 col-sm-offset-2">Product 2 of 2</h3>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2">Name:</label>
+								<div class="col-sm-10 form-inline">
+									<input type="text" placeholder="Name of your product" class="form-control input-stable-width">
+									<a class="link-text" href="#" data-toggle="tooltip" data-placement="right" title="Here is going a small tooltip. Here is going a small tooltip.">
+										<i class="fa fa-info-circle"></i>
+									</a>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2">Price:</label>
+								<div class="col-sm-10 form-inline">
+									<input type="text" placeholder="$0.00" class="form-control input-stable-width">
+									<a class="link-text" href="#" data-toggle="tooltip" data-placement="right" title="Here is going a small tooltip. Here is going a small tooltip.">
+										<i class="fa fa-info-circle"></i>
+									</a>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2">Link:</label>
+								<div class="col-sm-10 form-inline">
+									<input type="url" placeholder="Link to your product" class="form-control input-stable-width">
+									<a class="link-text" href="#" data-toggle="tooltip" data-placement="right" title="Here is going a small tooltip. Here is going a small tooltip.">
+										<i class="fa fa-info-circle"></i>
+									</a>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="control-label col-sm-2">Image:</label>
+								<div class="col-sm-10">
+									<div class="pull-left">
+										<img src="img/logo.png" class="img-email-logo img-thumbnail"></div>
+									<div class="pull-left img-pic-links">
+										<a class="link-text" href="#">Change image</a>
+										|
+										<a  class="link-text" href="#">Remove</a>
+										<div class="text-sm">Recommend 125x150</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="well well-lg">
+										<div class="row">
+											<div class="col-sm-8 col-sm-offset-2">
+
+												<div class="box-preview-body">
+													<h2 class="text-center no-margin">Featured Products</h2>
+													<div class="col-sm-6">
+														<div class="img-product-wrap">
+															<div class="img-product">
+																<img class="img-thumbnail" src="img/image-example.jpg"></div>
+															<h5>Product1 Name</h5>
+															<p>Price $100.00</p>
+														</div>
+													</div>
+													<div class="col-sm-6">
+														<div class="img-product-wrap">
+															<div class="img-product">
+																<img class="img-thumbnail" src="img/image-example.jpg"></div>
+															<h5>Product1 Name</h5>
+															<p>Price $100.00</p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										
+									</div>
+
+									<div class="row">
+											<div class="col-md-12 text-center">
+												<!-- Trigger the modal with a button -->
+												<button data-target="#ModalSendTestEmail2" data-toggle="modal" class="btn btn-lg btn-default" type="button">Send test email</button>
+												<!-- Modal -->
+												<div role="dialog" class="modal fade" id="ModalSendTestEmail2">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button data-dismiss="modal" class="close" type="button">×</button>
+																<h4 class="modal-title">Test email sent</h4>
+															</div>
+															<div class="modal-body">
+																<p>Your test email was successfully sent to (account-email)!</p>
+															</div>
+															<div class="modal-footer">
+																<button data-dismiss="modal" class="btn btn-primary center-block" type="button">Ok</button>
+															</div>
+														</div>
+
+													</div>
+												</div>
+
+												<!-- Trigger the modal with a button -->
+												<button data-target="#SaveEmail2" data-toggle="modal" class="btn btn-lg btn-success" type="button">Save</button>
+												<!-- Modal -->
+												<div role="dialog" class="modal fade" id="SaveEmail2">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button data-dismiss="modal" class="close" type="button">×</button>
+																<h4 class="modal-title">Email saved</h4>
+															</div>
+															<div class="modal-body">
+																<p>Your email was successfully saved</p>
+															</div>
+															<div class="modal-footer">
+																<button data-dismiss="modal" class="btn btn-primary center-block" type="button">Ok</button>
+															</div>
+														</div>
+
+													</div>
+												</div>
+
+											</div>
+										</div>
+								</div>
+
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

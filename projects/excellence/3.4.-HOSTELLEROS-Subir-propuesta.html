@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <meta name="subject" content="">
+  <meta name="copyright" content="Excellence Project">
+
+  <link rel="icon" href="favicon.ico">
+
+  <title>3.4.-HOSTELLEROS-Subir-propuesta</title>
+
+  <!-- CSS -->
+
+  <link href="css/styles.css" rel="stylesheet">
+<link href="css/styles_override.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- JavaScript -->
+
+  <!-- You can use all scripts in one minified app.js or only necessary scripts for concrete page -->
+  <!-- <script src="js/app.js"></script> -->
+
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <script src="js/jquery.form-validator.min.js"></script>
+
+  <!-- JS plugin for styling scrollbar -->
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+  <!-- JS plugin for file upload dropzone -->
+  <script src="js/dropzone.js"></script>
+
+
+  <!-- JS scripts for site styling -->
+  <script src="js/scripts.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navbar BEGIN-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Excellence Project</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+          <img src="images/logo-academy.png" alt="Logo"></a>
+      </div>
+      <div id="navbar" class="navbar-collapse navbar-right collapse">
+        <a href="#" class="btn btn-info btn-sm">Contacto</a>
+        <a href="#" class="btn btn-info btn-sm">Login</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar END-->
+
+  <!-- Main wrapper begin -->
+  <div id="main-wrapper" class="main-wrapper-inner-white">
+
+    <div class="container">
+      <div class="back-link">
+        <a href="#">ATRAS</a>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-12">
+          <div class="blocks-inline-wrap">
+            <div class="blocks-inline paragraph-xs">
+              <div class="item-title no-margin">alumno</div>
+              <div class="item-text no-margin">Jesús Rodríguez</div>
+            </div>
+            <div class="blocks-inline paragraph-xs">
+              <div class="item-title no-margin">Escuela</div>
+              <div class="item-text no-margin">Esc. Hostelería del Sur</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <form class="form-styled">
+
+        <div class="row">
+          <!-- Form - Left part-->
+          <div class="col-xs-12 col-sm-6">
+
+            <div class="paragraph-sm">
+
+              <div class="form-group">
+                <label  class="h5 title-label" for="OfferName">Nombre de la propuesta</label>
+                <input type="text" class="form-control" id="OfferName" data-validation="alphanumeric" data-validation-allowing="-_"></div>
+
+              <div class="form-group">
+                <div class="title-label">CategoríA</div>
+                <div class="checkbox-styled checkbox-inline">
+                  <input type="radio" id="propuestaCocteleria" name="choiceCategory" />
+                  <label class="text-md" for="propuestaCocteleria">
+                    <span></span>
+                    coctelería
+                  </label>
+                </div>
+
+                <div class="checkbox-styled checkbox-inline">
+                  <input type="radio" id="propuestaPerfectServe" name="choiceCategory" />
+                  <label class="text-md" for="propuestaPerfectServe">
+                    <span></span>
+                    perfect serve
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="form-group">
+                <div class="title-label">Descripción</div>
+
+                <!-- wrap textarea in a .textarea-wrapper div -->
+                <div class="textarea-wrapper">
+                  <textarea data-validation="length" data-validation-length="min20"></textarea>
+                  <!-- add an extra .textarea-clone div -->
+                  <div class="textarea-clone"></div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Form - Right part with image  -->
+          <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+
+            <div class="row">
+
+              <div class="text-md col-xs-10">cómo tendría que ser tu propuesta audiovisual?</div>
+
+              <div class="col-xs-2 text-right">
+                <span class="icon-info" data-toggle="modal" data-target="#Modal_PropuestaAudiovusial"></span>
+              </div>
+            </div>
+
+              <!-- Modal -->
+              <div id="Modal_PropuestaAudiovusial" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title text-center">cómo tendría que ser tu propuesta audiovisual?</h4>
+                    </div>
+                    <div class="modal-body modal-scroll">
+                      <p class="text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                      <p>
+                        <img class="img-in-modal" src="images/example-image.jpg" alt="Image"></p>
+                      <p class="text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                      <p>
+                        <img class="img-in-modal" src="images/example-image.jpg" alt="Image"></p>
+                      <p class="text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                      <p>
+                        <img class="img-in-modal" src="images/example-image.jpg" alt="Image"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            <!-- File upload BEGIN -->
+            <!-- I used dropzonejs plugin, so you will be able to add video preview 
+              after choosing video file.  -->
+            <div class="paragraph-md">
+
+              <!-- This code I took from http://www.dropzonejs.com/bootstrap.html -->
+
+              <div id="PreviewsUpload" class="preview-upload preview-upload-image"> 
+
+                <div id="TemplateUpload" class="file-row">
+                  <!-- This is used as the file preview template -->
+                  <div>
+                    <span class="preview">
+                      <img data-dz-thumbnail />
+                    </span>
+                  </div>
+              </div>
+            </div>
+
+              <div id="ActionsUpload" class="row">
+
+                <div class="col-lg-12 text-center">
+                  <!-- The fileinput-button span is used to style the file input field as button. -->
+                  <span class="btn btn-success btn-sm fileinput-button">
+                    <span>Subir Foto</span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Dropzonejs script for adding file BEGIN -->
+              <script>
+                      // Get the template HTML and remove it from the doument
+                      var previewNode = document.querySelector("#TemplateUpload");
+                      previewNode.id = "";
+                      var previewTemplate = previewNode.parentNode.innerHTML;
+                      previewNode.parentNode.removeChild(previewNode);
+
+                      var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
+                        url: "http://www.torrentplease.com/dropzone.php", // Set the url
+                        thumbnailWidth: null,
+                        thumbnailHeight: null,
+                        init: function() {
+                            this.on("thumbnail", function(file, dataUrl) {
+                                $('.dz-image').last().find('img').attr({width: '100%', height: '100%'});
+                            }),
+                            this.on("success", function(file) {
+                                $('.dz-image').css({"width":"100%", "height":"auto"});
+                            }),
+                            // Show modal window after added file
+                            this.on("addedfile", function (file) {
+                              $('#Modal_FileAddedSuccess').modal('show')
+                            });
+                            // Show modal window after complete uploading file on server                            
+                            this.on("complete", function (file) {
+                              $('#Modal_FileAddedSuccess').modal('show')
+                            });                            
+                        },
+                        maxFiles: 1,
+                        maxfilesexceeded: function(file) {
+                            this.removeAllFiles();
+                            this.addFile(file);
+                        },
+                        previewTemplate: previewTemplate,
+                        autoQueue: false, // Make sure the files aren't queued until manually added
+                        previewsContainer: "#PreviewsUpload", // Define the container to display the previews
+                        clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.                          
+                      });
+
+
+
+
+
+                </script>
+              <!-- Dropzonejs script for adding file END -->
+
+
+
+              <!-- Modal window to show modal window after file added to server -->
+
+              <div id="Modal_FileAddedSuccess" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-md">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title text-center">gracias por subir tu propuesta</h1>
+                    </div>
+                    <div class="modal-body modal-scroll text-center">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">continuar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal after succeed of adding file END -->
+
+
+            <!-- File upload END -->
+
+
+            <!--  --> </div>
+        </div>
+
+      </div>
+
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <input type="submit" class="btn btn-primary" value="Enviar">
+            <!-- You can use either input type submit or button -->
+            <!-- <button type="submit" class="btn btn-primary">Enviar</button>
+          -->
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+<!-- Main wrapper end -->
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Coupons</title>
+
+	<link href="fonts/fonts.css" rel="stylesheet" />
+	<link href="css/bootstrap.css" rel="stylesheet" />
+
+	<script type='text/javascript' src='js/jquery-1.11.3.js'></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+
+	<!-- Admin stylesheet -->
+	<link href="css/starReviewsAdmin.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="css/c3.css" rel="stylesheet" type="text/css"/>
+	<!-- Merchant Dashboard Theme-->
+	<link href="css/dashboard.css" rel="stylesheet">
+
+	<!--  css -->
+	<link href="css/bootstrap-fileinput.css" rel="stylesheet" />
+	<link href="css/bootstrap-select.css" rel="stylesheet" />
+	<link href="css/table-styling.css" rel="stylesheet">
+	<link href="css/override-your-styles.css" rel="stylesheet">
+	<link href="css/styledash-additional.css" rel="stylesheet">
+
+	<!--  js -->
+	<script type='text/javascript' src='js/bootstrap.file-input.js'></script>
+	<script type='text/javascript' src='js/bootstrap-select.min.js'></script>
+	<script type='text/javascript' src='js/scripts-marketing.js'></script>
+
+</head>
+
+<body>
+
+	<div class="content">
+		<div class="page-header">
+			<h2>Coupons</h2>
+		</div>
+		<div class="error"></div>
+		<div>
+			<p>
+				Coupons are a great way to promote your brand to visitors and prospective customers, by offering them a discount. You can also use coupons within a Thank you email to customers who leave you a review, which is another great way to create additional opportunuity for sales.
+			</p>
+		</div>
+
+		<div class="panel panel-default panel-toggle chart-wrap">
+			<div class="panel-heading clearfix chart-panel">
+				<h3 class="panel-title pull-left chart-title"> <i class="fa fa-percent"></i>
+					CREATE NEW COUPON
+				</h3>
+				<button class="btn-panel-arrow"> <i class="fa fa-angle-up"></i>
+				</button>
+			</div>
+			<div class="panel-body  wrapper-inner-lg">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="control-label col-sm-2">Name:</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" placeholder="Name of your coupon"></div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">Code:</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" placeholder="SAVE10OFF"></div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">Savings Text:</label>
+						<div class="col-sm-4">
+							<input type="url" class="form-control" placeholder="Save 10% off your next purchase"></div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-8 text-center">
+							<button type="submit" class="btn btn-lg btn-success">CREATE</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+
+		<div class="panel panel-default panel-toggle chart-wrap">
+			<div class="panel-heading clearfix chart-panel">
+				<h3 class="panel-title pull-left chart-title">
+					<i class="fa fa-list"></i>
+					COUPON LIST
+				</h3>
+				<button class="btn-panel-arrow">
+					<i class="fa fa-angle-up"></i>
+				</button>
+			</div>
+			<div class="panel-body  wrapper-inner-lg">
+
+				<p>
+					All of your coupons that have been created are listed below. You can also easily set coupons to be active or not active depending on your promotion.
+				</p>
+
+				<div class="form-inline form-styled pull-right no-footer">
+
+					<div class="form-group">
+						<label>Filter</label>
+						<select class="selectpicker select-styled">
+
+							<option>All</option>
+							<option>Active</option>
+							<option>Product Name</option>
+							<option>Price</option>
+
+						</select>
+					</div>
+
+					<div class="form-group">
+						<!-- Search input -->
+						<div id="reviews_filter" class="input-group">
+							<div class="input-group-btn">
+								<button class="btn btn-styled" type="submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+							<input type="search" class="form-control" placeholder="Search"  aria-controls="reviews"></div>
+					</div>
+				</div>
+
+				<table id="reviews" class="table table-striped table-styled no-footer" >
+					<thead>
+						<tr>
+							<th style="width: 10%">Active</th>
+							<th style="width: 30%">Coupon name</th>
+							<th style="width: 15%">Code</th>
+							<th style="width: 25%">Savings Text</th>
+							<th style="width: 5%">Clicks</th>
+							<th style="width: 15%">Actions</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr class="tablelist-item-tr">
+							<td class="tablelist-item-checkbox">
+								<div class="checkbox-styled">
+									<input type="checkbox" value="None" id="checkbox1" name="check" checked="checked">
+									<label for="checkbox1"></label>
+								</div>
+							</td>
+							<td class="tablelist-item-name tablelist-item-editable">
+								<span>Battlefield 4: Max Edition Pack #29</span>
+								<input type="text"></td>
+							<td class="tablelist-item-code tablelist-item-editable">
+								<span>FALLSAVE10</span>
+								<input type="text"></td>
+							<td class="tablelist-item-text tablelist-item-editable">
+								<span>Save 10% off your next purchase</span>
+								<input type="text"></td>
+							<td class="tablelist-item-clicks popup-simple">
+								<!-- Popup window with clicks list -->
+								<div class="popup-window pull-left" data-placement='right'>
+									<span title='Show Clicks List in popup window' class="btn-popup">129</span>
+								</div>
+								<div class="popup-content hide">
+									<div class="pull-left">Store Page:</div>
+									<div class="pull-right">90 (85%)</div>
+									<div class="clearfix"></div>
+									<div class="pull-left">Review Form:</div>
+									<div class="pull-right">5 (2%)</div>
+									<div class="clearfix"></div>
+									<div class="pull-left spacer-after">Follow up Email:</div>
+									<div class="pull-right">25 (13%)</div>
+									<div class="clearfix"></div>
+								</div>
+
+							</td>
+							<td class="tablelist-item-actions">
+								<div class="tablelist-item-buttons">
+									<div class="tablelist-item-edit-btn">Edit</div>
+									<div class="tablelist-item-hidden-buttons">
+										<span class="tablelist-item-save-btn vertical-line-after">Save</span>
+										<span class="tablelist-item-delete-btn">Delete</span>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="tablelist-item-tr">
+							<td class="tablelist-item-checkbox">
+								<div class="checkbox-styled">
+									<input type="checkbox" value="None" id="checkbox1" name="check" checked="checked">
+									<label for="checkbox1"></label>
+								</div>
+							</td>
+							<td class="tablelist-item-name tablelist-item-editable">
+								<span>Battlefield 4: Max Edition Pack #29</span>
+								<input type="text"></td>
+							<td class="tablelist-item-code tablelist-item-editable">
+								<span>FALLSAVE10</span>
+								<input type="text"></td>
+							<td class="tablelist-item-text tablelist-item-editable">
+								<span>Save 10% off your next purchase</span>
+								<input type="text"></td>
+							<td class="tablelist-item-clicks popup-simple">
+								<!-- Popup window with clicks list -->
+								<div class="popup-window pull-left" data-placement='right'>
+									<span title='Show Clicks List in popup window' class="btn-popup">129</span>
+								</div>
+								<div class="popup-content hide">
+									<div class="pull-left">Store Page:</div>
+									<div class="pull-right">90 (85%)</div>
+									<div class="clearfix"></div>
+									<div class="pull-left">Review Form:</div>
+									<div class="pull-right">5 (2%)</div>
+									<div class="clearfix"></div>
+									<div class="pull-left spacer-after">Follow up Email:</div>
+									<div class="pull-right">25 (13%)</div>
+									<div class="clearfix"></div>
+								</div>
+
+							</td>
+							<td class="tablelist-item-actions">
+								<div class="tablelist-item-buttons">
+									<div class="tablelist-item-edit-btn">Edit</div>
+									<div class="tablelist-item-hidden-buttons">
+										<span class="tablelist-item-save-btn vertical-line-after">Save</span>
+										<span class="tablelist-item-delete-btn">Delete</span>
+									</div>
+								</div>
+							</td>
+						</tr>
+
+					</tbody>
+
+				</table>
+
+				<div class="wrapper-outer-lg text-center">
+					<button type="submit" class="btn btn-lg btn-primary">Save</button>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="panel panel-default panel-toggle chart-wrap">
+			<div class="panel-heading clearfix chart-panel">
+				<h3 class="panel-title pull-left chart-title">
+					<i class="fa fa-eye"></i>
+					DISPLAY OPTIONS
+				</h3>
+				<button class="btn-panel-arrow">
+					<i class="fa fa-angle-up"></i>
+				</button>
+			</div>
+			<div class="panel-body  wrapper-inner-lg">
+				<p>
+					Select from the following options where you would like to display your featured products. You can also preview each option before saving.
+				</p>
+
+				<div class="form-group checkbox-block width-lg-mega">
+					<div class="checkbox-styled pull-left spacer-after">
+						<input type="checkbox" name="check" id="checkbox_1" value="None">
+						<label for="checkbox_1"></label>
+					</div>
+					<div class="checkbox-label no-margin"> <b>Display on Store Page</b>
+					</div>
+					<div class="pull-right">
+						<!-- Popup window with Preview -->
+						<div class="popup-option-preview popup-simple">
+							<div class="popup-window pull-left" data-placement='right'>
+								<span title='Look at the preview in the popup window' class="btn-popup">Preview</span>
+							</div>
+							<div class="popup-content hide">Here goes html of preview</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="form-group checkbox-block width-lg-mega">
+					<div class="checkbox-styled pull-left spacer-after">
+						<input type="checkbox" name="check" id="checkbox_3" value="None">
+						<label for="checkbox_3"></label>
+					</div>
+					<div class="checkbox-label no-margin">
+						<b>Display on Follow up Email</b>
+					</div>
+					<div class="pull-right">
+						<!-- Popup window with Preview -->
+						<div class="popup-option-preview popup-simple">
+							<div class="popup-window pull-left" data-placement='right'>
+								<span title='Look at the preview in the popup window' class="btn-popup">Preview</span>
+							</div>
+							<div class="popup-content hide">Here goes html of preview</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="checkbox-additional-content">
+						<div class="paragraph-sm">
+							<div class="paragraph-xs">Coupon Code</div>
+							<select class="selectpicker select-styled">
+
+								<option>10% off next purchase</option>
+								<option>30% off next purchase</option>
+								<option>50% off next purchase</option>
+								<option>70% off next purchase70% off next purchase</option>
+
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group checkbox-block width-lg-mega">
+					<div class="checkbox-styled pull-left spacer-after">
+						<input type="checkbox" name="check" id="checkbox_4" value="None">
+						<label for="checkbox_4"></label>
+					</div>
+					<div class="checkbox-label no-margin">
+						<b>Display on Review Form</b>
+					</div>
+					<div class="pull-right">
+						<!-- Popup window with Preview -->
+						<div class="popup-option-preview popup-simple">
+							<div class="popup-window pull-left" data-placement='right'>
+								<span title='Look at the preview in the popup window' class="btn-popup">Preview</span>
+							</div>
+							<div class="popup-content hide">Here goes html of preview</div>
+						</div>
+					</div>
+										<div class="clearfix"></div>
+					<div class="checkbox-additional-content">
+						<div class="paragraph-sm">
+							<div class="paragraph-xs">Coupon Code</div>
+							<select class="selectpicker select-styled">
+
+								<option>10% off next purchase</option>
+								<option>30% off next purchase</option>
+								<option>50% off next purchase</option>
+								<option>70% off next purchase70% off next purchase</option>
+
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-12">
+					<div class="wrapper-outer-lg text-center">
+						<button class="btn btn-lg btn-primary" type="submit">Save</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+</body>
+</html>

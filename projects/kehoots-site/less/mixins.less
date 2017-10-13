@@ -1,0 +1,82 @@
+.separator{border-bottom:1px #cacaca solid;min-height:1px;}
+.width100{width:100%;}
+// Fonts and font-sizes
+.font-reg{font-family:'open_sansregular';}
+.font-light{font-family:'open_sanslight';}
+.font17{font-size:0.95em;}
+.font25{font-size:1.4em;
+	@media (max-width:480px){
+	font-size:0.9em;}
+}
+.font75{font-size:3em;
+	@media (max-width:768px){
+	font-size:2em;}
+}
+
+/* Colors and background-colors */
+.bg-orange{background-color:@orange;}
+a.bg-orange:hover,
+a.bg-orange:focus,
+input.bg-orange:hover,
+input.bg-orange:focus,
+button.bg-orange:hover,
+button.bg-orange:focus{background-color:lighten(@orange,6%);}
+.orange{color:@orange;}
+.black{color:@baseFontColor;}
+a.black:hover{color:@baseFontColor;text-decoration:underline;}
+.bg-blue{background-color:@blue;}
+a.bg-blue:hover,
+a.bg-blue:focus,
+input.bg-blue:hover,
+input.bg-blue:focus,
+button.bg-blue:hover,
+button.bg-blue:focus{background-color:lighten(@blue,6%);}
+.blue{color:@blue;}
+.btn.blue{color:@blue!important;}
+.btn.green{color:@green!important;}
+.bg-green{background-color:@green;}
+a.bg-green:hover,
+a.bg-green:focus,
+input.bg-green:hover,
+input.bg-green:focus,
+button.bg-green:hover,
+button.bg-green:focus{background-color:lighten(@green,6%);}
+.green{color:@green;}
+a.green:hover{color:@green;text-decoration:underline;}
+.white{color:#fff!important;}
+.bg-white{background:white;}
+.btn.bg-white{&:hover,
+	&:focus{opacity:0.85;}
+}
+.bg-bluelilac{background:#5171a8;}
+.btn.bg-bluelilac:hover,
+.btn.bg-bluelilac:focus{background:lighten(#5171a8,6%);}
+.bg-red{background:#cc0000;}
+.btn.bg-red:hover,
+.btn.bg-red:focus{background:lighten(#cc0000,6%);}
+.white a,
+a.white{color:#fff!important;
+	&:hover,
+	&:focus{text-decoration:underline;}
+}
+
+/* margins */
+.marginbot-0{margin-bottom:0!important;}
+.marginbot-10{margin-bottom:10px!important;}
+.marginbot-20{margin-bottom:20px!important;}
+.marginbot-30{margin-bottom:30px!important;}
+.marginbot-40{margin-bottom:40px!important;}
+.marginbot-50{margin-bottom:50px!important;}
+.margintop-20pr{margin-top:20%!important;}
+
+/* Circle styled as radio button */
+.radio-circle{display:block;float:left;margin:3px 10px 0 0;width:20px;height:20px;border-radius:50%;}
+// Buttons
+.btn{border-radius:0;border:0;color:@baseLightFontColor;font-size:1em;padding:15px 30px;margin-bottom:15px;white-space:normal;
+	&:hover,
+	&:focus{color:@baseLightFontColor;}
+}
+.btn-transparent{background:transparent;border:3px #fff solid;color:#fff;font-weight:bold;
+	&:hover,
+	&:focus{opacity:0.8;}
+}

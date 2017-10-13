@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <meta name="subject" content="">
+  <meta name="copyright" content="Excellence Project">
+
+  <link rel="icon" href="favicon.ico">
+
+  <title>1.1. Home - Login</title>
+
+  <!-- CSS -->
+
+  <link href="css/styles.css" rel="stylesheet">
+<link href="css/styles_override.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- JavaScript -->
+
+  <!-- You can use all scripts in one minified app.js or only necessary scripts for concrete page -->
+  <!-- <script src="js/app.js"></script> -->
+
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.form-validator.min.js"></script>
+
+  <!-- Js for styling selects -->
+  <script src="js/bootstrap-select.min.js"></script>
+
+  <!-- Site scripts -->
+  <script src="js/scripts.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navbar BEGIN-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Excellence Project</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+          <img src="images/logo.png" alt="Logo Coop Vision"></a>
+      </div>
+      <div id="navbar" class="navbar-collapse navbar-right collapse">
+        <a href="#" class="btn btn-info">Contacto</a>
+        <a href="#" class="btn btn-info">Login</a>
+        <!-- Logout button -->
+        <!-- <a href="#" class="btn btn-info">Logout</a>
+      -->
+    </div>
+  </div>
+</nav>
+<!-- Navbar END-->
+
+<!-- Main wrapper begin -->
+<div id="main-wrapper" class="main-wrapper-inner-opacity">
+
+  <div class="container">
+
+    <div class="row block-opacity-wrap vertical-aligner">
+      <div class="col-sm-12">
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h4 class="text-center">
+              introduce tu usuario y contraseña y accede
+              <br>a tu cuenta the excellence project</h4>
+          </div>
+        </div>
+
+        <form>
+          <div class="row">
+
+            <div class="col-sm-6 col-sm-offset-3">
+
+              <!-- Form validator in scripts.js -->
+              <!-- http://www.formvalidator.net/ -->
+              <div class="form-group">
+                <input type="text" placeholder="USUARIO" class="form-control no-border font-with-lowercase" id="RegisterName" data-validation="alphanumeric" data-validation-allowing="-_"></div>
+
+              <div class="form-group">
+                <input type="password" placeholder="CONTRASENA" class="form-control no-border font-with-lowercase" id="RegisterPass" name="passw_confirmation" data-validation="length" data-validation-length="min6"></div>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+
+              <div class="text-md text-center form-group">
+                ¿no tienes una cuenta? contacta con tu escuela e informate
+                <br>como puedes participar en the excellence project</div>
+
+              <div class="form-group text-center">
+                <input type="submit" class="btn btn-default btn-md btn-transparent" value="login">
+
+                <!-- You can use either "input submit" or "button" -->
+                <!-- <button type="submit" class="btn btn-default btn-lg">login</button>
+              -->
+            </div>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<!-- Push for sticked footer - do not delete -->
+<div class="push"></div>
+
+</div>
+<!-- Main wrapper end -->
+
+<!-- Footer begin -->
+<footer class="footer">
+<div class="logo-footer">
+  <img src="images/logo-footer.png" alt="By Premium Selection MAXXIUM"></div>
+
+<!-- New Bar with bottles BEGIN -->
+  <div class="footer-bar-products"><img src="images/bar-with-bottles.png" alt="Bottles"></div>
+<!-- New Bar with bottles END -->
+
+</footer>
+
+</body>
+</html>

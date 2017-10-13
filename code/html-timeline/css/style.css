@@ -1,0 +1,78 @@
+.white {
+	color: #fff;
+}
+.bg-darklilac {
+	background-color: #371e64;
+}
+#main {
+	background:  #ececec ;
+	padding: 20px 0;
+	font-size: 14px;
+	line-height: 1.4;
+}
+.info-block {
+		border-radius: 10px;
+
+}
+.timeline {
+	position: relative;
+	padding: 40px;
+
+}
+.timeline-block {
+	background: #fff;
+	color: #371e64;
+	border-radius: 10px;
+	padding: 11px 15px;
+	font-size: 12px;
+	margin: 5px 0 5px 22px;
+	z-index: 2;
+	position: relative;
+}
+.timeline-block-green {
+	border-left: 10px #7ce681 solid;
+}
+.timeline-block-red {
+	border-left: 10px #fb5555 solid;
+}
+.timeline-line {
+	position: relative;
+	height: 20px;
+}
+.timeline-line span {
+	position: absolute;
+	display: block;
+	z-index: 0;
+	width: 22px;
+}
+.timeline-line b {
+	position: absolute;
+	display: block;
+	z-index: 1;
+	left: -10px;
+	top: -2px;
+	background: #371e64;
+	padding: 5px 0 7px;
+	font-weight: normal;
+	font-family: 'OpenSansR';
+}
+.timeline-line-green span {
+	border-left: 1px #7ce681 solid;
+	border-top: 1px #7ce681 solid;
+	border-bottom: 1px #7ce681 solid;
+}
+.timeline-line-red span {
+	border-left: 1px #fb5555 solid;
+	border-top: 1px #fb5555 solid;
+	border-bottom: 1px #fb5555 solid;
+}
+.timeline-block {
+	font-family: 'OpenSansR';
+}
+.timeline-block .font12 {
+	font-family: 'OpenSansSB';
+}
+.info-block .timeline {
+	margin-top: -5px;
+	margin-bottom: -5px;
+}

@@ -1,0 +1,334 @@
+.radio-img-disabled {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.radio-img-disabled input[type="radio"] + label:hover > img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.radio-img-disabled input[type="radio"] + label > img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.radio-img-disabled input[type="radio"] + label:hover {
+  border: 2px solid #D3D3D3;
+  color: #D3D3D3;
+}
+
+.radio-img-disabled input[type="radio"] + label {
+  border: 2px solid #D3D3D3;
+  color: #D3D3D3;
+}
+
+.radio-img-disabled label img {
+  display: table-cell;
+  text-align: center;
+  margin: 0 auto;
+  height: auto;
+  max-width: 185px!important;
+  max-height: 185px!important;
+  color: #D3D3D3;
+}
+
+
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  border: 2px solid #D3D3D3;
+  cursor: not-allowed;
+  color: #D3D3D3;
+}
+
+.checkbox-styled.text-disabled input[type="radio"] + label span,
+.checkbox-styled input[type="radio"] + label span .check-disabled {
+  border: 1px solid #D3D3D3;
+  cursor: not-allowed;
+  color: #D3D3D3;
+}
+
+.text-disabled {
+  color: #D3D3D3;
+}
+
+.row.vertical-divider {
+  overflow: hidden;
+}
+
+.row.vertical-divider > div[class^="col-"] {
+  text-align: center;
+  padding-bottom: 100px;
+  margin-bottom: -100px;
+  /*
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
+  */
+}
+
+.row.vertical-divider div[class^="col-"]:first-child {
+  border-left: none;
+}
+
+.row.vertical-divider div[class^="col-"]:last-child {
+  border-right: none;
+}
+
+.errorlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.height-register {
+  min-height: 470px;
+}
+
+.input-code {
+  background: none !important;
+  /*padding: 0 0 0 10px;*/
+  text-align: center;
+}
+
+.input-code.error {
+  background: none !important;
+}
+
+.col-border-left {
+  border-left: 2px #000 solid;
+  margin-left: -2px;
+}
+
+label.text-disabled {
+  color: #D3D3D3 !important;
+}
+
+input.text-disabled {
+  background: none !important;
+}
+
+@media (min-width:992px) {
+  .product-item {
+    max-width: 28%;
+  }
+
+}
+
+.product-list-wrap .blocks-inline {
+  max-width: 50%;
+}
+
+.product-item .item-title {
+    word-break: break-all;
+}
+
+.filters-additional {
+  width: 93%;
+  margin: 0 auto;
+  text-align: right;
+  padding-right: 27px;
+}
+
+.filters-additional .btn-inline-wrap .btn {
+  margin-right: 35px;
+}
+
+@media (max-width:1200px) {
+  .filters-additional {
+    width: 100%;
+    padding-right: 17px;
+  }
+
+  .filters-additional .btn-inline-wrap .btn {
+    margin-right: 3px;
+  }
+
+  .filters-additional .btn.btn-sm {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+
+@media (max-width:768px) {
+  .block-mode-switch-wrap .blocks-inline {
+    padding-left: 0;
+  }
+}
+.title-filters {
+  margin-top: 30px;
+}
+.title-filters .blocks-inline:last-child .item-title-sm{
+  padding-left: 68px;
+}
+#main-wrapper.main-wrapper-inner-opacity {
+    margin: 0 auto -140px;
+}
+.footer, .push {
+    height: 140px;
+}
+.footer-another-bg {
+  background: url("../images/footer-another-bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/* Important for footer position */
+.space {
+    padding-bottom: 150px;
+}
+
+#main-wrapper {
+    padding-bottom: 0px;
+}
+/* End Important for footer position */
+
+@media (min-width:768px) and (max-width:992px){
+  .AverageRating_wrap .col-sm-6 {
+    width: 100%;
+  }
+}
+#AverageRating {
+  min-height: 60px;
+  height: auto; 
+  line-height: 60px;  
+}
+
+.rating-item .item-text {
+    font-size: 34px;
+    word-break: break-all;
+}
+
+.video-wrapper-outer {
+    position: relative;
+    border-right: 5px solid #6f6f6f;
+    border-bottom: 5px solid #6f6f6f;
+    border-left: 5px solid #6f6f6f;
+    border-top: 7px solid #6f6f6f;
+}
+
+/* Video background black*/
+video {
+    background-color:#000;
+}
+
+.image-wrapper {
+    padding-top: 0;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #fff;
+    text-align: center;
+
+}
+
+.image-wrapper-outer {
+    border: 1px solid #b1b1b1;
+    outline: 5px solid #282828;
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image-wrapper, .image-wrapper-outer {
+    height: 280px;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+/* Overriden for age check screen and proposal explanation screen */
+@media (min-width: 800px) {
+  .modal-dialog-large {
+      width: 800px;
+  }
+
+  .block-opacity-wrap {
+      background-color: hsla(0,0%,100%,.5);
+      margin: 30px auto;
+      padding: 20px 14%;
+      display: table;
+      padding-top: 0px;
+  }
+}
+@media (max-width: 800px) {
+   .block-opacity-wrap {
+      padding: 20px 0;
+  }
+}
+/* class to diaplay al validation errors in same red color */
+.validation-error {
+    color: #a94442;
+}
+
+/* Disable blue dorder on focus */
+*:focus {
+    outline: none!important;
+}
+
+textarea:focus, input:focus, select:focus, button:focus{
+    outline: none!important;
+}
+
+button:focus {outline:none!important;}
+
+.bootstrap-select .dropdown-toggle:focus {
+    outline: none!important;
+}
+
+.text-with-info {
+    text-align: right;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+.paragraph-md {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.paragraph-lg {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-in-modal {
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+.has-success .checkbox, .has-success .checkbox-inline, .has-success.checkbox-inline label, .has-success.checkbox label, .has-success .control-label, .has-success .help-block, .has-success .radio, .has-success .radio-inline, .has-success.radio-inline label, .has-success.radio label {
+    color: #000;
+}
+
+/* Size of shaker gif in register page */
+.gif-assigned-drink {
+    max-width:185px!important;
+    max-height:185px!important;
+}
+
+/* Size of shaker gif in drink assignation page */
+.radio-img label img {
+    display: table-cell;
+    text-align: center;
+    margin: 0 auto;
+    height: auto;
+    max-width: 185px!important;
+    max-height: 185px!important;
+}

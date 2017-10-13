@@ -1,0 +1,15 @@
+
+@font-face {
+	font-family: 'FjallaOne';
+	src: url('../fonts/FjallaOne-Regular.otf')
+}
+@font-face {
+	font-family: 'ProximaNovaRegular';
+	src: url('../fonts/proximanova-regular_0.eot');
+	src: url('../fonts/proximanova-regular_0.eot') format('embedded-opentype'), url('../fonts/proximanova-regular_0.woff') format('woff'), url('../fonts/proximanova-regular_0.ttf') format('truetype'), url('../fonts/proximanova-regular_0.svg') format('svg')
+}
+@font-face {
+	font-family: 'ProximaNovaSemibold';
+	src: url('../fonts/proximanova-semibold.eot');
+	src: url('../fonts/proximanova-semibold.eot') format('embedded-opentype'), url('../fonts/proximanova-semibold.woff') format('woff'), url('../fonts/proximanova-semibold.ttf') format('truetype'), url('../fonts/proximanova-semibold.svg') format('svg')
+}

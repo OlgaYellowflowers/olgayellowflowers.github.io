@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Buy Sell Fast</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/jquery.selectBoxIt.css" />
+
+  <!-- JavaScripts -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/jquery-ui-1.10.3.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.selectBoxIt.min.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="top-bar-logo">
+      <a href="/">
+        <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+    </div>
+
+    <!-- Cart on the top bar -->
+    <div class="top-bar-cart">
+      <a href="#">
+        <span class="top-bar-cart-items">95</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="nav-buy">
+              <span class="nav-name">Buy</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-explore">
+              <span class="nav-name">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-sell">
+              <span class="nav-name">Sell</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-contacts">
+              <span class="nav-name">Contacts</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-messages">
+              <span class="nav-name">Messages</span>
+              <span class="nav-quantity">89</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-reports">
+              <span class="nav-name">Reports</span>
+            </a>
+          </li>
+          <li  class="active">
+            <a href="#" class="nav-settings">
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ./navbar -->
+
+  <div id="page-content">
+
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="breadcrumbs-wrap">
+        <div class="back-link">
+          <a href="#">Back</a>
+        </div>
+        <div class="page-title icon-shopping-cart">
+          <span>Shopping cart</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="shipped-order not-yet-shipped">
+      <div class="shipped-order-checked"></div>
+      <div class="shipped-order-text">Order has shipped</div>
+      <div class="shipped-order-number">Order #301-000-921</div>
+    </div>
+
+    <div  class="leave-feedback-link">
+      <a href="#">
+        <span class="icon-leave-feedback">Leave Feedback</span>
+      </a>
+    </div>
+
+    <table class="incart not-yet-shipped">
+      <thead>
+        <tr>
+          <td>Items in cart</td>
+          <td>QTY</td>
+          <td>Cost</td>
+        </tr>
+      </thead>
+
+      <!-- Items in shopping cart -->
+      <tbody>
+        <tr>
+          <td class="incart-item-first">
+            <div class="incart-item-del">
+              <a href="#"></a>
+            </div>
+            <div class="incart-item-name">iPhone5</div>
+          </td>
+          <td class="incart-item-quantity">
+            <input type="number" value="2"></td>
+          <td class="incart-item-price">$&nbsp;300.00</td>
+        </tr>
+        <tr>
+          <td class="incart-item-first">
+            <div class="incart-item-del">
+              <a href="#"></a>
+            </div>
+            <div class="incart-item-name">2009 Ford Mustang Blue and this is very long long long</div>
+          </td>
+          <td class="incart-item-quantity">
+            <input type="number" value="1"></td>
+          <td class="incart-item-price">$&nbsp;7300.00</td>
+        </tr>
+      </tbody>
+      <!-- Calculating amount -->
+      <tr class="calc-amount">
+        <td colspan="2">
+          <img src="images/SubTotal.png" height="24" width="24" alt="">Subtotal</td>
+        <td class="incart-item-price">$&nbsp;7600.00</td>
+      </tr>
+      <tr class="calc-line">
+        <td colspan="3">
+          <div></div>
+        </td>
+      </tr>
+      <tr class="calc-amount">
+        <td colspan="2">
+          <img src="images/Tax.png" height="24" width="24" alt="">Tax</td>
+        <td class="incart-item-price">$&nbsp;500.00</td>
+      </tr>
+      <tr class="calc-line">
+        <td colspan="3">
+          <div></div>
+        </td>
+      </tr>
+      <tr class="calc-amount">
+        <td colspan="2">
+          <img src="images/ShippingDetail.png" height="24" width="24" alt="">Shipping</td>
+        <td class="incart-item-price">$&nbsp;700.00</td>
+      </tr>
+      <tr class="calc-line">
+        <td colspan="3">
+          <div></div>
+        </td>
+      </tr>
+
+      <!-- TOTAL AMOUNT -->
+      <tr class="calc-total">
+        <td colspan="2">Total (CAD)</td>
+        <td class="incart-item-price">$&nbsp;700.00</td>
+      </tr>
+    </table>
+
+    <!-- Shipping details -->
+    <div class="lilac-title">
+      <span class="icon-ship-details"></span>
+      <span class="lilac-title-text">Shipping details</span>
+    </div>
+
+    <div class="order-details">
+      <div class="details-item ship-date">
+        <div class="icon-left icon-ship-date"></div>
+        <div class="details-title">Shipped On</div>
+        <div class="details-shipped-date not-yet-shipped">
+          <span>Not Shipped Yet</span>
+        </div>
+      </div>
+      <div class="details-item ship-type">
+        <div class="icon-left icon-ship-type"></div>
+        <div class="details-title">Shipping Type</div>
+        <div class="details-value">Domestic</div>
+      </div>
+      <div class="details-item ship-address">
+        <div class="icon-left icon-address"></div>
+        <div class="details-title">Shipping address</div>
+        <div class="details-address">
+          <div class="address-name">John Smith</div>
+          <div class="address-value">
+            2280 St. Laurent Blvd. Suite 101  Ottawa, Ontario, Canada K1G 4K1
+          </div>
+        </div>
+        <div class="address-bottom"></div>
+      </div>
+      <div class="details-item ship-company ship-company-not-yet">
+        <div class="icon-left icon-ship-company"></div>
+        <div class="details-title">
+          Add shipping / tracking details of this purchase order for yor buyer
+        </div>
+        <div class="table-row-with-icon">
+          <div class="icon-left icon-left-empty"></div>
+          <div class="ship-company-select">
+            <select name="shipping-company" id="shipping-company">
+              <option value="0">Select Shipping Company</option>
+              <option value="UPS">UPS</option>
+              <option value="Canada Post">Canada Post</option>
+              <option value="Fedex">Fedex</option>
+              <option  selected="selected"  value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter the name of the shipping company you used"></div>
+        </div>
+      </div>
+      <div class="details-item track-id track-id-not-yet">
+        <div class="icon-left icon-track-id"></div>
+        <div class="details-title">Tracking ID</div>
+        <div class="table-row-with-icon">
+          <div class="icon-left icon-left-empty"></div>
+          <div class="form-group">
+            <input type="text" placeholder="" class="form-control input-pencil"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Billing details -->
+    <div class="lilac-title">
+      <span class="icon-bill-details"></span>
+      <span class="lilac-title-text">Billing details</span>
+    </div>
+
+    <div class="bill-details">
+      <div class="details-item bill-date">
+        <div class="icon-left icon-bill-date"></div>
+        <div class="details-title">Date/Time</div>
+        <div class="details-value">12/12/2013 6:30am</div>
+      </div>
+      <div class="details-item bill-method">
+        <div class="icon-left icon-bill-method"></div>
+        <div class="details-title">Payment Method</div>
+        <div class="method-value">
+          PayPal
+          <img src="images/paypal.png" alt=""></div>
+      </div>
+      <div class="details-item trans-number">
+        <div class="icon-left icon-trans-number"></div>
+        <div class="details-title">Transaction number</div>
+        <div class="details-value">VADE0B248932</div>
+      </div>
+      <div class="details-item bill-address">
+        <div class="icon-left icon-address"></div>
+        <div class="details-title">Billing address</div>
+        <div class="details-address">
+          <div class="address-name">John Smith</div>
+          <div class="address-value">
+            2280 St. Laurent Blvd. Suite 101  Ottawa, Ontario, Canada K1G 4K1
+          </div>
+        </div>
+        <div class="address-bottom"></div>
+      </div>
+    </div>
+
+  </div>
+  <!-- ./page-content -->
+
+  <script>
+  // Selects styling
+  $("select").selectBoxIt();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title -->
+    <title>Backtesting</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/select2-3.5.2/select2.css" />
+    <link rel="stylesheet" href="vendor/select2-bootstrap/select2-bootstrap.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-datepicker-master/dist/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="vendor/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css">
+    <link rel="stylesheet" href="vendor/datatables.net-bs/css/dataTables.bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/c3/c3.min.css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_extend.css">
+    <link href="styles/c3.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="fixed-navbar fixed-sidebar">
+
+<!-- Simple splash screen-->
+<div class="splash">
+    <div class="splash-title"><h1>CREDERE</h1><p>Credere Loan Trader</p></div>
+    <div class="spinner"> 
+        <div class="rect1"></div> <div class="rect2"></div> <div class="rect3"></div> <div class="rect4"></div> <div class="rect5"></div> 
+    </div> 
+</div>
+<!--[if lt IE 7]>
+<p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Header -->
+<div id="header" >
+<!-- <div class="color-line" style="background:#eee;"></div> -->
+    <div id="logo" class="light-version">
+        <span class="logo_credere"></span>
+    </div>
+    <nav role="navigation">
+        <div class="header-link hide-menu"><i class="fa fa-bars"></i></div>
+        <div class="small-logo">
+            <span class="text-primary">CREDERE</span>
+        </div>
+<!--         <form role="search" class="navbar-form-custom" method="post" action="#">
+            <div class="form-group">
+                <input type="text" placeholder="Search something special" class="form-control" name="search">
+            </div>
+        </form> -->
+        <div class="mobile-menu">
+            <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
+                <i class="fa fa-chevron-down"></i>
+            </button>
+            <div class="collapse mobile-navbar" id="mobile-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="" href="login.html">Login</a>
+                    </li>
+                    <li>
+                        <a class="" href="login.html">Logout</a>
+                    </li>
+                    <li>
+                        <a class="" href="profile.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-left">
+            <div class="small-header transition animated fadeIn">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <!-- <div id="hbreadcrumb" class="pull-right">
+                            <ol class="hbreadcrumb breadcrumb">
+                                <li><a href="index.html">Dashboard</a></li>
+                                <li>
+                                    <span>Forms</span>
+                                </li>
+                                <li class="active">
+                                    <span>Forms elements </span>
+                                </li>
+                            </ol>
+                        </div> -->
+                        <h2 class="font-light m-b-xs">
+                            Backtesting Model
+                        </h2>
+                        <small>&nbsp</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <ul class="nav navbar-nav no-borders">
+                <li class="dropdown">
+                    <a class="dropdown-toggle label-menu-corner" href="#" data-toggle="dropdown">
+                        <i class="pe-7s-speaker"></i>
+                        <span class="label label-success">4</span>
+                    </a>
+                    <ul class="dropdown-menu hdropdown notification animated flipInX">
+                        <li>
+                            <a>
+                                <span class="label label-success">NEW</span> It is a long established.
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span class="label label-warning">WAR</span> There are many variations.
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span class="label label-danger">ERR</span> Contrary to popular belief.
+                            </a>
+                        </li>
+                        <li class="summary"><a href="#">See all notifications</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="sidebar" class="right-sidebar-toggle">
+                         <h5 class="nav-label">Hi Alex!</h5>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="login.html">
+                        <i class="pe-7s-upload pe-rotate-90"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- Navigation -->
+<aside id="menu">
+    <div id="navigation">
+        <ul class="nav" id="side-menu">
+            <li>
+                <a href="#"> <span class="nav-label">Auctions</span> <!-- <span class="label label-success pull-right">v.1</span> --> </a>
+            </li>
+            <li>
+                <a href="#"> <span class="nav-label">Orders</span><span class="fa arrow"></span><!-- <span class="label label-warning pull-right">NEW</span>  --></a>
+                <ul class="nav nav-second-level">
+                    <li><a href="panels.html">Active Orders</a></li>
+                    <li><a href="typography.html">Trade History</a></li>
+                    <li><a href="buttons.html">New Order</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"> <span class="nav-label">Portfolio</span></a>
+            </li>
+            <li class="active">
+                <a href="#"> <span class="nav-label">Backtesting</span></a>
+            </li>
+        </ul>
+    </div>
+</aside>
+
+<!-- Main Wrapper -->
+<div id="wrapper">
+<div class="content animate-panel">
+    <div>
+        <div class="small-header transition animated fadeIn mobile-only">
+            <div class="hpanel">
+                <div class="panel-body">
+                    <h2 class="font-light m-b-xs">
+                        Backtesting Model
+                    </h2>
+                    <!-- <small>Examples of various form controls.</small> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- row with full panel -->
+<form method="get" class="form-horizontal">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="hpanel">
+                <div class="panel-heading">
+                    <div class="row">
+                    
+                        <H3 class="col-sm-12">
+                            Create New Model 
+                            <!-- <div class="btn btn-sm btn-outline btn-success pull-right"><i class="fa fa-plus"></i> New Order</div> -->
+                        </H3> 
+                   </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="btn-group col-sm-12">
+                                    <a class="btn btn-default col-md-2" href="#step1" data-toggle="tab">1. Load Data</a>
+                                    <a class="btn btn-default col-md-2" href="#step2" data-toggle="tab">2. Assumptions</a>
+                                    <a class="btn btn-primary col-md-2" href="#step3" data-toggle="tab">3. Overview</a>
+                                    <a class="btn btn-default col-md-2" href="#step2" data-toggle="tab">4. Risk Report</a>
+                                    <a class="btn btn-default col-md-2" href="#step3" data-toggle="tab">5. Amortisation</a>
+                                    <a class="btn btn-default col-md-2" href="#step2" data-toggle="tab">6. Saved Filters</a>
+                                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="hpanel">
+            <div class="panel-heading">
+                <div class="panel-tools">
+                    
+                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+
+                    <!-- <a class="closebox"><i class="fa fa-times"></i></a> -->
+                </div>
+                Model Timeframes
+            </div>
+            <div class="panel-body">
+
+                <div class="col-sm-6">
+                    <table class="table no-margins">
+                        <thead>
+                            <th class="font-normal col-xs-6">Portfolio Inception Date</th>
+                            <th class="font-bold col-xs-6">12 August 2015</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Initial Payment Date</td>
+                                <td class="font-bold">12 August 2015</td>
+                            </tr>
+                            <tr>
+                                <td>Last Payment Date</td>
+                                <td class="font-bold">12 August 2015</td>
+                            </tr>
+                            <tr>
+                                <td>Terms Completed / (%)</td>
+                                <td class="font-bold">38 (85%)</td>
+                            </tr>
+                            <tr>
+                                <td>Remaining Terms / (%)</td>
+                                <td class="font-bold">6 (15%)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="col-sm-6">
+                    <table class="table no-margins">
+                        <thead>
+                            <th class="font-normal col-xs-6">End of Projections</th>
+                            <th class="font-bold col-xs-6">12 August 2015</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Re-investment Option</td>
+                                <td class="font-bold text-success">Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Re-investment Frequency</td>
+                                <td class="font-bold">Monthly</td>
+                            </tr>
+                            <tr>
+                                <td>Cash Re-balancing</td>
+                                <td class="font-bold text-success">Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Originator</td>
+                                <td class="font-bold">Prosper</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- tiles -->
+    <div class="row">    
+            <div class="col-md-2"  style="width:200px; float:left;">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <div class="stats-title pull-left">
+                            <h4>Selected Loans</h4>
+                        </div>
+                        <div class="m-t-xl">
+                            <h3 class="text-info">462</h3>
+                        <!--     <small>
+                                Lorem Ipsum is simply dummy text of the printing and <strong>typesetting industry</strong>. Lorem Ipsum has been.
+                            </small> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2" style="width:200px; float:left;">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <div class="stats-title pull-left">
+                            <h4>Invest Amount</h4>
+                        </div>
+                        <div class="m-t-xl">
+                            <h3 class="text-info"><small class="text-info">$ </small>334,495</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2" style="width:200px; float:left;">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <div class="stats-title pull-left">
+                            <h4>Avg. Appl FICO</h4>
+                        </div>
+                        <div class="m-t-xl">
+                            <h3 class="text-warning">680-700</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2" style="width:200px; float:left;">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <div class="stats-title pull-left">
+                            <h4>Lender Note Yield</h4>
+                        </div>
+                        <div class="m-t-xl">
+                            <h3 class="text-info">12,5%</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2" style="width:200px; float:left;">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <div class="stats-title pull-left">
+                            <h4>Avg. Terms</h4>
+                        </div>
+                        <div class="m-t-xl">
+                            <h3 class="text-info">34.5 <small class="text-info">Months</small></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2" style="width:200px; float:left;">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <div class="stats-title pull-left">
+                            <h4>Expected Return</h4>
+                        </div>
+                        <div class="m-t-xl">
+                            <h3 class="text-info">9,4%</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2" style="width:200px; float:left;">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <div class="stats-title pull-left">
+                            <h4>WA PDs</h4>
+                        </div>
+                        <div class="m-t-xl">
+                            <h3 class="text-info">8.84 <small class="text-info">%</small></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2" style="width:200px; float:left;">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <div class="stats-title pull-left">
+                            <h4>WAL</h4>
+                        </div>
+                        <div class="m-t-xl">
+                            <h3 class="text-info">8 <small class="text-info">Months</small></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+<!-- charts -->
+
+<div class="row">
+        <div class="col-lg-12">
+            <div class="hpanel">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                        <!-- <a class="closebox"><i class="fa fa-times"></i></a> -->
+                    </div>
+                    Model Portfolio Dashboard
+                </div>
+                <div class="panel-body">
+                   <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hpanel">
+                                <div class="panel-heading ">
+                                    <div class="panel-tools">
+
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                            <span >IRR by Loan Grade<b class="caret"></b></span>
+                                        </a>
+                                        <ul class="dropdown-menu animated flipInX m-t-xs">
+                                            <li class="active"><a href="">IRR by Loan Grade</a></li>
+                                             <li><a href="">IRR by Origination date</a></li>
+                                            <li><a href="">IRR by Listing Request Amount</a></li>
+                                            <li><a href="">IRR by Monthly Income</a></li>
+                                            <li><a href="">IRR by Borrower Rate </a></li>
+                                            <li><a href="">IRR by Internal Risk Score</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div>
+                                        <div id="pie" class="c3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="hpanel">
+                                <div class="panel-heading">
+                                    <div class="panel-tools">
+                                        
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                            <span >Funded Amount by Grade<b class="caret"></b></span>
+                                        </a>
+                                        <ul class="dropdown-menu animated flipInX m-t-xs">
+                                            <li class="active"><a href="">Funded Amount by Grade</a></li>
+                                            <li><a href="">Funded Amount by FICO</a></li>
+                                            <li><a href="">Funded Amount by Income Range</a></li>
+                                            <li><a href="">Funded Amount by Employment Description (Top 10)</a></li>
+                                            <li><a href="">Funded Amount by Internal Risk Score </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div>
+                                        <div id="fico" class="c3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hpanel">
+                                <div class="panel-heading ">
+                                    <div class="panel-tools">
+                                        
+                                    </div>
+                                    Funded Amount by Top 10 States
+                                </div>
+                                <div class="panel-body">
+                                    <div>
+                                        <div id="stocked" class="c3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="hpanel">
+                                <div class="panel-heading ">
+                                    <div class="panel-tools">
+                                        
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                            <span >Average revolving Balance by Grade<b class="caret"></b></span>
+                                        </a>
+                                        <ul class="dropdown-menu animated flipInX m-t-xs">
+                                            <li class="active"><a href="">Average revolving Balance by Grade</a></li>
+                                             <li><a href="">Average Loan Amount by Grade</a></li>
+                                            <li><a href="">Lender Yield by Grade</a></li>
+                                            <li><a href="">Monthly Income by Grade</a></li>
+                                            <li><a href="">FICO Score by Grade</a></li>
+                                            <li><a href="">DTI by Grade</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div>
+                                        <!-- <div id="ct-chart4" class="ct-perfect-fourth"></div> -->
+                                        <div id="stocked2" class="c3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-footer">
+                <span class="pull-right">
+                      
+                </span>
+                    Last update: 21.05.2015
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- charts -->
+
+<div class="row">
+        <div class="col-lg-12">
+            <div class="hpanel">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                        <!-- <a class="closebox"><i class="fa fa-times"></i></a> -->
+                    </div>
+                    Outputs
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hpanel">
+                                <div class="panel-heading ">
+                                    <div class="panel-tools">
+                                        
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                            <span >Principal Balance Amortisation<b class="caret"></b></span>
+                                        </a>
+                                        <ul class="dropdown-menu animated flipInX m-t-xs">
+                                            <li class="active"><a href="">Principal Balance Amortisation</a></li>
+                                             <li><a href="">IRR by Origination date</a></li>
+                                            <li><a href="">IRR by Listing Request Amount</a></li>
+                                            <li><a href="">IRR by Monthly Income</a></li>
+                                            <li><a href="">IRR by Borrower Rate </a></li>
+                                            <li><a href="">IRR by Internal Risk Score</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div>
+                                        <div id="lineChart" class="c3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="hpanel">
+                                <div class="panel-heading showhide">
+                                    <div class="panel-tools">
+                                        
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                            <span >Cashflow: Principal and Interest Recieved<b class="caret"></b></span>
+                                        </a>
+                                        <ul class="dropdown-menu animated flipInX m-t-xs">
+                                            <li class="active"><a href="">IRR by Loan Grade</a></li>
+                                             <li><a href="">IRR by Origination date</a></li>
+                                            <li><a href="">IRR by Listing Request Amount</a></li>
+                                            <li><a href="">IRR by Monthly Income</a></li>
+                                            <li><a href="">IRR by Borrower Rate </a></li>
+                                            <li><a href="">IRR by Internal Risk Score</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div>
+                                        <div id="areaChart" class="c3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hpanel">
+                                <div class="panel-heading ">
+                                    <div class="panel-tools">
+                                       
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                            <span >Deliquency D0 to D2<b class="caret"></b></span>
+                                        </a>
+                                        <ul class="dropdown-menu animated flipInX m-t-xs">
+                                            <li class="active"><a href="">Deliqnuency D0 to D2</a></li>
+                                             <li><a href="">Deliqnuency D2 to D4</a></li>
+                                            <li><a href="">Losses: Expected Losses vs. Actual Charge Off</a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div>
+                                        <div id="barchart" class="c3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="hpanel">
+                                <div class="panel-heading ">
+                                    <div class="panel-tools">
+                                        
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                            <span >Prepayment: Actual Cum. vs. Rating Scenarios<b class="caret"></b></span>
+                                        </a>
+                                        <ul class="dropdown-menu animated flipInX m-t-xs">
+                                            <li class="active"><a href="">Prepayment: Actual Cum. vs. Rating Scenarios</a></li>
+                                            <li><a href="">Losses: Actual Cum. vs. Rating Scenarios</a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div>
+                                        <div id="areaChart2" class="c3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hpanel">
+                                <div class="panel-heading ">
+                                    <div class="panel-tools">
+                                       
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                            <span >Actual Amount Losses and Prepayment<b class="caret"></b></span>
+                                        </a>
+                                        <ul class="dropdown-menu animated flipInX m-t-xs">
+                                            <li class="active"><a href="">IRR by Loan Grade</a></li>
+                                             <li><a href="">IRR by Origination date</a></li>
+                                            <li><a href="">IRR by Listing Request Amount</a></li>
+                                            <li><a href="">IRR by Monthly Income</a></li>
+                                            <li><a href="">IRR by Borrower Rate </a></li>
+                                            <li><a href="">IRR by Internal Risk Score</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div>
+                                        <div id="barchart2" class="c3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="hpanel">
+                                <div class="panel-heading ">
+                                    <div class="panel-tools">
+                                        
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                            <span >Projected Amount Losses and Prepayments<b class="caret"></b></span>
+                                        </a>
+                                        <ul class="dropdown-menu animated flipInX m-t-xs">
+                                            <li class="active"><a href="">IRR by Loan Grade</a></li>
+                                             <li><a href="">IRR by Origination date</a></li>
+                                            <li><a href="">IRR by Listing Request Amount</a></li>
+                                            <li><a href="">IRR by Monthly Income</a></li>
+                                            <li><a href="">IRR by Borrower Rate </a></li>
+                                            <li><a href="">IRR by Internal Risk Score</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div>
+                                        <div id="line2" class="c3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="panel-footer">
+                <span class="pull-right">
+                      
+                </span>
+                    Last update: 21.05.2015
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Table -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="hpanel">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                       <!--  <a class="closebox"><i class="fa fa-times"></i></a> -->
+                    </div>
+                    Model Portfolio Loans
+                </div>
+                <div class="panel-body">
+
+                
+
+                <table id="example2" class="table table-striped table-hover"><!-- table-bordered  -->
+                <thead>
+                <tr>
+                    <th><div class="checkbox checkbox-success"><input id="checkbox-all" type="checkbox" ><label for="checkbox-all"></label></div></th>
+                    <th>Listing ID</th>
+                    <th>Loan Purpose</th>
+                    <th>Grade</th>
+                    <th>Loan Amount</th>
+                    <th>Yield</th>
+                    <th>Term</th>
+                    
+                    <th>Investment Type</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox" checked><label for="checkbox1"></label></div></th>
+                        <td>481892</td>
+                        <td>Debt Consolidation</td>
+                        <td><span class="btn-xs btn-success btn-circle"><strong>A</strong></span></td>
+                        <td>$15,000</td>
+                        <td>9.5%</td>
+                        <td>36</td>
+                        
+                        <td>Fractional</td>
+                    </tr>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox2" type="checkbox" checked><label for="checkbox2"></label></div></th>
+                        <td>481895</td>
+                        <td>Home Improvement</td>
+                        <td><span class="btn-xs btn-warning btn-circle"><strong>B</strong></span></td>
+                        <td>$5,000</td>
+                        <td>10.5%</td>
+                        <td>24</td>
+                      
+
+                        <td>Whole</td>
+                    </tr>
+                     <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox" checked><label for="checkbox1"></label></div></th>
+                        <td>481892</td>
+                        <td>Debt Consolidation</td>
+                        <td><span class="btn-xs btn-success btn-circle"><strong>AA</strong></span></td>
+                        <td>$15,000</td>
+                        <td>9.5%</td>
+                        <td>36</td>
+ 
+                        <td>Fractional</td>
+                    </tr>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox2" type="checkbox" checked><label for="checkbox2"></label></div></th>
+                        <td>481895</td>
+                        <td>Home Improvement</td>
+                        <td><span class="btn-xs btn-warning2 btn-circle"><strong>C</strong></span></td>
+                        <td>$5,000</td>
+                        <td>10.5%</td>
+                        <td>24</td>
+                     
+                        <td>Whole</td>
+                    </tr>
+                    
+                </tbody>
+                </table>
+                <hr>
+                <button class="btn btn-default btn-sm btn-outline pull-right">Export to XLS</button>
+            
+                
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="row">
+        <div class="col-lg-12">        
+            <div class="hpanel">            
+                <div class="panel-body">
+                    <div class="text-center">
+                        <div class="pull-left">
+                        <button class="btn btn-default w-lg" type="submit">Back to Assumptions</button>
+                        </div>
+                        <div class="pull-right">
+                        <button class="btn btn-primary w-lg" type="submit">Next Step: Risk Report</button>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+</div>
+
+    <!-- Right sidebar -->
+    <div id="right-sidebar" class="animated fadeInRight">
+
+        <div class="p-m">
+            <button id="sidebar-close" class="right-sidebar-toggle sidebar-button btn btn-default m-b-md"><i class="pe pe-7s-close"></i>
+            </button>
+            <div>
+                <span class="font-bold no-margins"> Analytics </span>
+                <br>
+                <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.</small>
+            </div>
+            <div class="row m-t-sm m-b-sm">
+                <div class="col-lg-6">
+                    <h3 class="no-margins font-extra-bold text-success">300,102</h3>
+
+                    <div class="font-bold">98% <i class="fa fa-level-up text-success"></i></div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="no-margins font-extra-bold text-success">280,200</h3>
+
+                    <div class="font-bold">98% <i class="fa fa-level-up text-success"></i></div>
+                </div>
+            </div>
+            <div class="progress m-t-xs full progress-small">
+                <div style="width: 25%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar"
+                     class=" progress-bar progress-bar-success">
+                    <span class="sr-only">35% Complete (success)</span>
+                </div>
+            </div>
+        </div>
+        <div class="p-m bg-light border-bottom border-top">
+            <span class="font-bold no-margins"> Social talks </span>
+            <br>
+            <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.</small>
+            <div class="m-t-md">
+                <div class="social-talk">
+                    <div class="media social-profile clearfix">
+                        <a class="pull-left">
+                            <img src="images/a1.jpg" alt="profile-picture">
+                        </a>
+
+                        <div class="media-body">
+                            <span class="font-bold">John Novak</span>
+                            <small class="text-muted">21.03.2015</small>
+                            <div class="social-content small">
+                                Injected humour, or randomised words which don't look even slightly believable.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-talk">
+                    <div class="media social-profile clearfix">
+                        <a class="pull-left">
+                            <img src="images/a3.jpg" alt="profile-picture">
+                        </a>
+
+                        <div class="media-body">
+                            <span class="font-bold">Mark Smith</span>
+                            <small class="text-muted">14.04.2015</small>
+                            <div class="social-content">
+                                Many desktop publishing packages and web page editors.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-talk">
+                    <div class="media social-profile clearfix">
+                        <a class="pull-left">
+                            <img src="images/a4.jpg" alt="profile-picture">
+                        </a>
+
+                        <div class="media-body">
+                            <span class="font-bold">Marica Morgan</span>
+                            <small class="text-muted">21.03.2015</small>
+
+                            <div class="social-content">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-m">
+            <span class="font-bold no-margins"> Sales in last week </span>
+            <div class="m-t-xs">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <small>Today</small>
+                        <h4 class="m-t-xs">$170,20 <i class="fa fa-level-up text-success"></i></h4>
+                    </div>
+                    <div class="col-xs-6">
+                        <small>Last week</small>
+                        <h4 class="m-t-xs">$580,90 <i class="fa fa-level-up text-success"></i></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <small>Today</small>
+                        <h4 class="m-t-xs">$620,20 <i class="fa fa-level-up text-success"></i></h4>
+                    </div>
+                    <div class="col-xs-6">
+                        <small>Last week</small>
+                        <h4 class="m-t-xs">$140,70 <i class="fa fa-level-up text-success"></i></h4>
+                    </div>
+                </div>
+            </div>
+            <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.
+                Many desktop publishing packages and web page editors.
+            </small>
+        </div>
+
+    </div>
+
+    <!-- Footer-->
+    <footer class="footer">
+        <span class="pull-right">
+            Help Terms and Conditions
+        </span>
+        Credere 2016
+    </footer>
+</div>
+</div>
+
+<!-- modal window -->
+
+
+
+<!-- Vendor scripts -->
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+<script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
+<script src="vendor/iCheck/icheck.min.js"></script>
+<script src="vendor/sparkline/index.js"></script>
+<script src="vendor/moment/moment.js"></script>
+<script src="vendor/select2-3.5.2/select2.min.js"></script>
+<script src="vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+<script src="vendor/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+
+<!-- Charts -->
+<script src="vendor/d3/d3.min.js"></script>
+<script src="vendor/c3/c3.min.js"></script>
+<!-- DataTables -->
+<script src="vendor/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="vendor/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- App scripts -->
+<script src="scripts/homer.js"></script>
+
+
+
+
+
+
+<style type="text/css">
+
+.table .checkbox {
+    margin: 0;
+}
+
+.c3-chart-line{
+    width:2px;
+}
+
+.c3-line{
+    stroke-width:1.5;
+}
+.c3-circle {
+    stroke:#ffffff;
+    stroke-width:1;
+    fill:#ffffff;
+}
+
+.c3-axis{
+    fill:#aaaaaa;
+}
+
+.c3-axis line{
+    fill:#aaaaaa;
+    stroke:#dddddd;
+}
+
+.c3-axis path{
+    stroke:#dddddd;
+}
+
+.c3-grid line{
+    stroke:#eeeeee;
+}
+
+.c3-legend-item{
+    fill:#999999;
+}
+.arehighlight {
+    fill: #f00;
+}
+
+</style>
+
+<script>
+
+    $(function () {
+
+        // Wait until all panels will be render
+        // Remove setTimeout if you don't use animate-panel effect
+
+        setTimeout(function(){
+            c3.generate({
+                bindto: '#lineChart',
+                data:{
+                    columns: [
+                        ["data1_x", 0.30, 0.31, 0.32, 0.33, 0.34, 0.36, 0.37, 0.38, 0.40, 0.42, 0.43, 0.45, 0.48, 0.50, 0.53, 0.56, 0.59, 0.63, 0.67, 0.71, 0.77, 0.83, 0.91, 1.00, 1.11, 1.25, 1.43, 1.67, 2.00, 2.50, 3.33, 5.00, 10.00],
+                        ["data2_x", 0.15, 0.16, 0.16, 0.17, 0.17, 0.18, 0.19, 0.19, 0.20, 0.21, 0.22, 0.23, 0.24, 0.25, 0.26, 0.28, 0.29, 0.31, 0.33, 0.36, 0.38, 0.42, 0.45, 0.50, 0.56, 0.63, 0.71, 0.83, 1.00, 1.25, 1.67, 2.50, 5.00],
+                        ["data1", 5.70, 5.69, 5.68, 5.67, 5.66, 5.64, 5.63, 5.62, 5.60, 5.58, 5.57, 5.55, 5.52, 5.50, 5.47, 5.44, 5.41, 5.38, 5.33, 5.29, 5.23, 5.17, 5.09, 5.00, 4.89, 4.75, 4.57, 4.33, 4.00, 3.50, 2.67, 1.00, 0.50],
+                        ["data2", 5.85, 5.84, 5.84, 5.83, 5.83, 5.82, 5.81, 5.81, 5.80, 5.79, 5.78, 5.77, 5.76, 5.75, 5.74, 5.72, 5.71, 5.69, 5.67, 5.64, 5.62, 5.58, 5.55, 5.50, 5.44, 5.38, 5.29, 5.17, 5.00, 4.75, 4.33, 3.50, 1.00]
+                    ]
+                    //colors:{
+                    //    data1: '#62cb31',
+                    //    data2: '#BABABA'
+                    //}
+                },
+                grid: {
+                    x: {
+                        show: true
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+                color: {
+                    pattern: [
+                            '#003157',
+                //            '#00537d',
+                //            '#007a8e',
+                //            '#00a774',
+                            '#26bd54',
+                            '#E67E22',
+                            '#C0392B' 
+
+                            ]
+                }
+            });
+
+            c3.generate({
+                bindto: '#areaChart',
+                data:{
+                    columns: [
+                        ['data1', 1.00, 7.50, 8.33, 8.75, 9.00, 9.17, 9.29, 9.38, 9.44, 9.50, 9.55, 9.58, 9.62, 9.64, 9.67, 9.69, 9.71, 9.72, 9.74, 9.75, 9.76, 9.77, 9.78, 9.79, 9.80, 9.81, 9.81, 9.82, 9.83, 9.83, 9.84, 9.84, 9.85],
+                        ['data2', 0.00,5.00, 6.67, 7.50, 8.00, 8.33, 8.57, 8.75, 8.89, 9.00, 9.09, 9.17, 9.23, 9.29, 9.33, 9.38, 9.41, 9.44, 9.47, 9.50, 9.52, 9.55, 9.57, 9.58, 9.60, 9.62, 9.63, 9.64, 9.66, 9.67, 9.68, 9.69, 9.70],
+                        ['data3', 1.00,5.50, 7.00, 7.75, 8.20, 8.50, 8.71, 8.88, 9.00, 9.10, 9.18, 9.25, 9.31, 9.36, 9.40, 9.44, 9.47, 9.50, 9.53, 9.55, 9.57, 9.59, 9.61, 9.63, 9.64, 9.65, 9.67, 9.68, 9.69, 9.70, 9.71, 9.72, 9.73 ],
+                        ['data4', 5.00, 7.50, 8.33, 8.75, 9.00, 9.17, 9.29, 9.38, 9.44, 9.50, 9.55, 9.58, 9.62, 9.64, 9.67, 9.69, 9.71, 9.72, 9.74, 9.75, 9.76, 9.77, 9.78, 9.79, 9.80, 9.81, 9.81, 9.82, 9.83, 9.83, 9.84, 9.84, 9.85 ],
+                        ['data5', 4.00, 7.00, 8.00, 8.50, 8.80, 9.00, 9.14, 9.25, 9.33, 9.40, 9.45, 9.50, 9.54, 9.57, 9.60, 9.63, 9.65, 9.67, 9.68, 9.70, 9.71, 9.73, 9.74, 9.75, 9.76, 9.77, 9.78, 9.79, 9.79, 9.80, 9.81, 9.81, 9.82 ],
+                        ['data6', 2.00, 4.00, 6.00, 7.00, 7.60, 8.00, 8.29, 8.50, 8.67, 8.80, 8.91, 9.00, 9.08, 9.14, 9.20, 9.25, 9.29, 9.33, 9.37, 9.40, 9.43, 9.45, 9.48, 9.50, 9.52, 9.54, 9.56, 9.57, 9.59, 9.60, 9.61, 9.63, 9.64],
+                        ['data7', 0.50 , 5.50, 7.50, 8.50, 9.10, 9.50, 9.79, 10.00, 10.17, 10.30, 10.41, 10.50, 10.58, 10.64, 10.70, 10.75, 10.79, 10.83, 10.87, 10.90, 10.93, 10.95, 10.98, 11.00, 11.02, 11.04, 11.06, 11.07, 11.09, 11.10, 11.11, 11.13, 11.14 ],
+                        ['data8', 1.30 ,1.60, 1.90, 2.20, 2.50, 2.80, 3.10, 3.40, 3.70, 4.00, 4.30, 4.60, 4.90, 5.20, 5.50, 5.80, 6.10, 6.40, 6.70, 7.00, 7.30, 7.60, 7.90, 8.20, 8.50, 8.80, 9.10, 9.40, 9.70, 10.00,10.30,10.60,10.90]
+                    ],
+                    types: {
+                        data8: 'area',
+                    //    data2: 'area-spline'
+                    }
+                    //colors:{
+                    //    data1: '#003157',
+                    //    data2: '#3b9de4'
+                    //}
+                },
+                type:'line',
+                point: {
+                    show: false
+                },
+                grid: {
+                    x: {
+                        show: true
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+                color: {
+                    pattern: [
+                    //darkblue green
+                    //        '#003157',
+                    //        '#164358',
+                    //        '#215659',
+                    //        '#28695a',
+                    //        '#2c7d5a',
+                    //        '#2d9259',
+                    //        '#2ba757',
+                    //        '#26bd54',
+                    //darkblue.lightblue.green
+                                '#003157',
+                                '#164358',
+                                '#085281',
+                                '#0a78ad',
+                                '#009fd9',
+                                '#00b0ce',
+                                '#00ba9e',
+                                '#26bd54',
+                            ]
+                }
+            });
+
+            c3.generate({
+                bindto: '#areaChart2',
+                data:{
+                    columns: [
+                        ['data1', 1.00, 7.50, 8.33, 8.75, 9.00, 9.17, 9.29, 9.38, 9.44, 9.50, 9.55, 9.58, 9.62, 9.64, 9.67, 9.69, 9.71, 9.72, 9.74, 9.75, 9.76, 9.77, 9.78, 9.79, 9.80, 9.81, 9.81, 9.82, 9.83, 9.83, 9.84, 9.84, 9.85],
+                        //['data2', 0.00,5.00, 6.67, 7.50, 8.00, 8.33, 8.57, 8.75, 8.89, 9.00, 9.09, 9.17, 9.23, 9.29, 9.33, 9.38, 9.41, 9.44, 9.47, 9.50, 9.52, 9.55, 9.57, 9.58, 9.60, 9.62, 9.63, 9.64, 9.66, 9.67, 9.68, 9.69, 9.70],
+                        //['data3', 1.00,5.50, 7.00, 7.75, 8.20, 8.50, 8.71, 8.88, 9.00, 9.10, 9.18, 9.25, 9.31, 9.36, 9.40, 9.44, 9.47, 9.50, 9.53, 9.55, 9.57, 9.59, 9.61, 9.63, 9.64, 9.65, 9.67, 9.68, 9.69, 9.70, 9.71, 9.72, 9.73 ],
+                        //['data4', 5.00, 7.50, 8.33, 8.75, 9.00, 9.17, 9.29, 9.38, 9.44, 9.50, 9.55, 9.58, 9.62, 9.64, 9.67, 9.69, 9.71, 9.72, 9.74, 9.75, 9.76, 9.77, 9.78, 9.79, 9.80, 9.81, 9.81, 9.82, 9.83, 9.83, 9.84, 9.84, 9.85 ],
+                        //['data5', 4.00, 7.00, 8.00, 8.50, 8.80, 9.00, 9.14, 9.25, 9.33, 9.40, 9.45, 9.50, 9.54, 9.57, 9.60, 9.63, 9.65, 9.67, 9.68, 9.70, 9.71, 9.73, 9.74, 9.75, 9.76, 9.77, 9.78, 9.79, 9.79, 9.80, 9.81, 9.81, 9.82 ],
+                        //['data6', 2.00, 4.00, 6.00, 7.00, 7.60, 8.00, 8.29, 8.50, 8.67, 8.80, 8.91, 9.00, 9.08, 9.14, 9.20, 9.25, 9.29, 9.33, 9.37, 9.40, 9.43, 9.45, 9.48, 9.50, 9.52, 9.54, 9.56, 9.57, 9.59, 9.60, 9.61, 9.63, 9.64],
+                        ['data7', 0.50 , 5.50, 7.50, 8.50, 9.10, 9.50, 9.79, 10.00, 10.17, 10.30, 10.41, 10.50, 10.58, 10.64, 10.70, 10.75, 10.79, 10.83, 10.87, 10.90, 10.93, 10.95, 10.98, 11.00, 11.02, 11.04, 11.06, 11.07, 11.09, 11.10, 11.11, 11.13, 11.14 ],
+                        ['data8', 1.30 ,1.60, 1.90, 2.20, 2.50, 2.80, 3.10, 3.40, 3.70, 4.00, 4.30, 4.60, 4.90, 5.20, 5.50, 5.80, 6.10, 6.40, 6.70, 7.00, 7.30, 7.60, 7.90, 8.20, 8.50, 8.80, 9.10, 9.40, 9.70, 10.00,10.30,10.60,10.90]
+                    ],
+                    types: {
+                        data8: 'area',
+                    //    data2: 'area-spline'
+                    },
+                    regions: {
+                        'data7': [{'start':20, 'end':25, 'style':'dashed'},{'start':30}], // currently 'dashed' style only
+                        'data8': [{'start':15, 'end':30, 'style':'dashed'}]
+                    }
+                    //colors:{
+                    //    data1: '#003157',
+                    //    data2: '#3b9de4'
+                    //}
+                },
+                
+                point: {
+                    show: false
+                },
+                grid: {
+                    x: {
+                        show: true
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+                tooltip: {
+                    format: {
+                        //title: function (d) { return 'Data ' + d; },
+                        value: function (value, ratio, id) {
+                            var format = id === 'Data' ? d3.format(',') : d3.format('$');
+                            return format(value) + 'M';
+                        }
+            //            value: d3.format(',') // apply this format to both y and y2
+                    }
+                },
+                color: {
+                    pattern: [
+                    //darkblue green
+                    //        '#003157',
+                    //        '#164358',
+                    //        '#215659',
+                    //        '#28695a',
+                    //        '#2c7d5a',
+                    //        '#2d9259',
+                    //        '#2ba757',
+                    //        '#26bd54',
+                    //darkblue.lightblue.green
+                    /*            '#003157',
+                                '#164358',
+                                '#085281',
+                                '#0a78ad',
+                                '#009fd9',
+                                '#00b0ce',
+                                '#00ba9e',
+                                '#26bd54',*/
+                    //reds
+                                '#FF9D29',
+                    //            '#E67E22',
+                                '#E74C3C',
+                    //            '#C0392B',
+                                '#A92518'
+                            ]
+                }
+            });
+            
+            c3.generate({
+                bindto: '#line2',
+                data:{
+                    columns: [
+                        ['Losses', 1.00, 4.50, 5.33, 6.75, 7.00, 8.17, 8.29, 8.38, 8.44, 8.50, 9.55, 9.58, 9.62, 9.64, 9.67, 9.69, 9.71, 9.72, 9.74, 9.75, 9.76, 9.77, 9.78, 9.79, 9.80, 9.81, 9.81, 9.82, 9.83, 9.83, 9.84, 9.84, 9.85],
+                        
+                        ['Prepayments', 0.50 , 5.50, 7.50, 8.50, 9.10, 9.50, 9.79, 10.00, 10.17, 10.30, 10.41, 10.50, 10.58, 10.64, 10.70, 10.75, 10.79, 10.83, 10.87, 10.90, 10.93, 10.95, 10.98, 11.00, 11.02, 11.04, 11.06, 11.07, 11.09, 11.10, 11.11, 11.13, 11.14 ],
+                        ['data8', 1.30 ,1.60, 1.90, 2.20, 2.50, 2.80, 3.10, 3.40, 3.70, 4.00, 4.30, 4.60, 4.90, 5.20, 5.50, 5.80, 6.10, 6.40, 6.70, 7.00, 7.30, 7.60, 7.90, 8.20, 8.50, 8.80, 9.10, 9.40, 9.70, 10.00,10.30,10.60,10.90]
+                    ],
+                    types: {
+                        data8: 'spline',
+                        Prepayments: 'spline',
+                        Losses: 'spline'
+                    },
+                    /*regions: {
+                        'data7': [{'start':20, 'end':25, 'style':'dashed'},{'start':30}], // currently 'dashed' style only
+                        'data8': [{'start':15, 'end':30, 'style':'dashed'}]
+                    }*/
+                    //colors:{
+                    //    data1: '#003157',
+                    //    data2: '#3b9de4'
+                    //}
+                },
+                
+                /*point: {
+                    show: false
+                },*/
+                grid: {
+                    x: {
+                        show: true
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+                tooltip: {
+                    format: {
+                        //title: function (d) { return 'Data ' + d; },
+                        value: function (value, ratio, id) {
+                            var format = id === 'Data' ? d3.format(',') : d3.format('$');
+                            return format(value) + 'M';
+                        }
+            //            value: d3.format(',') // apply this format to both y and y2
+                    }
+                },
+                color: {
+                    pattern: [
+                    //darkblue green
+                    //        '#003157',
+                    //        '#164358',
+                    //        '#215659',
+                    //        '#28695a',
+                    //        '#2c7d5a',
+                    //        '#2d9259',
+                    //        '#2ba757',
+                    //        '#26bd54',
+                    //darkblue.lightblue.green
+                    /*            '#003157',
+                                '#164358',
+                                '#085281',
+                                '#0a78ad',
+                                '#009fd9',
+                                '#00b0ce',
+                                '#00ba9e',
+                                '#26bd54',*/
+                    //reds
+                                '#FF9D29',
+                    //            '#E67E22',
+                                '#E74C3C',
+                    //            '#C0392B',
+                                '#009fd9',
+                                //'#A92518'
+                            ]
+                }
+            });
+
+            c3.generate({
+                bindto: '#barchart',
+                data:{
+                    columns: [
+                        ['data1', 1.00, 7.50, 8.33, 8.75, 9.00, 9.17, 9.29, 9.38, 9.44, 9.50, 9.55, 9.58, 9.62, 9.64, 9.67, 9.69, 9.71, 9.72, 9.74, 9.75, 9.76, 9.77, 9.78, 9.79, 9.80, 9.81, 9.81, 9.82, 9.83, 9.83, 9.84, 9.84, 9.85],
+                        ['data2', 0.00,5.00, 6.67, 7.50, 8.00, 8.33, 8.57, 8.75, 8.89, 9.00, 9.09, 9.17, 9.23, 9.29, 9.33, 9.38, 9.41, 9.44, 9.47, 9.50, 9.52, 9.55, 9.57, 9.58, 9.60, 9.62, 9.63, 9.64, 9.66, 9.67, 9.68, 9.69, 9.70],
+                        ['data3', 1.00,5.50, 7.00, 7.75, 8.20, 8.50, 8.71, 8.88, 9.00, 9.10, 9.18, 9.25, 9.31, 9.36, 9.40, 9.44, 9.47, 9.50, 9.53, 9.55, 9.57, 9.59, 9.61, 9.63, 9.64, 9.65, 9.67, 9.68, 9.69, 9.70, 9.71, 9.72, 9.73 ],
+                        ['data4', 5.00, 7.50, 8.33, 8.75, 9.00, 9.17, 9.29, 9.38, 9.44, 9.50, 9.55, 9.58, 9.62, 9.64, 9.67, 9.69, 9.71, 9.72, 9.74, 9.75, 9.76, 9.77, 9.78, 9.79, 9.80, 9.81, 9.81, 9.82, 9.83, 9.83, 9.84, 9.84, 9.85 ],
+                        ['data5', 4.00, 7.00, 8.00, 8.50, 8.80, 9.00, 9.14, 9.25, 9.33, 9.40, 9.45, 9.50, 9.54, 9.57, 9.60, 9.63, 9.65, 9.67, 9.68, 9.70, 9.71, 9.73, 9.74, 9.75, 9.76, 9.77, 9.78, 9.79, 9.79, 9.80, 9.81, 9.81, 9.82 ],
+                        ['data6', 2.00, 4.00, 6.00, 7.00, 7.60, 8.00, 8.29, 8.50, 8.67, 8.80, 8.91, 9.00, 9.08, 9.14, 9.20, 9.25, 9.29, 9.33, 9.37, 9.40, 9.43, 9.45, 9.48, 9.50, 9.52, 9.54, 9.56, 9.57, 9.59, 9.60, 9.61, 9.63, 9.64],
+                        ['data7', 0.50 , 5.50, 7.50, 8.50, 9.10, 9.50, 9.79, 10.00, 10.17, 10.30, 10.41, 10.50, 10.58, 10.64, 10.70, 10.75, 10.79, 10.83, 10.87, 10.90, 10.93, 10.95, 10.98, 11.00, 11.02, 11.04, 11.06, 11.07, 11.09, 11.10, 11.11, 11.13, 11.14 ],
+                        ['data8', 1.30 ,1.60, 1.90, 2.20, 2.50, 2.80, 3.10, 3.40, 3.70, 4.00, 4.30, 4.60, 4.90, 5.20, 5.50, 5.80, 6.10, 6.40, 6.70, 7.00, 7.30, 7.60, 7.90, 8.20, 8.50, 8.80, 9.10, 9.40, 9.70, 10.00,10.30,10.60,10.90]
+                    ],
+                    type:'bar',
+                    types: {
+                        data8: 'line',
+                    //    data2: 'area-spline'
+                    },
+
+                    groups: [
+                    ['data1', 'data2', 'data3', 'data4', 'data5', 'data6', 'data7'],
+                    ]
+                    //colors:{
+                    //    data1: '#003157',
+                    //    data2: '#3b9de4'
+                    //}
+                },
+                type:'bar',
+                /*point: {
+                    show: false
+                },*/
+                grid: {
+                    x: {
+                        show: true
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+                regions: [
+                    {start:0, end:5},
+                    {start:7, end:15, class:'arehighlight'}
+                ],
+                tooltip: {
+                    format: {
+                        //title: function (d) { return 'Data ' + d; },
+                        value: function (value, ratio, id) {
+                            var format = id === 'Data' ? d3.format(',') : d3.format('$');
+                            return format(value) + 'M';
+                        }
+            //            value: d3.format(',') // apply this format to both y and y2
+                    }
+                },
+                color: {
+                    pattern: [
+                    //darkblue green
+                           '#003157',
+                           '#164358',
+                           '#215659',
+                           '#28695a',
+                           '#2c7d5a',
+                           '#2d9259',
+                           '#2ba757',
+
+                           '#E74C3C',
+                           
+                            ]
+                }
+            });
+
+            c3.generate({
+                bindto: '#barchart2',
+                data:{
+                    columns: [
+                        ['Losses', 1.00, 7.50, 4.33, 8.75, 2.00, 9.17, 5.29, 7.38, 9.44, 6.50, 7.55, 9.58, 3.62, 3.64, 6.67, 7.69, 9.71, 2.72, 2.74, 1.75, 7.76, 3.77, 4.78, 5.79, 9.80, 5.81, 8.81, 6.82, 3.83, 8.83, 9.84, 3.84, 2.85],
+                        ['Prepayments', 0.00,5.00, 6.67, 7.0, 8.00, 8.33, 8.57, 8.75, 8.89, 9.00, 9.09, 9.17, 9.23, 9.29, 9.33, 9.38, 9.41, 9.44, 9.47, 9.50, 9.52, 9.55, 9.57, 9.58, 9.60, 9.62, 9.63, 9.64, 9.66, 9.67, 9.68, 9.69, 9.70],
+                        
+                    ],
+                    type:'bar',
+                    types: {
+                    //    data8: 'line',
+                    //    data2: 'area-spline'
+                    },
+
+                    groups: [
+                    ['Losses', 'Prepayments'],
+                    ]
+
+                    //colors:{
+                    //    data1: '#003157',
+                    //    data2: '#3b9de4'
+                    //}
+                },
+                type:'bar',
+                /*point: {
+                    show: false
+                },*/
+                grid: {
+                    x: {
+                        show: true
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+                tooltip: {
+                    format: {
+                        //title: function (d) { return 'Data ' + d; },
+                        value: function (value, ratio, id) {
+                            var format = id === 'Data' ? d3.format(',') : d3.format('$');
+                            return format(value) + 'M';
+                        }
+            //            value: d3.format(',') // apply this format to both y and y2
+                    }
+                },
+                color: {
+                    pattern: [
+                    //darkblue green
+                            '#E67E22',
+                            '#C0392B',
+                            //'#009fd9',
+                            //'#003157',
+                            //'#074d75',
+                            //'#16668a',
+                            //'#257e96',
+                            //'#329397',
+                            //'#39a48d',
+                            //'#38b377',
+                            //'#26bd54',
+                    //darkblue.lightblue.green
+ /*                              '#003157',
+                                '#164358',
+                                '#085281',
+                                '#0a78ad',
+                                '#009fd9',
+                                '#00b0ce',
+                                '#00ba9e',
+                                
+                                '#26bd54',
+                                '#FF9D29',
+                                '#E67E22',
+                                '#E74C3C',
+                                '#C0392B',
+                                '#A92518'
+
+                                */
+                            ]
+                }
+            });
+
+            c3.generate({
+                bindto: '#stocked2',
+                data:{
+                    x : 'x',
+                    columns: [
+                        ['x', '750-800', '700-749', '650-699', '600-659', '450-499', '400-459'],
+                        ['Loans', 30,100,120,150,180,200],
+                        ['Founded', 50,80,100,140,150,180]
+                        //['Amount', 130,1200,2320,3100,3450,4100],
+                        //['Founded Amount', 120,1100,2100,2560,3000,3180]
+                    ],
+                    //colors:{
+                    //    Loans: '#9AC6E6',
+                    //    Founded: '#2A5271'
+                        //Amount: '#E67E22',
+                        //'Founded Amount': '#3B9DE4'//'#1E9743'
+                    //},
+                    type: 'bar',
+                    labels: {
+                        format: function (v, id, i, j) { return " $" + v; },
+                    },
+                    types: {
+                        Amount: 'spline',
+                        'Founded Amount': 'area-spline'
+                    },
+                    axes: {
+                        Loans: 'y',
+                        Founded: 'y'
+                    //    Amount: 'y2',
+                    //    'Founded Amount': 'y2'
+                    }
+                    //groups: [
+                    //    ['Loans', 'Founded']
+                    //]
+                },
+                // axis: {
+                //    y2: {
+                //        show: true
+                //    }
+                //},
+                axis: {
+                    x: {
+                        type: 'category' // this needed to load string x value
+                    }
+                },
+                 bar: {
+                    width: {
+                        ratio: 0.5 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                //    x: {
+                //        show: true
+                //    },
+                    y: {
+                        show: true
+                    }
+                },
+                color: {
+                    pattern: [
+                            '#003157',
+                //            '#00537d',
+                //            '#007a8e',
+                //            '#00a774',
+                            '#26bd54']
+                }
+
+            });
+            c3.generate({
+                bindto: '#stocked',
+                data:{
+                    columns: [
+                        ['Loans', 30,100,120,150,180,200],
+                        ['Founded', 50,80,100,140,150,180],
+                        ['Amount', 130,1200,2320,3100,3450,4100],
+                        ['Founded Amount', 120,1100,2100,2560,3000,3180]
+                    ],
+                    colors:{
+                        Loans: '#9AC6E6',
+                        Founded: '#003157',
+                        Amount: '#E67E22',
+                        'Founded Amount': '#3B9DE4'//'#1E9743'
+                    },
+                    type: 'bar',
+                    types: {
+                        Amount: 'spline',
+                        'Founded Amount': 'area-spline'
+                    },
+                    axes: {
+                        Loans: 'y',
+                        Founded: 'y',
+                        Amount: 'y2',
+                        'Founded Amount': 'y2'
+                    },
+                    groups: [
+                        ['Loans', 'Founded']
+                    ]
+                },
+                 axis: {
+                    y2: {
+                        show: true
+                    }
+                },
+                 bar: {
+                    width: {
+                        ratio: 0.2 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                    x: {
+                        show: true
+                    },
+                    y: {
+                        show: true
+                    }
+                }
+
+            });
+
+            c3.generate({
+                bindto: '#fico',
+                data:{
+                    columns: [
+                        ['Loans', 70,100,120,150,180,200],
+                        ['Founded', 50,80,100,140,150,180],
+                       // ['Amount', 130,1200,2320,3100,3450,4100],
+                       // ['Founded Amount', 120,1100,2100,2560,3000,3180]
+                    ],
+                    colors:{
+                        Loans: '#003157',
+                        Founded: '#26BD54',
+                        //Amount: '#E67E22',
+                        //'Founded Amount': '#1E9743'
+                    },
+                    type: 'bar',
+                    labels: true,
+                    labels: {
+                        format: function (v, id, i, j) { return "$" + v; },
+                    
+                    }
+                    
+                },
+                 axis: {    
+                    rotated: true,
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+                
+
+            });
+
+            c3.generate({
+                bindto: '#gauge',
+                data:{
+                    columns: [
+                        ['data', 91.4]
+                    ],
+
+                    type: 'gauge'
+                },
+                color:{
+                    pattern: ['#62cb31', '#BABABA']
+
+                }
+            });
+
+            c3.generate({
+                bindto: '#pie',
+                data:{
+                    columns: [
+                        ['AA', 130],
+                        ['A', 320],
+                        ['B', 340],
+                        ['C', 233],
+                        ['D', 434],
+                        ['E', 344],
+                        ['F', 434],
+                        ['G', 321]
+                    ],
+                    order: null,
+                    colors:{
+                        AA: '#1E9743',
+                        A: '#26BD54', 
+                        B:'#E6BC00',
+                        C:'#FF9D29',
+                        D:'#E67E22',
+                        E:'#E74C3C',
+                        F:'#C0392B',
+                        G:'#A92518'
+                    },
+                     labels: {
+                        format: 
+
+                            function (v, id, i, j) { return id + ": " + v; }
+                        
+                    },
+                    type : 'pie'
+                },
+                legend: {
+                      position: 'right'
+                },
+                pie: {
+                    label: {
+                        format: function (value, ratio, id) {
+                            return d3.format('')(value);
+                        }
+                    }
+                }
+                //color: {
+                //    pattern: ['#1f77b4', '#aec7e8', '#ff7f0e', '#ffbb78', '#2ca02c', '#98df8a', '#d62728', '#ff9896', '#9467bd', '#c5b0d5', '#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#7f7f7f', '#c7c7c7', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5']
+            //}
+            });
+        },2700)
+
+
+
+
+    });
+
+</script>
+
+<script>
+
+    $(function(){
+        $('#example2').dataTable();
+
+        $('.input-group.date').datepicker();
+
+        $("#demo1").TouchSpin({
+            min: 0,
+            max: 100,
+            step: 0.1,
+            decimals: 2,
+            boostat: 5,
+            maxboostedstep: 10
+        });
+
+        $("#demo2").TouchSpin({
+            verticalbuttons: true
+        });
+
+        $(".select2").select2();
+
+    });
+
+</script>
+
+</body>
+</html>

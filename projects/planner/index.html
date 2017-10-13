@@ -1,0 +1,3600 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Stay Planner</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- CSS -->
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  <!--  JavaScript Files -->
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <!-- jquery plugin for equal heights responsive columns -->
+  <script src="js/jquery.matchHeight.js"></script>
+
+  <!-- jquery plugin for photo gallery -->
+  <script src="js/owl.carousel.js"></script>
+
+  <!-- for google maps -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+
+  <!-- Scroll bar styling -->
+  <link href="css/perfect-scrollbar.css" rel="stylesheet" type="text/css">
+  <script src="js/perfect-scrollbar.jquery.min.js"></script>
+
+
+  <script src="js/scripts.js"></script>
+
+<body>
+
+  <!-- Div id="main" begin-->
+  <div id="main">
+
+    <div class="container-fluid">
+
+      <div class="notifications col-lg-2 col-md-4 col-sm-4 col-xs-6">
+        <h3 class="text-center" id="notifications-label">
+          Notifications
+          <span class="badge badge-yellow badge-supper">207</span>
+        </h3>
+        <div class="info">
+          <div class="top-scroll"></div>
+          <div class="info-scroll">
+            <div class="info-block bg-darklilac white">
+              <div class="pull-left font12">
+                Mercredi
+                <br>5 août 2015</div>
+              <div class="pull-right pull-right-icon">
+                <img alt="" src="images/icon-rain-white.png" height="26" width="26"></div>
+            </div>
+
+            <div class="info-block bg-darkenlilac white">
+              <div class="pull-left pull-left-icon">
+                <img src="images/icon-ratr-white.png" height="35" width="29" alt=""></div>
+              <div class="pull-left">
+                Grève RATP
+                <br>9h00 à 15h00</div>
+              <div class="clearfix pbottom-15"></div>
+              <div class="pull-left pull-left-icon">
+                <img src="images/icon-pollution-white.png" height="27" width="29" alt=""></div>
+              <div class="pull-left">Pic de pollution</div>
+            </div>
+
+            <div class="info-block bg-darklilac white">
+              <div class="timeline">
+
+                <div class="timeline-block timeline-block-green ">
+                  <div class="font12">Visite Grande Roue</div>
+                  Début à 9h30
+                </div>
+
+                <div class="timeline-line timeline-line-green"> <b>50 min</b>
+                  <span></span>
+                </div>
+
+                <div class="timeline-block timeline-block-green">
+                  <div class="font12">Visite Grande RoueVisite Grande RoueVisite Grande Roue</div>
+                  Début à 9h30
+                </div>
+
+                <div class="timeline-line timeline-line-red"> <b>90 min</b>
+                  <span></span>
+                </div>
+
+                <div class="timeline-block timeline-block-red">
+                  <div class="font12">Visite Grande Roue</div>
+                  Début à 9h30
+                </div>
+
+                <div class="timeline-line timeline-line-green">
+                  <b>50 min</b>
+                  <span></span>
+                </div>
+
+                <div class="timeline-block timeline-block-green">
+                  <div class="font12">
+                    Visite Grande RoueVisite Grande Visite Grande RoueVisite Grande Visite Grande RoueVisite Grande Visite Grande RoueVisite Grande RoueVisite Grande Roue
+                  </div>
+                  Début à 9h30
+                </div>
+
+                <div class="timeline-line timeline-line-red">
+                  <b>90 min</b>
+                  <span></span>
+                </div>
+
+                <div class="timeline-block timeline-block-red">
+                  <div class="font12">Visite Grande Roue</div>
+                  Début à 9h30
+                </div>
+
+              </div>
+            </div>
+
+            <div class="info-block bg-lilac-opacity ">
+              <div class="pull-left font12 white">
+                Jeudi
+                <br>6 août 2015</div>
+              <div class="pull-right pull-right-icon">
+                <img alt="" src="images/icon-rain-opacity.png" height="26" width="26"></div>
+              <div class="clearfix pbottom-15"></div>
+              <div class="bg-white-opacity block-rounded lightlilac">
+                <div class="font12">Le Côte Rottie</div>
+                Début à 12h00
+              </div>
+            </div>
+
+            <div class="info-block bg-lilac-opacity ">
+              <div class="pull-left font12 white">
+                Vendredi
+                <br>7 août 2015</div>
+              <div class="pull-right pull-right-icon">
+                <img alt="" src="images/icon-lightning-white.png" height="24" width="27"></div>
+              <div class="clearfix pbottom-15"></div>
+              <div class="bg-white-opacity block-rounded lightlilac">
+                <div class="font12">Le Côte Rottie</div>
+                Début à 12h00
+              </div>
+            </div>
+
+            <div class="info-block bg-lilac-opacity ">
+              <div class="pull-left font12 white">
+                Jeudi
+                <br>6 août 2015</div>
+              <div class="pull-right pull-right-icon">
+                <img alt="" src="images/icon-sun-white.png" height="30" width="31"></div>
+            </div>
+          </div>
+          <div class="bottom-scroll"></div>
+        </div>
+
+      </div>
+
+      <div class="row" id="header-row">
+        <div class=" col-lg-12">
+          <h1 class="text-center">Que voulez-vous faire aujourd’hui ?</h1>
+          <h2 class="text-center">
+            <img alt="" src="images/icon-man-checked.png">&nbsp;Nous sommes en contact en temps réel</h2>
+        </div>
+      </div>
+
+      <div class="columns-bordered">
+        <!-- Column 1 -->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6" id="reserve-col"></div>
+
+        <!-- Column 2 begin-->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 column-bordered">
+          <div class="text-center">
+            <h3 class="title-styled bg-rose">
+              <span>Romantique</span>
+            </h3>
+          </div>
+
+          <!-- One card item - card with photo-->
+          <div class="card-wrap">
+            <!-- Add to the next div class with one of the backgrounds of card cover: card-cover-rose, card-cover-lilac, card-cover-blue, card-cover-green, card-cover-grey  -->
+            <div class="card-cover card-cover-rose">
+              <div class="card-cover-inside">
+                <div class="text-center">
+                  <!-- Button for modal window modalWindow1 -->
+                  <a href="#" class="btn-styled btn-modal" data-toggle="modal" data-target="#modalWindow1" data-backdrop="false">Réserver</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Ajouter</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Une question ?</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card content -->
+            <div class="card">
+              <div class="card-top">
+                <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></div>
+              <div class="card-bottom">
+                <div class="card-title">Visite Grande Roue</div>
+                <div class="card-text">30 min</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- One card item - card with icon -->
+          <div class="card-wrap">
+            <!-- Add to the next div class with one of the backgrounds of card cover: card-cover-rose, card-cover-lilac, card-cover-blue, card-cover-green, card-cover-grey  -->
+            <div class="card-cover card-cover-rose">
+              <div class="card-cover-inside">
+                <div class="text-center">
+                  <!-- Button for modal window modalWindow1 -->
+                  <a href="#" class="btn-styled btn-modal" data-toggle="modal" data-target="#modalWindow2" data-backdrop="false">Réserver</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Ajouter</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Une question ?</a>
+                </div>
+              </div>
+
+            </div>
+            <!-- Card content -->
+            <div class="card">
+              <!-- Add to the next div class with one of the backgrounds of card: bg-rose, bg-lilac, bg-darklilac, bg-blue, bg-green, bg-grey  -->
+              <div class="card-top card-top-big-icon bg-rose">
+                <span class="icon-big">
+                  <img src="images/icon-big-flower.png" height="64" width="52" alt=""></span>
+              </div>
+              <div class="card-bottom">
+                <div class="card-title">Visite Grande Roue</div>
+                <div class="card-text">30 min</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-blocks" data-style="rose" data-title="Romantique">
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+          </div>
+
+        </div>
+        <!-- Column 2 end-->
+
+        <!-- Column 3 begin-->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 column-bordered">
+          <div class="text-center">
+            <h3 class="title-styled bg-lilac">
+              <span>Architecture</span>
+            </h3>
+          </div>
+
+          <!-- One card item - card with photo-->
+          <div class="card-wrap">
+            <!-- Add to the next div class with one of the backgrounds of card cover: card-cover-rose, card-cover-lilac, card-cover-blue, card-cover-green, card-cover-grey  -->
+            <div class="card-cover card-cover-lilac">
+              <div class="card-cover-inside">
+                <div class="text-center">
+                  <!-- Button for modal window modalWindow1 -->
+                  <a href="#" class="btn-styled btn-modal" data-toggle="modal" data-target="#modalWindow3" data-backdrop="false">Réserver</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Ajouter</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Une question ?</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card content -->
+            <div class="card">
+              <div class="card-top">
+                <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></div>
+              <div class="card-bottom">
+                <div class="card-title">Visite Grande Roue</div>
+                <div class="card-text">30 min</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- One card item - card with icon -->
+          <div class="card-wrap">
+            <!-- Add to the next div class with one of the backgrounds of card cover: card-cover-rose, card-cover-lilac, card-cover-blue, card-cover-green, card-cover-grey  -->
+            <div class="card-cover card-cover-lilac">
+              <div class="card-cover-inside">
+                <div class="text-center">
+                  <!-- Button for modal window modalWindow1 -->
+                  <a href="#" class="btn-styled btn-modal" data-toggle="modal" data-target="#modalWindow4" data-backdrop="false">Réserver</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Ajouter</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Une question ?</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card content -->
+            <div class="card">
+              <!-- Add to the next div class with one of the backgrounds of card: bg-rose, bg-lilac, bg-darklilac, bg-blue, bg-green, bg-grey  -->
+              <div class="card-top card-top-big-icon bg-lilac">
+                <span class="icon-big">
+                  <img src="images/icon-big-car.png" height="58" width="59" alt=""></span>
+              </div>
+              <div class="card-bottom">
+                <div class="card-title">Visite Grande Roue</div>
+                <div class="card-text">30 min</div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-blocks" data-style="lilac" data-title="Architecture">
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+          </div>
+        </div>
+        <!-- Column 3 end-->
+
+        <!-- Column 4 begin-->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 column-bordered">
+          <div class="text-center">
+            <h3 class="title-styled bg-blue">
+              <span>Restaurants</span>
+            </h3>
+          </div>
+
+          <!-- One card item - card with photo-->
+          <div class="card-wrap">
+            <!-- Add to the next div class with one of the backgrounds of card cover: card-cover-rose, card-cover-lilac, card-cover-blue, card-cover-green, card-cover-grey  -->
+            <div class="card-cover card-cover-blue">
+              <div class="card-cover-inside">
+                <div class="text-center">
+                  <!-- Button for modal window modalWindow1 -->
+                  <a href="#" class="btn-styled btn-modal" data-toggle="modal" data-target="#modalWindow5" data-backdrop="false">Réserver</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Ajouter</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Une question ?</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card content -->
+            <div class="card">
+              <div class="card-top">
+                <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></div>
+              <div class="card-bottom">
+                <div class="card-title">Visite Grande Roue</div>
+                <div class="card-text">30 min</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- One card item - card with icon -->
+          <div class="card-wrap">
+            <!-- Add to the next div class with one of the backgrounds of card cover: card-cover-rose, card-cover-lilac, card-cover-blue, card-cover-green, card-cover-grey  -->
+            <div class="card-cover card-cover-blue">
+              <div class="card-cover-inside">
+                <div class="text-center">
+                  <!-- Button for modal window modalWindow1 -->
+                  <a href="#" class="btn-styled btn-modal" data-toggle="modal" data-target="#modalWindow6" data-backdrop="false">Réserver</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Ajouter</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Une question ?</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card content -->
+            <div class="card">
+              <!-- Add to the next div class with one of the backgrounds of card: bg-rose, bg-lilac, bg-darklilac, bg-blue, bg-green, bg-grey  -->
+              <div class="card-top card-top-big-icon bg-blue">
+                <span class="icon-big">
+                  <img src="images/icon-big-car.png" height="58" width="59" alt=""></span>
+              </div>
+              <div class="card-bottom">
+                <div class="card-title">Visite Grande Roue</div>
+                <div class="card-text">30 min</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-blocks" data-style="blue" data-title="Restaurants">
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+          </div>
+
+        </div>
+        <!-- Column 4 end-->
+
+        <!-- Column 5 begin-->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 column-bordered">
+          <div class="text-center">
+            <h3 class="title-styled bg-green">
+              <span>Balades</span>
+            </h3>
+          </div>
+
+          <!-- One card item - card with map -->
+          <div class="card-wrap">
+            <!-- Add to the next div class with one of the backgrounds of card cover: card-cover-rose, card-cover-lilac, card-cover-blue, card-cover-green, card-cover-grey  -->
+            <div class="card-cover card-cover-green">
+              <div class="card-cover-inside">
+                <div class="text-center">
+                  <!-- Button for modal window modalWindow1 -->
+                  <a href="#" class="btn-styled btn-modal" data-toggle="modal" data-target="#modalWindow7" data-backdrop="false">Réserver</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Ajouter</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Une question ?</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card content -->
+            <div class="card">
+              <!-- Add to the next div class with one of the backgrounds of card: bg-rose, bg-lilac, bg-darklilac, bg-blue, bg-green, bg-grey  -->
+              <div class="card-top card-top-map">
+                <div class="block-google-map">
+                  <img alt="" src="images/map-example.png" height="337" width="270"></div>
+              </div>
+              <div class="card-bottom">
+                <div class="card-title">Commander un gâteau</div>
+                <div class="card-text">Service Hôtel</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-blocks" data-style="green" data-title="Balades">
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+          </div>
+
+        </div>
+        <!-- Column 5 end-->
+
+        <!-- Column 6 begin-->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 column-bordered">
+          <div class="text-center">
+            <h3 class="title-styled title-styled-longtext bg-grey">
+              <span>Services Hôtel</span>
+            </h3>
+          </div>
+
+          <!-- One card item - card with icon -->
+          <div class="card-wrap">
+            <!-- Add to the next div class with one of the backgrounds of card cover: card-cover-rose, card-cover-lilac, card-cover-blue, card-cover-green, card-cover-grey  -->
+            <div class="card-cover card-cover-grey">
+              <div class="card-cover-inside">
+                <div class="text-center">
+                  <!-- Button for modal window modalWindow1 -->
+                  <a href="#" class="btn-styled btn-modal" data-toggle="modal" data-target="#modalWindow8" data-backdrop="false">Réserver</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Ajouter</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Une question ?</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card content -->
+            <div class="card">
+              <!-- Add to the next div class with one of the backgrounds of card: bg-rose, bg-lilac, bg-darklilac, bg-blue, bg-green, bg-grey  -->
+              <div class="card-top card-top-big-icon bg-darklilac">
+                <span class="icon-big">
+                  <img src="images/icon-big-dish.png" height="51" width="60" alt=""></span>
+              </div>
+              <div class="card-bottom">
+                <div class="card-title">Commander un gâteau</div>
+                <div class="card-text">Service Hôtel</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- One card item - card with icon -->
+          <div class="card-wrap">
+            <!-- Add to the next div class with one of the backgrounds of card cover: card-cover-rose, card-cover-lilac, card-cover-blue, card-cover-green, card-cover-grey  -->
+            <div class="card-cover card-cover-grey">
+              <div class="card-cover-inside">
+                <div class="text-center">
+                  <!-- Button for modal window modalWindow1 -->
+                  <a href="#" class="btn-styled btn-modal" data-toggle="modal" data-target="#modalWindow9" data-backdrop="false">Réserver</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Ajouter</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Une question ?</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card content -->
+            <div class="card">
+              <!-- Add to the next div class with one of the backgrounds of card: bg-rose, bg-lilac, bg-darklilac, bg-blue, bg-green, bg-grey  -->
+              <div class="card-top card-top-big-icon bg-darklilac">
+                <span class="icon-big">
+                  <img src="images/icon-big-hanger.png" height="53" width="57" alt=""></span>
+              </div>
+              <div class="card-bottom">
+                <div class="card-title">Service Pressing</div>
+                <div class="card-text">Service Hôtel</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- One card item - card with icon -->
+          <div class="card-wrap">
+            <!-- Add to the next div class with one of the backgrounds of card cover: card-cover-rose, card-cover-lilac, card-cover-blue, card-cover-green, card-cover-grey  -->
+            <div class="card-cover card-cover-grey">
+              <div class="card-cover-inside">
+                <div class="text-center">
+                  <!-- Button for modal window modalWindow1 -->
+                  <a href="#" class="btn-styled btn-modal" data-toggle="modal" data-target="#modalWindow10" data-backdrop="false">Réserver</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Ajouter</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Une question ?</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card content -->
+            <div class="card">
+              <!-- Add to the next div class with one of the backgrounds of card: bg-rose, bg-lilac, bg-darklilac, bg-blue, bg-green, bg-grey  -->
+              <div class="card-top card-top-big-icon bg-darklilac">
+                <span class="icon-big">
+                  <img src="images/icon-big-bath.png" height="60" width="68" alt=""></span>
+              </div>
+              <div class="card-bottom">
+                <div class="card-title">Faire couler un bain</div>
+                <div class="card-text">Service Hôtel</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- One card item - card with icon -->
+          <div class="card-wrap">
+            <!-- Add to the next div class with one of the backgrounds of card cover: card-cover-rose, card-cover-lilac, card-cover-blue, card-cover-green, card-cover-grey  -->
+            <div class="card-cover card-cover-grey">
+              <div class="card-cover-inside">
+                <div class="text-center">
+                  <!-- Button for modal window modalWindow1 -->
+                  <a href="#" class="btn-styled btn-modal" data-toggle="modal" data-target="#modalWindow11" data-backdrop="false">Réserver</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Ajouter</a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn-styled">Une question ?</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card content -->
+            <div class="card">
+              <!-- Add to the next div class with one of the backgrounds of card: bg-rose, bg-lilac, bg-darklilac, bg-blue, bg-green, bg-grey  -->
+              <div class="card-top card-top-big-icon bg-rose">
+                <span class="icon-big">
+                  <img src="images/icon-big-heart.png" height="59" width="60" alt=""></span>
+              </div>
+              <div class="card-bottom">
+                <div class="card-title">Love box</div>
+                <div class="card-text">Service Hôtel</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-blocks" data-style="grey" data-title="Services HГґtel">
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+            <img alt="" src="images/example-image-1.jpg" />
+            <img alt="" src="images/example-gallery-1.jpg" />
+            <img alt="" src="images/example-gallery-2.jpg" />
+            <img alt="" src="images/example-gallery-3.jpg" />
+          </div>
+
+        </div>
+        <!-- Column 6 end--> </div>
+
+      <div class="slider-container col-lg-10 col-md-8 col-sm-8 col-xs-6">
+        <div id="slider-carousel" class="owl-carousel"></div>
+      </div>
+
+    </div>
+
+    <!--  --> </div>
+  <!-- Div id="main" end-->
+  <div class="clear"></div>
+  <div class="modals">
+    <!-- Modal window content-->
+    <div id="modalWindow1" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content modal-styled">
+          <div class="modal-header white bg-blue">
+            <button type="button" class="close" data-dismiss="modal">
+              <img alt="" src="images/icon-cross-white.png" height="20" width="21"></button>
+            <h4 class="modal-title text-center">La Salle à Manger</h4>
+            <p class="text-center">
+              4 Rue d'Assas, 75006 Paris&nbsp;&nbsp;
+              <img src="images/icon-place-white.png" alt="icon">&nbsp;1,6 km</p>
+          </div>
+          <div class="modal-body">
+            <div class="col-sm-6">
+              <div class="offer-photos">
+
+                <div id="sync1" class="owl-carousel sync1">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+                <div id="sync2" class="owl-carousel sync2">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="offer-desc">
+                <div class="offer-desc-text">
+                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer.
+                </div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-clock-darkblue.png" height="25" width="25">90 min</div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-euro-darkblue.png" height="25" width="25">45 euros</div>
+                <div class="offer-row">
+                  <div class="offer-desc-rounded-text">19h00</div>
+                  <div class="offer-desc-rounded-text">20h00</div>
+                  <div class="offer-desc-rounded-text">22h30</div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-12 text-center">
+              <button class="btn btn-lg btn-styled bg-darklilac text-uppercase">
+                <img alt="" src="images/icon-exit-white.png" height="15" width="16">&nbsp;&nbsp;ajouter à mon agenda</button>
+            </div>
+
+          </div>
+          <div class="modal-footer bg-lightgrey">
+
+            <div class="offer-reviews">
+              <div class="offer-review">
+                <div class="fix-padding  col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+
+              <div class="offer-review">
+                <div class="fix-padding col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-offers">
+              <div class="col-sm-5">
+                <!-- Small card as link, if you don't need link, use the next small card -->
+                <a href="#" class="card-small">
+                  <span class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></span>
+                  <span class="card-bottom">
+                    <span class="card-title">Visite Grande Roue</span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-sm-5">
+                <!-- Small card as a div -->
+                <div class="card-small">
+                  <div class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></div>
+                  <div class="card-bottom">
+                    <div class="card-title">Visite Grande Roue</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal window content-->
+    <div id="modalWindow2" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content modal-styled">
+          <div class="modal-header white bg-blue">
+            <button type="button" class="close" data-dismiss="modal">
+              <img alt="" src="images/icon-cross-white.png" height="20" width="21"></button>
+            <h4 class="modal-title text-center">La Salle à Manger</h4>
+            <p class="text-center">
+              4 Rue d'Assas, 75006 Paris&nbsp;&nbsp;
+              <img src="images/icon-place-white.png" alt="icon">&nbsp;1,6 km</p>
+          </div>
+          <div class="modal-body">
+            <div class="col-sm-6">
+              <div class="offer-photos">
+
+                <div id="sync3" class="owl-carousel sync1">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+                <div id="sync4" class="owl-carousel sync2">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="offer-desc">
+                <div class="offer-desc-text">
+                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer.
+                </div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-clock-darkblue.png" height="25" width="25">90 min</div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-euro-darkblue.png" height="25" width="25">45 euros</div>
+                <div class="offer-row">
+                  <div class="offer-desc-rounded-text">19h00</div>
+                  <div class="offer-desc-rounded-text">20h00</div>
+                  <div class="offer-desc-rounded-text">22h30</div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-12 text-center">
+              <button class="btn btn-lg btn-styled bg-darklilac text-uppercase">
+                <img alt="" src="images/icon-exit-white.png" height="15" width="16">&nbsp;&nbsp;ajouter à mon agenda</button>
+            </div>
+
+          </div>
+          <div class="modal-footer bg-lightgrey">
+
+            <div class="offer-reviews">
+              <div class="offer-review">
+                <div class="fix-padding  col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+
+              <div class="offer-review">
+                <div class="fix-padding col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-offers">
+              <div class="col-sm-5">
+                <!-- Small card as link, if you don't need link, use the next small card -->
+                <a href="#" class="card-small">
+                  <span class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></span>
+                  <span class="card-bottom">
+                    <span class="card-title">Visite Grande Roue</span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-sm-5">
+                <!-- Small card as a div -->
+                <div class="card-small">
+                  <div class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></div>
+                  <div class="card-bottom">
+                    <div class="card-title">Visite Grande Roue</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="modalWindow3" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content modal-styled">
+          <div class="modal-header white bg-blue">
+            <button type="button" class="close" data-dismiss="modal">
+              <img alt="" src="images/icon-cross-white.png" height="20" width="21"></button>
+            <h4 class="modal-title text-center">La Salle à Manger</h4>
+            <p class="text-center">
+              4 Rue d'Assas, 75006 Paris&nbsp;&nbsp;
+              <img src="images/icon-place-white.png" alt="icon">&nbsp;1,6 km</p>
+          </div>
+          <div class="modal-body">
+            <div class="col-sm-6">
+              <div class="offer-photos">
+
+                <div id="sync5" class="owl-carousel sync1">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+                <div id="sync6" class="owl-carousel sync2">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="offer-desc">
+                <div class="offer-desc-text">
+                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer.
+                </div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-clock-darkblue.png" height="25" width="25">90 min</div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-euro-darkblue.png" height="25" width="25">45 euros</div>
+                <div class="offer-row">
+                  <div class="offer-desc-rounded-text">19h00</div>
+                  <div class="offer-desc-rounded-text">20h00</div>
+                  <div class="offer-desc-rounded-text">22h30</div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-12 text-center">
+              <button class="btn btn-lg btn-styled bg-darklilac text-uppercase">
+                <img alt="" src="images/icon-exit-white.png" height="15" width="16">&nbsp;&nbsp;ajouter à mon agenda</button>
+            </div>
+
+          </div>
+          <div class="modal-footer bg-lightgrey">
+
+            <div class="offer-reviews">
+              <div class="offer-review">
+                <div class="fix-padding  col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+
+              <div class="offer-review">
+                <div class="fix-padding col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-offers">
+              <div class="col-sm-5">
+                <!-- Small card as link, if you don't need link, use the next small card -->
+                <a href="#" class="card-small">
+                  <span class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></span>
+                  <span class="card-bottom">
+                    <span class="card-title">Visite Grande Roue</span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-sm-5">
+                <!-- Small card as a div -->
+                <div class="card-small">
+                  <div class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></div>
+                  <div class="card-bottom">
+                    <div class="card-title">Visite Grande Roue</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal window content-->
+    <div id="modalWindow4" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content modal-styled">
+          <div class="modal-header white bg-blue">
+            <button type="button" class="close" data-dismiss="modal">
+              <img alt="" src="images/icon-cross-white.png" height="20" width="21"></button>
+            <h4 class="modal-title text-center">La Salle à Manger</h4>
+            <p class="text-center">
+              4 Rue d'Assas, 75006 Paris&nbsp;&nbsp;
+              <img src="images/icon-place-white.png" alt="icon">&nbsp;1,6 km</p>
+          </div>
+          <div class="modal-body">
+            <div class="col-sm-6">
+              <div class="offer-photos">
+
+                <div id="sync7" class="owl-carousel sync1">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+                <div id="sync8" class="owl-carousel sync2">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="offer-desc">
+                <div class="offer-desc-text">
+                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer.
+                </div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-clock-darkblue.png" height="25" width="25">90 min</div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-euro-darkblue.png" height="25" width="25">45 euros</div>
+                <div class="offer-row">
+                  <div class="offer-desc-rounded-text">19h00</div>
+                  <div class="offer-desc-rounded-text">20h00</div>
+                  <div class="offer-desc-rounded-text">22h30</div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-12 text-center">
+              <button class="btn btn-lg btn-styled bg-darklilac text-uppercase">
+                <img alt="" src="images/icon-exit-white.png" height="15" width="16">&nbsp;&nbsp;ajouter à mon agenda</button>
+            </div>
+
+          </div>
+          <div class="modal-footer bg-lightgrey">
+
+            <div class="offer-reviews">
+              <div class="offer-review">
+                <div class="fix-padding  col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+
+              <div class="offer-review">
+                <div class="fix-padding col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-offers">
+              <div class="col-sm-5">
+                <!-- Small card as link, if you don't need link, use the next small card -->
+                <a href="#" class="card-small">
+                  <span class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></span>
+                  <span class="card-bottom">
+                    <span class="card-title">Visite Grande Roue</span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-sm-5">
+                <!-- Small card as a div -->
+                <div class="card-small">
+                  <div class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></div>
+                  <div class="card-bottom">
+                    <div class="card-title">Visite Grande Roue</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal window content-->
+    <div id="modalWindow5" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content modal-styled">
+          <div class="modal-header white bg-blue">
+            <button type="button" class="close" data-dismiss="modal">
+              <img alt="" src="images/icon-cross-white.png" height="20" width="21"></button>
+            <h4 class="modal-title text-center">La Salle à Manger</h4>
+            <p class="text-center">
+              4 Rue d'Assas, 75006 Paris&nbsp;&nbsp;
+              <img src="images/icon-place-white.png" alt="icon">&nbsp;1,6 km</p>
+          </div>
+          <div class="modal-body">
+            <div class="col-sm-6">
+              <div class="offer-photos">
+
+                <div id="sync9" class="owl-carousel sync1">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+                <div id="sync10" class="owl-carousel sync2">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="offer-desc">
+                <div class="offer-desc-text">
+                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer.
+                </div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-clock-darkblue.png" height="25" width="25">90 min</div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-euro-darkblue.png" height="25" width="25">45 euros</div>
+                <div class="offer-row">
+                  <div class="offer-desc-rounded-text">19h00</div>
+                  <div class="offer-desc-rounded-text">20h00</div>
+                  <div class="offer-desc-rounded-text">22h30</div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-12 text-center">
+              <button class="btn btn-lg btn-styled bg-darklilac text-uppercase">
+                <img alt="" src="images/icon-exit-white.png" height="15" width="16">&nbsp;&nbsp;ajouter à mon agenda</button>
+            </div>
+
+          </div>
+          <div class="modal-footer bg-lightgrey">
+
+            <div class="offer-reviews">
+              <div class="offer-review">
+                <div class="fix-padding  col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+
+              <div class="offer-review">
+                <div class="fix-padding col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-offers">
+              <div class="col-sm-5">
+                <!-- Small card as link, if you don't need link, use the next small card -->
+                <a href="#" class="card-small">
+                  <span class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></span>
+                  <span class="card-bottom">
+                    <span class="card-title">Visite Grande Roue</span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-sm-5">
+                <!-- Small card as a div -->
+                <div class="card-small">
+                  <div class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></div>
+                  <div class="card-bottom">
+                    <div class="card-title">Visite Grande Roue</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal window content-->
+    <div id="modalWindow6" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content modal-styled">
+          <div class="modal-header white bg-blue">
+            <button type="button" class="close" data-dismiss="modal">
+              <img alt="" src="images/icon-cross-white.png" height="20" width="21"></button>
+            <h4 class="modal-title text-center">La Salle à Manger</h4>
+            <p class="text-center">
+              4 Rue d'Assas, 75006 Paris&nbsp;&nbsp;
+              <img src="images/icon-place-white.png" alt="icon">&nbsp;1,6 km</p>
+          </div>
+          <div class="modal-body">
+            <div class="col-sm-6">
+              <div class="offer-photos">
+
+                <div id="sync11" class="owl-carousel sync1">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+                <div id="sync12" class="owl-carousel sync2">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="offer-desc">
+                <div class="offer-desc-text">
+                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer.
+                </div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-clock-darkblue.png" height="25" width="25">90 min</div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-euro-darkblue.png" height="25" width="25">45 euros</div>
+                <div class="offer-row">
+                  <div class="offer-desc-rounded-text">19h00</div>
+                  <div class="offer-desc-rounded-text">20h00</div>
+                  <div class="offer-desc-rounded-text">22h30</div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-12 text-center">
+              <button class="btn btn-lg btn-styled bg-darklilac text-uppercase">
+                <img alt="" src="images/icon-exit-white.png" height="15" width="16">&nbsp;&nbsp;ajouter à mon agenda</button>
+            </div>
+
+          </div>
+          <div class="modal-footer bg-lightgrey">
+
+            <div class="offer-reviews">
+              <div class="offer-review">
+                <div class="fix-padding  col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+
+              <div class="offer-review">
+                <div class="fix-padding col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-offers">
+              <div class="col-sm-5">
+                <!-- Small card as link, if you don't need link, use the next small card -->
+                <a href="#" class="card-small">
+                  <span class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></span>
+                  <span class="card-bottom">
+                    <span class="card-title">Visite Grande Roue</span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-sm-5">
+                <!-- Small card as a div -->
+                <div class="card-small">
+                  <div class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></div>
+                  <div class="card-bottom">
+                    <div class="card-title">Visite Grande Roue</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal window content-->
+    <div id="modalWindow7" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content modal-styled">
+          <div class="modal-header white bg-blue">
+            <button type="button" class="close" data-dismiss="modal">
+              <img alt="" src="images/icon-cross-white.png" height="20" width="21"></button>
+            <h4 class="modal-title text-center">La Salle à Manger</h4>
+            <p class="text-center">
+              4 Rue d'Assas, 75006 Paris&nbsp;&nbsp;
+              <img src="images/icon-place-white.png" alt="icon">&nbsp;1,6 km</p>
+          </div>
+          <div class="modal-body">
+            <div class="col-sm-12">
+              <div id="map" class="block-google-map-big">
+                <!-- Add google map 
+                https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map
+                -->
+                <script>
+                // Initializing map
+                      function initialize() {
+                        var mapCanvas = document.getElementById('map');
+                        var mapOptions = {
+                          center: new google.maps.LatLng(44.5403, -78.5463),
+                          zoom: 8,
+                          mapTypeId: google.maps.MapTypeId.ROADMAP
+                        }
+                        var map = new google.maps.Map(mapCanvas, mapOptions)
+                      }
+                      google.maps.event.addDomListener(window, 'load', initialize);
+                </script>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+            <div class="col-sm-12 text-center">
+              <button class="btn btn-lg btn-styled bg-darklilac text-uppercase">
+                <img alt="" src="images/icon-exit-white.png" height="15" width="16">&nbsp;&nbsp;ajouter à mon agenda</button>
+            </div>
+
+          </div>
+          <div class="modal-footer bg-lightgrey">
+
+            <div class="offer-reviews">
+              <div class="offer-review">
+                <div class="fix-padding  col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+
+              <div class="offer-review">
+                <div class="fix-padding col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-offers">
+              <div class="col-sm-5">
+                <!-- Small card as link, if you don't need link, use the next small card -->
+                <a href="#" class="card-small">
+                  <span class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></span>
+                  <span class="card-bottom">
+                    <span class="card-title">Visite Grande Roue</span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-sm-5">
+                <!-- Small card as a div -->
+                <div class="card-small">
+                  <div class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></div>
+                  <div class="card-bottom">
+                    <div class="card-title">Visite Grande Roue</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal window content-->
+    <div id="modalWindow8" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content modal-styled">
+          <div class="modal-header white bg-blue">
+            <button type="button" class="close" data-dismiss="modal">
+              <img alt="" src="images/icon-cross-white.png" height="20" width="21"></button>
+            <h4 class="modal-title text-center">La Salle à Manger</h4>
+            <p class="text-center">
+              4 Rue d'Assas, 75006 Paris&nbsp;&nbsp;
+              <img src="images/icon-place-white.png" alt="icon">&nbsp;1,6 km</p>
+          </div>
+          <div class="modal-body">
+            <div class="col-sm-6">
+              <div class="offer-photos">
+
+                <div id="sync13" class="owl-carousel sync1">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+                <div id="sync14" class="owl-carousel sync2">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="offer-desc">
+                <div class="offer-desc-text">
+                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer.
+                </div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-clock-darkblue.png" height="25" width="25">90 min</div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-euro-darkblue.png" height="25" width="25">45 euros</div>
+                <div class="offer-row">
+                  <div class="offer-desc-rounded-text">19h00</div>
+                  <div class="offer-desc-rounded-text">20h00</div>
+                  <div class="offer-desc-rounded-text">22h30</div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-12 text-center">
+              <button class="btn btn-lg btn-styled bg-darklilac text-uppercase">
+                <img alt="" src="images/icon-exit-white.png" height="15" width="16">&nbsp;&nbsp;ajouter à mon agenda</button>
+            </div>
+
+          </div>
+          <div class="modal-footer bg-lightgrey">
+
+            <div class="offer-reviews">
+              <div class="offer-review">
+                <div class="fix-padding  col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+
+              <div class="offer-review">
+                <div class="fix-padding col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-offers">
+              <div class="col-sm-5">
+                <!-- Small card as link, if you don't need link, use the next small card -->
+                <a href="#" class="card-small">
+                  <span class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></span>
+                  <span class="card-bottom">
+                    <span class="card-title">Visite Grande Roue</span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-sm-5">
+                <!-- Small card as a div -->
+                <div class="card-small">
+                  <div class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></div>
+                  <div class="card-bottom">
+                    <div class="card-title">Visite Grande Roue</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal window content-->
+    <div id="modalWindow9" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content modal-styled">
+          <div class="modal-header white bg-blue">
+            <button type="button" class="close" data-dismiss="modal">
+              <img alt="" src="images/icon-cross-white.png" height="20" width="21"></button>
+            <h4 class="modal-title text-center">La Salle à Manger</h4>
+            <p class="text-center">
+              4 Rue d'Assas, 75006 Paris&nbsp;&nbsp;
+              <img src="images/icon-place-white.png" alt="icon">&nbsp;1,6 km</p>
+          </div>
+          <div class="modal-body">
+            <div class="col-sm-6">
+              <div class="offer-photos">
+
+                <div id="sync15" class="owl-carousel sync1">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+                <div id="sync16" class="owl-carousel sync2">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="offer-desc">
+                <div class="offer-desc-text">
+                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer.
+                </div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-clock-darkblue.png" height="25" width="25">90 min</div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-euro-darkblue.png" height="25" width="25">45 euros</div>
+                <div class="offer-row">
+                  <div class="offer-desc-rounded-text">19h00</div>
+                  <div class="offer-desc-rounded-text">20h00</div>
+                  <div class="offer-desc-rounded-text">22h30</div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-12 text-center">
+              <button class="btn btn-lg btn-styled bg-darklilac text-uppercase">
+                <img alt="" src="images/icon-exit-white.png" height="15" width="16">&nbsp;&nbsp;ajouter à mon agenda</button>
+            </div>
+
+          </div>
+          <div class="modal-footer bg-lightgrey">
+
+            <div class="offer-reviews">
+              <div class="offer-review">
+                <div class="fix-padding  col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+
+              <div class="offer-review">
+                <div class="fix-padding col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-offers">
+              <div class="col-sm-5">
+                <!-- Small card as link, if you don't need link, use the next small card -->
+                <a href="#" class="card-small">
+                  <span class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></span>
+                  <span class="card-bottom">
+                    <span class="card-title">Visite Grande Roue</span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-sm-5">
+                <!-- Small card as a div -->
+                <div class="card-small">
+                  <div class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></div>
+                  <div class="card-bottom">
+                    <div class="card-title">Visite Grande Roue</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal window content-->
+    <div id="modalWindow10" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content modal-styled">
+          <div class="modal-header white bg-blue">
+            <button type="button" class="close" data-dismiss="modal">
+              <img alt="" src="images/icon-cross-white.png" height="20" width="21"></button>
+            <h4 class="modal-title text-center">La Salle à Manger</h4>
+            <p class="text-center">
+              4 Rue d'Assas, 75006 Paris&nbsp;&nbsp;
+              <img src="images/icon-place-white.png" alt="icon">&nbsp;1,6 km</p>
+          </div>
+          <div class="modal-body">
+            <div class="col-sm-6">
+              <div class="offer-photos">
+
+                <div id="sync17" class="owl-carousel sync1">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+                <div id="sync18" class="owl-carousel sync2">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="offer-desc">
+                <div class="offer-desc-text">
+                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer.
+                </div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-clock-darkblue.png" height="25" width="25">90 min</div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-euro-darkblue.png" height="25" width="25">45 euros</div>
+                <div class="offer-row">
+                  <div class="offer-desc-rounded-text">19h00</div>
+                  <div class="offer-desc-rounded-text">20h00</div>
+                  <div class="offer-desc-rounded-text">22h30</div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-12 text-center">
+              <button class="btn btn-lg btn-styled bg-darklilac text-uppercase">
+                <img alt="" src="images/icon-exit-white.png" height="15" width="16">&nbsp;&nbsp;ajouter à mon agenda</button>
+            </div>
+
+          </div>
+          <div class="modal-footer bg-lightgrey">
+
+            <div class="offer-reviews">
+              <div class="offer-review">
+                <div class="fix-padding  col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+
+              <div class="offer-review">
+                <div class="fix-padding col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-offers">
+              <div class="col-sm-5">
+                <!-- Small card as link, if you don't need link, use the next small card -->
+                <a href="#" class="card-small">
+                  <span class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></span>
+                  <span class="card-bottom">
+                    <span class="card-title">Visite Grande Roue</span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-sm-5">
+                <!-- Small card as a div -->
+                <div class="card-small">
+                  <div class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></div>
+                  <div class="card-bottom">
+                    <div class="card-title">Visite Grande Roue</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal window content-->
+    <div id="modalWindow11" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content modal-styled">
+          <div class="modal-header white bg-blue">
+            <button type="button" class="close" data-dismiss="modal">
+              <img alt="" src="images/icon-cross-white.png" height="20" width="21"></button>
+            <h4 class="modal-title text-center">La Salle à Manger</h4>
+            <p class="text-center">
+              4 Rue d'Assas, 75006 Paris&nbsp;&nbsp;
+              <img src="images/icon-place-white.png" alt="icon">&nbsp;1,6 km</p>
+          </div>
+          <div class="modal-body">
+            <div class="col-sm-6">
+              <div class="offer-photos">
+
+                <div id="sync19" class="owl-carousel sync1">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+                <div id="sync20" class="owl-carousel sync2">
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-1.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-2.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                  <div class="item">
+                    <img alt="offer photo" src="images/example-gallery-3.jpg"></div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="offer-desc">
+                <div class="offer-desc-text">
+                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer.
+                </div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-clock-darkblue.png" height="25" width="25">90 min</div>
+                <div class="offer-desc-icon-text">
+                  <img alt="" src="images/icon-euro-darkblue.png" height="25" width="25">45 euros</div>
+                <div class="offer-row">
+                  <div class="offer-desc-rounded-text">19h00</div>
+                  <div class="offer-desc-rounded-text">20h00</div>
+                  <div class="offer-desc-rounded-text">22h30</div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-12 text-center">
+              <button class="btn btn-lg btn-styled bg-darklilac text-uppercase">
+                <img alt="" src="images/icon-exit-white.png" height="15" width="16">&nbsp;&nbsp;ajouter à mon agenda</button>
+            </div>
+
+          </div>
+          <div class="modal-footer bg-lightgrey">
+
+            <div class="offer-reviews">
+              <div class="offer-review">
+                <div class="fix-padding  col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+
+              <div class="offer-review">
+                <div class="fix-padding col-sm-2 col-xs-3">
+                  <img alt="" class="offer-review-avatar" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg"></div>
+                <div class="col-sm-10 col-xs-9">
+                  <div class="offer-review-date">12 / 09 / 2015</div>
+                  <div class="offer-review-text">
+                    « On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized »
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-offers">
+              <div class="col-sm-5">
+                <!-- Small card as link, if you don't need link, use the next small card -->
+                <a href="#" class="card-small">
+                  <span class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></span>
+                  <span class="card-bottom">
+                    <span class="card-title">Visite Grande Roue</span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-sm-5">
+                <!-- Small card as a div -->
+                <div class="card-small">
+                  <div class="card-top">
+                    <img alt="" src="images/example-image-1.jpg" alt="" class="img-responsive"></div>
+                  <div class="card-bottom">
+                    <div class="card-title">Visite Grande Roue</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer col-lg-10 col-md-8 col-sm-8 col-xs-6">
+    <div class="text-center">
+      <button class="btn btn-lg btn-styled btn-transparent text-uppercase">
+        <img src="images/icon-calendar-white.png" height="17" width="16" alt="">&nbsp;&nbsp;synchroniser avec mon agenda</button>
+    </div>
+  </footer>
+</body>
+
+</html>

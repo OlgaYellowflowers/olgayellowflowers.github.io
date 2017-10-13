@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Admin Panel Kehoots</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+
+  <!-- LESS -->
+  <link href="less/style-new-admin-panel.less" rel="stylesheet/less" type="text/css">
+
+  <script>
+    less = {
+      env: "development",
+      async: false,
+      fileAsync: false,
+      poll: 1000,
+      functions: {},
+      dumpLineNumbers: "comments",
+      relativeUrls: false,
+      rootpath: ""
+    };
+  </script>
+  <script src="js/less.min.js" type="text/javascript"></script>
+
+<body>
+  <div  id="main-region">
+
+    <!-- Begin of div.new-admin-panel css classes  - all the pages of new mark up (except admin pages) must be placed in this div -->
+    <!-- Начало div.new-admin-panel классов в css  - все страницы с новой версткой (кроме страниц админки) должны быть помещены в этот div -->
+    <div class="new-admin-panel">
+
+      <aside class="admin-sidebar ">
+
+        <!-- Menu -->
+        <div class="nav-side-menu">
+
+          <!-- Small user info on sidebar -->
+          <div class="small-user-info">
+            <div class="small-user-info-userpic">
+              <img src="images/userpic-example.jpg" height="48" width="48" alt="User Avatar"></div>
+            <div class="small-user-info-name">Mike Tyson</div>
+            <div class="small-user-info-address">Str Boston, Nr 312</div>
+            <div class="small-user-info-link">
+              <a href="#">Edit Profile</a>
+            </div>
+          </div>
+
+          <div class="sidebar-box">
+            <a href="#" class="btn bg-lightblue">Upload Affiliation Perk</a>
+          </div>
+          <div class="sidebar-box">
+            <p>Kehoots Redemption Points</p>
+            <div class="big-number-circle">
+              <span>67</span>
+            </div>
+          </div>
+
+        </div>
+
+      </aside>
+
+      <div class="main-admin-panel">
+        <div class="header-content">
+          <div class="navbar-button">
+            <button type="button" class="sidebar-toggle" >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- CONTENT -->
+        <section class="content">
+          <div class="page-title-wrap">
+            <div class="page-title">
+              <h1>Dashboard</h1>
+              <p>Welcome back, Mike</p>
+            </div>
+          </div>
+
+          <!-- Colored Blocks with Info Statistics-->
+          <div class="row-fluid-5">
+            <div class="span2">
+              <div class="info-block rounded bg-lightblue">
+                <div class="info-block-title">
+                  <div class="info-block-refresh">
+                    <a href="#"></a>
+                  </div>
+                  Kehoots Active Perks
+                </div>
+                <div class="info-block-number info-block-number-aligned">10</div>
+                <a href="#" class="more-aligned-right">View</a>
+              </div>
+            </div>
+            <div class="span2">
+              <div class="info-block rounded  bg-orange">
+                <div class="info-block-title">
+                  <div class="info-block-refresh">
+                    <a href="#"></a>
+                  </div>
+                  Members in Kehoots
+                </div>
+                <div class="info-block-number  info-block-number-aligned">45</div>
+              </div>
+            </div>
+            <div class="span2">
+              <div class="info-block rounded  bg-green">
+                <div class="info-block-title">
+                  <div class="info-block-refresh">
+                    <a href="#"></a>
+                  </div>
+                  Kehoots Redemptions
+                </div>
+                <div class="info-block-number info-block-number-aligned">10</div>
+                <a href="#" class="more-aligned-right">View</a>
+              </div>
+            </div>
+            <div class="span2">
+              <div class="info-block rounded bg-lightblue">
+                <div class="info-block-title">
+                  <div class="info-block-refresh">
+                    <a href="#"></a>
+                  </div>
+                  Your Aploaded Perks
+                </div>
+                <div class="info-block-number info-block-number-aligned">10</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Table Merchants in Kehoots with your Affiliation -->
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <h2>Merchants in Kehoots with your Affiliation</h2>
+              <div class="responsive-tables">
+                <table class="width100 table-condensed text-center-inside fixed-long-th">
+                  <thead >
+                    <tr>
+                      <th>Name</th>
+                      <th>Date</th>
+                      <th >City</th>
+                      <th >State</th>
+                      <th >Zip</th>
+                      <th>#Active Perks</th>
+                      <th>Distance</th>
+                      <th>Merchant Category</th>
+                      <th>Kehoots Redemptions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-title="Name">John Auto</td>
+                      <td data-title="Date">
+                        &nbsp;
+                        <!-- Не оставляй в теге td совсем пустые строки, обязательно пиши пробел "&nbsp;" это нужно для того, чтобы было нормальное отображение респонсив на маленьких экранах --> </td>
+                      <td data-title="City">New York</td>
+                      <td data-title="State">NY</td>
+                      <td data-title="Zip">30000</td>
+                      <td data-title="#Active Perks">
+                        <a href="#" class="text-center underline">2</a>
+                      </td>
+                      <td data-title="Distance">50 miles away</td>
+                      <td data-title="Merchant Category">Auto</td>
+                      <td data-title="Kehoots Redemptions">3</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Table Users From Your Affiliations in Kehoots -->
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <h2>Users From Your Affiliations in Kehoots</h2>
+              <div class="responsive-tables">
+                <table class="width100 table-condensed ">
+                  <thead >
+                    <tr>
+                      <th>Name</th>
+                      <th>Email Address</th>
+                      <th >Date Joined</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-title="Name">Shwarzenegger Arny</td>
+                      <td data-title="Email Address">genmihai@gmail.com</td>
+                      <td data-title="Date Joined" >24 March 2015</td>
+                      <td data-title=""  class="text-right td-with-btn">
+                        <a href="#" class="btn bg-orange">Delete User from Your Affiliation</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Table Pending Users Wanting to Be in Kehoots -->
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <h2>Table Pending Users Wanting to Be in Kehoots</h2>
+              <div class="responsive-tables">
+                <table class="width100 table-condensed ">
+                  <thead >
+                    <tr>
+                      <th>Name</th>
+                      <th>Email Address</th>
+                      <th >Date Joined</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-title="Name">Shwarzenegger Arny</td>
+                      <td data-title="Email Address">genmihai@gmail.com</td>
+                      <td data-title="Date Joined" >24 March 2015</td>
+                      <td data-title=""  class="text-right td-with-btn">
+                        <a href="#" class="btn bg-green">Accept Request</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Table Group Administrator Perks (non-kehoots sponsored perks) -->
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <h2>
+                Group Administrator Perks (non-kehoots sponsored perks)
+                <!-- 
+       Если эта кнопка для загрузки файла то код вот: (использует bootstrap.file-input.js) -->
+                <span id="upload-file1" class="styled-file-input pull-right">
+                  <input type="file" class="btn btn-middle bg-blue" data-filename-placement="outside" title="Upload"></span>
+                <!-- Если эта кнопка не для загрузки файла, то код другой -->
+                <!-- <span class="pull-right">
+                <a href="#" class="btn btn-middle bg-blue">Upload</a>
+              </span>
+              -->
+            </h2>
+            <div class="responsive-tables">
+              <table class="width100 table-condensed">
+                <thead >
+                  <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th >How to Redeem/Instructions</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-title="Title ">15% Off Barnes and Nobbles</td>
+                    <td data-title="Description">Teachers get 15% Off Barnes and Nobbles this year</td>
+                    <td data-title="How to Redeem" >Goto www.mysite.com</td>
+                    <td data-title=""  class="text-right td-with-btn">
+                      <a href="#" class="btn bg-green">Edit</a>
+                      <a href="#" class="btn bg-orange">Delete</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+    <!-- ./main-admin-panel --> </div>
+  <!-- ./new-admin-panel -->
+
+</div>
+<!-- ./main-region -->
+
+<div id="popup-region" ></div>
+
+<!--  JavaScript Files -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui-1.10.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.selectBoxIt.min.js"></script>
+<script src='js/bootstrap.file-input.js'></script>
+
+<script src="js/scripts.js"></script>
+
+<!-- This script you can delete on production - it is only for example - shows popup on the map -->
+<!-- Этот скрипт можно удалить на продакшене, он только для примера, показывает попап на карте -->
+<script>
+  $('.place-sticker').hover(function() {
+    $('.box-with-arrow-top-wrap').show();
+  }, function() {
+    $('.box-with-arrow-top-wrap').hide();
+  });
+</script>
+
+</body>
+
+</html>

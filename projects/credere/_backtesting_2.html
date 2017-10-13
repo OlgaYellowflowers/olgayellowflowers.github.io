@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title -->
+    <title>Prosper Credit Scoring Order</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/select2-3.5.2/select2.css" />
+    <link rel="stylesheet" href="vendor/select2-bootstrap/select2-bootstrap.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-datepicker-master/dist/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="vendor/chartist/custom/chartist.css" />
+    <link rel="stylesheet" href="vendor/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css">
+    <link rel="stylesheet" href="vendor/datatables.net-bs/css/dataTables.bootstrap.min.css" />
+
+    <link rel="stylesheet" href="vendor/xeditable/bootstrap3-editable/css/bootstrap-editable.css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_extend.css">
+
+</head>
+<body class="fixed-navbar fixed-sidebar">
+
+<!-- Simple splash screen-->
+<div class="splash">
+    <div class="splash-title"><h1>CREDERE</h1><p>Credere Loan Trader</p></div>
+    <div class="spinner"> 
+        <div class="rect1"></div> <div class="rect2"></div> <div class="rect3"></div> <div class="rect4"></div> <div class="rect5"></div> 
+    </div> 
+</div>
+<!--[if lt IE 7]>
+<p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Header -->
+<div id="header" >
+<!-- <div class="color-line" style="background:#eee;"></div> -->
+    <div id="logo" class="light-version">
+        <span class="logo_credere"></span>
+    </div>
+    <nav role="navigation">
+        <div class="header-link hide-menu"><i class="fa fa-bars"></i></div>
+        <div class="small-logo">
+            <span class="text-primary">CREDERE</span>
+        </div>
+<!--         <form role="search" class="navbar-form-custom" method="post" action="#">
+            <div class="form-group">
+                <input type="text" placeholder="Search something special" class="form-control" name="search">
+            </div>
+        </form> -->
+        <div class="mobile-menu">
+            <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
+                <i class="fa fa-chevron-down"></i>
+            </button>
+            <div class="collapse mobile-navbar" id="mobile-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="" href="login.html">Login</a>
+                    </li>
+                    <li>
+                        <a class="" href="login.html">Logout</a>
+                    </li>
+                    <li>
+                        <a class="" href="profile.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-left">
+            <div class="small-header transition animated fadeIn">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <!-- <div id="hbreadcrumb" class="pull-right">
+                            <ol class="hbreadcrumb breadcrumb">
+                                <li><a href="index.html">Dashboard</a></li>
+                                <li>
+                                    <span>Forms</span>
+                                </li>
+                                <li class="active">
+                                    <span>Forms elements </span>
+                                </li>
+                            </ol>
+                        </div> -->
+                        <h2 class="font-light m-b-xs">
+                            Backtesting Model
+                        </h2>
+                        <small>&nbsp</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <ul class="nav navbar-nav no-borders">
+                <li class="dropdown">
+                    <a class="dropdown-toggle label-menu-corner" href="#" data-toggle="dropdown">
+                        <i class="pe-7s-speaker"></i>
+                        <span class="label label-success">4</span>
+                    </a>
+                    <ul class="dropdown-menu hdropdown notification animated flipInX">
+                        <li>
+                            <a>
+                                <span class="label label-success">NEW</span> It is a long established.
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span class="label label-warning">WAR</span> There are many variations.
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span class="label label-danger">ERR</span> Contrary to popular belief.
+                            </a>
+                        </li>
+                        <li class="summary"><a href="#">See all notifications</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="sidebar" class="right-sidebar-toggle">
+                         <h5 class="nav-label">Hi Alex!</h5>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="login.html">
+                        <i class="pe-7s-upload pe-rotate-90"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- Navigation -->
+<aside id="menu">
+    <div id="navigation">
+        <ul class="nav" id="side-menu">
+            <li>
+                <a href="#"> <span class="nav-label">Auctions</span> <!-- <span class="label label-success pull-right">v.1</span> --> </a>
+            </li>
+            <li>
+                <a href="#"> <span class="nav-label">Orders</span><span class="fa arrow"></span><!-- <span class="label label-warning pull-right">NEW</span>  --></a>
+                <ul class="nav nav-second-level">
+                    <li><a href="panels.html">Active Orders</a></li>
+                    <li><a href="typography.html">Trade History</a></li>
+                    <li><a href="buttons.html">New Order</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"> <span class="nav-label">Portfolio</span></a>
+            </li>
+            <li class="active">
+                <a href="#"> <span class="nav-label">Backtesting</span></a>
+            </li>
+        </ul>
+    </div>
+</aside>
+
+<!-- Main Wrapper -->
+<div id="wrapper">
+<div class="content animate-panel">
+    <div>
+        <div class="small-header transition animated fadeIn mobile-only">
+            <div class="hpanel">
+                <div class="panel-body">
+                    <h2 class="font-light m-b-xs">
+                        Backtesting Model
+                    </h2>
+                    <!-- <small>Examples of various form controls.</small> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- row with full panel -->
+<form method="get" class="form-horizontal">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="hpanel">
+                <div class="panel-heading">
+                    <div class="row">
+                    
+                        <H3 class="col-sm-12">
+                            Create New Model 
+                            <!-- <div class="btn btn-sm btn-outline btn-success pull-right"><i class="fa fa-plus"></i> New Order</div> -->
+                        </H3> 
+                   </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="btn-group col-sm-12">
+                        <a class="btn btn-default col-md-2" href="#step1" data-toggle="tab">1. Load Data</a>
+                        <a class="btn btn-primary col-md-2" href="#step2" data-toggle="tab">2. Assumptions</a>
+                        <a class="btn btn-default col-md-2" href="#step3" data-toggle="tab">3. Overview</a>
+                        <a class="btn btn-default col-md-2" href="#step2" data-toggle="tab">4. Risk Report</a>
+                        <a class="btn btn-default col-md-2" href="#step3" data-toggle="tab">5. Amortisation</a>
+                        <a class="btn btn-default col-md-2" href="#step2" data-toggle="tab">6. Saved Filters</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="row no-margins">
+        <div class="col-lg-6">
+            <div class="hpanel ">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        
+                        <!-- <div class="btn btn-sm btn-success btn-outline btn-switcher on" style="margin: -3px 0 0 10px; ">
+                            <span class="btn btn-xs btn-success font-bold btn-on">ON</span>
+                            <span class="btn btn-xs btn-warning font-bold btn-off">OFF</span>
+                        </div> -->
+                        <!-- <a class="showhide"><i class="fa fa-chevron-up"></i></a> -->
+
+                        <!-- <a class="closebox"><i class="fa fa-times"></i></a> -->
+                    </div>
+                    Scenarios <i class="pe-7s-help1 " style="font-size:150%; vertical-align:bottom;"></i>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Prepayment Scenario</label>
+                        <div class="col-sm-4" >
+                            <select name="" id="" class="form-control" data-toggle="tooltip" title="Hooray!">
+                                <option value="">Base</option>
+                                <option value="">Back</option>
+                                <option value="">Even</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Delinquency Scenario</label>
+                        <div class="col-sm-4">
+                            <select name="" id="" class="form-control">
+                                <option value="">Base</option>
+                                <option value="">2x</option>
+                                <option value="">3x</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Charge Off Scenario</label>
+                        <div class="col-sm-4">
+                            <select name="" id="" class="form-control">
+                                <option value="">Base</option>
+                                <option value="">2x</option>
+                                <option value="">3x</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Recession Assumption</label>
+                        <div class="col-sm-4">
+                            <div class="btn  btn-success btn-outline btn-switcher on" >
+                            <span class="btn btn-sm btn-success font-bold btn-on">ON</span>
+                            <span class="btn btn-sm btn-warning font-bold btn-off">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="hpanel ">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        
+                    </div>
+                    Investments <i class="pe-7s-help1 " style="font-size:150%; vertical-align:bottom;"></i>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Investment Amount</label>
+                        <div class="col-sm-4" >
+                            <input type="text" placeholder="" class="form-control" value="$ 5,000,000">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Rebalancing</label>
+                        <div class="col-sm-4">
+                            <div class="btn  btn-success btn-outline btn-switcher on" >
+                            <span class="btn btn-sm btn-success font-bold btn-on">ON</span>
+                            <span class="btn btn-sm btn-warning font-bold btn-off">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Rebalancing %</label>
+                        <div class="col-sm-4">
+                            <input type="text" placeholder="" class="form-control" value="100%">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Rebalancing interval</label>
+                        <div class="col-sm-4">
+                            <select name="" id="" class="form-control">
+                                <option value="">Montly</option>
+                                <option value="">Quarterly</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row no-margins">
+        <div class="col-lg-6">
+            <div class="hpanel hgreen">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        
+                        <div class="btn btn-sm btn-success btn-outline btn-switcher on" style="margin: -3px 0 0 10px; ">
+                            <span class="btn btn-xs btn-success font-bold btn-on">ON</span>
+                            <span class="btn btn-xs btn-warning font-bold btn-off">OFF</span>
+                        </div>
+                        
+                    </div>
+                    Prepayment Assumptions <i class="pe-7s-help1 " style="font-size:150%; vertical-align:bottom;"></i>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Constant Prepayment Rate (CPR)</label>
+                        <div class="col-sm-4" >
+                            <select name="" id="" class="form-control" data-toggle="tooltip" title="Hooray!">
+                                <option value="">Yes</option>
+                                <option value="">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Methodology</label>
+                        <div class="col-sm-4">
+                            <select name="" id="" class="form-control">
+                                <option value="">Median</option>
+                                <option value="">Average</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Constant Payement</label>
+                        <div class="col-sm-4">
+                            <div class="btn btn-success btn-outline btn-switcher on" style="">
+                            <span class="btn btn-sm btn-success font-bold btn-on">ON</span>
+                            <span class="btn btn-sm btn-warning font-bold btn-off">OFF</span>
+                        </div>
+                        </div>
+                    </div>
+                    <table cellpadding="1" cellspacing="1" class="table no-margins">
+                            <tbody>
+                            <tr>
+                                <td class="control-label"><label class="control-label">CPR 1st Year</label></td>
+                                
+                                <td class="col-sm-8"><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter base percentage" class="editable editable-click">9.54</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class=" control-label"><label class="control-label">CPR 2nd Year</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">7.82</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class=" control-label"><label class="control-label ">CPR 3rd Year</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">2.57</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class=" control-label"><label class="control-label">CPR Total</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click font-extra-bold">11.99</a> %</td>
+                                
+                            </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="hpanel ">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        
+                        
+                        
+                    </div>
+                    Prepayment Scenarios <i class="pe-7s-help1 " style="font-size:150%; vertical-align:bottom;"></i>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table cellpadding="1" cellspacing="1" class="table no-margins">
+                            <thead>
+                                <th class="col-xs-3"></th>
+                                <th class="col-xs-3">Base</th>
+                                <th class="col-xs-3">Medium Stress</th>
+                                <th class="col-xs-3">High Stress</th>
+                                
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="font-extra-bold"><label class="control-label">12</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter base percentage" class="editable editable-click">4.12</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">8.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">12.36</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="font-extra-bold"><label class="control-label">24</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">5.30</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">8.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">12.36</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="font-extra-bold"><label class="control-label ">36</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">2.57</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">8.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">12.36</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="font-extra-bold"><label class="control-label">Total</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">11.99</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">8.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">12.36</a> %</td>
+                                
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <div class="row no-margins">
+        <div class="col-lg-6">
+            <div class="hpanel hgreen">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        
+                        <div class="btn btn-sm btn-success btn-outline btn-switcher on" style="margin: -3px 0 0 10px; ">
+                            <span class="btn btn-xs btn-success font-bold btn-on">ON</span>
+                            <span class="btn btn-xs btn-warning font-bold btn-off">OFF</span>
+                        </div>
+                        
+                    </div>
+                    Late Payment and Charge Off Assumption <i class="pe-7s-help1 " style="font-size:150%; vertical-align:bottom;"></i>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table cellpadding="1" cellspacing="1" class="table no-margins">
+                            <thead>
+                            <tr>
+                                <td><label class="control-label ">Recoveries</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">10</a> %</td>
+                                <td><label class="control-label ">Loss Given Default (LGD)</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">90</a> %</td>
+                                
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><label class="control-label ">Monthly Deliquency Rate</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">1.36</a> %</td>
+                                <td><label class="control-label ">Recovery of Deliquency</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">4</a> Months</td>
+                                
+                            </tr>
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="hpanel ">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        
+                        
+                        
+                    </div>
+                    Late Payment Scenarios <i class="pe-7s-help1 " style="font-size:150%; vertical-align:bottom;"></i>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table cellpadding="1" cellspacing="1" class="table no-margins">
+                            <thead>
+                                
+                                <th class="col-xs-4">Base</th>
+                                <th class="col-xs-4">Medium Stress</th>
+                                <th class="col-xs-4">High Stress</th>
+                                
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter base percentage" class="editable editable-click">1.12</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">2.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">4.36</a> %</td>
+                                
+                            </tr>
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row no-margins">
+        
+
+        <div class="col-lg-6">
+            <div class="hpanel hgreen">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        
+                        <div class="btn btn-sm btn-success btn-outline btn-switcher on" style="margin: -3px 0 0 10px; ">
+                            <span class="btn btn-xs btn-success font-bold btn-on">ON</span>
+                            <span class="btn btn-xs btn-warning font-bold btn-off">OFF</span>
+                        </div>
+                      
+                    </div>
+                    Charge off assumptions <i class="pe-7s-help1 " style="font-size:150%; vertical-align:bottom;"></i>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Constant Charge off Rate</label>
+                        <div class="col-sm-4" >
+                            <select name="" id="" class="form-control" data-toggle="tooltip" title="Hooray!">
+                                <option value="">No</option>
+                                <option value="">Yes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Methodology</label>
+                        <div class="col-sm-4">
+                            <select name="" id="" class="form-control">
+                                <option value="">Median</option>
+                                <option value="">Average</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Charge Off Assumption</label>
+                        <div class="col-sm-4">
+                            <div class="btn btn-success btn-outline btn-switcher on" style="">
+                            <span class="btn btn-sm btn-success font-bold btn-on">ON</span>
+                            <span class="btn btn-sm btn-warning font-bold btn-off">OFF</span>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <table cellpadding="1" cellspacing="1" class="table no-margins">
+                            <tbody>
+                            <tr>
+                                <td class="control-label"><label class="control-label">CDR 1st Year</label></td>
+                                
+                                <td class="col-sm-8"><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter base percentage" class="editable editable-click">4.12</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class=" control-label"><label class="control-label">CDR 2nd Year</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">5.30</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class=" control-label"><label class="control-label ">CDR 3rd Year</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">2.57</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class=" control-label"><label class="control-label">CDR Total</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="font-extra-bold editable editable-click">11.99</a> %</td>
+                                
+                            </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="hpanel ">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        
+                        
+                    </div>
+                    Charge Off Scenarios <i class="pe-7s-help1 " style="font-size:150%; vertical-align:bottom;"></i>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table cellpadding="1" cellspacing="1" class="table no-margins">
+                            <thead>
+                                <th class="col-xs-3"></th>
+                                <th class="col-xs-3">Base</th>
+                                <th class="col-xs-3">Medium Stress</th>
+                                <th class="col-xs-3">High Stress</th>
+                                
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="font-extra-bold"><label class="control-label">12</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter base percentage" class="editable editable-click">4.12</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">8.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">12.36</a> %</td>
+                               
+                            </tr>
+                            <tr>
+                                <td class="font-extra-bold"><label class="control-label">24</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">5.30</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">8.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">12.36</a> %</td>
+                               
+                            </tr>
+                            <tr>
+                                <td class="font-extra-bold"><label class="control-label ">36</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">2.57</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">8.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">12.36</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="font-extra-bold"><label class="control-label">Total</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">11.99</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">8.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">12.36</a> %</td>
+                                
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row no-margins">
+        
+
+        <div class="col-lg-6">
+            <div class="hpanel hgreen">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        
+                        <div class="btn btn-sm btn-success btn-outline btn-switcher on" style="margin: -3px 0 0 10px; ">
+                            <span class="btn btn-xs btn-success font-bold btn-on">ON</span>
+                            <span class="btn btn-xs btn-warning font-bold btn-off">OFF</span>
+                        </div>
+                        
+                    </div>
+                    Recession Scenarios <i class="pe-7s-help1 " style="font-size:150%; vertical-align:bottom;"></i>
+                </div>
+                <div class="panel-body">
+                    <table cellpadding="1" cellspacing="1" class="table no-margins">
+                            <thead>
+                           
+                            
+                            <tr>
+                                <td class="col-sm-6 control-label"><label class="control-label">Recession Length</label></td>
+                                
+                                <td class="col-sm-6"><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter base percentage" class="editable editable-click">4.12</a> Years</td>
+                                
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class=" control-label"><label class="control-label">Recession Start Month</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">33</a> </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class=" control-label"><label class="control-label ">Recovery for Defaults</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">4</a> Months</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class=" control-label"><label class="control-label">Constant Annual Charge Off Rate</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">4.08</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class=" control-label"><label class="control-label">Monthly Default Rate</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">0.34</a> %</td>
+                                
+                            </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="hpanel ">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        
+                        
+                    </div>
+                    Recession Scenarios <i class="pe-7s-help1 " style="font-size:150%; vertical-align:bottom;"></i>
+                </div>
+                <div class="panel-body">
+                    <h5>Default Distribution</h5><a href=""></a>
+                    <div class="table-responsive ">
+                        <table cellpadding="1" cellspacing="1" class="table  table-condensed">
+                            <thead>
+                                <th class="col-xs-3">Recession Month</th>
+                                <th class="col-xs-3">Front</th>
+                                <th class="col-xs-3">Even</th>
+                                <th class="col-xs-3">Back</th>
+                                
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="font-extra-bold"><label class="control-label">1-6</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter base percentage" class="editable editable-click">4.12</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">8.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">12.36</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="font-extra-bold"><label class="control-label">7-12</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">5.30</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">8.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">12.36</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="font-extra-bold"><label class="control-label ">13-18</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">2.57</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">8.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">12.36</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="font-extra-bold"><label class="control-label">19-24</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">11.99</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">8.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">12.36</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="font-extra-bold"><label class="control-label">25-30</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">5.30</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">8.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">12.36</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="font-extra-bold"><label class="control-label ">31-36</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">2.57</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">8.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">12.36</a> %</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="font-extra-bold"><label class="control-label">37-42</label></td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">11.99</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">8.24</a> %</td>
+                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter multiplier" class="editable editable-click">12.36</a> %</td>
+                                
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+     <div class="row no-margins">
+        
+
+       <div class="row no-margins">
+        <div class="col-lg-12">
+            <div class="hpanel hgreen">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        
+                    </div>
+                    NAV Computation Assumption <i class="pe-7s-help1 " style="font-size:150%; vertical-align:bottom;"></i>
+                </div>
+                <div class="panel-body">
+                    <div class="col-sm-6">
+                    
+                    
+                    <table cellpadding="1" cellspacing="1" class="table no-margins">
+                            <thead>
+                            
+                                <td class="col-sm-6 control-label">
+                                    <label class="control-label">Set up Fees</label>
+                                </td>
+                                
+                                <td class="col-sm-6">
+                                <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter base percentage" class="editable editable-click">0</a> %
+                                </td>
+                                
+                            
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="col-sm-6 control-label">
+                                    <label class="control-label">Annual Fees</label>
+                                </td>
+                                
+                                <td class="col-sm-6">
+                                <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter base percentage" class="editable editable-click">0</a> %
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-6 control-label">
+                                    <label class="control-label">Management Fees</label>
+                                </td>
+                                
+                                <td class="col-sm-6">
+                                <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter base percentage" class="editable editable-click">0</a> %
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-6 control-label">
+                                    <label class="control-label">Performance Fees</label>
+                                </td>
+                                
+                                <td class="col-sm-6">
+                                <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter base percentage" class="editable editable-click">0</a> %
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-6 control-label">
+                                    <label class="control-label">Sub fund</label>
+                                </td>
+                                
+                                <td class="col-sm-6">
+                                <a href="#" id="username" data-type="select" data-pk="1" data-title="Enter base percentage" class="editable editable-click">No</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-6 control-label">
+                                    <label class="control-label">Target Cash</label>
+                                </td>
+                                
+                                <td class="col-sm-6">
+                                <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter base percentage" class="editable editable-click">0</a> %
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-sm-6">
+                    
+                        <table cellpadding="1" cellspacing="1" class="table no-margins">
+                            <thead>
+                            
+                                <td class="col-sm-6 control-label">
+                                    <label class="control-label">Provision for losses</label>
+                                </td>
+                                
+                                <td class="col-sm-6">
+                                <a href="#" id="username" data-type="Select" data-pk="1" data-title="Enter base percentage" class="editable editable-click">No</a>
+                                </td>
+                                
+                            
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="col-sm-6 control-label">
+                                    <label class="control-label">% Provision of losses</label>
+                                </td>
+                                
+                                <td class="col-sm-6">
+                                <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter base percentage" class="editable editable-click">0</a> %
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-6 control-label">
+                                    <label class="control-label">Distribution</label>
+                                </td>
+                                
+                                <td class="col-sm-6">
+                                <a href="#" id="username" data-type="Select" data-pk="1" data-title="Enter base percentage" class="editable editable-click">No</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-6 control-label">
+                                    <label class="control-label">Leverage</label>
+                                </td>
+                                
+                                <td class="col-sm-6">
+                                <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter base percentage" class="editable editable-click">0</a> %
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-6 control-label">
+                                    <label class="control-label">Issue Price</label>
+                                </td>
+                                
+                                <td class="col-sm-6">
+                                <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter base percentage" class="editable editable-click">100</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="col-lg-12">        
+            <div class="hpanel">            
+                <div class="panel-body">
+                    <div class="text-center">
+                        <div class="pull-left">
+                        <button class="btn btn-default w-lg" type="submit">Back to Load Data</button>
+                        </div>
+                        <div class="pull-right">
+                        <button class="btn btn-primary w-lg" type="submit">Save Assumptions and See Model Overview</button>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+
+
+
+    <!-- Right sidebar -->
+    <div id="right-sidebar" class="animated fadeInRight">
+
+        <div class="p-m">
+            <button id="sidebar-close" class="right-sidebar-toggle sidebar-button btn btn-default m-b-md"><i class="pe pe-7s-close"></i>
+            </button>
+            <div>
+                <span class="font-bold no-margins"> Analytics </span>
+                <br>
+                <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.</small>
+            </div>
+            <div class="row m-t-sm m-b-sm">
+                <div class="col-lg-6">
+                    <h3 class="no-margins font-extra-bold text-success">300,102</h3>
+
+                    <div class="font-bold">98% <i class="fa fa-level-up text-success"></i></div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="no-margins font-extra-bold text-success">280,200</h3>
+
+                    <div class="font-bold">98% <i class="fa fa-level-up text-success"></i></div>
+                </div>
+            </div>
+            <div class="progress m-t-xs full progress-small">
+                <div style="width: 25%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar"
+                     class=" progress-bar progress-bar-success">
+                    <span class="sr-only">35% Complete (success)</span>
+                </div>
+            </div>
+        </div>
+        <div class="p-m bg-light border-bottom border-top">
+            <span class="font-bold no-margins"> Social talks </span>
+            <br>
+            <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.</small>
+            <div class="m-t-md">
+                <div class="social-talk">
+                    <div class="media social-profile clearfix">
+                        <a class="pull-left">
+                            <img src="images/a1.jpg" alt="profile-picture">
+                        </a>
+
+                        <div class="media-body">
+                            <span class="font-bold">John Novak</span>
+                            <small class="text-muted">21.03.2015</small>
+                            <div class="social-content small">
+                                Injected humour, or randomised words which don't look even slightly believable.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-talk">
+                    <div class="media social-profile clearfix">
+                        <a class="pull-left">
+                            <img src="images/a3.jpg" alt="profile-picture">
+                        </a>
+
+                        <div class="media-body">
+                            <span class="font-bold">Mark Smith</span>
+                            <small class="text-muted">14.04.2015</small>
+                            <div class="social-content">
+                                Many desktop publishing packages and web page editors.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-talk">
+                    <div class="media social-profile clearfix">
+                        <a class="pull-left">
+                            <img src="images/a4.jpg" alt="profile-picture">
+                        </a>
+
+                        <div class="media-body">
+                            <span class="font-bold">Marica Morgan</span>
+                            <small class="text-muted">21.03.2015</small>
+
+                            <div class="social-content">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-m">
+            <span class="font-bold no-margins"> Sales in last week </span>
+            <div class="m-t-xs">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <small>Today</small>
+                        <h4 class="m-t-xs">$170,20 <i class="fa fa-level-up text-success"></i></h4>
+                    </div>
+                    <div class="col-xs-6">
+                        <small>Last week</small>
+                        <h4 class="m-t-xs">$580,90 <i class="fa fa-level-up text-success"></i></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <small>Today</small>
+                        <h4 class="m-t-xs">$620,20 <i class="fa fa-level-up text-success"></i></h4>
+                    </div>
+                    <div class="col-xs-6">
+                        <small>Last week</small>
+                        <h4 class="m-t-xs">$140,70 <i class="fa fa-level-up text-success"></i></h4>
+                    </div>
+                </div>
+            </div>
+            <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.
+                Many desktop publishing packages and web page editors.
+            </small>
+        </div>
+
+    </div>
+
+    <!-- Footer-->
+    <footer class="footer">
+        <span class="pull-right">
+            Help Terms and Conditions
+        </span>
+        Credere 2016
+    </footer>
+</div>
+</div>
+
+<!-- modal window -->
+
+
+
+<!-- Vendor scripts -->
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+<script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
+<script src="vendor/iCheck/icheck.min.js"></script>
+<script src="vendor/sparkline/index.js"></script>
+<script src="vendor/moment/moment.js"></script>
+<script src="vendor/select2-3.5.2/select2.min.js"></script>
+<script src="vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+<script src="vendor/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+
+<script src="vendor/xeditable/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+
+
+<!-- Charts -->
+<script src="vendor/chartist/dist/chartist.min.js"></script>
+<!-- DataTables -->
+<script src="vendor/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="vendor/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- App scripts -->
+<script src="scripts/homer.js"></script>
+
+
+
+
+<script>
+
+    $(function(){
+
+        $('.input-group.date').datepicker();
+
+        $("#demo1").TouchSpin({
+            min: 0,
+            max: 100,
+            step: 0.1,
+            decimals: 2,
+            boostat: 5,
+            maxboostedstep: 10
+        });
+
+        $("#demo2").TouchSpin({
+            verticalbuttons: true
+        });
+
+        $(".select2").select2();
+
+        //turn to inline mode deafult is popup
+            //$.fn.editable.defaults.mode = 'inline';
+
+            //defaults
+            $.fn.editable.defaults.url = '#';
+
+            //editables
+            $('#username').editable({
+                url: '#',
+                type: 'text',
+                pk: 1,
+                name: 'username',
+                title: 'Enter username'
+            });
+
+            $('#firstname').editable({
+                validate: function(value) {
+                    if($.trim(value) == '') return 'This field is required';
+                }
+            });
+
+            $('#2').editable({
+                //prepend: "not selected",
+                source: [
+                    {value: 2, text: '2'},
+                    {value: 3, text: '3'}
+                ],
+                
+            });
+
+            $('#dob').editable();
+
+            $('#event').editable({
+                placement: 'right',
+                combodate: {
+                    firstItem: 'name'
+                }
+            });
+
+            $('#comments').editable({
+                showbuttons: 'bottom'
+            });
+
+            $('#fruits').editable({
+                pk: 1,
+                limit: 3,
+                source: [
+                    {value: 1, text: 'banana'},
+                    {value: 2, text: 'peach'},
+                    {value: 3, text: 'apple'},
+                    {value: 4, text: 'watermelon'},
+                    {value: 5, text: 'orange'}
+                ]
+            });
+
+            $('#user .editable').on('hidden', function(e, reason){
+                if(reason === 'save' || reason === 'nochange') {
+                    var $next = $(this).closest('tr').next().find('.editable');
+                    if($('#autoopen').is(':checked')) {
+                        setTimeout(function() {
+                            $next.editable('show');
+                        }, 300);
+                    } else {
+                        $next.focus();
+                    }
+                }
+            });
+
+    });
+
+</script>
+
+</body>
+</html>

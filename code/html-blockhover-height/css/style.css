@@ -1,0 +1,40 @@
+/*-------------------
+        Database business cards styles
+--------------------*/
+.biz-card-wrap{display:inline-block;vertical-align:top;width:340px;position:relative;margin:10px;}
+.biz-card-link{width:340px;display:block;position:absolute;top:0;left:0;border-radius:4px;}
+.biz-card-link:hover,.biz-card-link:focus,.biz-card-link:active{background:rgba(223,255,243,0.5);}
+.biz-card{box-shadow:1px 1px 3px 0px rgba(66,79,99,.3);border:1px solid #ccc;border-radius:4px;background:#fff;padding:0 1px 1px 1px;display:block;overflow:hidden;width:340px;}
+.biz-card-header{display:block;overflow:hidden;border-bottom:1px solid #ccc;width:100%;padding:10px 0 10px 10px;}
+.biz-card-header-left{display:block;float:left;padding-right:15px;vertical-align:top;width:180px;}
+.biz-card-company{color:#424f63;font-size:16px;text-transform:uppercase;font-weight:bold;display:block;margin:0 0 5px 0;}
+.biz-card-area{color:#424f63;font-size:12px;text-transform:uppercase;display:block;margin:0 0 5px 0;}
+.biz-card-site{position:relative;}
+.biz-card-site a{font-size:12px;text-transform:uppercase;display:inline;color:#65cea7;float:left;}
+.biz-card-logo{display:block;float:left;height:55px;width:95px;vertical-align:top;text-align:right;}
+.biz-card-logo  img{max-width:95px;max-height:55px;}
+.biz-card-tools{position:absolute;top:5px;right:5px;display:block;width:35px;}
+.biz-card-tools a{background:rgba(0,0,0,0.2);border-radius:3px;color:#fff;float:right;margin-bottom:5px;padding:10px;width:32px;height:32px;text-align:center;text-decoration:none;}
+.biz-card-tools a:hover,.biz-card-tools a:focus,.biz-card-tools a:active{background:rgba(101,206,167,1);}
+.biz-card-one-in-row,.biz-card-two-in-row,.biz-card-three-in-row,.biz-card-four-in-row{float:none;clear:both;display:block;overflow:hidden;border-bottom:1px #f1f1f1 solid;}
+.biz-card-two-in-row,.biz-card-four-in-row{padding-top:10px;padding-bottom:10px;}
+.biz-card-one-in-row{width:100%;padding:15px;border-bottom:1px solid #e0e0e0;}
+.biz-card-one-in-row b{font-weight:bold;}
+.biz-card-two-in-row .biz-card-info-item{color:#556e8c;float:left;width:49.5%;text-align:center;font-size:14px;}
+.biz-card-two-in-row .biz-card-info-item b{display:block;font-weight:normal;color:#888;font-size:13px;}
+.biz-card-three-in-row{padding-top:5px;padding-bottom:5px;background:#f9f9f9;}
+.biz-card-three-in-row .biz-card-info-item{float:left;width:33%;text-align:center;margin:7px 0;font-size:14px;}
+.biz-card-three-in-row .biz-card-info-item b{display:block;font-weight:normal;color:#888;font-size:12px;}
+.biz-card-four-in-row{background:#f4f4f4;}
+.biz-card-four-in-row .biz-card-info-item{float:left;width:24.5%;text-align:center;margin:3px 0;font-size:14px;}
+.biz-card-four-in-row .biz-card-info-item b{display:block;font-weight:normal;color:#888;font-size:12px;}
+@media (max-width:1215px){
+	.biz-card-wrap{margin:10px 5px;}
+}
+@media (max-width:768px){
+	.biz-card-wrap{margin:10px 5px;}
+	.biz-card-wrap,.biz-card,.biz-card-link{width:300px;}
+	.biz-card-logo{width:70px;}
+	.biz-card-logo img{max-width:70px;}
+	.biz-card-header-left{width:170px;}
+}

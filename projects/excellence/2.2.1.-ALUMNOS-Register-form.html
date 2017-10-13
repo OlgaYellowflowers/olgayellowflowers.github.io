@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <meta name="subject" content="">
+  <meta name="copyright" content="Excellence Project">
+
+  <link rel="icon" href="favicon.ico">
+
+  <title>2.2.1.-ALUMNOS-Register form</title>
+
+  <!-- CSS -->
+
+  <link href="css/styles.css" rel="stylesheet">
+<link href="css/styles_override.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+ <!-- JavaScript -->
+
+  <!-- You can use all scripts in one minified app.js or only necessary scripts for concrete page -->
+  <!-- <script src="js/app.js"></script> -->
+
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <script src="js/jquery.form-validator.min.js"></script>
+
+  <!-- JS plugin for styling scrollbar -->
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+  <script src="js/scripts.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navbar BEGIN-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Excellence Project</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+          <img src="images/logo-academy.png" alt="Logo"></a>
+      </div>
+      <div id="navbar" class="navbar-collapse navbar-right collapse">
+        <a href="#" class="btn btn-info btn-sm">Contacto</a>
+        <a href="#" class="btn btn-info btn-sm">Login</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar END-->
+
+  <!-- Main wrapper begin -->
+  <div id="main-wrapper" class="main-wrapper-inner-white">
+
+    <form class="form-horizontal">
+
+      <div class="container">
+
+        <div class="row paragraph-sm">
+          <div class="col-xs-2 col-sm-1 col-sm-offset-2 text-center">
+            <div class="text-bignumber">1</div>
+          </div>
+          <div class="col-xs-10 col-sm-9">
+            <div class="item-title item-title-register">Escuela</div>
+            <div class="item-text">Esc. Hostelería del Sur</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- Form validator in scripts.js -->
+            <!-- http://www.formvalidator.net/ -->
+            <div class="form-group">
+              <label class="control-label col-sm-5" for="RegisterName">Nombre y apellidos</label>
+              <div class="col-sm-5 col-md-4 col-lg-3">
+                <input type="text" class="form-control" id="RegisterName" data-validation="alphanumeric length" data-validation-allowing="-_" data-validation-length="min3"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-5" for="RegisterEmail">Email</label>
+              <div class="col-sm-5 col-md-4 col-lg-3">
+                <input type="text" data-validation="email" class="form-control" id="RegisterEmail"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-5" for="RegisterPass">Pasword</label>
+              <div class="col-sm-5 col-md-4 col-lg-3">
+                <input type="password" class="form-control" id="RegisterPass" name="passw_confirmation" data-validation="length" data-validation-length="min6"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-5" for="">Repetir pasword</label>
+              <div class="col-sm-5 col-md-4 col-lg-3">
+                <input type="password" class="form-control" id="" name="passw" data-validation="confirmation"></div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-offset-5 col-sm-5">
+                <div class="checkbox-styled">
+                  <input type="checkbox" id="AcceptCondicionesLeagales" name="AcceptCondicionesLeagales[]" data-validation="validate_checkbox_group" data-validation-qty="min1" />
+                  <label class="text-sm" for="AcceptCondicionesLeagales">
+                    <span></span>
+                    accepto las
+                  </label>
+                  <span class="text-sm text-underline" data-toggle="modal" data-target="#Modal_CondicionesLegales" >condiciones legales</span>
+
+                  <!-- Modal -->
+                  <div id="Modal_CondicionesLegales" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-md">
+
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title text-center">Bases Legales</h4>
+                        </div>
+                        <div class="modal-body modal-scroll">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                          <p>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                          <p>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </p>
+                          <p>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-offset-5 col-sm-6 text-sm-center">
+            <div class="paragraph-xs">
+              <input type="submit" class="btn btn-primary btn-md" value="REGISTRARSE">
+              <!-- You can use either "input submit" or "button" -->
+              <!-- <button type="submit" class="btn btn-primary">REGISTRARSE</button>
+            -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </form>
+
+</div>
+<!-- Main wrapper end -->
+
+</body>
+</html>

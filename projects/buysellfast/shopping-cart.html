@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Buy Sell Fast</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- JavaScripts -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+
+  <script src='js/bootstrap.min.js'></script>
+
+ 
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="top-bar-logo">
+      <a href="/">
+        <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+    </div>
+
+    <!-- Cart on the top bar -->
+    <div class="top-bar-cart">
+      <a href="#">
+        <span class="top-bar-cart-items">95</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="nav-buy">
+              <span class="nav-name">Buy</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-explore">
+              <span class="nav-name">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-sell">
+              <span class="nav-name">Sell</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-contacts">
+              <span class="nav-name">Contacts</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-messages">
+              <span class="nav-name">Messages</span>
+              <span class="nav-quantity">89</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-reports">
+              <span class="nav-name">Reports</span>
+            </a>
+          </li>
+          <li  class="active">
+            <a href="#" class="nav-settings">
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ./navbar -->
+
+  <div id="page-content">
+
+    <div class="breadcrumbs">
+      <div class="breadcrumbs-wrap">
+        <div class="back-link">
+          <a href="#">Back</a>
+        </div>
+        <div class="page-title icon-shopping-cart">
+          <span>Shopping cart</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion">
+
+    <!-- collapsed item -->
+      <div class="panel panel-default">
+        <div class="panel-heading products" >
+          <h4 class="panel-title ">
+        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+              <span class="products-seller">Apple shoes</span>
+              <span class="products-number">
+                <span>2</span>
+              </span>
+              <span class="arrow-right"></span>
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse ">
+        <div class="panel-body">
+            <table class="incart">
+              <thead>
+                <tr>
+                  <td>Items in cart</td>
+                  <td>QTY</td>
+                  <td>Cost</td>
+                </tr>
+              </thead>
+              <!-- Items in shopping cart -->
+              <tr>
+                <td class="incart-item-first">
+                  <div class="incart-item-del">
+                    <a href="#"></a>
+                  </div>
+                  <div class="incart-item-name">iPhone5</div>
+                </td>
+                <td class="incart-item-quantity">
+                  <input type="number" value="2" ></td>
+                <td class="incart-item-price">$&nbsp;300.00</td>
+              </tr>
+              <tr>
+                <td class="incart-item-first">
+                  <div class="incart-item-del">
+                    <a href="#"></a>
+                  </div>
+                  <div class="incart-item-name">2009 Ford Mustang Blue and this is very long long long</div>
+                </td>
+               <td class="incart-item-quantity">
+                  <input type="number" value="1" >
+                </td>
+                <td class="incart-item-price">$&nbsp;7300.00</td>
+              </tr>
+            </table>
+            <!-- Calculating amount -->
+            <table class="incart incart-width">
+              <tr class="calc-amount">
+                <td>
+                  <img src="images/SubTotal.png" height="24" width="24" alt="">Subtotal</td>
+                <td class="incart-item-price">$&nbsp;7600.00</td>
+              </tr>
+              <tr class="calc-amount">
+                <td>
+                  <img src="images/Tax.png" height="24" width="24" alt="">Tax</td>
+                <td class="incart-item-price">$&nbsp;500.00</td>
+              </tr>
+              <tr class="calc-amount">
+                <td>
+                  <img src="images/ShippingDetail.png" height="24" width="24" alt="">Shipping</td>
+                <td class="incart-item-price">$&nbsp;700.00</td>
+              </tr>
+              <!-- TOTAL AMOUNT -->
+              <tr class="calc-total">
+                <td>Total (CAD)</td>
+                <td class="incart-item-price">$&nbsp;700.00</td>
+              </tr>
+            </table>
+            <div class="cart-buttons">
+              <button class="btn btn-primary" type="submit">Update Cart</button>
+              <button class="btn btn-success" type="submit">Complete Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- ./collapsed item -->
+
+
+    <!-- collapsed item -->
+      <div class="panel panel-default">
+        <div class="panel-heading products" >
+          <h4 class="panel-title">
+        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+              <span class="products-seller">Lotto</span>
+              <span class="products-number">
+                <span>2</span>
+              </span>
+              <span class="arrow-right"></span>
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">
+            <table class="incart">
+              <thead>
+                <tr>
+                  <td>Items in cart</td>
+                  <td>QTY</td>
+                  <td>Cost</td>
+                </tr>
+              </thead>
+              <!-- Items in shopping cart -->
+              <tr>
+                <td class="incart-item-first">
+                  <div class="incart-item-del">
+                    <a href="#"></a>
+                  </div>
+                  <div class="incart-item-name">iPhone5</div>
+                </td>
+                <td class="incart-item-quantity">
+                  <input type="number" value="2" ></td>
+                <td class="incart-item-price">$&nbsp;300.00</td>
+              </tr>
+              <tr>
+                <td class="incart-item-first">
+                  <div class="incart-item-del">
+                    <a href="#"></a>
+                  </div>
+                  <div class="incart-item-name">2009 Ford Mustang Blue and this is very long long long</div>
+                </td>
+               <td class="incart-item-quantity">
+                  <input type="number" value="1" >
+                </td>
+                <td class="incart-item-price">$&nbsp;7300.00</td>
+              </tr>
+            </table>
+            <!-- Calculating amount -->
+            <table class="incart incart-width">
+              <tr class="calc-amount">
+                <td>
+                  <img src="images/SubTotal.png" height="24" width="24" alt="">Subtotal</td>
+                <td class="incart-item-price">$&nbsp;7600.00</td>
+              </tr>
+              <tr class="calc-amount">
+                <td>
+                  <img src="images/Tax.png" height="24" width="24" alt="">Tax</td>
+                <td class="incart-item-price">$&nbsp;500.00</td>
+              </tr>
+              <tr class="calc-amount">
+                <td>
+                  <img src="images/ShippingDetail.png" height="24" width="24" alt="">Shipping</td>
+                <td class="incart-item-price">$&nbsp;700.00</td>
+              </tr>
+              <!-- TOTAL AMOUNT -->
+              <tr class="calc-total">
+                <td>Total (CAD)</td>
+                <td class="incart-item-price">$&nbsp;700.00</td>
+              </tr>
+            </table>
+            <div class="cart-buttons">
+              <button class="btn btn-primary" type="submit">Update Cart</button>
+              <button class="btn btn-success" type="submit">Complete Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- ./collapsed item -->
+
+
+    <!-- collapsed item -->
+      <div class="panel panel-default">
+        <div class="panel-heading products" >
+          <h4 class="panel-title">
+        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+              <span class="products-seller">Huang Muo corporation</span>
+              <span class="products-number">
+                <span>2</span>
+              </span>
+              <span class="arrow-right"></span>
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body">
+            <table class="incart">
+              <thead>
+                <tr>
+                  <td>Items in cart</td>
+                  <td>QTY</td>
+                  <td>Cost</td>
+                </tr>
+              </thead>
+              <!-- Items in shopping cart -->
+              <tr>
+                <td class="incart-item-first">
+                  <div class="incart-item-del">
+                    <a href="#"></a>
+                  </div>
+                  <div class="incart-item-name">iPhone5</div>
+                </td>
+                <td class="incart-item-quantity">
+                  <input type="number" value="2" ></td>
+                <td class="incart-item-price">$&nbsp;300.00</td>
+              </tr>
+              <tr>
+                <td class="incart-item-first">
+                  <div class="incart-item-del">
+                    <a href="#"></a>
+                  </div>
+                  <div class="incart-item-name">2009 Ford Mustang Blue and this is very long long long</div>
+                </td>
+               <td class="incart-item-quantity">
+                  <input type="number" value="1" >
+                </td>
+                <td class="incart-item-price">$&nbsp;7300.00</td>
+              </tr>
+            </table>
+            <!-- Calculating amount -->
+            <table class="incart incart-width">
+              <tr class="calc-amount">
+                <td>
+                  <img src="images/SubTotal.png" height="24" width="24" alt="">Subtotal</td>
+                <td class="incart-item-price">$&nbsp;7600.00</td>
+              </tr>
+              <tr class="calc-amount">
+                <td>
+                  <img src="images/Tax.png" height="24" width="24" alt="">Tax</td>
+                <td class="incart-item-price">$&nbsp;500.00</td>
+              </tr>
+              <tr class="calc-amount">
+                <td>
+                  <img src="images/ShippingDetail.png" height="24" width="24" alt="">Shipping</td>
+                <td class="incart-item-price">$&nbsp;700.00</td>
+              </tr>
+              <!-- TOTAL AMOUNT -->
+              <tr class="calc-total">
+                <td>Total (CAD)</td>
+                <td class="incart-item-price">$&nbsp;700.00</td>
+              </tr>
+            </table>
+            <div class="cart-buttons">
+              <button class="btn btn-primary" type="submit">Update Cart</button>
+              <button class="btn btn-success" type="submit">Complete Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- ./collapsed item -->
+
+
+    </div>
+
+  </div>
+  <!-- ./page-content -->
+
+</body>
+</html>

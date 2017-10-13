@@ -1,0 +1,266 @@
+// MyVariables
+//////////////////////////////////////////////////////
+
+@icon-font-path: "../bower_components/bootstrap/fonts/";
+@icon-font-name: "glyphicons-halflings-regular";
+
+@custom-font-path: "../fonts/custom-font/";
+@awesome-font-path: "../fonts/font-awesome/";
+
+
+@imageUrl: "../img/";
+
+// Цветовая схема
+//////////////////////////////////////////////////////
+@activeColor: @theme1;
+
+
+// Typographic
+//////////////////////////////////////////////////////
+
+// Custom Font
+@font-face {
+  font-family: 'fontello';
+  src: url('@{custom-font-path}fontello.eot?');
+  src: url('@{custom-font-path}fontello.eot?#iefix') format('embedded-opentype'),
+       url('@{custom-font-path}fontello.woff?') format('woff'),
+       url('@{custom-font-path}fontello.ttf?') format('truetype'),
+       url('@{custom-font-path}fontello.svg?#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('@{awesome-font-path}fontawesome-webfont.eot?');
+  src: url('@{awesome-font-path}fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+       url('@{awesome-font-path}fontawesome-webfont.woff?') format('woff'),
+       url('@{awesome-font-path}fontawesome-webfont.ttf?') format('truetype'),
+       url('@{awesome-font-path}fontawesome-webfont.svg?#fontawesome-webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-size-base-bootstrap: 14px;
+@font-size-base: @font-size-base-bootstrap;
+@font-size-large: round(@font-size-base * 2.43);
+@font-size-normal: round(@font-size-base * 1.3);
+@font-size-small: round(@font-size-base * 1.1);
+@font-size-xsmall: round(@font-size-base * 0.9);
+ 
+@line-height-computed: round(@font-size-base-bootstrap * @line-height-base);
+@line-height-large-my: round(@line-height-computed * 2.5);
+@line-height-normal-my: round(@line-height-computed * 1.3);
+@line-height-small-my: round(@line-height-computed * 1.1);
+@line-height-xsmall-my: @line-height-computed;
+
+@sans-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+@sans-light-font-weight: 300;
+@sans-normal-font-weight: 400;
+@sans-semibold-font-weight: 600;
+@sans-bold-font-weight: 700;
+
+/*@serif-font-family: Helvetica, Arial, sans-serif;
+@sans-normal-font-weight: 400;
+@sans-bold-font-weight: 700;*/
+
+@normal-letter-spacing: normal;
+
+@ico-size-large: 180%;
+@ico-size-normal: 140%;
+@ico-size-small: 120%;
+@ico-size-xsmall: 70%;
+
+// Grid and Sizes
+//////////////////////////////////////////////////////
+
+@grid-gutter-width: 28px;
+/*@grid-gutter-width: 0;*/
+
+@size: @grid-gutter-width;
+/*@size: @line-height-computed;*/
+
+@min-width: 320px;
+
+@borderWidth: 3px;
+@headerHeight: 74px;
+
+@transitionDelay: 0.3s;
+
+@shadowCoordsX: 0;
+@shadowCoordsY: 2px;
+@shadowSize: 1px;
+@shadowStretch: 0;
+
+// Media quieries
+@screen-mg: 1700px;
+
+
+
+// Bootstrap Colors
+//////////////////////////////////////////////////////
+@gray: lighten(#000, 33.5%);
+@gray-dark: lighten(#000, 20%);
+@gray-darker: lighten(#000, 13.5%);
+@gray-light: lighten(#000, 60%);
+@gray-lighter: lighten(#000, 93.5%);
+
+// Project colors
+//////////////////////////////////////////////////////
+
+@black: #000;
+@white: #fff;
+
+@gray: #212121;
+
+//Themes colors
+@red: #ff2626;
+@theme1: @red;
+
+@pink: #ed0b66;
+@theme2: @pink;
+
+@orange: #ff8207;
+@theme3: @orange;
+
+@darkOrange: #f7540d;
+@theme4: @darkOrange;
+
+@green: #276b2f;
+@theme5: @green;
+
+@lightGreen: #8dc011;
+@theme6: @lightGreen;
+
+@violet: #7820a5;
+@theme7: @violet;
+
+@blue: #0d7fe0;
+@theme8: @blue;
+
+@sky: #12a7d8;
+@theme9: @sky;
+
+@sea: #1b9f94;
+@theme10: @sea;
+
+@darkBlue: #2516ae;
+@theme11: @darkBlue;
+
+@vine: #ad0a29;
+@theme12: @vine;
+
+@coral: #f75f5f;
+@theme13: @coral;
+
+@indigo: #0d3b79;
+@theme14: @indigo;
+
+@military: #4f5e13;
+@theme15: @military;
+
+@lavander: #86538f;
+@theme16: @lavander;
+
+@grayLight: #ededed;
+@grayLightDark: #cdcdcd;
+
+@text-color: #3b3b3b;
+@textColor: @text-color;
+
+@mainColor: @gray;
+
+@baseGrey: #ececec;
+@lightColor: @gray-lighter;
+@darkColor: @gray-darker;
+
+
+@shadowColor: #545454;
+@borderColor: @lightColor;
+
+@backgroundOpacityWhiteColor: rgba(255,255,255,.25);
+
+@baseBorderColor: #8a8a8a;
+
+
+
+// Override Bootstrap variables
+//////////////////////////////////////////////////////
+
+@border-radius-base: 0;
+@border-radius-xs: 2px;
+@border-radius-small: 6px;
+@border-radius-large: 7px;
+
+@padding-base-vertical: 7px;
+@padding-small-vertical: 7px;
+@padding-small-horizontal: 12px;
+@padding-large-vertical:    14px;
+@padding-large-horizontal:  84px;
+
+@link-color: @gray;
+@link-hover-color: @activeColor;
+
+@input-color-placeholder: @activeColor;
+@input-color: @text-color;
+@input-bg: @white;
+@input-border: #a6a6a6;
+@input-border-focus: @activeColor;
+
+@dropdown-bg: @grayLightDark;
+@dropdown-border: @input-border;
+@dropdown-link-hover-bg: @white;
+@dropdown-link-color: @black;
+@dropdown-link-hover-color: @black;
+
+@leftMenuDropdownWidth: 300px;
+
+@caret-width-base: 5px;
+
+@tooltip-bg: @white;
+@tooltip-arrow-color: @white;
+@tooltip-color: @textColor;
+@tooltip-opacity: 1;
+@tooltip-arrow-width: 5px;
+
+@carousel-control-color: @black;
+@carousel-indicator-border-color: transparent;
+@carousel-indicator-active-bg: @activeColor;
+@carousel-control-opacity: 1;
+@carousel-text-shadow: transparent;
+
+// Frameless Grid    <http://framelessgrid.com/>
+//////////////////////////////////////////////////////
+
+//
+// Configuration
+//
+
+@font-size: @font-size-base-bootstrap;
+@em: @font-size * 1em; // Shorthand for outputting ems, e.g. "12/@em"
+
+@column: 60; // The column-width of your grid in pixels
+@gutter: 20; // The gutter-width of your grid in pixels
+
+//
+// Column-widths in variables, in ems
+//
+
+@1cols: ( 1 * (@column + @gutter) - @gutter) / @em;
+@2cols: ( 2 * (@column + @gutter) - @gutter) / @em;
+@3cols: ( 3 * (@column + @gutter) - @gutter) / @em;
+@4cols: ( 4 * (@column + @gutter) - @gutter) / @em;
+@5cols: ( 5 * (@column + @gutter) - @gutter) / @em;
+@6cols: ( 6 * (@column + @gutter) - @gutter) / @em;
+@7cols: ( 7 * (@column + @gutter) - @gutter) / @em;
+@8cols: ( 8 * (@column + @gutter) - @gutter) / @em;
+@9cols: ( 9 * (@column + @gutter) - @gutter) / @em;
+@10cols: (10 * (@column + @gutter) - @gutter) / @em;
+@11cols: (11 * (@column + @gutter) - @gutter) / @em;
+@12cols: (12 * (@column + @gutter) - @gutter) / @em;
+@13cols: (13 * (@column + @gutter) - @gutter) / @em;
+@14cols: (14 * (@column + @gutter) - @gutter) / @em;
+@15cols: (15 * (@column + @gutter) - @gutter) / @em;
+@16cols: (16 * (@column + @gutter) - @gutter) / @em;
+@17cols: (17 * (@column + @gutter) - @gutter) / @em;
+@18cols: (18 * (@column + @gutter) - @gutter) / @em;
+
+

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Welcome steps</title>
+
+	<link href="fonts/fonts.css" rel="stylesheet" />
+	<link href="css/bootstrap.css" rel="stylesheet" />
+
+	<!-- Admin stylesheet -->
+	<link href="css/starReviewsAdmin.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="css/c3.css" rel="stylesheet" type="text/css"/>
+	<!-- Merchant Dashboard Theme-->
+	<link href="css/dashboard.css" rel="stylesheet">
+
+	<!--  css -->
+	<link href="css/override-your-styles.css" rel="stylesheet">
+	<link href="css/bootstrap-select.css" rel="stylesheet" />
+	<link href="css/dropzone.css" rel="stylesheet">
+	<link href="css/jquery.validator.css" rel="stylesheet">
+	<link href="css/styledash-additional.css" rel="stylesheet">
+
+	<!--  js -->
+
+	<script type='text/javascript' src='js/jquery-1.11.3.js'></script>
+	<script type='text/javascript' src='js/bootstrap-select.min.js'></script>
+	<script type='text/javascript' src='js/jquery.form-validator.js'></script>
+	<script type='text/javascript' src='js/scripts-welcome-steps.js'></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+	<script type='text/javascript' src='js/dropzone.min.js'></script>
+
+</head>
+<body class="bg-lightblue">
+
+	<!-- Modal -->
+	<!-- If modal window without button, you need to change behavour of some DOM elements-->
+	<script type="text/javascript">
+	$( document ).ready(function() {
+		$("body").addClass("modal-open");
+		$("#StepsModal").css("display", "block");
+		$("#StepsModal").addClass("in");
+	});
+</script>
+
+	<div id="StepsModal" class="modal fade modal-styled in" role="dialog" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Step 1 -begin -->
+				<div id="step1" class="modal-body steps">
+					<div class="steps-header  text-center">
+						<div class="title-small-lightblue">Step 1</div>
+						<div class="modal-title">Tell us about Your Company</div>
+
+					</div>
+					<div class="steps-body">
+						<form>
+							<div class="form-group">
+
+								<input class="form-control input-light width100" type="text" placeholder="Company Name"></div>
+							<div class="form-group">
+								<!-- I copied the ISO country list from this page
+http://www.freeformatter.com/iso-country-list-html-select.html
+   -->
+								<select class="form-control selectpicker select-light" data-width="100%">
+									<option value="0">Company Country</option>
+									<option value="AF">Afghanistan</option>
+									<option value="AX">Åland Islands</option>
+									<option value="AL">Albania</option>
+									<option value="DZ">Algeria</option>
+									<option value="AS">American Samoa</option>
+									<option value="AD">Andorra</option>
+									<option value="AO">Angola</option>
+									<option value="AI">Anguilla</option>
+									<option value="AQ">Antarctica</option>
+									<option value="AG">Antigua and Barbuda</option>
+									<option value="AR">Argentina</option>
+									<option value="AM">Armenia</option>
+									<option value="AW">Aruba</option>
+									<option value="AU">Australia</option>
+									<option value="AT">Austria</option>
+									<option value="AZ">Azerbaijan</option>
+									<option value="BS">Bahamas</option>
+									<option value="BH">Bahrain</option>
+									<option value="BD">Bangladesh</option>
+									<option value="BB">Barbados</option>
+									<option value="BY">Belarus</option>
+									<option value="BE">Belgium</option>
+									<option value="BZ">Belize</option>
+									<option value="BJ">Benin</option>
+									<option value="BM">Bermuda</option>
+									<option value="BT">Bhutan</option>
+									<option value="BO">Bolivia, Plurinational State of</option>
+									<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+									<option value="BA">Bosnia and Herzegovina</option>
+									<option value="BW">Botswana</option>
+									<option value="BV">Bouvet Island</option>
+									<option value="BR">Brazil</option>
+									<option value="IO">British Indian Ocean Territory</option>
+									<option value="BN">Brunei Darussalam</option>
+									<option value="BG">Bulgaria</option>
+									<option value="BF">Burkina Faso</option>
+									<option value="BI">Burundi</option>
+									<option value="KH">Cambodia</option>
+									<option value="CM">Cameroon</option>
+									<option value="CA">Canada</option>
+									<option value="CV">Cape Verde</option>
+									<option value="KY">Cayman Islands</option>
+									<option value="CF">Central African Republic</option>
+									<option value="TD">Chad</option>
+									<option value="CL">Chile</option>
+									<option value="CN">China</option>
+									<option value="CX">Christmas Island</option>
+									<option value="CC">Cocos (Keeling) Islands</option>
+									<option value="CO">Colombia</option>
+									<option value="KM">Comoros</option>
+									<option value="CG">Congo</option>
+									<option value="CD">Congo, the Democratic Republic of the</option>
+									<option value="CK">Cook Islands</option>
+									<option value="CR">Costa Rica</option>
+									<option value="CI">Côte d'Ivoire</option>
+									<option value="HR">Croatia</option>
+									<option value="CU">Cuba</option>
+									<option value="CW">Curaçao</option>
+									<option value="CY">Cyprus</option>
+									<option value="CZ">Czech Republic</option>
+									<option value="DK">Denmark</option>
+									<option value="DJ">Djibouti</option>
+									<option value="DM">Dominica</option>
+									<option value="DO">Dominican Republic</option>
+									<option value="EC">Ecuador</option>
+									<option value="EG">Egypt</option>
+									<option value="SV">El Salvador</option>
+									<option value="GQ">Equatorial Guinea</option>
+									<option value="ER">Eritrea</option>
+									<option value="EE">Estonia</option>
+									<option value="ET">Ethiopia</option>
+									<option value="FK">Falkland Islands (Malvinas)</option>
+									<option value="FO">Faroe Islands</option>
+									<option value="FJ">Fiji</option>
+									<option value="FI">Finland</option>
+									<option value="FR">France</option>
+									<option value="GF">French Guiana</option>
+									<option value="PF">French Polynesia</option>
+									<option value="TF">French Southern Territories</option>
+									<option value="GA">Gabon</option>
+									<option value="GM">Gambia</option>
+									<option value="GE">Georgia</option>
+									<option value="DE">Germany</option>
+									<option value="GH">Ghana</option>
+									<option value="GI">Gibraltar</option>
+									<option value="GR">Greece</option>
+									<option value="GL">Greenland</option>
+									<option value="GD">Grenada</option>
+									<option value="GP">Guadeloupe</option>
+									<option value="GU">Guam</option>
+									<option value="GT">Guatemala</option>
+									<option value="GG">Guernsey</option>
+									<option value="GN">Guinea</option>
+									<option value="GW">Guinea-Bissau</option>
+									<option value="GY">Guyana</option>
+									<option value="HT">Haiti</option>
+									<option value="HM">Heard Island and McDonald Islands</option>
+									<option value="VA">Holy See (Vatican City State)</option>
+									<option value="HN">Honduras</option>
+									<option value="HK">Hong Kong</option>
+									<option value="HU">Hungary</option>
+									<option value="IS">Iceland</option>
+									<option value="IN">India</option>
+									<option value="ID">Indonesia</option>
+									<option value="IR">Iran, Islamic Republic of</option>
+									<option value="IQ">Iraq</option>
+									<option value="IE">Ireland</option>
+									<option value="IM">Isle of Man</option>
+									<option value="IL">Israel</option>
+									<option value="IT">Italy</option>
+									<option value="JM">Jamaica</option>
+									<option value="JP">Japan</option>
+									<option value="JE">Jersey</option>
+									<option value="JO">Jordan</option>
+									<option value="KZ">Kazakhstan</option>
+									<option value="KE">Kenya</option>
+									<option value="KI">Kiribati</option>
+									<option value="KP">Korea, Democratic People's Republic of</option>
+									<option value="KR">Korea, Republic of</option>
+									<option value="KW">Kuwait</option>
+									<option value="KG">Kyrgyzstan</option>
+									<option value="LA">Lao People's Democratic Republic</option>
+									<option value="LV">Latvia</option>
+									<option value="LB">Lebanon</option>
+									<option value="LS">Lesotho</option>
+									<option value="LR">Liberia</option>
+									<option value="LY">Libya</option>
+									<option value="LI">Liechtenstein</option>
+									<option value="LT">Lithuania</option>
+									<option value="LU">Luxembourg</option>
+									<option value="MO">Macao</option>
+									<option value="MK">Macedonia, the former Yugoslav Republic of</option>
+									<option value="MG">Madagascar</option>
+									<option value="MW">Malawi</option>
+									<option value="MY">Malaysia</option>
+									<option value="MV">Maldives</option>
+									<option value="ML">Mali</option>
+									<option value="MT">Malta</option>
+									<option value="MH">Marshall Islands</option>
+									<option value="MQ">Martinique</option>
+									<option value="MR">Mauritania</option>
+									<option value="MU">Mauritius</option>
+									<option value="YT">Mayotte</option>
+									<option value="MX">Mexico</option>
+									<option value="FM">Micronesia, Federated States of</option>
+									<option value="MD">Moldova, Republic of</option>
+									<option value="MC">Monaco</option>
+									<option value="MN">Mongolia</option>
+									<option value="ME">Montenegro</option>
+									<option value="MS">Montserrat</option>
+									<option value="MA">Morocco</option>
+									<option value="MZ">Mozambique</option>
+									<option value="MM">Myanmar</option>
+									<option value="NA">Namibia</option>
+									<option value="NR">Nauru</option>
+									<option value="NP">Nepal</option>
+									<option value="NL">Netherlands</option>
+									<option value="NC">New Caledonia</option>
+									<option value="NZ">New Zealand</option>
+									<option value="NI">Nicaragua</option>
+									<option value="NE">Niger</option>
+									<option value="NG">Nigeria</option>
+									<option value="NU">Niue</option>
+									<option value="NF">Norfolk Island</option>
+									<option value="MP">Northern Mariana Islands</option>
+									<option value="NO">Norway</option>
+									<option value="OM">Oman</option>
+									<option value="PK">Pakistan</option>
+									<option value="PW">Palau</option>
+									<option value="PS">Palestinian Territory, Occupied</option>
+									<option value="PA">Panama</option>
+									<option value="PG">Papua New Guinea</option>
+									<option value="PY">Paraguay</option>
+									<option value="PE">Peru</option>
+									<option value="PH">Philippines</option>
+									<option value="PN">Pitcairn</option>
+									<option value="PL">Poland</option>
+									<option value="PT">Portugal</option>
+									<option value="PR">Puerto Rico</option>
+									<option value="QA">Qatar</option>
+									<option value="RE">Réunion</option>
+									<option value="RO">Romania</option>
+									<option value="RU">Russian Federation</option>
+									<option value="RW">Rwanda</option>
+									<option value="BL">Saint Barthélemy</option>
+									<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+									<option value="KN">Saint Kitts and Nevis</option>
+									<option value="LC">Saint Lucia</option>
+									<option value="MF">Saint Martin (French part)</option>
+									<option value="PM">Saint Pierre and Miquelon</option>
+									<option value="VC">Saint Vincent and the Grenadines</option>
+									<option value="WS">Samoa</option>
+									<option value="SM">San Marino</option>
+									<option value="ST">Sao Tome and Principe</option>
+									<option value="SA">Saudi Arabia</option>
+									<option value="SN">Senegal</option>
+									<option value="RS">Serbia</option>
+									<option value="SC">Seychelles</option>
+									<option value="SL">Sierra Leone</option>
+									<option value="SG">Singapore</option>
+									<option value="SX">Sint Maarten (Dutch part)</option>
+									<option value="SK">Slovakia</option>
+									<option value="SI">Slovenia</option>
+									<option value="SB">Solomon Islands</option>
+									<option value="SO">Somalia</option>
+									<option value="ZA">South Africa</option>
+									<option value="GS">South Georgia and the South Sandwich Islands</option>
+									<option value="SS">South Sudan</option>
+									<option value="ES">Spain</option>
+									<option value="LK">Sri Lanka</option>
+									<option value="SD">Sudan</option>
+									<option value="SR">Suriname</option>
+									<option value="SJ">Svalbard and Jan Mayen</option>
+									<option value="SZ">Swaziland</option>
+									<option value="SE">Sweden</option>
+									<option value="CH">Switzerland</option>
+									<option value="SY">Syrian Arab Republic</option>
+									<option value="TW">Taiwan, Province of China</option>
+									<option value="TJ">Tajikistan</option>
+									<option value="TZ">Tanzania, United Republic of</option>
+									<option value="TH">Thailand</option>
+									<option value="TL">Timor-Leste</option>
+									<option value="TG">Togo</option>
+									<option value="TK">Tokelau</option>
+									<option value="TO">Tonga</option>
+									<option value="TT">Trinidad and Tobago</option>
+									<option value="TN">Tunisia</option>
+									<option value="TR">Turkey</option>
+									<option value="TM">Turkmenistan</option>
+									<option value="TC">Turks and Caicos Islands</option>
+									<option value="TV">Tuvalu</option>
+									<option value="UG">Uganda</option>
+									<option value="UA">Ukraine</option>
+									<option value="AE">United Arab Emirates</option>
+									<option value="GB">United Kingdom</option>
+									<option value="US">United States</option>
+									<option value="UM">United States Minor Outlying Islands</option>
+									<option value="UY">Uruguay</option>
+									<option value="UZ">Uzbekistan</option>
+									<option value="VU">Vanuatu</option>
+									<option value="VE">Venezuela, Bolivarian Republic of</option>
+									<option value="VN">Viet Nam</option>
+									<option value="VG">Virgin Islands, British</option>
+									<option value="VI">Virgin Islands, U.S.</option>
+									<option value="WF">Wallis and Futuna</option>
+									<option value="EH">Western Sahara</option>
+									<option value="YE">Yemen</option>
+									<option value="ZM">Zambia</option>
+									<option value="ZW">Zimbabwe</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<input class="form-control input-light width100" type="url" placeholder="Company Website"></div>
+
+							<div class="form-group">
+								<input class="form-control input-light width100" type="text" placeholder="Company Phone"></div>
+
+							<div class="form-group">
+								<select class="form-control selectpicker select-light" data-width="100%">
+									<option value="0">Company Category</option>
+									<option>Category1</option>
+									<option>Category2</option>
+									<option>Category3</option>
+								</select>
+							</div>
+							<div class="text-center">
+								<div id="step1Next" class="btn btn-green btn-big btn-steps">NEXT STEP</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- Step 1 -end -->
+
+				<!-- Step 2 -begin -->
+				<div id="step2" class="modal-body steps">
+					<div class="steps-header text-center">
+						<div class="title-small-lightblue">Step 2</div>
+						<div class="modal-title">Upload Your Company Logo</div>
+
+					</div>
+					<div class="steps-body">
+
+						<div class="text-center">
+							Upload a Company Logo that will be displayed within email review
+							<br>templates and on your store page.</div>
+
+						<!-- 
+For drug and drop and upload picture I use plugin dropzone.min.js and dropzone.css
+
+Plugin site: http://www.dropzonejs.com/
+
+ -->
+
+						<!-- And this link might be helpfull for implementation, because I added code from it to scripts-welcome-steps.js
+http://www.jqueryajaxphp.com/upload-resize-image-dropzone-php/ 
+-->
+						<div class="wrapper-outer-lg">
+							<form action="" class="dropzone " id="dropzoneLogo">
+								<div class="dz-message ">
+									<div class="text-center">
+										<img alt="" src="img/icon-big-plus-lightgrey.png" height="70" width="70"></div>
+									<div class="text-center text-upload">
+										Drag & Drop Logo
+										<br>
+										or use <u>Manual Upload</u>
+									</div>
+								</div>
+							</form>
+						</div>
+
+						<div class="text-center">
+							<div id="step2Prev" class="btn btn-lightblue btn-big btn-steps">PREVIOUS STEP</div>
+							<div id="step2Next" class="btn btn-green btn-big btn-steps">NEXT STEP</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- Step 2 -end -->
+
+				<!-- Step 3 -begin -->
+				<div id="step3" class="modal-body steps">
+					<div class="steps-header text-center">
+						<div class="title-small-lightblue">Step 3</div>
+						<div class="modal-title">Learn about Premium Options</div>
+
+					</div>
+					<div class="steps-body">
+
+						<div class="text-center">
+							Your TrustSpot Lite account comes with features to grow your reviews
+							<br>and ensure customer happiness.</div>
+
+						<div class="text-bolder paragraph-lg">
+							We also have several premium options to collect & share reviews,
+							<br>in addition to growing your sales. Few Examples:</div>
+						<div class="paragraph-sm">
+							<img alt="" src="img/label-premium-yellow.png" height="22" width="91" class="spacer-after">Upsell featured products in your review emails</div>
+						<div class="paragraph-sm">
+							<img alt="" src="img/label-premium-yellow.png" height="22" width="91" class="spacer-after">Promote your coupons to profile visitors</div>
+						<div class="paragraph-sm">
+							<img alt="" src="img/label-premium-yellow.png" height="22" width="91" class="spacer-after">Grow your public apperance with Google Star Ratings</div>
+						<div class="paragraph-sm">
+							<img alt="" src="img/label-premium-yellow.png" height="22" width="91" class="spacer-after">Respond to customer reviews</div>
+
+						<div class="step3-checkbox">
+							<div class="checkbox-lighter pull-left spacer-after">
+								<input type="checkbox" value="None" id="checkbox1" name="check" checked="checked" />
+								<label for="checkbox1"></label>
+							</div>
+							<div class="text-lighter">
+								Send me an email about premium account upgrades and save 10% off
+							</div>
+						</div>
+
+						<div class="text-center">
+							<div id="step3Prev" class="btn btn-lightblue btn-big btn-steps">PREVIOUS STEP</div>
+							<div id="step3Next" class="btn btn-green btn-big btn-steps">NEXT STEP</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- Step 3 -end -->
+
+				<!-- Step 4 -begin -->
+				<div id="step4" class="modal-body steps">
+					<div class="steps-header text-center">
+						<div class="title-small-lightblue">Step 4</div>
+						<div class="modal-title">Setup Complete</div>
+
+					</div>
+					<div class="steps-body">
+
+						<div class="text-center">
+							<img alt="" src="img/clock.png" height="100" width="100"></div>
+						<h3 class="text-center">Congratulations!</h3>
+						<div class="paragraph-md text-center">
+							Your account has been successfully setup and you're ready
+							<br>to start collecting customer reviews!</div>
+
+						<div class="text-center">
+							<div id="step4Prev" class="btn btn-lightblue btn-big btn-steps">PREVIOUS STEP</div>
+							<div id="step4Next" class="btn btn-green btn-big btn-steps">VIEW ACCOUNT</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- Step 4 -end -->
+
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

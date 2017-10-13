@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Buy Sell Fast</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- JavaScripts -->
+  <script src='js/jquery-1.10.2.min.js'></script>
+  <script src='js/bootstrap.min.js'></script>
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="top-bar-logo">
+      <a href="/">
+        <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+    </div>
+
+    <!-- Cart on the top bar -->
+    <div class="top-bar-cart">
+      <a href="#">
+        <span class="top-bar-cart-items">95</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="nav-buy">
+              <span class="nav-name">Buy</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-explore">
+              <span class="nav-name">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-sell">
+              <span class="nav-name">Sell</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-contacts">
+              <span class="nav-name">Contacts</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-messages">
+              <span class="nav-name">Messages</span>
+              <span class="nav-quantity">89</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-reports">
+              <span class="nav-name">Reports</span>
+            </a>
+          </li>
+          <li  class="active">
+            <a href="#" class="nav-settings">
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ./navbar -->
+  <!-- Page-content -->
+  <div id="page-content">
+    <!-- Container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+
+          <!-- Button trigger modal -->
+          <a class="photo-trigger" href="#" data-toggle="modal" data-target="#AddPhoto">Add Photo</a>
+
+          <!-- Modal -->
+          <div class="modal fade photo-modal photo-modal-2-buttons" id="AddPhoto" tabindex="-1" role="dialog" aria-labelledby="AddPhoto" aria-hidden="true">
+            <div class="modal-dialog ">
+              <div class="modal-content">
+
+                <div class="modal-body">
+
+                  <div class="photo-modal-title ">
+                    <img src="images/AddPhoto.png" height="31" width="37" alt="">Add Photo</div>
+
+                </div>
+                <div class="modal-footer">
+                  <div class="row-buttons">
+
+                    <div class="btn btn-darkgrey btn-add-photo">
+                      <a href="#">
+                        <span  class="photo-modal-label">Camera</span>
+                      </a>
+                    </div>
+
+                    <div class="btn btn-darkgrey btn-photo-gallery">
+                      <div class="img-replace-input">
+                        <input type="file" id="photo-gallery" name="photo-gallery">
+                        <span class="photo-modal-label">Gallery</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Button trigger modal -->
+          <a class="photo-trigger" href="#" data-toggle="modal" data-target="#OrganizePhoto">Orzanize Photo</a>
+
+          <!-- Modal -->
+          <div class="modal fade photo-modal photo-modal-3-buttons" id="OrganizePhoto" tabindex="-1" role="dialog" aria-labelledby="OrganizePhoto" aria-hidden="true">
+            <div class="modal-dialog ">
+              <div class="modal-content">
+
+                <div class="modal-body">
+
+                  <div class="photo-modal-title ">
+                    <img src="images/AddPhoto.png" height="31" width="37" alt="">Organize Photo</div>
+
+                </div>
+                <div class="modal-footer">
+                  <div class="row-buttons">
+
+                    <div class="btn btn-darkgrey btn-photo-edit">
+                      <a href="#">
+                        <span  class="photo-modal-label">Edit</span>
+                      </a>
+                    </div>
+
+                    <div class="btn btn-darkgrey btn-photo-replace">
+                      <div class="img-replace-input">
+                        <input type="file" id="photo-replace" name="photo-s">
+                        <span class="photo-modal-label">Replace</span>
+                      </div>
+                    </div>
+
+                    <div class="btn btn-darkgrey btn-photo-delete">
+                      <a href="#">
+                        <span class="photo-modal-label">Delete</span>
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- ./container --> </div>
+  <!-- ./page-content -->
+</body>
+</html>

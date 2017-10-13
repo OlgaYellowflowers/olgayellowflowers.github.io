@@ -1,0 +1,57 @@
+.asCheck_checkbox.asCheck_skin {
+  position: relative;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin: -4px 7px 0 0;
+  padding: 0;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+border: 1px #000 solid; 
+}
+.asCheck_checkbox.asCheck_skin:hover {
+
+}
+.asCheck_checkbox.asCheck_skin.asCheck_checked {
+background-color: #000;
+}
+.asCheck_checkbox.asCheck_skin.asCheck_disabled {
+  background-color: #eeeeee;
+  cursor: default;
+}
+.asCheck_checkbox.asCheck_skin.asCheck_disabled.asCheck_checked {
+  cursor: default;
+}
+.asCheck_radio.asCheck_skin {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  background-color: #dddddd;
+  background-position: 22px 0;
+  cursor: pointer;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  -ms-transform: 23px;
+  -o-transform: 23px;
+  border-radius: 23px;
+  border: 1px #000 solid; 
+}
+.asCheck_radio.asCheck_skin:hover {
+  background-color: #ffffff;
+}
+.asCheck_radio.asCheck_skin.asCheck_checked {
+  background-color: #ffffff;
+}
+.asCheck_radio.asCheck_skin.asCheck_disabled {
+  background-color: #eeeeee;
+  cursor: default;
+}
+.asCheck_radio.asCheck_skin.asCheck_disabled.asCheck_checked {
+  background-color: #ffffff;
+  cursor: default;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!-- CSS files -->
+    <link type="text/css" rel="Stylesheet" href="Styles/bootstrap.css" />
+    <link type="text/css" rel="Stylesheet" href="Styles/BSFStyles.css" />
+</head>
+<body style="margin:0;padding:0;">
+    <form name="aspnetForm" method="post" action="WelcomeScreen.aspx" id="aspnetForm">
+        <div>
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTExMTEyNDEyD2QWAmYPZBYCAgMPZBYCAgEPZBYEAgcPDxYCHgdWaXNpYmxlaGRkAgkPDxYCHwBoZGRkim9mz6kja6iUl4LAWwD9pDM0MxvLxVo6UrGRevYJJcs=" />
+        </div>
+
+        <script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+        <div>
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A8A8407F" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAANYWjNLD8G6exdGpl7CkuHEKBA46QdevCk71PA0mHH6H9QIAxzpzxIrwfJp6SHwt0O2hXlZHGoj7Cx2I9uFRXsj5MoH7Q+3aBZ6P6B39dq9Kg==" />
+        </div>
+
+        <div class="admin-panel-wrap">
+            <div class="admin-panel">
+
+                <header class="admin-header">
+                    <!-- Logo -->
+                    <div class="top-bar-logo">
+                        <a href="/">
+                            <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+                    </div>
+
+                    <!-- Admin controls -->
+                    <div class="top-bar-admin">
+                        <div class="red btn-admin fl-right">
+                            <input type="submit" name="ctl00$body$btnLogOut" value="" id="ctl00_body_btnLogOut"  />
+                            <span class="btn-circle-signout"></span>
+                            <span class="red">Log Out</span>
+                        </div>
+                    </div>
+
+                </header>
+
+                <div class="page-content">
+                    <div class="text-center">
+                        <h1>Welcome to the Administration Website!</h1>
+                    </div>
+
+                    <div class="lilac-title">
+                        <span id="ctl00_body_Label1">Administration Tools</span>
+                    </div>
+                    <ul class="list">
+                        <li>
+                            <a id="ctl00_body_LinkButton1" href="javascript:__doPostBack(&#39;ctl00$body$LinkButton1&#39;,&#39;&#39;)" class="list-link">
+                                <span class="list-text">View Store Settings</span>
+                                <span class="arrow-right"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

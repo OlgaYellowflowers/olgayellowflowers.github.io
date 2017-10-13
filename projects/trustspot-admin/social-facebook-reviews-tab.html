@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Facebook Reviews Tab</title>
+
+	<link href="css/bootstrap.css" rel="stylesheet" />
+
+	<script type='text/javascript' src='js/jquery-1.11.3.js'></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+
+	<!-- Admin stylesheet -->
+	<link href="css/starReviewsAdmin.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="css/c3.css" rel="stylesheet" type="text/css"/>
+	<!-- Merchant Dashboard Theme-->
+	<link href="css/dashboard.css" rel="stylesheet">
+
+	<!--  css -->
+	<!-- I added new fonts -->
+	<link href="fonts/fonts.css" rel="stylesheet" />
+	<link href="css/bootstrap-colorpicker.css" rel="stylesheet" />
+	<link href="css/bootstrap-select.css" rel="stylesheet" />
+	<link href="css/table-styling.css" rel="stylesheet">
+	<link href="css/override-your-styles.css" rel="stylesheet">
+	<link href="css/jquery.tagbox.css" rel="stylesheet" />
+
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="fonts/site-font.css" rel="stylesheet" />
+
+	<link href="css/styledash-additional.css" rel="stylesheet">
+
+	<!--  js -->
+	<script type='text/javascript' src='js/bootstrap-colorpicker.min.js'></script>
+	<script type='text/javascript' src='js/bootstrap-select.min.js'></script>
+	<script type="text/javascript" src="js/jquery.tagbox.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type='text/javascript' src='js/scripts-promotion.js'></script>
+
+</head>
+
+<body>
+
+	<div class="content">
+		<div class="page-header">
+			<h2>Facebook Reviews Tab</h2>
+		</div>
+		<div>
+			<p>
+				Create a tab on your Facebook page where you can display all of your reviews to your visitors. The Facebook Tab helps you show off reviews and drives quality traffic to your store. Have a question? Check out our
+				<a href="#" target="_blank">Social Sharing Guide</a>
+				.
+			</p>
+		</div>
+		<div class="chart-wrap">
+			<div class="chart-panel">
+				<p class="chart-title"> <i class="fa fa-cogs"></i>
+					SETUP
+				</p>
+			</div>
+			<div class="wrapper-outer-lg">
+				<form class="form-horizontal">
+
+					<div class="form-group form-inline ">
+						<div class="col-sm-10">
+							<label class="control-label width-md">Facebook Page ID:</label>
+							<input type="text" class="form-control input-stable-width">
+							<a class="link-text" href="#" data-toggle="tooltip" data-placement="right" title="Here is going a small tooltip. Here is going a small tooltip."> <i class="fa fa-info-circle"></i>
+							</a>
+						</div>
+					</div>
+
+					<div class="form-group form-inline ">
+						<div class="col-sm-10">
+							<label class="control-label width-md">Max Reviews:</label>
+							<input type="number" class="input-short form-control" placeholder="50">
+							<div class="form-group grey">The 50 latest reviews will be displayed.</div>
+						</div>
+					</div>
+
+					<!-- Stars checkboxes -->
+					<div class="form-group form-inline ">
+						<div class="col-sm-10">
+							<label class="control-label width-md">Show only:</label>
+
+							<div class="checkbox-inline">
+								<div class="checkbox-grey pull-left spacer-after">
+									<input name="check" id="checkboxStars5" value="None" type="checkbox">
+									<label for="checkboxStars5"></label>
+								</div>
+								<div class="checkbox-label">5 Stars</div>
+							</div>
+
+							<div class="checkbox-inline">
+								<div class="checkbox-grey pull-left spacer-after">
+									<input name="check" id="checkboxStars4" value="None" type="checkbox">
+									<label for="checkboxStars4"></label>
+								</div>
+								<div class="checkbox-label">4 Stars</div>
+							</div>
+
+							<div class="checkbox-inline">
+								<div class="checkbox-grey pull-left spacer-after">
+									<input name="check" id="checkboxStars3" value="None" type="checkbox">
+									<label for="checkboxStars3"></label>
+								</div>
+								<div class="checkbox-label">3 Stars</div>
+							</div>
+
+							<div class="checkbox-inline">
+								<div class="checkbox-grey pull-left spacer-after">
+									<input name="check" id="checkboxStars2" value="None" type="checkbox">
+									<label for="checkboxStars2"></label>
+								</div>
+								<div class="checkbox-label">2 Stars</div>
+							</div>
+
+							<div class="checkbox-inline">
+								<div class="checkbox-grey pull-left spacer-after">
+									<input name="check" id="checkboxStars1" value="None" type="checkbox">
+									<label for="checkboxStars1"></label>
+								</div>
+								<div class="checkbox-label">1 Stars</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- I added js tag plugin. Type something and click "Add tag" button -->
+					<div class="form-group">
+						<label class="control-label col-sm-3 width-label-md">Filter by Tag:</label>
+						<div class="col-sm-10">
+							<input id="jquery-tagbox-text" type="text" />
+						</div>
+					</div>
+				</form>
+
+				<div class="line-separator paragraph-lg"></div>
+
+				<div class="well">
+					<div class="bg-white">
+
+						<div class="wrapper-inner-sm">
+							<div class="blocks-inline-wrapper">
+								<img src="img/image-example.jpg" class="blocks-inline" width="130" height="50" alt="Timeline">
+								<img src="img/image-example.jpg" class="blocks-inline" width="130" height="50" alt="About">
+								<img src="img/image-example.jpg" class="blocks-inline" width="130" height="50" alt="Photos">
+								<img src="img/image-example.jpg" class="blocks-inline" width="130" height="50" alt="TrustSpot reviews">
+								<img src="img/image-example.jpg" class="blocks-inline" width="130" height="50" alt="More"></div>
+						</div>
+
+						<div class="bg-lightblue wrapper-inner-xs">
+							<h5>Check out what our customers are saying about us</h5>
+
+							<div class="clearfix">
+								<div class="stars-inline-wrapper pull-left">
+									<div class="stars-inline">
+										<i class="fa fa-2x fa-star yellow"></i>
+									</div>
+									<div class="stars-inline">
+										<i class="fa fa-2x fa-star yellow"></i>
+									</div>
+									<div class="stars-inline">
+										<i class="fa fa-2x fa-star yellow"></i>
+									</div>
+									<div class="stars-inline">
+										<i class="fa fa-2x fa-star yellow"></i>
+									</div>
+									<div class="stars-inline">
+										<i class="fa fa-2x fa-star yellow"></i>
+									</div>
+								</div>
+								<div class="pull-right">
+									<a href="#" class="btn btn-info">View our Site</a>
+								</div>
+								<div class="pull-left wrapper-inner-xs">4.8 / 5.0 Avg Rating</div>
+							</div>
+							<p>
+								See all 5,419 reviews on
+								<a href="#">TrustSpot</a>
+							</p>
+						</div>
+
+						<!-- Facebook reviews -->
+						<div class="bg-white wrapper-inner-md facebook-reviews">
+
+							<!-- One facebook review -->
+							<div class="row facebook-review">
+								<div class="col-sm-2">Ryan H.</div>
+								<div class="col-sm-8">
+									<div class="clearfix">
+										<div class="stars-inline-wrapper pull-left">
+											<div class="stars-inline">
+												<i class="fa fa fa-star yellow"></i>
+											</div>
+											<div class="stars-inline">
+												<i class="fa fa fa-star yellow"></i>
+											</div>
+											<div class="stars-inline">
+												<i class="fa fa fa-star yellow"></i>
+											</div>
+											<div class="stars-inline">
+												<i class="fa fa fa-star yellow"></i>
+											</div>
+											<div class="stars-inline">
+												<i class="fa fa fa-star yellow"></i>
+											</div>
+										</div>
+									</div>
+									<p class="paragraph-sm">
+										Review Text Here Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</p>
+									<p class="paragraph-sm">
+										<i class="fa fa-check text-success text-md"></i>
+										I recommend DigitalGameSales to my friends!
+									</p>
+								</div>
+								<div class="col-sm-2 pull-right text-right">November 21, 2015</div>
+							</div>
+
+							<!-- One facebook review -->
+							<div class="row facebook-review">
+								<div class="col-sm-2">Ryan H.</div>
+								<div class="col-sm-8">
+									<div class="clearfix">
+										<div class="stars-inline-wrapper pull-left">
+											<div class="stars-inline">
+												<i class="fa fa fa-star yellow"></i>
+											</div>
+											<div class="stars-inline">
+												<i class="fa fa fa-star yellow"></i>
+											</div>
+											<div class="stars-inline">
+												<i class="fa fa fa-star yellow"></i>
+											</div>
+										</div>
+									</div>
+									<p class="paragraph-sm">Review Text Here</p>
+								</div>
+								<div class="col-sm-2 pull-right text-right">November 21, 2015</div>
+							</div>
+
+							<!-- One facebook review -->
+							<div class="row facebook-review">
+								<div class="col-sm-2">Tweebuffelsmeteenskootmorsdoodgeskietfontein R.</div>
+								<div class="col-sm-8">
+									<div class="clearfix">
+										<div class="stars-inline-wrapper pull-left">
+											<div class="stars-inline">
+												<i class="fa fa fa-star yellow"></i>
+											</div>
+											<div class="stars-inline">
+												<i class="fa fa fa-star yellow"></i>
+											</div>
+											<div class="stars-inline">
+												<i class="fa fa fa-star yellow"></i>
+											</div>
+											<div class="stars-inline">
+												<i class="fa fa fa-star yellow"></i>
+											</div>
+										</div>
+									</div>
+									<p class="paragraph-sm">Review Text Here</p>
+								</div>
+								<div class="col-sm-2 pull-right text-right">November 21, 2015</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+<p>
+After you've confirmed your settings above click "Save", than click "Add Reviews Tab".<br>
+To publish the reviews tab you must be an administrator of your business page; check out our <a href="#" target="_blank">Facebook Reviews Tab guide</a> if you have any questions.
+</p>
+
+<div class="text-center wrapper-inner-lg">
+										<button type="submit" class="btn btn-lg btn-default">Save</button>
+										<button type="submit" class="btn btn-lg btn-success ">Add reviews tab</button>
+
+									</div>
+
+			</div>
+
+		</div>
+</body>
+	</html>

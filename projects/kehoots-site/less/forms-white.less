@@ -1,0 +1,272 @@
+.login{left:0;min-height:100%;position:absolute;top:0;width:100%;}
+.new-forms{color:@baseLightFontColor;background-size:cover!important;}
+.new-forms{input{color:@baseLightFontColor;}
+  .form-control::-moz-placeholder{color:@baseLightFontColor;}
+  .form-control:-ms-input-placeholder{color:@baseLightFontColor;}
+  .form-control::-webkit-input-placeholder{color:@baseLightFontColor;}
+  .control-label{font-weight:normal;padding-top:13px;
+    @media (max-width:767px){
+    padding-top:0;}
+  }
+  &.text-center input{text-align:center;}
+  .form-group{margin-bottom:30px;
+    @media (max-width:767px){
+    margin-bottom:15px;}
+  }
+  .form-control{border-radius:0;background:transparent;color:@baseLightFontColor!important;font-size:@baseFontSize;height:50px;
+    &:focus{outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255,255,255,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255,255,255,.6);}
+  }
+  .checkbox{padding-top:0;
+    @media (max-width:767px){
+    font-size:0.8em;}
+  }
+  .checkbox-aftertext{display:inline-block;}
+  div.styled-checkbox{display:block;width:23px;height:23px;}
+  div.styled-checkbox label{display:block;width:20px;height:20px;}
+  div.styled-checkbox input[type=checkbox]:not(old){width:20px;height:20px;margin:0;padding:0;opacity:0;}
+  div.styled-checkbox input[type=checkbox]:not(old) + label{display:inline-block;margin:0;padding:0;background:url('@{imagePath}checkbox-white.png') no-repeat 0 0;line-height:20px;}
+  div.styled-checkbox input[type=checkbox]:not(old):checked + label{background-position:0 -20px;}
+  .bg-white{font-weight:bold;}
+  .new-search{border-radius:45px;}
+  .new-search input{border-radius:0 45px 45px 0;border:10px #74a75c solid;border-left:0 none;height:90px;background:#fff;color:#34981e;text-align:center;float:left;width:100%;z-index:2;display:table-cell;line-height:1.42857;padding:6px 12px 6px 0;transition:border-color 0.15s ease-in-out 0s,box-shadow 0.15s ease-in-out 0s;
+    &:focus{-webkit-box-shadow:0;box-shadow:0;border-color:0 none!important;outline:0;}
+  .font-reg;}
+  .new-search button{border-radius:45px 0 0 45px;border-width:10px;border-color:#74a75c;border-style:solid;border-right:0;height:90px;width:80px;background:url('@{imagePath}search-green.png') 25px 19px no-repeat #fff;
+    &:hover,
+    &:focus{background-position:25px -71px;}
+  }
+
+/* end of .new-forms */}
+.new-search.focused{-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255,255,255,1);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255,255,255,1);}
+.bg-img-blue .form-control{border:2px solid #85c4db;
+  &:focus{border-color:#85c4db;}
+}
+.bg-img-green .form-control{border:2px solid #9cbf8f;
+  &:focus{border-color:#9cbf8f;}
+}
+.bg-img-blue .new-search button{border-color:#61c0e5;background:url('@{imagePath}search-blue.png') 25px 19px no-repeat #fff;
+  &:hover,
+  &:focus{background-position:25px -71px;}
+}
+.bg-img-blue .new-search input{border:10px #61c0e5 solid;border-left:0;color:#00adef!important;}
+.bg-img-blue{background:url('@{imagePath}bg-img-blue.png') center center repeat darken(@blue,15%);background-size:cover;color:#fff;}
+.bg-img-green{background:url('@{imagePath}bg-img-green.png') center center repeat darken(@green,15%);background-size:cover;color:#fff;
+  .btn-transparent{border-color:#d5d5d5;}
+}
+.bg-img-blue h1{color:#fff;}
+.h1-forms{text-align:center;padding:60px 10px 20px;color:#fff;}
+#aafil-type-selectSelectBoxIt,
+.new-search{width:550px!important;margin:0 auto;
+  @media (max-width:600px){
+  width:290px!important;}
+}
+.new-search input{@media (max-width:600px){
+  font-size:0.9em}
+}
+
+/*ooooooo- Dropdown select with green arrow -ooooooooo*/
+.big-green-select{
+
+  /* SelectBoxIt container */
+  .selectboxit-container{position:relative;display:inline-block;vertical-align:top;/*  width: 50%;
+  */}
+
+  /* Styles that apply to all SelectBoxIt elements */
+  .selectboxit-container *{font-size:18px;  /* Prevents text selection */-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:-moz-none;-ms-user-select:none;-o-user-select:none;user-select:none;outline:none;white-space:nowrap;}
+  @media (max-width:768px) and (min-width:481px){
+    .selectboxit-container *{font-size:98%;}
+  }
+  @media (max-width:480px){
+    .selectboxit-container *{font-size:96%!important;}
+  }
+
+  /* Button */
+  .selectboxit-container .selectboxit{min-width:280px; /* Width of the dropdown button */cursor:pointer;margin:0;padding:0;overflow:hidden;display:block;position:relative;height:90px;}
+
+  /* Height and Vertical Alignment of Text */
+  .selectboxit-container span{height:70px; /* Height of the drop down */line-height:70px; /* Vertically positions the drop down text */display:inline-block;}
+  .selectboxit-container .selectboxit-options a{height:70px; /* Height of the drop down */line-height:70px; /* Vertically positions the drop down text */display:block;}
+
+  /* Focus pseudo selector */
+  .selectboxit-container .selectboxit:focus{outline:0;}
+
+  /* Disabled Mouse Interaction */
+  .selectboxit.selectboxit-disabled,
+  .selectboxit-options .selectboxit-disabled{opacity:0.65;filter:alpha(opacity=65);-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;cursor:default;}
+
+  /* Button Text */
+  .selectboxit-text{overflow:hidden;text-overflow:ellipsis;padding:0 40px;max-width:100%!important}
+  .selectboxit .selectboxit-option-icon-container{margin-left:5px;}
+
+  /* Options List */
+  .selectboxit-container .selectboxit-options{-moz-box-sizing:border-box;box-sizing:border-box;min-width:100%!important;  /* Minimum Width of the dropdown list box options */*width:100%;margin:0;padding:0;list-style:none;position:absolute;overflow-x:hidden;overflow-y:auto;cursor:pointer;display:none;z-index:9999999999999;text-align:left;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+
+  /* Individual options */
+  .selectboxit-option .selectboxit-option-anchor{padding:0 2px;}
+
+  /* Individual Option Hover Action */
+  .selectboxit-option .selectboxit-option-anchor:hover{text-decoration:none;}
+
+  /* Individual Option Optgroup Header */
+  .selectboxit-option,
+  .selectboxit-optgroup-header{text-indent:0; /* Horizontal Positioning of the select box option text */margin:0;list-style-type:none;}
+
+  /* Drop Down optgroup headers */
+  .selectboxit-optgroup-header{font-weight:bold;}
+
+  /* Drop Down optgroup header hover psuedo class */
+  .selectboxit-optgroup-header:hover{cursor:default;}
+
+  /* Drop Down down arrow container */
+  .selectboxit-arrow-container{  /* Positions the down arrow */
+  width:52px;position:absolute;right:0;}
+
+  /* Drop Down down arrow */
+  .selectboxit .selectboxit-arrow-container .selectboxit-arrow{  /* Horizontally centers the down arrow */
+  margin:0 auto;position:absolute;top:26px;right:0;left:0;}
+
+  /* Drop Down down arrow for jQueryUI and jQuery Mobile */
+  .selectboxit .selectboxit-arrow-container .selectboxit-arrow.ui-icon{top:30%;}
+
+  /* Drop Down individual option icon positioning */
+  .selectboxit-option-icon-container{float:left;}
+  .selectboxit-container .selectboxit-option-icon{margin:0;padding:0;vertical-align:middle;}
+
+  /* Drop Down individual option icon positioning */
+  .selectboxit-option-icon-url{width:18px;background-size:18px 18px;background-repeat:no-repeat;height:100%;background-position:center;float:left;}
+  .selectboxit-rendering{display:inline-block!important;*display:inline!important;zoom:1!important;visibility:visible!important;position:absolute!important;top:-9999px!important;left:-9999px!important;}
+
+  /* jQueryUI and jQuery Mobile compatability fix - Feel free to remove this style if you are not using jQuery Mobile */
+  .jqueryui .ui-icon{background-color:inherit;}
+
+  /* Another jQueryUI and jQuery Mobile compatability fix - Feel free to remove this style if you are not using jQuery Mobile */
+  .jqueryui .ui-icon-triangle-1-s{background-position:-64px -16px;}
+
+  /*
+  Default Theme
+  -------------
+  Note: Feel free to remove all of the CSS underneath this line if you are not using the default theme
+  */
+  .selectboxit-btn{background:#fff;color:#74a75c;border:10px #74a75c solid;}
+  .selectboxit-btn.selectboxit-enabled:hover,
+  .selectboxit-btn.selectboxit-enabled:focus,
+  .selectboxit-btn.selectboxit-enabled:active{color:#34981e;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255,255,255,1);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255,255,255,1);}
+  .selectboxit-btn.selectboxit-enabled:hover,
+  .selectboxit-btn.selectboxit-enabled:focus{color:#34981e;text-decoration:none;background-position:0 -15px;}
+  .selectboxit-default-arrow{background:url(../images/select-green-arrow.png) 0 0 no-repeat;width:100px;height:38px;}
+  .selectboxit-open .selectboxit-default-arrow{background-position:-100px 0;}
+  .selectboxit-list{background-color:#ffffff;border:1px solid #74a75c;}
+  .selectboxit-list .selectboxit-option-anchor{padding-right:10px;color:#74a75c;background-color:transparent;background-repeat:repeat-x;padding-left:20px;border-top:1px solid #74a75c;}
+  .selectboxit-list .selectboxit-option:first-child  .selectboxit-option-anchor{border-top:0!important;}
+  .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor{background:#b7d2ae;color:#000!important;}
+  .selectboxit-list > .selectboxit-disabled > .selectboxit-option-anchor{color:#999999;}
+}
+.padding{padding:60px 0 20px 0;}
+
+// Select as input in form
+.select-as-formfield{
+
+  /* SelectBoxIt container */
+  .selectboxit-container{position:relative;display:inline-block;vertical-align:top;}
+
+  /* Styles that apply to all SelectBoxIt elements */
+  .selectboxit-container *{font-size:13px;  /* Prevents text selection */-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:-moz-none;-ms-user-select:none;-o-user-select:none;user-select:none;outline:none;white-space:nowrap;}
+  @media (max-width:768px) and (min-width:481px){
+    .selectboxit-container *{font-size:98%;}
+  }
+  @media (max-width:480px){
+    .selectboxit-container *{font-size:96%!important;}
+  }
+
+  /* Button */
+  .selectboxit-container .selectboxit{min-width:100px; /* Width of the dropdown button */cursor:pointer;margin:0;padding:0;overflow:hidden;display:block;position:relative;height:50px;}
+
+  /* Height and Vertical Alignment of Text */
+  .selectboxit-container span,
+  .selectboxit-container .selectboxit-options a{height:48px; /* Height of the drop down */line-height:48px; /* Vertically positions the drop down text */display:block;}
+
+  /* Focus pseudo selector */
+  .selectboxit-container .selectboxit:focus{outline:0;}
+
+  /* Disabled Mouse Interaction */
+  .selectboxit.selectboxit-disabled,
+  .selectboxit-options .selectboxit-disabled{opacity:0.65;filter:alpha(opacity=65);-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;cursor:default;}
+
+  /* Button Text */
+  .selectboxit-text{margin:0 13px;overflow:hidden;text-overflow:ellipsis;float:left;max-width:100%!important;color:#fff;font-size:18px;}
+  .selectboxit .selectboxit-option-icon-container{margin-left:0;}
+
+  /* Options List */
+  .selectboxit-container .selectboxit-options{-moz-box-sizing:border-box;box-sizing:border-box;min-width:100%!important;  /* Minimum Width of the dropdown list box options */*width:100%;margin:0;padding:0;list-style:none;position:absolute;overflow-x:hidden;overflow-y:auto;cursor:pointer;display:none;z-index:9999999999999;border-radius:0;text-align:left;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+
+  /* Individual options */
+  .selectboxit-option .selectboxit-option-anchor{padding:0 2px;}
+
+  /* Individual Option Hover Action */
+  .selectboxit-option .selectboxit-option-anchor:hover{text-decoration:none;}
+
+  /* Individual Option Optgroup Header */
+  .selectboxit-option,
+  .selectboxit-optgroup-header{text-indent:2px; /* Horizontal Positioning of the select box option text */margin:0;list-style-type:none;}
+
+  /* The first Drop Down option */
+  .selectboxit-option-first{border-top-right-radius:0;border-top-left-radius:0;}
+
+  /* The first Drop Down option optgroup */
+  .selectboxit-optgroup-header + .selectboxit-option-first{border-top-right-radius:0;border-top-left-radius:0;}
+
+  /* The last Drop Down option */
+  .selectboxit-option-last{border-bottom-right-radius:0;border-bottom-left-radius:0;}
+
+  /* Drop Down optgroup headers */
+  .selectboxit-optgroup-header{font-weight:bold;}
+
+  /* Drop Down optgroup header hover psuedo class */
+  .selectboxit-optgroup-header:hover{cursor:default;}
+
+  /* Drop Down down arrow container */
+  .selectboxit-arrow-container{    /* Positions the down arrow */
+  width:40px;position:absolute;right:4px;top:-1px;border-left:0;}
+
+  /* Drop Down down arrow */
+  .selectboxit .selectboxit-arrow-container .selectboxit-arrow{    /* Horizontally centers the down arrow */
+  margin:0 auto;position:absolute;top:0;right:0;left:0;}
+
+  /* Drop Down down arrow for jQueryUI and jQuery Mobile */
+  .selectboxit .selectboxit-arrow-container .selectboxit-arrow.ui-icon{top:30%;}
+
+  /* Drop Down individual option icon positioning */
+  .selectboxit-option-icon-container{float:left;}
+  .selectboxit-container .selectboxit-option-icon{margin:0;padding:0;vertical-align:middle;}
+
+  /* Drop Down individual option icon positioning */
+  .selectboxit-option-icon-url{width:18px;background-size:18px 18px;background-repeat:no-repeat;height:100%;background-position:center;float:left;}
+  .selectboxit-rendering{display:inline-block!important;*display:inline!important;zoom:1!important;visibility:visible!important;position:absolute!important;top:-9999px!important;left:-9999px!important;}
+
+  /* jQueryUI and jQuery Mobile compatability fix - Feel free to remove this style if you are not using jQuery Mobile */
+  .jqueryui .ui-icon{background-color:inherit;}
+
+  /* Another jQueryUI and jQuery Mobile compatability fix - Feel free to remove this style if you are not using jQuery Mobile */
+  .jqueryui .ui-icon-triangle-1-s{background-position:-64px -16px;}
+
+  /*
+    Default Theme
+    -------------
+    Note: Feel free to remove all of the CSS underneath this line if you are not using the default theme
+  */
+  .selectboxit-btn{background-color:transparent;border:2px #9cbf8f solid;color:#7a7a7a;}
+  &.select-as-formfield-blue .selectboxit-btn{border:2px #93d0e4 solid !important;}
+  .selectboxit-btn.selectboxit-enabled:hover,
+  .selectboxit-btn.selectboxit-enabled:focus,
+  .selectboxit-btn.selectboxit-enabled:active{color:#7a7a7a;background-color:transparent;}
+  .selectboxit-btn.selectboxit-enabled:hover,
+  .selectboxit-btn.selectboxit-enabled:focus{color:#7a7a7a;text-decoration:none;}
+  .selectboxit-default-arrow{background:url('@{imagePath}arrow-down.png') transparent center center no-repeat;width:40px;height:50px;}
+  // .select-as-formfield-blue .selectboxit-default-arrow{background:url('@{imagePath}arrow-down-blue.png') transparent center center no-repeat !important;}
+  .selectboxit-open .selectboxit-default-arrow{}
+  .selectboxit-list{background-color:#f3f3f3;color:#4f4f4f;border:1px solid #4f4f4f;font-size:18px;}
+  .selectboxit-list .selectboxit-option-anchor{color:#4f4f4f;background-color:#f3f3f3;background-repeat:repeat-x;border-top:1px solid #4f4f4f;word-wrap:break-word;padding-right:5px;font-size:18px;height:50px;}
+  .selectboxit-list .selectboxit-option:first-child  .selectboxit-option-anchor{border-top:0!important;}
+  .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor{background:#dfdfdf;margin-left:0;}
+  .selectboxit-list > .selectboxit-disabled > .selectboxit-option-anchor{color:#4f4f4f;}
+}

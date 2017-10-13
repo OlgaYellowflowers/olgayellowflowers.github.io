@@ -1,0 +1,80 @@
+.navbar-custom.top-nav-collapse ul.nav li a {
+  color: #fff;
+}
+.navbar-brand {
+  background: url('@{imagePath}logo.png');
+  width: 77px;
+  height: 45px;
+  background-size: cover;
+  margin: 10px;
+
+  &:focus {
+    outline: 0;
+  }
+}
+.navbar-toggle .icon-bar {
+  background: #fff;
+}
+.navbar-custom {
+  background: @baseNavColor;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border-bottom: 2px #fff solid; 
+}
+.navbar-fixed {
+  border-bottom: 1px #d5d5d5 solid;
+  width: 80%;
+  margin: 0 auto;
+}
+.nav {
+  padding: 24px 0 0 0;
+}
+.navbar-custom ul.nav li a {
+  font-size: 18px;
+  color: #fff;
+  padding: 0;
+  margin: 0 0 0 46px;
+  font-family: 'AvantgardeBook';
+
+  &:hover,
+  &:focus {
+    color: @baseBgColor;
+      background: transparent;
+
+  }
+
+  @media (max-width:767px) {
+    margin: 20px;
+    background: transparent;
+  }
+  @media (min-width:768px) and (max-width:1000px) {
+    font-size: 16px;
+  }
+  @media (min-width:1001px) and (max-width:1199px) {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:767px) {
+  .navbar-custom ul.nav {
+    padding: 0;
+  }
+}
+.navbar-custom ul.nav li:last-child a {
+  background: transparent;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.navbar-toggle {
+  font-size: 0.77em;
+  color: #fff;
+  margin: 16px 8px 0;
+
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+}

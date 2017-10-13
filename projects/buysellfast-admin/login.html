@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <title></title>
+
+    <!-- CSS files -->
+    <link type="text/css" rel="Stylesheet" href="Styles/bootstrap.css" />
+    <link type="text/css" rel="Stylesheet" href="Styles/BSFStyles.css" />
+
+    <script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+        var windowHeight = $(window).height();
+        UIService.SaveWindowHeight(windowHeight, OnCompleted);
+    });
+
+    function OnCompleted() { }
+        </script>
+</head>
+<body style="margin:0;padding:0;">
+    <form name="aspnetForm" method="post" action="login.aspx" id="aspnetForm">
+        <div>
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjAwMDQ4MjExNGRkyl0MBbfQJiaj+0+mwW7I7CnV0soLik4MRv4y/ss64PM=" />
+        </div>
+
+        <div>
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1D3207DC" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAQ1jxb0UcHUiM0wb30L6dvlV5js7rUfFAbHoQVmNCOOB3d0tjk80Ryx8LuqYTadhtMP7FDnsJqvYecG2na3qxq4V0Ad58ipvEGOQOAp1fEGYI5An7G4XjXeSBIix8oN7Aw=" />
+        </div>
+
+        <div class="admin-panel-wrap">
+            <div class="admin-panel">
+
+                <header class="admin-header">
+                    <!-- Logo -->
+                    <div class="top-bar-logo">
+                        <a href="/">
+                            <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+                    </div>
+
+                </header>
+
+                <div class="container">
+                    <div class="grey-block login-block">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span id="ctl00_body_lblLoginId" class="label">Login ID</span>
+                            </div>
+                            <div class="col-xs-8">
+                                <input name="ctl00$body$txtLoginID" type="text" id="ctl00_body_txtLoginID" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span id="ctl00_body_lblPassword" class="label">Password</span>
+                            </div>
+                            <div class="col-xs-8">
+                                <input name="ctl00$body$txtPassword" type="password" id="ctl00_body_txtPassword" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <span id="ctl00_body_lblBlank" class="label" style="background-color:Transparent;"></span>
+                                <input type="submit" name="ctl00$body$btnLogin" value="Login" id="ctl00_body_btnLogin" class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+
+</body>
+</html>

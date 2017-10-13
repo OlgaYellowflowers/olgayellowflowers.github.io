@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Buy Sell Fast</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- JavaScripts -->
+  <script src='js/jquery.min.js'></script>
+  <script src='js/bootstrap.min.js'></script>
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="top-bar-logo">
+      <a href="/">
+        <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+    </div>
+
+    <!-- Cart on the top bar -->
+    <div class="top-bar-cart">
+      <a href="#">
+        <span class="top-bar-cart-items">95</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="nav-buy">
+              <span class="nav-name">Buy</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-explore">
+              <span class="nav-name">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-sell">
+              <span class="nav-name">Sell</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-contacts">
+              <span class="nav-name">Contacts</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-messages">
+              <span class="nav-name">Messages</span>
+              <span class="nav-quantity">89</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-reports">
+              <span class="nav-name">Reports</span>
+            </a>
+          </li>
+          <li  class="active">
+            <a href="#" class="nav-settings">
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ./navbar -->
+
+  <div id="page-content">
+
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="breadcrumbs-wrap">
+        <div class="back-link">
+          <a href="#">Back</a>
+        </div>
+        <div class="page-title icon-item-details">
+          <span>Buyers Profile</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-lilac">
+      <h2>Shipping ADDRESS</h2>
+      <p>
+        The shipping address is the location where the order is to be sent. This can be the same as or different from the billing address.
+      </p>
+    </div>
+
+    <!-- The same as shipping address -->
+    <div class="bg-white">
+      <div  class="styled-checkbox-label">Same as the billing address</div>
+      <div  class="styled-checkbox">
+        <input id="checkbox1" type="checkbox" name="checkbox1" value="1" checked="checked">
+        <label for="checkbox1">&nbsp;</label>
+      </div>
+    </div>
+    <div class="bg-lilac"></div>
+
+    <form role="form">
+
+      <div class="buyer-billing-address">
+
+        <div class="buyer-billing-address-row">
+          <div class="label">Full Name</div>
+          <div class="form-group">
+            <input type="text" placeholder="Enter your name, e.g., John B Smith" id="" class="form-control"></div>
+
+        </div>
+
+        <div class="buyer-billing-address-row">
+          <div class="label">Address 1</div>
+          <div class="form-group">
+            <input type="email" placeholder="Enter your apartment, suite, buzzer, etc." id="" class="form-control"></div>
+
+        </div>
+
+        <div class="buyer-billing-address-row">
+          <div class="label">Address 2</div>
+          <div class="form-group">
+            <input type="email" placeholder="Enter your apartment, suite, buzzer, etc." id="" class="form-control"></div>
+
+        </div>
+
+        <div class="buyer-billing-address-row">
+          <div class="label">City</div>
+          <div class="form-group">
+            <input type="email" placeholder="Enter your city name" id="" class="form-control"></div>
+          <a class="list-link" href="#">
+            <span class="location-name"> <i>Vancouver</i>
+            </span>
+            <span class="arrow-right"></span>
+          </a>
+        </div>
+
+        <div class="buyer-billing-address-row link-location">
+          <div class="label">Country</div>
+          <a class="list-link" href="#">
+            <span class="location-name"> <i>Canada</i>
+            </span>
+            <span class="arrow-right"></span>
+          </a>
+        </div>
+
+        <div class="buyer-billing-address-row link-location">
+          <div class="label">Postal / Zip Code</div>
+          <div class="form-group">
+            <input type="email" placeholder="Enter your city name" id="" class="form-control"></div>
+        </div>
+
+        <div class="buyer-billing-address-row link-location">
+          <div class="label">Province / State</div>
+          <a class="list-link" href="#">
+            <span class="location-name">
+              <i>British Colombia</i>
+            </span>
+            <span class="arrow-right"></span>
+          </a>
+        </div>
+
+      </div>
+
+      <button type="submit" class="btn btn-primary ">Save</button>
+    </form>
+  </div>
+  <!-- ./page-content -->
+
+</body>
+</html>

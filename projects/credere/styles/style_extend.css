@@ -1,0 +1,331 @@
+.logo_credere {
+	background-image: url('../images/logo.svg');
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-position: 5px 0;
+	width: 120px;
+	height: 20px;
+	display: inline-block;
+}
+
+#logo {
+	border-right: 1px solid #e4e5e7;
+	width: 181px;
+}
+
+nav[role="navigation"] .hide-menu {
+	display: none;
+}
+
+nav[role="navigation"] .navbar-left .small-header .panel-body {
+	padding: 11px 25px 10px;
+	border-bottom-width: 0px;
+}
+
+.fixed-sidebar #menu {
+	padding-right: 0;
+}
+
+.mobile-only {
+	display: none;
+}
+
+#header {
+	height: 56px;
+}
+
+.fixed-navbar #wrapper {
+	top: 56px;
+}
+
+#menu {
+	top: 55px;
+}
+
+.form-horizontal .control-label.text-center {
+	text-align: center;
+}
+
+@media (max-width:768px) {
+	nav[role="navigation"] .hide-menu {
+		display: block;
+	}
+
+	nav[role="navigation"] .navbar-left .small-header {
+		display: none;
+	}
+
+	.mobile-only {
+		display: block;
+	}
+
+}
+
+.form-horizontal .control-label.text-left {
+	text-align: left;
+}
+
+.c3-chart-line {
+	width: 2px;
+}
+
+.c3-line {
+	stroke-width: 2;
+}
+
+.c3-circle {
+	stroke: #ffffff;
+	stroke-width: 1;
+	fill: #ffffff;
+}
+
+.c3-axis {
+	fill: #aaaaaa;
+}
+
+.c3-axis line {
+	fill: #aaaaaa;
+	stroke: #dddddd;
+}
+
+.c3-axis path {
+	stroke: #dddddd;
+}
+
+.c3-grid line {
+	stroke: #eeeeee;
+}
+
+.c3-legend-item {
+	fill: #999999;
+}
+
+#scatter .c3-circle {
+	stroke-width: 10;
+	width: 10;
+	stroke: none;
+}
+
+.row-tile {
+	clear: both;
+	float: none;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.col-tile {
+	min-width: 180px;
+	max-width: 200px;
+}
+
+.col-tile h3 {
+	font-size: 22px;
+	white-space: nowrap;
+}
+.equal-account-performance .row > div {
+	margin-bottom: 10px;
+}
+@media (max-width: 480px){
+	.equal-account-performance .m-l-xl {
+		margin-left: 10px;
+	}
+
+.col-tile {
+	min-width: 100%;
+	max-width: 100%;
+	width: 100%;
+}	
+.col-tile h3 {
+	margin-bottom: 5px;
+}
+.col-tile .hpanel {
+	margin-bottom: 10px;
+}
+.col-tile .panel-body {
+	padding: 5px;
+}
+}
+@media (min-width:1400px) {
+	.col-tile h3 {
+		font-size: 24px;
+	}
+
+	.row-tile {
+		flex-wrap: nowrap;
+	}
+
+}
+
+@media (max-width:1000px) {
+	.col-tile h3 {
+		font-size: 20px;
+		white-space: normal;
+	}
+
+}
+
+@media (max-width:768px) {
+	.col-tile {
+		width: 180px;
+		float: left;
+	}
+
+}
+
+.width100 {
+	width: 100%;
+}
+
+.table-with-checkbox .checkbox {
+	padding-top: 0;
+}
+
+.table th {
+	padding-bottom: 7px !important;
+}
+
+th.checkbox-column {
+	padding: 0 5px 2px 2px !important;
+}
+
+.live {
+	animation: blinker 0.8s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+	-webkit-animation: blinker 0.8s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+}
+
+@keyframes blinker {
+	to {
+		opacity: 0.2;
+	}
+
+}
+
+@-webkit-keyframes blinker {
+	to {
+		opacity: 0.2;
+	}
+
+}
+
+.panel-title .btn-switcher {
+	margin: -5px 0 -8px 10px !important;
+}
+.panel-heading[role="tab"] {
+	cursor: pointer; 
+}
+.btn  .closebtn {
+	color: rgba(255, 255, 255, 0.5);
+	margin-left: 9px;
+}
+
+.table.table-styled > tr > td:first-child,
+.table.table-styled > thead > tr > td:first-child,
+.table.table-styled > tbody > tr > td:first-child,
+.table.table-styled > tfoot > tr > td:first-child {
+	padding-left: 0;
+}
+
+.table.table-styled > tr > td,
+.table.table-styled > thead > tr > td,
+.table.table-styled > tbody > tr > td,
+.table.table-styled > tfoot > tr > td {
+	border-top: 0 none;
+}
+
+.table.table-styled > tfoot > tr > td {
+	border-top: 1px #ddd solid;
+	font-weight: bold;
+}
+@media (min-width: 480px) {
+.cashflow-equal-blocks {
+	clear: both;
+	float: none;
+	display: flex;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+}
+.cashflow-equal-blocks > div {
+	clear: both;
+	float: none;
+}
+
+@media (max-width:480px) {
+	.cashflow-equal-blocks {
+		width: 100%;
+	}
+
+}
+
+.icon-question {
+	background-color: #ddd;
+	height: 16px;
+	width: 16px;
+	position: relative;
+	margin: 0px 0 0 4px;
+	display: inline-block;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	cursor: help;
+}
+
+.icon-question:before {
+	content: "?";
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 5px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.table-cashflow td {
+	text-align: center;
+}
+
+.table-cashflow th {
+	text-align: center !important;
+	vertical-align: top !important;
+}
+
+.panel-body .table:last-child {
+	margin-bottom: 0;
+}
+
+
+                        .selection-filters > .btn {
+                            margin-bottom:3px;
+                        }
+
+
+
+
+
+
+
+
+                        .popover-content {
+	padding: 10px;
+}
+.popup-window {
+	display: inline-block;
+	padding: 7px;
+	
+}
+.popup-window:hover,
+.popup-window:focus{
+	opacity: 0.85;
+}
+.btn-popup {
+	font-style: normal;
+	cursor: pointer;
+}
+#accordion .popover-title {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.input-group .select2-input {
+	min-width: 50px;
+}

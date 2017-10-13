@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Buy Sell Fast</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- JavaScripts -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src='js/bootstrap.min.js'></script>
+  <script src='js/main.js'></script>
+
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="top-bar-logo">
+      <a href="/">
+        <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+    </div>
+
+    <!-- Cart on the top bar -->
+    <div class="top-bar-cart">
+      <a href="#">
+        <span class="top-bar-cart-items">95</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="nav-buy">
+              <span class="nav-name">Buy</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-explore">
+              <span class="nav-name">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-sell">
+              <span class="nav-name">Sell</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-contacts">
+              <span class="nav-name">Contacts</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-messages">
+              <span class="nav-name">Messages</span>
+              <span class="nav-quantity">89</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-reports">
+              <span class="nav-name">Reports</span>
+            </a>
+          </li>
+          <li  class="active">
+            <a href="#" class="nav-settings">
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ./navbar -->
+
+  <div id="page-content">
+
+    <!-- Panel with ALL-MESSAGES MENU and DROPDOWN with EXPANDED MESSAGES CATEGORIES  -->
+    <ul class="page-controls" role="tablist">
+
+      <!-- ALL-MESSAGES MENU -->
+
+      <!-- All-mesagges menu button -->
+      <li role="presentation" class="dropdown-panel dropdown-panel-menu ">
+        <span id="dropdownMenu1" class="messages-menu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+          <span></span>
+        </span>
+
+        <!-- SUBMENUS in all-messages menu -->
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+          <li role="presentation" class="messages-cat">
+            <a role="menuitem" tabindex="-1" href="#">
+              <span class="messages-cat-wrap">
+                <span class="messages-cat-title">All messages</span>
+                <span class="messages-number">
+                  <span>222</span>
+                </span>
+              </span>
+            </a>
+          </li>
+          <li role="presentation" class="messages-cat">
+            <a role="menuitem" tabindex="-1" href="#">
+              <span class="messages-cat-wrap">
+                <span class="messages-cat-title">Messages from Friends</span>
+                <span class="messages-number">
+                  <span>8</span>
+                </span>
+              </span>
+            </a>
+          </li>
+          <li role="presentation" class="messages-cat">
+            <a role="menuitem" tabindex="-1" href="#">
+              <span class="messages-cat-wrap">
+                <span class="messages-cat-title">Friend Requests</span>
+              </span>
+            </a>
+          </li>
+          <li role="presentation" class="messages-cat">
+            <a role="menuitem" tabindex="-1" href="#">
+              <span class="messages-cat-wrap">
+                <span class="messages-cat-title">My Messages to Customers</span>
+              </span>
+            </a>
+          </li>
+          <li role="presentation" class="messages-cat">
+            <a role="menuitem" tabindex="-1" href="#">
+              <span class="messages-cat-wrap">
+                <span class="messages-cat-title">Sellers Messages for Me</span>
+              </span>
+            </a>
+          </li>
+          <li role="presentation" class="messages-cat">
+            <a role="menuitem" tabindex="-1" href="#">
+              <span class="messages-cat-wrap">
+                <span class="messages-cat-title">My Purchased Orders</span>
+                <span class="messages-number">
+                  <span>3222</span>
+                </span>
+              </span>
+            </a>
+          </li>
+          <li role="presentation" class="messages-cat">
+            <a role="menuitem" tabindex="-1" href="#">
+              <span class="messages-cat-wrap">
+                <span class="messages-cat-title">My Sold orders</span>
+                <span class="messages-number">
+                  <span>3222</span>
+                </span>
+              </span>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li role="presentation" class="dropdown-panel dropdown-panel-expanded dropdown-with-arrow">
+        <span id="dropdownMenu2"  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+          <span class="messages-title">My Messages to Sellers</span>
+          <span class="messages-number">
+            <span>12</span>
+          </span>
+          <span class="arrow-right chevron-greengrey"></span>
+        </span>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+          <li role="presentation" class="messages-cat">
+            <a role="menuitem" tabindex="-1" href="#">
+              <span class="messages-cat-wrap">
+                <span class="messages-cat-title">Messages from Friends</span>
+                <span class="messages-number">
+                  <span>2</span>
+                </span>
+              </span>
+            </a>
+          </li>
+          <li role="presentation" class="messages-cat">
+            <a role="menuitem" tabindex="-1" href="#">
+              <span class="messages-cat-wrap">
+                <span class="messages-cat-title">Friend Requests</span>
+              </span>
+            </a>
+          </li>
+          <li role="presentation" class="messages-cat">
+            <a role="menuitem" tabindex="-1" href="#">
+              <span class="messages-cat-wrap">
+                <span class="messages-cat-title">My Messages to Sellers</span>
+                <span class="messages-number">
+                  <span>498</span>
+                </span>
+              </span>
+            </a>
+          </li>
+          <li role="presentation" class="messages-cat">
+            <a role="menuitem" tabindex="-1" href="#">
+              <span class="messages-cat-wrap">
+                <span class="messages-cat-title">Customer Messages for Me</span>
+              </span>
+            </a>
+          </li>
+          <li role="presentation" class="messages-cat">
+            <a role="menuitem" tabindex="-1" href="#">
+              <span class="messages-cat-wrap">
+                <span class="messages-cat-title">My Sold Orders</span>
+              </span>
+            </a>
+          </li>
+          <li role="presentation" class="messages-cat">
+            <a role="menuitem" tabindex="-1" href="#">
+              <span class="messages-cat-wrap">
+                <span class="messages-cat-title">My Purchased Orders</span>
+                <span class="messages-number">
+                  <span>3222</span>
+                </span>
+              </span>
+            </a>
+          </li>
+          <li role="presentation" class="messages-cat">
+            <a role="menuitem" tabindex="-1" href="#">
+              <span class="messages-cat-wrap">
+                <span class="messages-cat-title">Stores Followed</span>
+              </span>
+            </a>
+          </li>
+          <li role="presentation" class="messages-cat">
+            <a role="menuitem" tabindex="-1" href="#">
+              <span class="messages-cat-wrap">
+                <span class="messages-cat-title">Follow Requests from Stores</span>
+                <span class="messages-number">
+                  <span>72</span>
+                </span>
+              </span>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+    </ul>
+
+ 
+  <!-- One item - message box -->
+  <div class="messages-box">
+    <div class="messages-box-not-a-link">
+      <span class="user-avatar-wrap">
+        <span class="user-avatar">
+          <img alt="image" src="images/user-avatar.png" class="user-avatar-img"></span>
+      </span>
+      <span class="messages-box-wrap">
+        <span class="messages-box-info">
+          <span class="messages-box-date">3:20 PM</span>
+        </span>
+        <span class="messages-box-user">
+          <span class="messages-box-user-name">Marvin Carr</span>
+        </span>
+        <span class="text-lilac">Would like to add you as a friend?</span>
+        <span class="messages-action-wrap">
+          <a href="#" class="messages-action add-friends">Add Friends</a>
+          <a href="#" class="messages-action ignore-request">Ignore Request</a>
+        </span>
+      </span>
+    </div>
+  </div>
+
+  <!-- One item - message box -->
+  <div class="messages-box">
+    <a href="#" class="messages-box-link">
+      <span class="user-avatar-wrap">
+        <span class="user-avatar">
+          <img alt="image" src="images/user-avatar.png" class="user-avatar-img"></span>
+      </span>
+      <span class="messages-box-wrap">
+        <span class="messages-box-info">
+          <span class="messages-box-date">Yesterday</span>
+        </span>
+        <span class="messages-box-user">
+          <span class="messages-box-user-name">Rosa Green</span>
+          <span class="label-seller">Seller</span>
+        </span>
+        <span class="seller-store">Name of store of seller</span>
+        <span class="text-grey">Some text bla bla bla</span>
+      </span>
+    </a>
+  </div>
+
+  <!-- One item - message box -->
+  <div class="messages-box">
+    <a href="#" class="messages-box-link">
+      <span class="user-avatar-wrap">
+        <span class="user-avatar">
+          <img alt="image" src="images/user-avatar.png" class="user-avatar-img"></span>
+      </span>
+      <span class="messages-box-wrap">
+        <span class="messages-box-info">
+          <span class="messages-box-date">Friday</span>
+          <span class="messages-number">
+            <span>12</span>
+          </span>
+        </span>
+        <span class="messages-box-user">
+          <span class="messages-box-user-name">Alvin Walters</span>
+          <span class="label-buyer">Buyer</span>
+        </span>
+        <span class="buyer-product">Name of product of buyer</span>
+        <span class="text-grey">
+          Some text bla bla bla Some text bla bla bla Some text bla bla bla Some text bla bla bla Some text bla bla bla
+        </span>
+      </span>
+    </a>
+  </div>
+
+  <!-- BUY SELL FAST TEAM - message box -->
+  <div class="messages-box">
+    <a href="#" class="messages-box-link">
+      <span class="messages-box-bsf">
+        <span class="user-avatar-wrap">
+          <img alt="image" src="images/buysellfast-logo-narrow.png" height="75" width="55"></span>
+        <span class="messages-box-wrap">
+          <span class="title-bsf">
+            <span class="blue">The</span>
+            <span class="lightorange">Buy</span>
+            <span class="magenta">Sell</span>
+            <span class="lilac">Fast</span>
+            <span class="green">Team</span>
+          </span>
+          <span class="text-grey">
+            Some text bla bla bla Some text bla bla bla Some text bla bla bla Some text bla bla bla Some text bla bla bla Some text bla bla bla
+          </span>
+        </span>
+      </span>
+    </a>
+  </div>
+
+  <!-- One item - message box -->
+  <div class="messages-box">
+    <a href="#" class="messages-box-link">
+      <span class="user-avatar-wrap">
+        <span class="user-avatar">
+          <img alt="image" src="images/user-avatar.png" class="user-avatar-img"></span>
+      </span>
+      <span class="messages-box-wrap">
+        <span class="messages-box-info">
+          <span class="messages-box-date">February 4</span>
+          <span class="messages-number">
+            <span>3</span>
+          </span>
+        </span>
+        <span class="messages-box-user">
+          <span class="messages-box-user-name">Tammy Rose very very long name Sara Rosa</span>
+        </span>
+        <span class="text-grey">Some text bla bla bla</span>
+      </span>
+    </a>
+  </div>
+
+  <!-- One item - message box -->
+  <div class="messages-box">
+    <div class="messages-box-not-a-link">
+      <span class="user-avatar-wrap">
+        <span class="user-avatar">
+          <img alt="image" src="images/user-avatar.png" class="user-avatar-img"></span>
+      </span>
+      <span class="messages-box-wrap">
+        <span class="messages-box-info">
+          <span class="messages-box-date">February, 10</span>
+        </span>
+        <span class="messages-box-user">
+          <span class="messages-box-user-name">Nick Colt</span>
+          <span class="label-seller">Seller</span>
+        </span>
+        <span class="messages-action-wrap">
+          <a href="#" class="messages-action remove-friends">Remove Friends</a>
+        </span>
+      </span>
+    </div>
+  </div>
+
+  <div class="messages-box">
+    <a href="#" class="messages-box-link">
+      <span class="user-avatar-wrap">
+        <span class="user-avatar">
+          <img alt="image" src="images/user-avatar.png" class="user-avatar-img"></span>
+      </span>
+      <span class="messages-box-wrap">
+        <span class="messages-box-info">
+          <span class="messages-box-date">February, 10</span>
+        </span>
+        <span class="messages-box-user">
+          <span class="messages-box-user-name">Nick Colt</span>
+          <span class="label-seller">Seller</span>
+        </span>
+        <span class="seller-product">Name of product of seller</span>
+        <span class="text-grey">Some text bla bla bla</span>
+      </span>
+    </a>
+  </div>
+
+</div>
+<!-- ./page-content -->
+
+</body>
+</html>

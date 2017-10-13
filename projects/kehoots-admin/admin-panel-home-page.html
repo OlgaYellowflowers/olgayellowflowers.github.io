@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Admin Panel Kehoots</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+
+  <!-- LESS -->
+  <link href="less/style-new-admin-panel.less" rel="stylesheet/less" type="text/css">
+
+  <script>
+    less = {
+      env: "development",
+      async: false,
+      fileAsync: false,
+      poll: 1000,
+      functions: {},
+      dumpLineNumbers: "comments",
+      relativeUrls: false,
+      rootpath: ""
+    };
+  </script>
+  <script src="js/less.min.js" type="text/javascript"></script>
+
+<body>
+  <div  id="main-region">
+
+    <!-- Begin of div.new-admin-panel css classes  - all the pages of new mark up (except admin pages) must be placed in this div -->
+    <!-- Начало div.new-admin-panel классов в css  - все страницы с новой версткой (кроме страниц админки) должны быть помещены в этот div -->
+    <div class="new-admin-panel">
+
+      <aside class="admin-sidebar ">
+
+        <!-- Menu -->
+        <div class="nav-side-menu">
+
+          <!-- Small user info on sidebar -->
+          <div class="small-user-info">
+            <div class="small-user-info-userpic">
+              <img src="images/userpic-example.jpg" height="48" width="48" alt="User Avatar"></div>
+            <div class="small-user-info-name">Mike Tyson</div>
+            <div class="small-user-info-address">
+              Str Boston, Nr 312 
+            </div>
+            <div class="small-user-info-link">
+              <a href="#">Edit Profile</a>
+            </div>
+          </div>
+
+          <div class="menu-list">
+
+            <ul id="menu-content" class="menu-content">
+
+              <li data-toggle="collapse" data-target="#navigation" class="collapsed active">
+                <a href="#">Navigation</a>
+              </li>
+              <ul class="sub-menu collapse in" id="navigation">
+                <li >
+                  <a href="#">Dashboard</a>
+                </li>
+                <li class="active">
+                  <a href="#">Add perk</a>
+                </li>
+                <li>
+                  <a href="#">Manage Perks and Rewards</a>
+                </li>
+                <li>
+                  <a href="#">Redemtions</a>
+                </li>
+                <li>
+                  <a href="#">Request Perk Management</a>
+                </li>
+                <li>
+                  <a href="#">Refferal Perk Management</a>
+                </li>
+                <li>
+                  <a href="#">Account and Billing</a>
+                </li>
+              </ul>
+
+              <li data-toggle="collapse" data-target="#merchant" class="collapsed">
+                <a href="#">Merchant Management</a>
+              </li>
+              <ul class="sub-menu collapse in" id="merchant">
+                <li>
+                  <a href="#">Add Merchant Profile</a>
+                </li>
+                <li>
+                  <a href="#">Manage Merchants</a>
+                </li>
+                <li>
+                  <a href="#">Activate Pending Merchants</a>
+                </li>
+                <li>
+                  <a href="#">Merchant Category Manage</a>
+                </li>
+              </ul>
+
+              <li data-toggle="collapse" data-target="#affiliation" class="collapsed">
+                <a href="#">Affiliation Management</a>
+              </li>
+              <ul class="sub-menu collapse in" id="affiliation">
+                <li>
+                  <a href="#">Add Affiliation</a>
+                </li>
+                <li>
+                  <a href="#">Manage Affiliations</a>
+                </li>
+                <li>
+                  <a href="#">Activate Pending Affiliations</a>
+                </li>
+                <li>
+                  <a href="#">Custom Affiliation Type</a>
+                </li>
+              </ul>
+
+              <li  data-toggle="collapse" data-target="#users" class="collapsed ">
+                <a href="#">Users</a>
+              </li>
+              <ul class="sub-menu collapse in" id="users">
+                <li >
+                  <a href="#">Manage Users</a>
+                </li>
+
+                <li>
+                  <a href="#">Manage Admin Users</a>
+                </li>
+                <li>
+                  <a href="#">Send Invites</a>
+                </li>
+              </ul>
+
+              <li  data-toggle="collapse" data-target="#perk" class="collapsed ">
+                <a href="#">Perk Management</a>
+              </li>
+              <ul class="sub-menu collapse in" id="perk">
+                <li >
+                  <a href="#">Manage Perks</a>
+                </li>
+                <li>
+                  <a href="#">Activate Perks</a>
+                </li>
+                <li>
+                  <a href="#">Send Push Notifications</a>
+                </li>
+                <li>
+                  <a href="#">View Perk Redemptions</a>
+                </li>
+              </ul>
+
+            </ul>
+          </div>
+        </div>
+
+      </aside>
+
+      <div class="main-admin-panel">
+        <div class="header-content">
+          <div class="navbar-button">
+            <button type="button" class="sidebar-toggle" >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+        </div>
+
+
+<!-- CONTENT -->
+        <section class="content">
+          <div class="page-title-wrap">
+<div class="page-title">
+  <h1>Dashboard</h1>
+  <p>Welcome back, Mike</p>
+</div>
+</div>
+
+          <!-- Colored Blocks with Info Statistics-->
+          <div class="row-fluid-5">
+            <div class="span2">
+              <div class="info-block rounded bg-lightblue">
+                <div class="info-block-title">
+                  <div class="info-block-refresh">
+                    <a href="#"></a>
+                  </div>
+                  Active Perks
+                </div>
+                <div class="info-block-number">10</div>
+                <div class="progress progress-styled">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    <span class="sr-only">60% Complete</span>
+                  </div>
+                </div>
+                <div class="info-block-text">You have 5 perks remaining</div>
+              </div>
+            </div>
+            <div class="span2">
+              <div class="info-block rounded  bg-orange">
+                <div class="info-block-title">
+                  <div class="info-block-refresh">
+                    <a href="#"></a>
+                  </div>
+                  Redemptions
+                </div>
+                <div class="info-block-number  info-block-number-aligned">10</div>
+              </div>
+            </div>
+            <div class="span2">
+              <div class="info-block rounded  bg-green">
+                <div class="info-block-title">
+                  <div class="info-block-refresh">
+                    <a href="#"></a>
+                  </div>
+                  New Groups / Affiliations
+                </div>
+                <div class="info-block-number info-block-number-aligned">10</div>
+              </div>
+            </div>
+            <div class="span2">
+              <div class="info-block rounded bg-lightblue">
+                <div class="info-block-title">
+                  <div class="info-block-refresh">
+                    <a href="#"></a>
+                  </div>
+                  Requests
+                </div>
+                <div class="info-block-number info-block-number-aligned">10</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="chart-container">
+                <img class="img-responsive" src="images/chart-example.png" height="293" width="586" alt="image"></div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+
+              <!-- Put your map in this .map-container, map will be responsive -->
+              <!-- Вставь карту в .map-container и она будет адаптивная -->
+              <div class="map-container">
+
+
+                <!-- This is a PLACE STICKER on the map (top, left and absolute position have been indicated just for example) -->
+                <!-- Это СТИКЕР на карте (позиции top, left и absolute указаны только для примера) -->
+                <div class="place-sticker" style="position: absolute; top: 150px; left: 160px; cursor:pointer "></div>
+
+                  <!-- In the bottom of the page there is a script that shows popup box-with-arrow-top - that script also only for example -->
+                  <!-- Внизу страницы скрипт, который открывает попап  box-with-arrow-top - этот скрипт только для примера -->
+
+                <!-- This is a BOX WITH ARROW on the map (top, left and absolute position have been indicated just for example) -->
+                <!-- Это БЛОК СО СТРЕЛКОЙ на карте (позиции top, left и absolute указаны только для примера) -->
+                <div class="box-with-arrow-top-wrap"  style="position: absolute; top: 196px; left: 39px; display: none;">
+                  <div class="box-with-arrow-top">
+                    <a class="btn bg-green pull-right">Offer</a>
+                    Name : Camdem Apartments
+                    <br>
+                    City and State : Atlanta GA
+                    <br>
+                    Verified by Kehoots : No
+                    <br>
+                    400 units
+                    <br>
+                    Active Members : 0
+                    <br>
+                    Distance : 10 Miles
+                    <br>
+                    Redemptions Percentage : 0%
+                    <br>
+                    Group / Affiliation Type : Premium
+                    <br></div>
+                </div>
+
+
+                <!-- Title on map -->
+                <!-- Заголовок на карте -->
+                <div class="map-title">Find Groups and Affiliations and Offer Perks</div>
+
+                <!-- Select Filter by Group or Affiliation Type -->
+                <div class="styled-select sselect-by-group" >
+                  <select name="sselect-by-group" id="sselect-by-group">
+                    <option  selected="selected" value="0">Filter by Group or Affiliation Type</option>
+                    <option value="One Category">One Category</option>
+                    <option value="Second Category">Second Category</option>
+                    <option value="Some Category">Very very long long long but very very very cool Category</option>
+                    <option value="More Category">More Category</option>
+                  </select>
+                </div>
+
+                <!-- Select  -->
+                <div class="styled-select sselect-by-state" >
+                  <select name="sselect-by-state" id="sselect-by-state">
+                    <option  selected="selected" value="0">Search By State</option>
+                    <option value="One Category">One Category</option>
+                    <option value="Second Category">Second Category</option>
+                    <option value="Some Category">
+                      Very very long 
+                long long but very very very cool Category
+                    </option>
+                    <option value="More Category">More Category</option>
+                  </select>
+                </div>
+
+                <!-- Here is the MAP -->
+                <!-- А вот здесь сама КАРТА -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26002479.21803376!2d-99.94457387500003!3d37.292034573646035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1428150480179" frameborder="0" style="border:0"></iframe>
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Statistics -->
+          <div class=" col-md-4 col-sm-5 col-xs-12">
+            <div class="table-one-row">30 Total Redemptions This Month</div>
+            <div class="table-one-row">$332.00 Value of Redemptions (minimal est.)</div>
+            <div class="table-one-row">50 Standard Perk Redemptions</div>
+            <div class="table-one-row">8 Reward Perk Redemptions</div>
+            <div class="table-one-row">12 Request Perk Redemptions</div>
+            <div class="table-one-row">6 Refferal Perk Redemptions</div>
+          </div>
+
+          <!-- Redemption by Affiliation -->
+          <div class=" col-md-8 col-sm-7 col-xs-12">
+            <div class="complicated-block rounded with-border">
+              <div class="complicated-block-title">Redemption by Affiliation</div>
+              <div class="complicated-block-select">
+                <!-- Select Filter by Group or Affiliation Type -->
+                <div class="styled-select sselect-redemption-by-group" >
+                  <select name="sselect-redemption-by-group" id="sselect-redemption-by-group">
+                    <option  selected="selected" value="0">Filter by Group or Affiliation Type</option>
+                    <option value="One Category">One Category</option>
+                    <option value="Second Category">Second Category</option>
+                    <option value="Some Category">Very very long long long but very very very cool Category</option>
+                    <option value="More Category">More Category</option>
+                  </select>
+                </div>
+              </div>
+              <div class="clear"></div>
+              <!-- Redemptions progress bars -->
+              <!-- Redemptions progress bar 1 -->
+              <div class="complicated-block-progress ">
+                <div class="complicated-block-progress-label">Coca-cola</div>
+                <div class="complicated-block-progress-progress">
+                  <div class="progress progress-styled">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                      <span class="sr-only">60% Complete</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="complicated-block-progress-desc">10 Redemptions of 100 offered</div>
+              </div>
+              <!-- Redemptions progress bar 2 -->
+              <div class="complicated-block-progress ">
+                <div class="complicated-block-progress-label">Georgia Tech very very very very very very long corporation</div>
+                <div class="complicated-block-progress-progress">
+                  <div class="progress progress-styled">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                      <span class="sr-only">40% Complete</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="complicated-block-progress-desc">10 Redemptions of 40 offered</div>
+              </div>
+
+              <!-- Link Show more -->
+              <div class="text-center more">
+                <a href="#">Show more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Requests block -->
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="number-block ">
+              <div class="number-block-number bg-green">54</div>
+              <div class="number-block-text">
+                Request for today or tomorrow
+                <br>
+                <a href="#">View</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="number-block ">
+              <div class="number-block-number bg-lightblue">54</div>
+              <div class="number-block-text">
+                Request for any day next week
+                <br>
+                <a href="#">View</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="number-block ">
+              <div class="number-block-number bg-orange">54</div>
+              <div class="number-block-text">
+                Request for any day this month
+                <br>
+                <a href="#">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table Pending Perks -->
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <h2>Pending Perks</h2>
+            <div class="responsive-tables">
+              <table class="width100 table-condensed ">
+                <thead >
+                  <tr>
+                    <th>Perk Name</th>
+                    <th>Merchant</th>
+                    <th >Type</th>
+                    <th >Start Date</th>
+                    <th >End Date</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-title="Perk Name">
+                      20% off oil change
+                      <br>
+                      <a href="#">View Description</a>
+                    </td>
+                    <td data-title="Merchant">
+                      Bobs Cleaners
+                      <br>
+                      <a href="#">View terms and conditions</a>
+                    </td>
+                    <td data-title="Type" >Request</td>
+                    <td data-title="Start Date" >3 April 2015</td>
+                    <td data-title="End Date">3 October 2015</td>
+                    <td data-title=""  class="text-right td-with-btn">
+                      <a href="#" class="btn bg-green">Activate</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table Pending Affiliations -->
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <h2>Pending Affiliations</h2>
+            <div class="responsive-tables">
+              <table class="width100 table-condensed ">
+                <thead >
+                  <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th >Contact Email</th>
+                    <th >Phone</th>
+                    <th >City</th>
+                    <th>State</th>
+                    <th class="text-right">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-title="Name">Coca-Cola</td>
+                    <td data-title="Type">Workplace</td>
+                    <td data-title="Contact Email" >genmihai@gmail.com</td>
+                    <td data-title="Phone" >(770) 567 4872</td>
+                    <td data-title="City">Atlanta</td>
+                    <td data-title="State">GA</td>
+                    <td data-title="Status"  class="text-right td-with-btn">
+                      <div class="btn bg-orange">Claimed</div>
+                      <a href="#" class="btn bg-green">Activate</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table Pending Merchants -->
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <h2>Pending Merchants</h2>
+            <div class="responsive-tables">
+              <table class="width100 table-condensed ">
+                <thead >
+                  <tr>
+                    <th>Merchant</th>
+                    <th>Address</th>
+                    <th >Type</th>
+                    <th >Phone</th>
+                    <th>Email</th>
+                    <th class="text-right">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-title="Merchant ">Joes Auto</td>
+                    <td data-title="Address">123 Main St Atlanta GA 3003</td>
+                    <td data-title="Type" >Automotive</td>
+                    <td data-title="Phone">(404) 510 3882</td>
+                    <td data-title="Email">username@joesauto.com</td>
+                    <td data-title="Status"  class="text-right td-with-btn">
+                      <div class="btn bg-orange">Claimed</div>
+                      <a href="#" class="btn bg-green">Activate</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-title="Merchant ">Joes Auto</td>
+                    <td data-title="Address">123 Main St Atlanta GA 3003</td>
+                    <td data-title="Type" >Automotive</td>
+                    <td data-title="Phone">(404) 510 3882</td>
+                    <td data-title="Email">username@joesauto.com</td>
+                    <td data-title="Status"  class="text-right td-with-btn">
+                      <div class="btn bg-dirtyOrange">New</div>
+                      <a href="#" class="btn bg-green">Activate</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+    <!-- ./main-admin-panel --> </div>
+  <!-- ./new-admin-panel -->
+
+</div>
+<!-- ./main-region -->
+
+<div id="popup-region" ></div>
+
+<!--  JavaScript Files -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui-1.10.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.selectBoxIt.min.js"></script>
+  <script src='js/bootstrap.file-input.js'></script>
+
+<script src="js/scripts.js"></script>
+
+
+<!-- This script you can delete on production - it is only for example - shows popup on the map -->
+<!-- Этот скрипт можно удалить на продакшене, он только для примера, показывает попап на карте -->
+<script>
+  $('.place-sticker').hover(function() {
+    $('.box-with-arrow-top-wrap').show();
+  }, function() {
+    $('.box-with-arrow-top-wrap').hide();
+  });
+</script>
+
+
+</body>
+
+
+</html>

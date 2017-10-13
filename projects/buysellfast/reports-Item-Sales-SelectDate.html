@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Buy Sell Fast</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/jquery.selectBoxIt.css" />
+
+  <!-- JavaScripts -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/jquery-ui-1.10.3.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.selectBoxIt.min.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="top-bar-logo">
+      <a href="/">
+        <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+    </div>
+
+    <!-- Cart on the top bar -->
+    <div class="top-bar-cart">
+      <a href="#">
+        <span class="top-bar-cart-items">95</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="nav-buy">
+              <span class="nav-name">Buy</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-explore">
+              <span class="nav-name">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-sell">
+              <span class="nav-name">Sell</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-contacts">
+              <span class="nav-name">Contacts</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-messages">
+              <span class="nav-name">Messages</span>
+              <span class="nav-quantity">89</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-reports">
+              <span class="nav-name">Reports</span>
+            </a>
+          </li>
+          <li  class="active">
+            <a href="#" class="nav-settings">
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ./navbar -->
+
+  <div id="page-content" data-role="page" data-quicklinks="true">
+
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="breadcrumbs-wrap">
+        <div class="back-link">
+          <a href="#">Back</a>
+        </div>
+        <div class="page-title icon-item-sales2">
+          <span>Item Sales</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-grey3">Select Date Range :</div>
+
+    <div class="container">
+      <div class="row">
+
+        <form role="form">
+
+          <div class="panel-group complicated-list-wrap" id="accordion-daterange">
+
+            <div class="complicated-list">
+
+<!-- FROM DATE -->
+              <!-- collapsed item -->
+              <div class="panel panel-default">
+                <div class="panel-heading" >
+                  <h4 class="panel-title">
+                    <span class="complicated-list-row">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion-container-type" href="#collapseOne">
+                        <span class="label">From</span>
+                        <span class="list-link">
+                          <span class="location-name"> <i>Select Date</i>
+                          </span>
+                          <span class="arrow-right"></span>
+                        </span>
+                      </a>
+                    </span>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse ">
+                  <div class="panel-body">
+                    <div class="selects-lilac-arrow selects-date">
+                      <div class="select-date">
+                        <select id="day-from" name="day-from">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                          <option>13</option>
+                          <option>14</option>
+                          <option>15</option>
+                          <option>16</option>
+                          <option>17</option>
+                          <option>18</option>
+                          <option>19</option>
+                          <option>20</option>
+                          <option>21</option>
+                          <option>22</option>
+                          <option>23</option>
+                          <option>24</option>
+                          <option>25</option>
+                          <option>26</option>
+                          <option>27</option>
+                          <option>28</option>
+                          <option>29</option>
+                          <option>30</option>
+                          <option>31</option>
+                        </select>
+                      </div>
+                      <div class="select-date">
+                        <select id="month-from" name="month-from">
+                          <option>January</option>
+                          <option>February</option>
+                          <option>March</option>
+                          <option>April</option>
+                          <option>May</option>
+                          <option>June</option>
+                          <option>July</option>
+                          <option>August</option>
+                          <option>September</option>
+                          <option>October</option>
+                          <option>November</option>
+                          <option>December</option>
+                        </select>
+                      </div>
+                      <div class="select-date">
+                        <select id="year-from" name="year-from">
+                          <option>2015</option>
+                          <option>2016</option>
+                          <option>2017</option>
+                          <option>2018</option>
+                          <option>2019</option>
+                          <option>2020</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ./collapsed item -->
+
+
+<!-- TO DATE -->
+              <!-- collapsed item -->
+              <div class="panel panel-default">
+                <div class="panel-heading" >
+                  <h4 class="panel-title">
+                    <span class="complicated-list-row">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion-container-type" href="#collapseTwo">
+                        <span class="label">To</span>
+                        <span class="list-link">
+                          <span class="location-name"> <i>Select Date</i>
+                          </span>
+                          <span class="arrow-right"></span>
+                        </span>
+                      </a>
+                    </span>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse ">
+                  <div class="panel-body">
+                    <div class="selects-lilac-arrow selects-date">
+                      <div class="select-date">
+                        <select id="day-to" name="day-to">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                          <option>13</option>
+                          <option>14</option>
+                          <option>15</option>
+                          <option>16</option>
+                          <option>17</option>
+                          <option>18</option>
+                          <option>19</option>
+                          <option>20</option>
+                          <option>21</option>
+                          <option>22</option>
+                          <option>23</option>
+                          <option>24</option>
+                          <option>25</option>
+                          <option>26</option>
+                          <option>27</option>
+                          <option>28</option>
+                          <option>29</option>
+                          <option>30</option>
+                          <option>31</option>
+                        </select>
+                      </div>
+                      <div class="select-date">
+                        <select id="month-to" name="month-to">
+                          <option>January</option>
+                          <option>February</option>
+                          <option>March</option>
+                          <option>April</option>
+                          <option>May</option>
+                          <option>June</option>
+                          <option>July</option>
+                          <option>August</option>
+                          <option>September</option>
+                          <option>October</option>
+                          <option>November</option>
+                          <option>December</option>
+                        </select>
+                      </div>
+                      <div class="select-date">
+                        <select id="year-to" name="year-to">
+                          <option>2015</option>
+                          <option>2016</option>
+                          <option>2017</option>
+                          <option>2018</option>
+                          <option>2019</option>
+                          <option>2020</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ./collapsed item --> </div>
+
+
+
+
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
+    <div class="bg-lilac center-block">
+      <button type="submit" class="btn btn-primary ">Done</button>
+    </div>
+
+    <!-- ./page-content --> </div>
+
+  <script>
+  // Selects styling
+  $("select").selectBoxIt();
+</script>
+
+</body>
+</html>

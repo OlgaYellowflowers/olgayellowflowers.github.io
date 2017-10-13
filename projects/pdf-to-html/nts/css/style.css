@@ -1,0 +1,27 @@
+/* Global css */
+*{margin:0;padding:0;}
+html,
+body{height:297mm;width:210mm;overflow:visible;float:none;margin:0 auto;background-color:#fff;position:relative;z-index:1;}
+
+/* .doc-print css */
+.doc-print-page-break{page-break-before:always;display:block;}
+.doc-print p{margin:0;padding:0 0 10px;}
+.doc-print{}
+.doc-print-header{}
+.doc-print-h1{}
+.doc-print-h2{font-size:20px;padding:30px 0 20px;text-transform:uppercase;font-weight:700;}
+.doc-print-h3{font-size:16px;font-weight:700;padding:20px 0 15px;}
+.doc-print-col-title{width:380px;display:table-cell;padding-bottom:9px;}
+.doc-print-col-text{display:table-cell;padding-bottom:9px;}
+.doc-print-col-text{font-weight:600;}
+.doc-print-attention{font-weight:700;padding:30px 0 35px;}
+
+/* .doc-print-table-total css */
+.doc-print-table-total{padding:0 0 30px 0;}
+.doc-print-table-total table{width:100%;border-collapse:collapse;overflow:hidden;}
+.doc-print-table-total table tr td{padding:5px 10px;border:0 none;}
+.doc-print-table-total table tr td.doc-print-table-bg{padding-left:0;}
+.doc-print-table-total table tr td.doc-print-table-bg{width:100px;text-align:right;background-color:#f5fbfe;}
+.doc-print-table-total table tfoot tr td{border-top:3px #000 solid;border-bottom:1px #000 solid;font-weight:700;padding-top:10px;padding-bottom:10px;}
+.doc-print-footer{padding:10px 0 30px;}
+.doc-print-note{padding-top:22px;color:rgb(51,69,148);font-size:12px;line-height:1;font-style:italic;}

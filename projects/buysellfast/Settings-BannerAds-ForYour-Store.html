@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Buy Sell Fast</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/jquery.switch.css" rel="stylesheet">
+
+  <!-- JavaScripts -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src='js/bootstrap.min.js'></script>
+
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="top-bar-logo">
+      <a href="/">
+        <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+    </div>
+
+    <!-- Cart on the top bar -->
+    <div class="top-bar-cart">
+      <a href="#">
+        <span class="top-bar-cart-items">95</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="nav-buy">
+              <span class="nav-name">Buy</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-explore">
+              <span class="nav-name">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-sell">
+              <span class="nav-name">Sell</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-contacts">
+              <span class="nav-name">Contacts</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-messages">
+              <span class="nav-name">Messages</span>
+              <span class="nav-quantity">89</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-reports">
+              <span class="nav-name">Reports</span>
+            </a>
+          </li>
+          <li  class="active">
+            <a href="#" class="nav-settings">
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ./navbar -->
+
+  <div id="page-content" data-role="page" data-quicklinks="true">
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="breadcrumbs-wrap">
+        <div class="back-link">
+          <a href="#">Back</a>
+        </div>
+        <div class="page-title icon-profile-picture">
+          <span>Banner Ads For Your Store</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="settings-banner">
+      <div class="bg-lilac">
+        You can have your very own banner advertisement on BuySellFast’ Wall screens, just like you see below.
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="settings-banner-featured">
+              <div class="settings-banner-featured-topbar">
+                <div class="wall-featured-title">Featured</div>
+                <div class="wall-featured-location">Chicago test, USA</div>
+              </div>
+              <div class="settings-banner-featured-img ">
+                <img class="img-responsive" alt="Featured" src="images/banner-example2.jpg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="darkgrey20">Select from one of the following choices:</p>
+            <ul class="list-with-icon">
+              <li>
+                <div class="list-link like-select selected">
+                  <span class="img-radio"></span>
+                  <span class="list-text">
+                    <span class="deep-blue-medium">$10 CDN</span>
+                    = 1000 yearly Impressions
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="list-link like-select">
+                  <span class="img-radio"></span>
+                  <span class="list-text">
+                    <span class="deep-blue-medium">$50 CDN</span>
+                    = 5000 yearly Impressions
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="list-link like-select">
+                  <span class="img-radio"></span>
+                  <span class="list-text">
+                    <span class="deep-blue-medium">$100 CDN</span>
+                    = 10000 yearly Impressions
+                  </span>
+                </div>
+              </li>
+            </ul>
+
+<script>
+    $(document).ready(function() {
+        $(".like-select").click(function () {
+            if(!$(this).hasClass('selected'))
+            {
+                $(".like-select.selected").removeClass("selected");
+                $(this).addClass("selected");        
+            }
+        });
+    });
+</script>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center paypal-block">
+            For over 10K impressions, contact
+            <br>
+            <a class="deep-blue" href="mailto:info@buysellfast.mobi">info@buysellfast.mobi</a>
+            <div class="center-block">
+              <button type="submit" class="btn btn-primary btn-paypal">
+                Pay via
+                <img src="images/paypal-logo.png" height="38" width="142" alt="PayPal"></button>
+            </div>
+            <div class="deep-blue">
+              Your banner ad will be enabled within 24 hours
+              <br>of payment being processed</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-lilac bg-line"></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 wrapper15">
+
+            <div class="add-banner-file-wrap">
+              <span class="add-banner-file-label">Click to add a banner ad image (100 x 500 pixels)</span>
+              <input type="file" class="add-banner-file" />
+            </div>
+
+            <div class="wrapper15 text-center">or</div>
+
+            <div class="add-banner-text-wrap">
+              <input type="text" class="add-banner-text form-control" placeholder="Type your text message"/>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-lilac bg-line"></div>
+
+      <div class="container wrapper15">
+        <div class="row ">
+          <div class="col-md-2 col-md-offset-1 text-regular banner-url-text">Banner Ad URL:</div>
+          <div class="col-md-6">
+            <input type="url" placeholder="For Example: http://www.buysellfast.mobi" class="form-control input-url"></div>
+        </div>
+
+        <div class="row ">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="add-banner-optional">
+              Optional: Input target URL for the Banner click event (this could go to an external website if you wish). If nothing entered this will go to seller’s storefront screen.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="bg-lilac">
+        <div class="center-block">
+          <button type="submit" class="btn btn-primary ">Save</button>
+        </div>
+      </div>
+
+    </div>
+    <!-- close div settings-banner -->
+
+    <!-- ./page-content --> </div>
+
+</body>
+</html>

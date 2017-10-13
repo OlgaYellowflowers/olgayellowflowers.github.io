@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <meta name="subject" content="">
+  <meta name="copyright" content="Excellence Project">
+
+  <link rel="icon" href="favicon.ico">
+
+  <title>CONSUMIDOR_1.6.-City-selection-map.html</title>
+
+  <!-- CSS -->
+
+  <link href="css/styles.css" rel="stylesheet">
+<link href="css/styles_override.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- JavaScript -->
+
+  <!-- You can use all scripts in one minified app.js or only necessary scripts for concrete page -->
+  <!-- <script src="js/app.js"></script>
+-->
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<script src="js/jquery.form-validator.min.js"></script>
+
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script src="js/bootstrap-select.min.js"></script>
+
+<script src="js/leaflet.js"></script>
+
+<script src="js/scripts.js"></script>
+
+</head>
+
+<body>
+
+<!-- Navbar BEGIN-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Excellence Project</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="images/logo.png" alt="Logo"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse navbar-right collapse">
+      <a href="#" class="btn btn-info btn-sm">Contacto</a>
+      <a href="#" class="btn btn-info btn-sm">Dónde</a>
+    </div>
+  </div>
+</nav>
+<!-- Navbar END-->
+
+<!-- Main wrapper begin -->
+<div id="main-wrapper" class="main-wrapper-inner-white">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h1 class="text-thin">donde vivir tu experiencia the excellence project</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+
+        <!-- City Filter BEGIN -->
+        <div class="select-filters">
+          <div class="form-group select-sm">
+            <select class="select-styled" name="SelectCiudad" id="SelectCiudad" onchange="" size="1">
+              <option value="Ciudad">Ciudad</option>
+              <option value="Ciudad-1">Ciudad 1</option>
+              <option value="Ciudad-2">Ciudad Ciudad 2</option>
+              <option value="Ciudad-3">Ciudad Ciudad Ciudad 3</option>
+            </select>
+          </div>
+        </div>
+        <!-- City Filter END --> </div>
+    </div>
+
+    <div class="row">
+
+      <!-- Left part with city choice BEGIN -->
+      <div class="col-sm-6">
+
+        <!-- Cities list BEGIN -->
+        <div class="list-bars block-scrollable list-bars-cities">
+
+          <!-- If you need you can use this block as a link "a href" or "div"-->
+          <!-- One name and city adress BEGIN -->
+          <a href="#" class="list-bar-item">
+            <div class="list-bar-title">The Gin Room</div>
+            <div class="list-bar-text">Academia 7, Madrid</div>
+          </a>
+          <!-- One name and city adress END -->
+
+          <!-- One name and city adress BEGIN -->
+          <div class="list-bar-item">
+            <div class="list-bar-title">The Gin Room</div>
+            <div class="list-bar-text">Academia 7, Madrid</div>
+          </div>
+          <!-- One name and city adress END -->
+
+          <!-- One name and city adress BEGIN -->
+          <div class="list-bar-item">
+            <div class="list-bar-title">The Gin Room</div>
+            <div class="list-bar-text">Academia 7, Madrid</div>
+          </div>
+          <!-- One name and city adress END -->
+
+          <!-- One name and city adress BEGIN -->
+          <div class="list-bar-item">
+            <div class="list-bar-title">The Gin Room</div>
+            <div class="list-bar-text">Academia 7, Madrid</div>
+          </div>
+          <!-- One name and city adress END -->
+
+          <!-- One name and city adress BEGIN -->
+          <div class="list-bar-item">
+            <div class="list-bar-title">The Gin Room</div>
+            <div class="list-bar-text">Academia 7, Madrid</div>
+          </div>
+          <!-- One name and city adress END -->
+
+          <!-- One name and city adress BEGIN -->
+          <div class="list-bar-item">
+            <div class="list-bar-title">The Gin Room</div>
+            <div class="list-bar-text">Academia 7, Madrid</div>
+          </div>
+          <!-- One name and city adress END -->
+
+          <!-- One name and city adress BEGIN -->
+          <div class="list-bar-item">
+            <div class="list-bar-title">The Gin Room</div>
+            <div class="list-bar-text">Academia 7, Madrid</div>
+          </div>
+          <!-- One name and city adress END -->
+
+          <!-- One name and city adress BEGIN -->
+          <div class="list-bar-item">
+            <div class="list-bar-title">The Gin Room</div>
+            <div class="list-bar-text">Academia 7, Madrid</div>
+          </div>
+          <!-- One name and city adress END --> </div>
+        <!-- Cities list END --> </div>
+      <!-- Left part with city choice END -->
+
+      <!-- Right part with map BEGIN -->
+      <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
+
+        <div class="map-wrapper-outer">
+          <div class="embed-responsive embed-responsive-16by9">
+
+            <div id="map" class="map-wrapper embed-responsive-item"></div>
+
+            <!-- Map -->
+            <script>
+
+              var mymap = L.map('map').setView([51.505, -0.09], 13);
+
+              L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw', {
+                maxZoom: 18,                
+                id: 'mapbox.streets'
+              }).addTo(mymap);
+
+              L.marker([51.5, -0.09]).addTo(mymap)
+                .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+
+
+              var popup = L.popup();
+
+              function onMapClick(e) {
+                popup
+                  .setLatLng(e.latlng)
+                  .setContent("You clicked the map at " + e.latlng.toString())
+                  .openOn(mymap);
+              }
+
+              mymap.on('click', onMapClick);
+
+            </script>
+          </div>
+        </div>
+
+      </div>
+      <!-- Right part with map END --> </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-5 col-sm-6 text-sm-center">
+        <div class="paragraph-xs">
+          <input type="submit" class="btn btn-primary btn-md" value="TU RECOMPENSA"  data-toggle="modal" data-target="#Modal_RecompensaSuccess">
+          <!-- You can use either "input submit" or "button" -->
+          <!-- <button type="submit" class="btn btn-primary">TU RECOMPENSA</button>
+        -->
+      </div>
+
+      <!-- Modal window after Enviar button clicked BEGIN -->
+
+      <div id="Modal_RecompensaSuccess" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-md">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title text-center">gracias por tu valoración</h1>
+            </div>
+            <div class="modal-body modal-scroll text-center">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">continuar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal window after Enviar button clicked END --> </div>
+  </div>
+
+</div>
+
+</div>
+<!-- Main wrapper end -->
+
+</body>
+</html>

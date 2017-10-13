@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Buy Sell Fast</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- JavaScripts -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+
+  <script src='js/bootstrap.min.js'></script>
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="top-bar-logo">
+      <a href="/">
+        <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+    </div>
+
+    <!-- Cart on the top bar -->
+    <div class="top-bar-cart">
+      <a href="#">
+        <span class="top-bar-cart-items">95</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="nav-buy">
+              <span class="nav-name">Buy</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-explore">
+              <span class="nav-name">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-sell">
+              <span class="nav-name">Sell</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-contacts">
+              <span class="nav-name">Contacts</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-messages">
+              <span class="nav-name">Messages</span>
+              <span class="nav-quantity">89</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-reports">
+              <span class="nav-name">Reports</span>
+            </a>
+          </li>
+          <li  class="active">
+            <a href="#" class="nav-settings">
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ./navbar -->
+
+  <div id="page-content">
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="breadcrumbs-wrap">
+        <div class="back-link">
+          <a href="#">Back</a>
+        </div>
+        <div class="page-title icon-location">
+          <span>Store Location</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-grey4 border-bottom">
+      <h2>Store Details</h2>
+      <p>
+        The location specifies the country and province or state from which the store operates. This information is needed to set the tax rate, to help customers find your store, etc.
+      </p>
+    </div>
+
+    <form role="form">
+
+      <div class="panel-group complicated-list-wrap lilac-list" id="accordion-store-details">
+
+        <div class="complicated-list">
+
+          <!-- collapsed item -->
+          <div class="panel panel-default">
+            <div class="panel-heading" >
+              <h4 class="panel-title">
+                <span class="complicated-list-row">
+                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion-container-type" href="#collapseOne">
+                    <span class="label">City</span>
+                    <span class="list-link">
+                      <span class="location-name"> <i>Vancouver</i>
+                      </span>
+                      <span class="arrow-right"></span>
+                    </span>
+                  </a>
+                </span>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse ">
+              <div class="panel-body">
+                <ul class="list-with-icon  select-list">
+                  <li>
+                    <a href="#" class="list-link chosen">
+                      <span class="img-radio"></span>
+                      <span class="list-text">Vancouver</span>
+                      <span class="fake-scroll-padding"></span>
+                      <span class="fake-scroll fake-scroll-top"> <b></b>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-link">
+                      <span class="img-radio"></span>
+                      <span class="list-text">Something else</span>
+                      <span class="fake-scroll-padding"></span>
+                      <span class="fake-scroll"> <b></b>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-link ">
+                      <span class="img-radio"></span>
+                      <span class="list-text">Something else</span>
+                      <span class="fake-scroll-padding"></span>
+                      <span class="fake-scroll">
+                        <b></b>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- ./collapsed item -->
+
+          <!-- collapsed item -->
+          <div class="panel panel-default">
+            <div class="panel-heading" >
+              <h4 class="panel-title">
+                <span class="complicated-list-row">
+                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion-container-type" href="#collapseTwo">
+                    <span class="label">Country</span>
+                    <span class="list-link">
+                      <span class="location-name"> <i>Canada</i>
+                      </span>
+                      <span class="arrow-right"></span>
+                    </span>
+                  </a>
+                </span>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse ">
+              <div class="panel-body">
+                <ul class="list-with-icon  select-list">
+                  <li>
+                    <a href="#" class="list-link chosen">
+                      <span class="img-radio"></span>
+                      <span class="list-text">Canada</span>
+                      <span class="fake-scroll-padding"></span>
+                      <span class="fake-scroll fake-scroll-top">
+                        <b></b>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-link">
+                      <span class="img-radio"></span>
+                      <span class="list-text">Something else</span>
+                      <span class="fake-scroll-padding"></span>
+                      <span class="fake-scroll">
+                        <b></b>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-link ">
+                      <span class="img-radio"></span>
+                      <span class="list-text">Canada</span>
+                      <span class="fake-scroll-padding"></span>
+                      <span class="fake-scroll">
+                        <b></b>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- ./collapsed item -->
+
+          <!-- collapsed item -->
+          <div class="panel panel-default">
+            <div class="panel-heading" >
+              <h4 class="panel-title">
+                <span class="complicated-list-row">
+                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion-container-type" href="#collapseThree">
+                    <span class="label">Province / State</span>
+                    <span class="list-link">
+                      <span class="location-name">
+                        <i>British Columbia</i>
+                      </span>
+                      <span class="arrow-right"></span>
+                    </span>
+                  </a>
+                </span>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse ">
+              <div class="panel-body">
+                <ul class="list-with-icon  select-list">
+                  <li>
+                    <a href="#" class="list-link chosen">
+                      <span class="img-radio"></span>
+                      <span class="list-text">British Columbia</span>
+                      <span class="fake-scroll-padding"></span>
+                      <span class="fake-scroll fake-scroll-top">
+                        <b></b>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-link">
+                      <span class="img-radio"></span>
+                      <span class="list-text">Something else</span>
+                      <span class="fake-scroll-padding"></span>
+                      <span class="fake-scroll">
+                        <b></b>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-link ">
+                      <span class="img-radio"></span>
+                      <span class="list-text">British Columbia</span>
+                      <span class="fake-scroll-padding"></span>
+                      <span class="fake-scroll">
+                        <b></b>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- ./collapsed item --> </div>
+
+      </div>
+
+      <div class="center-block">
+        <button type="submit" class="btn btn-primary ">Save</button>
+      </div>
+    </form>
+
+  </div>
+  <!-- ./page-content -->
+
+</body>
+</html>

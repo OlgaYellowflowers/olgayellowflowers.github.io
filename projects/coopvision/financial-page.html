@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Charity, children, fundraising, help children, volunteers"/>
+  <meta name="keywords" content="Charity donations for children, help children with charity, become a voluunteer for children needs"/>
+  <meta name="subject" content="Charity for children">
+  <meta name="copyright" content="Coop-Vision">
+
+  <link rel="icon" href="favicon.ico">
+
+  <title>Charity - Financial</title>
+
+  <!-- CSS -->
+
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/form-validator.css" rel="stylesheet">
+
+  
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- JavaScript -->
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.form-validator.min.js"></script>
+
+  <!-- JS for animation when scroll -->
+  <script src="js/scrollreveal.min.js"></script>
+
+  <!-- JS for trancate the strings in the titles of news with dots "..." -->
+  <script src="js/jquery.dotdotdot.min.js"></script>
+
+  <script src="js/scripts.js"></script>
+
+  <!-- Google Charts API -->
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+  <!-- Draw chart for Total Donations -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script type="text/javascript">
+
+      // Load Charts and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // 
+      // 
+      // Draw the chart for #chartTotalDonation
+      google.charts.setOnLoadCallback(chartTotalDonation);
+
+      // Callback that draws the chart #chartTotalDonation.
+      function chartTotalDonation() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Title','Percentage'],
+          ['Program Services',     95],
+          ['General',     3],
+          ['Fundraising',      2]
+        ]);
+
+        var options = {
+          pieHole: 0.45,
+          pieStartAngle: 60,
+          width: '220',
+          height: '220',
+          chartArea: {'height': '200', 'width':'200',left:10, top:10, },
+          colors: ['#359da1', '#f9ca70', '#fe6d68'],
+          backgroundColor: 'transparent',
+          pieSliceBorderColor: 'none',
+          tooltip: { 'text':'percentage', 'ignoreBounds':'true' },
+          pieSliceText: 'none',
+          legend: 'none',
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('chartTotalDonations'));
+        chart.draw(data, options);
+
+      }
+
+
+     // 
+      // 
+      // Draw the chart for #chartOperatingRevenue
+      google.charts.setOnLoadCallback(chartOperatingRevenue);
+
+      // Callback that draws the chart #chartOperatingRevenue.
+      function chartOperatingRevenue() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Title','Percentage'],
+          ['Private Donations',     90],
+          ['Game Store',     5],
+          ['Network Sponsorship',     2],
+          ['Other Revenue',      3]
+        ]);
+
+        var options = {
+          pieHole: 0.45,
+          pieStartAngle: 60,
+          width: '220',
+          height: '220',
+          chartArea: {'height': '200', 'width':'200',left:10, top:10, },
+          colors: ['#359da1', '#68cbc6', '#f9ca70', '#fe6d68'],
+          backgroundColor: 'transparent',
+          pieSliceBorderColor: 'none',
+          tooltip: { 'text':'percentage', 'ignoreBounds':'true' },
+          pieSliceText: 'none',
+          legend: 'none',
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('chartOperatingRevenue'));
+        chart.draw(data, options);
+
+      }
+
+
+
+
+     // 
+      // 
+      // Draw the chart for #chartOperatingExpenses
+      google.charts.setOnLoadCallback(chartOperatingExpenses);
+
+      // Callback that draws the chart #chartOperatingExpenses.
+      function chartOperatingExpenses() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Title','Percentage'],
+          ['Shipping & Postage',     40],
+          ['Website Hosting',     17],
+          ['Marketing',     30],
+          ['Fundraising',      13]
+        ]);
+
+        var options = {
+          pieHole: 0.45,
+          pieStartAngle: 60,
+          width: '220',
+          height: '220',
+          chartArea: {'height': '200', 'width':'200',left:10, top:10, },
+          colors: ['#359da1', '#68cbc6', '#f9ca70', '#fe6d68'],
+          backgroundColor: 'transparent',
+          pieSliceBorderColor: 'none',
+          tooltip: { 'text':'percentage', 'ignoreBounds':'true' },
+          pieSliceText: 'none',
+          legend: 'none',
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('chartOperatingExpenses'));
+        chart.draw(data, options);
+
+      }
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+          <img src="images/logo.png" alt="Logo Coop Vision"></a>
+      </div>
+      <div id="navbar" class="navbar-collapse navbar-right collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">News</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Our Impact
+              <span class="caret text-success"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Our Impact</li>
+              <li>
+                <a href="#">Action</a>
+              </li>
+              <li>
+                <a href="#">Another action</a>
+              </li>
+              <li>
+                <a href="#">Something else here</a>
+              </li>
+              <li>
+                <a href="#">Separated link</a>
+              </li>
+              <li class="navbar-image">
+                <img src="images/pic-children.png" alt="Children"></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Ways to Give
+              <span class="caret text-success"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Ways to Give</li>
+              <li>
+                <a href="#">Action</a>
+              </li>
+              <li>
+                <a href="#">Another action</a>
+              </li>
+              <li>
+                <a href="#">Something else here</a>
+              </li>
+              <li>
+                <a href="#">Separated link</a>
+              </li>
+              <li class="navbar-image">
+                <img src="images/pic-rocket.png" alt="Rocket"></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Get Involved
+              <span class="caret text-success"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Get Involved</li>
+              <li>
+                <a href="#">Action</a>
+              </li>
+              <li>
+                <a href="#">Another action</a>
+              </li>
+              <li>
+                <a href="#">Something else here</a>
+              </li>
+              <li>
+                <a href="#">Separated link</a>
+              </li>
+              <li class="navbar-image">
+                <img src="images/pic-bear-in-stars.png" alt="Children"></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              About
+              <span class="caret text-success"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">About</li>
+              <li>
+                <a href="#">Action</a>
+              </li>
+              <li>
+                <a href="#">Another action</a>
+              </li>
+              <li>
+                <a href="#">Something else here</a>
+              </li>
+              <li>
+                <a href="#">Separated link</a>
+              </li>
+              <li class="navbar-image">
+                <img src="images/pic-bear-in-stars.png" alt="Children"></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="pull-left">
+          <a href="#" class="btn btn-success">
+            Donate
+            &nbsp; <i class="fa fa-heart"></i>
+          </a>
+        </div>
+      </div>
+      <!--/.nav-collapse --> </div>
+  </nav>
+
+  <!-- Main wrapper begin -->
+  <div class="wrapper">
+
+    <!-- Colored bar after main navigtion BEGIN  -->
+    <div class="colored-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 colored-bar-wrap">
+            <div class="image-left">
+              <img src="images/pic-children-no-floor.png" alt="Children"></div>
+            <div class="image-right">
+              <img src="images/pic-train.png" alt="Train"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Colored bar after main navigaion END  -->
+
+    <!-- div id="main" begin -->
+    <div id="main">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-8">
+
+            <!-- Breadcrumbs BEGIN -->
+            <ul class="breadcrumb">
+              <li>
+                <a href="/"> <i class="fa fa-home" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li class="active">Financial</li>
+            </ul>
+            <!-- Breadcrumbs END -->
+
+            <!--  -->
+            <!--  -->
+            <div id="main-content">
+
+              <h1>Financial Overview</h1>
+
+              <p>
+                Co-op Vision is a registered 501(c)(3) non-profit organization. We hold a bronze award from GuideStar and 5 star rating with TrustSpot. We also meet the Council of Better Business Bureaus' Standards for Charitable Solicitations. We believe in transparency, ethical accounting, and donor stewardship. Below you will find an overview of how revenue and expenses are utilized within our organization.
+              </p>
+
+              <!-- Financial block with chart BEGIN -->
+
+              <div class="paragraph-40">
+                <h3 class="text-primary">
+                  For every $1 donated in 2015, 95% was directed to our program services
+                </h3>
+
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="box alert-primary box-no-separate box-financial">
+                      <div class="box-financial-chart">
+
+                        <div id="chartTotalDonations"></div>
+                        <div class="box-financial-overlay"></div>
+                        <div class="box-financial-title-bg"></div>
+                        <div class="box-financial-title">Total Donations</div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-sm-8">
+                    <div class="box box-height-sm alert-warning box-no-separate box-financial bg-grey-stars">
+                      <div class="paragraph-60">
+                        <div class="paragraph-20">
+                          <span class="label label-primary bg-darken-overlay"></span>
+                          95% program services
+                        </div>
+                        <div class="paragraph-20">
+                          <span class="label label-warning "></span>
+                          3% general
+                        </div>
+                        <div class="paragraph-20">
+                          <span class="label label-success"></span>
+                          2% fundraising
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Financial block with chart END -->
+
+              <!-- Financial block with chart BEGIN -->
+
+              <div class="paragraph-40">
+                <h3 class="text-primary">How we obtain our donations</h3>
+
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="box alert-primary box-no-separate box-financial">
+                      <div class="box-financial-chart">
+
+                        <div id="chartOperatingRevenue"></div>
+                        <div class="box-financial-overlay"></div>
+                        <div class="box-financial-title-bg"></div>
+                        <div class="box-financial-title">Operating Revenue</div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-sm-8">
+                    <div class="box box-height-sm alert-warning box-no-separate box-financial bg-grey-stars">
+                      <div class="paragraph-50">
+                        <div class="paragraph-20">
+                          <span class="label label-primary bg-darken-overlay"></span>
+                          90% Private Donations
+                        </div>
+                        <div class="paragraph-20">
+                          <span class="label label-primary"></span>
+                          5% Game Store
+                        </div>
+                        <div class="paragraph-20">
+                          <span class="label label-warning "></span>
+                          2% Network Sponsorship
+                        </div>
+                        <div class="paragraph-20">
+                          <span class="label label-success"></span>
+                          3% Other Revenue
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Financial block with chart END -->
+
+              <!-- Financial block with chart BEGIN -->
+
+              <div class="paragraph-40">
+                <h3 class="text-primary">Where our expenses originate</h3>
+
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="box alert-primary box-no-separate box-financial">
+                      <div class="box-financial-chart">
+
+                        <div id="chartOperatingExpenses"></div>
+                        <div class="box-financial-overlay"></div>
+                        <div class="box-financial-title-bg"></div>
+                        <div class="box-financial-title">Operating Expenses</div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-8">
+                    <div class="box box-height-sm alert-warning box-no-separate box-financial bg-grey-stars">
+                      <div class="paragraph-50">
+                        <div class="paragraph-20">
+                          <span class="label label-primary bg-darken-overlay"></span>
+                          40% Shipping & Postage
+                        </div>
+                        <div class="paragraph-20">
+                          <span class="label label-primary"></span>
+                          17% Website Hosting
+                        </div>
+                        <div class="paragraph-20">
+                          <span class="label label-warning "></span>
+                          30% Marketing
+                        </div>
+                        <div class="paragraph-20">
+                          <span class="label label-success"></span>
+                          13% Fundraising
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Financial block with chart END --> </div>
+
+            <!--  -->
+            <!--  --> </div>
+
+          <!-- Sidebar BEGIN -->
+          <div class="col-md-4">
+
+            <div class="sidebar">
+
+              <div class="box box-height-sm alert-warning">
+                <div class="h4 text-center paragraph-20 text-">Tax ID</div>
+                <div class="h1 text-white text-center">47-5142574</div>
+                <div class="text-white text-center">Co-op Vision is a 501(c)(3) nonprofit entity</div>
+                <div class="text-center paragraph-20">
+                  <img class="img-md" src="images/logo-white.png" alt="Logo CoopVision"></div>
+              </div>
+
+              <div class="paragraph-30 text-center">
+                <a class="btn btn-styled btn-lg btn-success" href="#">Get Involved</a>
+              </div>
+
+              <div class="bg-primary">
+                <div class="bg-visit-store">
+                  <div class="h4 text-center wrapper-inner-20">
+                    Visit our Store
+                    <br>for more Great Deals!</div>
+                </div>
+                <div class="bg-primary text-center wrapper-inner-10">
+                  <a class="btn btn-styled btn-md btn-warning" href="#">Shop Now</a>
+                </div>
+              </div>
+
+              <div class="wrapper-inner-10"></div>
+              <h4 class="paragraph-20">
+                <img alt="" class="img-xs" src="images/icon-news.png">Latest News</h4>
+
+              <!-- One news list item small BEGIN -->
+              <div class="news-list-item-small">
+                <span class="news-list-image">
+                  <img alt="News" src="images/example-image1.png"></span>
+                <span class="news-list-body">
+                  <a href="#" class="h4 news-list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                  <span class="news-list-text">
+                    By
+                    <a class="text-success"> <i>Coop Vision</i>
+                    </a>
+                    in
+                    <a class="text-primary">
+                      <i>Category</i>
+                    </a>
+                  </span>
+                  <span class="news-list-date">13 October 2016</span>
+                </span>
+              </div>
+              <!-- One news list item small END -->
+
+              <!-- One news list item small BEGIN -->
+              <div class="news-list-item-small">
+                <span class="news-list-image">
+                  <img alt="News" src="images/example-image1.png"></span>
+                <span class="news-list-body">
+                  <a href="#" class="h4 news-list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                  <span class="news-list-text">
+                    By
+                    <a class="text-success">
+                      <i>Coop Vision</i>
+                    </a>
+                    in
+                    <a class="text-primary">
+                      <i>Category</i>
+                    </a>
+                  </span>
+                  <span class="news-list-date">13 October 2016</span>
+                </span>
+              </div>
+              <!-- One news list item small END -->
+
+              <!-- One news list item small BEGIN -->
+              <div class="news-list-item-small">
+                <span class="news-list-image">
+                  <img alt="News" src="images/example-image1.png"></span>
+                <span class="news-list-body">
+                  <a href="#" class="h4 news-list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                  <span class="news-list-text">
+                    By
+                    <a class="text-success">
+                      <i>Coop Vision</i>
+                    </a>
+                    in
+                    <a class="text-primary">
+                      <i>Category</i>
+                    </a>
+                  </span>
+                  <span class="news-list-date">13 October 2016</span>
+                </span>
+              </div>
+              <!-- One news list item small END -->
+
+              <!-- One news list item small BEGIN -->
+              <div class="news-list-item-small">
+                <span class="news-list-image">
+                  <img alt="News" src="images/example-image1.png"></span>
+                <span class="news-list-body">
+                  <a href="#" class="h4 news-list-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                  <span class="news-list-text">
+                    By
+                    <a class="text-success">
+                      <i>Coop Vision</i>
+                    </a>
+                    in
+                    <a class="text-primary">
+                      <i>Category</i>
+                    </a>
+                  </span>
+                  <span class="news-list-date">13 October 2016</span>
+                </span>
+              </div>
+              <!-- One news list item small END -->
+
+              <div class="paragraph-30 text-center">
+                <a href="#" class="btn btn-styled btn-md btn-success">View All News</a>
+              </div>
+
+            </div>
+
+          </div>
+          <!-- Sidebar END --> </div>
+      </div>
+    </div>
+    <!-- div id="main" end -->
+
+    <!-- Push for sticked footer - do not delete -->
+    <div class="push"></div>
+  </div>
+  <!-- Main wrapper end -->
+
+  <!-- Footer begin -->
+  <footer class="footer">
+    <div class="footer-links">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-15">
+            <h5 class="text-primary">About Us</h5>
+            <a href="#">Who We Are</a>
+            <a href="#">Meet Our Team</a>
+            <a href="#">Financial Accountability</a>
+            <a href="#">Our Partners</a>
+            <a href="#">Charity FAQ</a>
+          </div>
+          <div class="col-sm-15">
+            <h5 class="text-primary">Our Impact</h5>
+            <a href="#">Children</a>
+            <a href="#">Mental Health</a>
+            <a href="#">Education</a>
+          </div>
+          <div class="col-sm-15">
+            <h5 class="text-primary">Ways to Give</h5>
+            <a href="#">Online Donation</a>
+            <a href="#">Game Store</a>
+            <a href="#">Donate Products</a>
+          </div>
+          <div class="col-sm-15">
+            <h5 class="text-primary">Connect with Us</h5>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Linkedin</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="col-sm-15">
+            <h5 class="text-primary">Navigate</h5>
+            <a href="#">Site Map</a>
+            <a href="#">Mobile Site</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <a href="/">
+              <img src="images/logo-white.png" alt="Logo CoopVision"></a>
+          </div>
+          <div class="col-sm-10 copyright">
+            Co-op Vision Inc. is a registered 501(c)(3) nonprofit organization. All donations are tax deductible in full or in part. EIN 47-5142574
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- Footer end -->
+
+</body>
+</html>

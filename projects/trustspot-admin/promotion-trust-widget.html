@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Trust Widget</title>
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<script type='text/javascript' src='js/jquery-1.11.3.js'></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+	<!-- Admin stylesheet -->
+	<link href="css/starReviewsAdmin.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="css/c3.css" rel="stylesheet" type="text/css"/>
+	<!-- Merchant Dashboard Theme-->
+	<link href="css/dashboard.css" rel="stylesheet">
+
+	<!--  css -->
+	<link href="fonts/fonts.css" rel="stylesheet" />
+	<link href="css/bootstrap-colorpicker.css" rel="stylesheet" />
+	<link href="css/bootstrap-select.css" rel="stylesheet" />
+	<link href="css/table-styling.css" rel="stylesheet">
+	<link href="css/override-your-styles.css" rel="stylesheet">
+	<link href="css/jquery.tagbox.css" rel="stylesheet" />
+
+	<link href="css/owl.carousel.css" rel="stylesheet">
+
+	<!-- !!!!!!!!!!!!!!      I added new font for site logo -->
+	<link href="fonts/site-font.css" rel="stylesheet" />
+
+	<link href="css/styledash-additional.css" rel="stylesheet">
+
+	<!--  js -->
+	<script type='text/javascript' src='js/bootstrap-colorpicker.min.js'></script>
+	<script type='text/javascript' src='js/bootstrap-select.min.js'></script>
+	<script type="text/javascript" src="js/jquery.tagbox.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type='text/javascript' src='js/scripts-promotion.js'></script>
+
+</head>
+
+<body>
+
+	<div class="content">
+		<div class="page-header">
+			<h2>Trust Widget</h2>
+		</div>
+		<div>
+			<p>
+				The Trust Widget allows you to showcase your reviews to your customers throughout your site. Create a widget to help convert visitors on the shopping cart page, on your product page, or even on your homepage when they first land on your site. After you've customized your widget settings click "Generate Code" to finish.
+			</p>
+		</div>
+		<div class="chart-wrap">
+			<div class="chart-panel">
+				<p class="chart-title"> <i class="fa fa-envelope-o"></i>
+					Content
+				</p>
+			</div>
+			<div class="wrapper-outer-lg">
+				<form class="form-horizontal">
+
+					<div class="form-group">
+						<label class="control-label col-sm-2">Title:</label>
+						<div class="col-sm-9">
+							<input type="text" placeholder="Latest Reviews" class="form-control"></div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-2">Layout:</label>
+						<div class="col-sm-3">
+							<!-- I added js code which switches layouts, depends on select value -->
+							<select id="layoutTrustWidgetSelect" class="form-control selectpicker select-white" data-width="100%">
+								<option value="basic">Basic Reviews</option>
+								<option value="extended">Extended Reviews</option>
+							</select>
+						</div>
+
+						<label class="control-label col-md-2 col-sm-3 text-right">Number of Reviews:</label>
+						<div class="col-sm-1">
+							<input type="text" value="1" class=" form-control"></div>
+
+						<label class="control-label col-md-2 col-sm-1 text-right">Max Width:</label>
+						<div class="col-sm-1">
+							<input type="text" value="150" class="form-control"></div>
+					</div>
+
+					<!-- Stars checkboxes -->
+					<div class="form-group">
+						<label class="control-label col-sm-2">Show only:</label>
+						<div class="col-sm-9">
+
+							<div class="checkbox-inline">
+								<div class="checkbox-grey pull-left spacer-after">
+									<input checked="checked" name="check" id="checkboxStars5" value="None" type="checkbox">
+									<label for="checkboxStars5"></label>
+								</div>
+								<div class="checkbox-label">5 Stars</div>
+							</div>
+
+							<div class="checkbox-inline">
+								<div class="checkbox-grey pull-left spacer-after">
+									<input checked="checked" name="check" id="checkboxStars4" value="None" type="checkbox">
+									<label for="checkboxStars4"></label>
+								</div>
+								<div class="checkbox-label">4 Stars</div>
+							</div>
+
+							<div class="checkbox-inline">
+								<div class="checkbox-grey pull-left spacer-after">
+									<input checked="checked" name="check" id="checkboxStars3" value="None" type="checkbox">
+									<label for="checkboxStars3"></label>
+								</div>
+								<div class="checkbox-label">3 Stars</div>
+							</div>
+
+							<div class="checkbox-inline">
+								<div class="checkbox-grey pull-left spacer-after">
+									<input checked="checked" name="check" id="checkboxStars2" value="None" type="checkbox">
+									<label for="checkboxStars2"></label>
+								</div>
+								<div class="checkbox-label">2 Stars</div>
+							</div>
+
+							<div class="checkbox-inline">
+								<div class="checkbox-grey pull-left spacer-after">
+									<input checked="checked" name="check" id="checkboxStars1" value="None" type="checkbox">
+									<label for="checkboxStars1"></label>
+								</div>
+								<div class="checkbox-label">1 Stars</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- I added js tag plugin. Type something and click "Add tag" button -->
+					<div class="form-group">
+						<label class="control-label col-sm-2">Filter by Tag:</label>
+						<div class="col-sm-10">
+							<input id="jquery-tagbox-text" type="text"  />
+						</div>
+					</div>
+
+					<!-- Color pickers -->
+					<div class="form-group">
+						<label class="control-label col-sm-2">Header Color:</label>
+						<div class="col-sm-inline">
+							<div class="input-group colorpicker-init colorpicker-component ">
+								<input type="text" value="#00AABB" class="form-control"/>
+								<span class="input-group-addon"> <i></i>
+								</span>
+							</div>
+						</div>
+
+						<label class="control-label col-sm-inline text-right">Stars Color:</label>
+						<div class="col-sm-inline">
+							<div class="input-group colorpicker-init colorpicker-component ">
+								<input type="text" value="#ffbbcc" class="form-control"/>
+								<span class="input-group-addon">
+									<i></i>
+								</span>
+							</div>
+						</div>
+
+						<label class="control-label col-sm-inline text-right">Background Color:</label>
+						<div class="col-sm-inline">
+							<div class="input-group colorpicker-init colorpicker-component ">
+								<input type="text" value="#000000" class="form-control"/>
+								<span class="input-group-addon">
+									<i></i>
+								</span>
+							</div>
+						</div>
+
+						<div class="col-sm-inline">
+							<div class="checkbox-inline">
+								<div class="checkbox-grey pull-left spacer-after">
+									<div class="checkbox-label checkbox-label-before">Transparency</div>
+									<input type="checkbox" value="None" id="transparency-checkbox" name="check" checked="checked">
+									<label for="transparency-checkbox"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Font pickers -->
+					<div class="form-group">
+						<label class="control-label col-sm-2">Font:</label>
+						<div class="col-sm-inline">
+							<select class="form-control selectpicker" data-width="100%">
+								<option>Font</option>
+								<option>Font1</option>
+								<option>Font2</option>
+								<option>Font3</option>
+							</select>
+						</div>
+
+						<label class="control-label col-sm-inline text-right">Font Size:</label>
+						<div class="col-sm-inline">
+							<select class="form-control selectpicker" data-width="100%">
+
+								<option>10</option>
+								<option>12</option>
+								<option>14</option>
+								<option>16</option>
+								<option>18</option>
+							</select>
+						</div>
+
+						<label class="control-label col-sm-inline text-right">Font Color:</label>
+						<div class="col-sm-inline">
+							<div class="input-group colorpicker-init colorpicker-component ">
+								<input type="text" value="#000000" class="form-control"/>
+								<span class="input-group-addon">
+									<i></i>
+								</span>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Preview of widget -->
+					<div class="container-fluid">
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="well well-lg">
+
+									<div class="widget-box trust-widget trust-widget-basic center-block">
+										<div class="widget-box-wrapper">
+											<div class="widget-header bg-blue">
+												<div class="widget-header-site">
+													<a href="#">YOUR SITE HERE</a>
+												</div>
+												<div class="widget-header-info-wrapper">
+													<div class="widget-header-info"> <b>4.0</b>
+														<i>Average</i>
+													</div>
+													<div class="widget-header-info"> <b>2000</b>
+														<i>Reviews</i>
+													</div>
+												</div>
+												<div class="widget-header-rating">
+													<div class="widget-header-text">Excellent</div>
+													<div class="widget-header-stars">
+
+														<i class="fa fa-star fa-3x yellow"></i>
+														<i class="fa fa-star fa-3x yellow"></i>
+														<i class="fa fa-star fa-3x yellow"></i>
+														<i class="fa fa-star fa-3x white"></i>
+														<i class="fa fa-star fa-3x white"></i>
+													</div>
+
+												</div>
+											</div>
+											<div class="trust-widget-body">
+												<!-- One review -->
+												<div class="widget-review">
+													<div class="widget-review-author">MIKE TYSON</div>
+													<div class="widget-review-stars">
+														<i class="fa fa-star yellow"></i>
+														<i class="fa fa-star yellow"></i>
+														<i class="fa fa-star yellow"></i>
+														<i class="fa fa-star lightgrey"></i>
+														<i class="fa fa-star lightgrey"></i>
+													</div>
+													<div class="widget-review-text">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													</div>
+													<div class="widget-review-date">posted 5 days ago</div>
+												</div>
+												<!-- One review -->
+												<div class="widget-review">
+													<div class="widget-review-author">MIKE TYSON</div>
+													<div class="widget-review-stars">
+														<i class="fa fa-star yellow"></i>
+														<i class="fa fa-star yellow"></i>
+														<i class="fa fa-star yellow"></i>
+														<i class="fa fa-star lightgrey"></i>
+														<i class="fa fa-star lightgrey"></i>
+													</div>
+													<div class="widget-review-text">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													</div>
+													<div class="widget-review-date">posted 5 days ago</div>
+												</div>
+
+												<!-- One review -->
+												<div class="widget-review">
+													<div class="widget-review-author">MIKE TYSON</div>
+													<div class="widget-review-stars">
+														<i class="fa fa-star yellow"></i>
+														<i class="fa fa-star yellow"></i>
+														<i class="fa fa-star yellow"></i>
+														<i class="fa fa-star lightgrey"></i>
+														<i class="fa fa-star lightgrey"></i>
+													</div>
+													<div class="widget-review-text">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													</div>
+													<div class="widget-review-date">posted 5 days ago</div>
+												</div>
+
+												<!-- One review -->
+												<div class="widget-review">
+													<div class="widget-review-author">MIKE TYSON</div>
+													<div class="widget-review-stars">
+														<i class="fa fa-star yellow"></i>
+														<i class="fa fa-star yellow"></i>
+														<i class="fa fa-star yellow"></i>
+														<i class="fa fa-star lightgrey"></i>
+														<i class="fa fa-star lightgrey"></i>
+													</div>
+													<div class="widget-review-text">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													</div>
+													<div class="widget-review-date">posted 5 days ago</div>
+												</div>
+											</div>
+											<div class="trust-widget-footer">
+											<!-- Changed code for logo - begin -->
+												<a href="#">
+													<span class="logo-box">
+														<span class="icon-logo-icon"></span>
+														<span class="logo-text">TrustSpot</span>
+													</span>
+												</a>
+											<!-- Changed code for logo - end -->
+											</div>
+										</div>
+										<div class="widget-box-border-bottom"></div>
+									</div>
+
+								</div>
+
+								<div class="row">
+									<div class="col-md-12  text-center">
+										<button class="btn btn-lg btn-success " type="submit">Generate Widget</button>
+
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+
+		<!-- WIDGET CODE -->
+		<div class="chart-wrap">
+			<div class="chart-panel">
+				<p class="chart-title">
+					<i class="fa fa-code"></i>
+					WIDGET CODE
+				</p>
+			</div>
+			<div class="wrapper-outer-lg">
+				<p>Copy and paste the generated widget code into your website.</p>
+				<pre class="pre-styled">
+&lt;div id="y-embedded-widget" class="trustspot embedded-widget"
+data-appkey="RYroTsF12zEiz7a4p9tN17TsrTCGyLXMRjuxRzzg"
+data-product-id="trustspot_global_reviews"
+data-layout="reviews"
+data-width="100"
+data-reviews="5"
+data-header-text="Recent Reviews"
+data-header-background-color="919191"
+data-body-background-color="FFFFFF"
+data-font-size="18"
+data-font-color="FFFFFF"&gt;&nbsp;&lt;/div&gt;
+</pre>
+				<div class="text-center">
+					<button class="btn btn-info btn-sm">Copy</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

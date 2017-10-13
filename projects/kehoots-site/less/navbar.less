@@ -1,0 +1,42 @@
+.navbar-custom.top-nav-collapse ul.nav li a{color:#363636;}
+.navbar-brand{background:url('@{imagePath}logo.png');width:145px;height:56px;background-size:cover;margin:10px;
+  &:focus{outline:0;}
+  @media (max-width:767px){
+  width:100px;height:38px;}
+}
+.navbar-custom{background:@baseBgColor;border:0;padding:0;margin:0;outline:0;}
+.navbar-fixed{border-bottom:1px #d5d5d5 solid;width:80%;margin:0 auto;}
+.nav{padding:28px 0 0 0;}
+.navbar-custom ul.nav li a{font-size:1.1em;color:@baseFontColor;padding:0 15px 0 0;margin:0 10px 0 0;background:url('@{imagePath}menu-sep.png') center right no-repeat;
+  &:hover,
+  &:focus{color:@blue;}
+  @media (max-width:767px){
+  margin:20px 0;background:transparent;}
+  @media (min-width:768px) and (max-width:1000px){
+  font-size:0.6em;}
+  @media (min-width:1001px) and (max-width:1199px){
+  font-size:0.8em;}
+}
+.navbar-custom  #navbar-collapse-2 ul.nav li a{@media (min-width:768px) and  (max-width:1199px){
+  font-size:@baseFontSize!important;}
+}
+@media (max-width:767px){
+  .navbar-custom ul.nav{padding:0;}
+}
+.navbar-custom ul.nav li:last-child a{background:transparent;padding-right:0;margin-right:0;}
+.navbar-custom .navbar-toggle .icon-bar{background-color:lighten(@baseFontColor,20%);}
+.navbar-toggle{font-size:0.77em;color:@baseFontColor;margin:12px 0px 0 0;
+  &:focus,
+  &:active{outline:0;}
+}
+.navbar-custom  .btn-login{float:right;margin:10px 0 0 20px;
+  @media (max-width:767px){
+  float:none!important;margin:0 0 0 -15px!important;}
+  a{margin:0!important;}
+}
+@media (max-width:767px){
+  #navbar-collapse-2,
+  #navbar-collapse-3{padding-top:10px;margin-left:0;}
+  #navbar-collapse-2 .pull-right,
+  #navbar-collapse-3 .pull-right{display:block;float:none!important;padding-top:0!important;margin-top:0!important;}
+}

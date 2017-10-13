@@ -1,0 +1,316 @@
+// MyMixin
+//////////////////////////////////////////////////////
+
+// Typographic
+//////////////////////////////////////////////////////
+
+// Используем ОДНУ универсальную примесь для всех случаев!!!!!!!!!!
+
+.text (@fontFamily, @fontSize, @fontWeight) {
+    font-family: @fontFamily;
+    font-weight: @fontWeight;
+    font-size: @fontSize;
+    letter-spacing: @normal-letter-spacing;
+}
+.text (@fontFamily, @fontSize, @fontWeight) when (@fontSize = @font-size-large) {
+    line-height: @line-height-large-my;
+}
+.text (@fontFamily, @fontSize, @fontWeight) when (@fontSize = @font-size-normal) {
+    line-height: @line-height-normal-my;
+}
+.text (@fontFamily, @fontSize, @fontWeight) when (@fontSize = @font-size-small) {
+    line-height: @line-height-small-my;
+}
+.text (@fontFamily, @fontSize, @fontWeight) when (@fontSize = @font-size-xsmall) {
+    line-height: @line-height-xsmall-my;
+}
+
+// Vendors
+//////////////////////////////////////////////////////
+
+.border-radius (@border-radius-base) {
+    -webkit-border-radius: @arguments;
+        -khtml-border-radius: @arguments;
+            -moz-border-radius: @arguments;
+                -o-border-radius: @arguments;
+                    border-radius: @arguments;
+}
+
+.borderRadius (@radiusTopLeft, @radiusTopRight, @radiusRightBottom, @radiusLeftBottom) {
+    -webkit-border-radius: @arguments;
+        -khtml-border-radius: @arguments;
+            -moz-border-radius: @arguments;
+                -o-border-radius: @arguments;
+                    border-radius: @arguments;
+}
+
+.boxShadow (@shadowCoordsX, @shadowCoordsY, @shadowSize, @shadowStretch, @shadowColor) {
+    box-shadow: @arguments;
+        -moz-box-shadow: @arguments;
+            -webkit-box-shadow: @arguments;
+                filter: progid:DXImageTransform.Microsoft.shadow(direction=0, color=@shadowColor, strength=@shadowCoordsY);
+}
+ 
+.boxShadowInset (@shadowCoordsX, @shadowCoordsY, @shadowSize, @shadowStretch, @shadowColor) {
+    box-shadow: inset @arguments;
+        -moz-box-shadow: inset @arguments;
+            -webkit-box-shadow: inset @arguments;
+                filter: progid:DXImageTransform.Microsoft.shadow(direction=0, color=@shadowColor, strength=@shadowCoordsY);
+}
+
+.gradientTopBottom (@colorTop, @colorBottom) {
+    background: @colorTop; // for non-css3 browsers
+    background-repeat: repeat-y; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = @colorTop, endColorstr = @colorBottom, GradientType=0); // IE6-9
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@colorTop), color-stop(@colorBottom)); // Chrome, Safari4+
+    background: -webkit-linear-gradient(top, @colorTop 0%,@colorBottom 100%); // Chrome10+, Safari5.1+
+    background: -moz-linear-gradient(top,  @colorTop 0%, @colorBottom 100%); // firefox 3.6+
+    background: -o-linear-gradient(top,  @colorTop 0%, @colorBottom 100%); // Opera 11.10+
+    background: -ms-linear-gradient(top,  @colorTop 0%, @colorBottom 100%); // IE10+
+    background: linear-gradient(to bottom, @colorTop 0%, @colorBottom 100%); // W3C
+}
+
+.gradientLeftRight (@colorLeft, @colorRight) {
+    background: @colorLeft; // for non-css3 browsers
+    background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = @colorLeft, endColorstr = @colorRight, GradientType=1); // IE6-9
+    background: -webkit-gradient(linear, 0 top, 100% top, color-stop(@colorLeft), color-stop(@colorRight)); // Chrome, Safari4+
+    background: -webkit-linear-gradient(left, @colorLeft 0%,@colorRight 100%); // Chrome10+, Safari5.1+
+    background: -moz-linear-gradient(top,  @colorLeft 0%, @colorRight 100%); // firefox 3.6+
+    background: -o-linear-gradient(to top, @colorLeft 0%, @colorRight 100%); // Opera 11.10+
+    background: -ms-linear-gradient(top,  @colorLeft 0%, @colorRight 100%); // IE10+
+    background: linear-gradient(to right, @colorLeft 0%, @colorRight 100%); // W3C
+}
+
+.rotate (@degrees){
+    -webkit-transform: rotate(@degrees);
+        -moz-transform: rotate(@degrees);
+            -o-transform: rotate(@degrees);
+                -ms-transform: rotate(@degrees);
+    transform: rotate(@degrees);
+}
+
+.scale (@scale) {
+    -webkit-transform: scale(@scale);
+        -moz-transform: scale(@scale);
+            -o-transform: scale(@scale);
+                -ms-transform: scale(@scale);
+    transform: scale(@scale);
+}
+
+.translate (@translateX, @translateY) {
+    -webkit-transform: translate(@translateX, @translateY);
+        -moz-transform: translate(@translateX, @translateY);
+            -o-transform: translate(@translateX, @translateY);
+                -ms-transform: translate(@translateX, @translateY);
+    transform: translate(@translateX, @translateY);
+}
+
+.transition (@property, @delay) {
+    transition: @property @delay;
+        -webkit-transition: @property @delay;
+            -moz-transition: @property @delay;
+}
+
+.selection (@color) {
+    ::selection {background: @color;}
+        ::-moz-selection {background: @color;}
+            ::-webkit-selection {background: #ccc; color:@color;}
+}
+
+
+
+.inlineList {
+    -ms-word-break: break-all;
+        word-break: break-all;
+            word-break: break-word;
+    -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+            -ms-hyphens: auto;
+                hyphens: auto;
+}
+
+// Element
+//////////////////////////////////////////////////////
+
+.colorBlock (@color,@background,@paddingH,@paddingV) {
+    display: inline-block;
+    color: @color;
+    background: @background;
+    padding: @paddingH @paddingV;
+    white-space: nowrap;
+}
+
+.linkStyle (@color,@colorHover) {
+    display: inline-block;
+    height: auto;
+    color: @color;
+    border-bottom: none;
+    &:hover, &:active {
+        color: @colorHover;
+        border-bottom: none;
+    }
+}
+
+.linkBorderedStyle (@color,@colorHover) {
+    display: inline-block;
+    height: auto;
+    color: @color;
+    border-bottom: 1px dotted @color;
+    &:hover, &:active {
+        color: @colorHover;
+        border-bottom: 1px solid @colorHover;
+        border-color: @colorHover !important;
+    }
+}
+
+.squareIcoSize (@size) {
+    .border-radius(0);
+    .size(@size,@size);
+    line-height: @size - (@padding-large-vertical * 2);
+    .fa, .glyphicon, .icon {
+    margin-right: 0;
+    }
+}
+
+.colorButton (@color,@backgorund) {
+    background-color: @backgorund;
+    border-color: @backgorund;
+    color: @color;
+    &:hover {
+        background-color: darken(@backgorund, 15%);
+        border-color: darken(@backgorund, 15%);
+        color: @color;
+        outline: none !important;
+    }
+    &:active, &.active {
+        background-color: @activeColor;
+        border-color: @activeColor;
+        .boxShadowInset(@shadowCoordsX,@shadowCoordsY,@shadowSize,@shadowStretch,@shadowColor);
+    }
+}
+
+.shadowButton {
+    .boxShadow(@shadowCoordsX,@shadowCoordsY,@shadowSize,@shadowStretch,@shadowColor);
+    &:active, &.active {
+        .boxShadowInset(@shadowCoordsX,@shadowCoordsY,@shadowSize,@shadowStretch,@shadowColor);
+    }
+}
+
+.colorCircleIco (@radius, @color, @backgorund) {
+    display: inline-block;
+    .circle (@radius, @backgorund);
+    line-height: (@radius * 2);
+    text-align: center;
+    font-size: @font-size-normal;
+    color: @color;
+    background-color: @backgorund;
+    vertical-align: top;
+    &:hover {
+        color: @backgorund;
+        background-color: @color;
+    }
+}
+
+// Help
+//////////////////////////////////////////////////////
+
+.circle (@radius, @background) {
+     .border-radius (100%);
+     .size(@radius * 2,@radius * 2);
+     background-color: @background;
+}
+
+.quoteContent {
+    &:before {
+        content: open-quote;
+    }
+    &:after {
+        content: close-quote;
+    }
+    &:before, &:after {
+        color: inherit;
+    }
+}
+
+// Loops
+//////////////////////////////////////////////////////
+
+.setBackgroundImage(@n, @i: 1) when (@i =< @n) {
+    &#back0@{i} {
+        background: url("@{imageUrl}back0@{i}.jpg") transparent 75% center no-repeat;
+        background-size: cover;
+    }
+    .setBackgroundImage(@n, (@i + 1));
+}
+
+// Redo Bootstrap responsive utilities
+//////////////////////////////////////////////////////
+
+.responsive-visibility() {
+  display: inline-block !important;
+  table&  { display: table; }
+  tr&     { display: table-row !important; }
+  th&,
+  td&     { display: table-cell !important; }
+}
+
+.responsive-invisibility() {
+    &,
+  tr&,
+  th&,
+  td& { display: none !important; }
+}
+
+
+// Frameless Grid    <http://framelessgrid.com/>
+//////////////////////////////////////////////////////
+
+//
+// Column-widths in a function, in ems
+//
+
+.width (@cols:1) {
+    width: (@cols * (@column + @gutter) - @gutter) / @em;
+}
+
+// Project
+//////////////////////////////////////////////////////
+.table-width (@width) {
+    width: @width;
+    min-width: @width;
+    max-width: @width;
+}
+
+.base-hover (@color){
+    .transition(background-color,@transitionDelay);
+        &:hover {
+        background-color: darken(@color, 10%);
+        color: #fff;
+
+        }
+        &:focus,
+        &:active {
+            background-color: lighten(@color, 10%);
+            color: #fff;
+
+        }
+}
+.base-hover-textlink (@color){
+       .transition(color,@transitionDelay);
+        &:hover {
+        color: darken(@color, 20%);
+        }
+        &:focus,
+        &:active {
+            color: lighten(@color, 10%);
+        }
+}
+.base-hover-border (@color){
+       .transition(color,@transitionDelay);
+        &:hover {
+        border-color: darken(@color, 20%);
+        }
+        &:focus,
+        &:active {
+            border-color: lighten(@color, 10%);
+        }
+}

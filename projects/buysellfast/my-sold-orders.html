@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Buy Sell Fast</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- JavaScripts -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src='js/bootstrap.js'></script>
+  <script src='js/main.js'></script>
+
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="top-bar-logo">
+      <a href="/">
+        <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+    </div>
+
+    <!-- Cart on the top bar -->
+    <div class="top-bar-cart">
+      <a href="#">
+        <span class="top-bar-cart-items">95</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="nav-buy">
+              <span class="nav-name">Buy</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-explore">
+              <span class="nav-name">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-sell">
+              <span class="nav-name">Sell</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-contacts">
+              <span class="nav-name">Contacts</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-messages">
+              <span class="nav-name">Messages</span>
+              <span class="nav-quantity">89</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-reports">
+              <span class="nav-name">Reports</span>
+            </a>
+          </li>
+          <li  class="active">
+            <a href="#" class="nav-settings">
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ./navbar -->
+
+  <div id="page-content">
+
+    <!-- 
+!!!
+Dont forget to put in head new file  <script src='js/bootstrap.js'></script>
+  -->
+  <!-- Panel with ALL-MESSAGES MENU and DROPDOWN with EXPANDED MESSAGES CATEGORIES  -->
+  <ul class="page-controls" role="tablist">
+
+    <!-- ALL-MESSAGES MENU -->
+
+    <!-- All-mesagges menu button -->
+    <li role="presentation" class="dropdown-panel dropdown-panel-menu ">
+      <span id="dropdownMenu1" class="messages-menu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+        <span></span>
+      </span>
+
+      <!-- SUBMENUS in all-messages menu -->
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation" class="messages-cat">
+          <a role="menuitem" tabindex="-1" href="#">
+            <span class="messages-cat-wrap">
+              <span class="messages-cat-title">All messages</span>
+              <span class="messages-number">
+                <span>222</span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li role="presentation" class="messages-cat">
+          <a role="menuitem" tabindex="-1" href="#">
+            <span class="messages-cat-wrap">
+              <span class="messages-cat-title">Messages from Friends</span>
+              <span class="messages-number">
+                <span>8</span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li role="presentation" class="messages-cat">
+          <a role="menuitem" tabindex="-1" href="#">
+            <span class="messages-cat-wrap">
+              <span class="messages-cat-title">Friend Requests</span>
+            </span>
+          </a>
+        </li>
+        <li role="presentation" class="messages-cat">
+          <a role="menuitem" tabindex="-1" href="#">
+            <span class="messages-cat-wrap">
+              <span class="messages-cat-title">My Messages to Customers</span>
+            </span>
+          </a>
+        </li>
+        <li role="presentation" class="messages-cat">
+          <a role="menuitem" tabindex="-1" href="#">
+            <span class="messages-cat-wrap">
+              <span class="messages-cat-title">Sellers Messages for Me</span>
+            </span>
+          </a>
+        </li>
+        <li role="presentation" class="messages-cat">
+          <a role="menuitem" tabindex="-1" href="#">
+            <span class="messages-cat-wrap">
+              <span class="messages-cat-title">My Purchased Orders</span>
+              <span class="messages-number">
+                <span>3222</span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li role="presentation" class="messages-cat">
+          <a role="menuitem" tabindex="-1" href="#">
+            <span class="messages-cat-wrap">
+              <span class="messages-cat-title">My Sold orders</span>
+              <span class="messages-number">
+                <span>3222</span>
+              </span>
+            </span>
+          </a>
+        </li>
+
+      </ul>
+    </li>
+
+    <!-- Menu TITLE -->
+    <li role="presentation" class="dropdown-panel dropdown-panel-expanded dropdown-with-arrow">
+      <span id="dropdownMenu2"  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+        <span class="messages-title">My Sold Orders</span>
+        <span class="arrow-right chevron-greengrey"></span>
+      </span>
+      <ul class="dropdown-menu dropdown-with-search" role="menu" aria-labelledby="dropdownMenu2">
+        <!-- Search -->
+        <li class="dropdown-search" role="presentation" >
+          <div class="bg-palegreen">
+            <div class="form-group">
+              <input type="text" placeholder="Search" class="form-control grey-search"></div>
+          </div>
+        </li>
+        <!-- Right arrow dropdown -->
+        <li class="panel-group" id="accordion-sold">
+          <div class="accordion-sold">
+            <div class="text-and-arrow  panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title ">
+                  <a href="#collapseFive" data-parent="#accordion-dropdown" data-toggle="collapse" class="accordion-toggle collapsed" aria-expanded="false">
+                    <span class="label">Today</span>
+                    <span class="list-link">
+                      <span class="arrow-right-circle-green"></span>
+                    </span>
+                  </a>
+                </h4>
+              </div>
+              <div class="panel-collapse collapse" id="collapseFive" aria-expanded="false" role="menu">
+                <div class="panel-body">
+                  <div class="sub-menu">
+                    <span>
+                      <a href="#" tabindex="-1" role="menuitem">All Orders</a>
+                    </span>
+                  </div>
+                  <div class="sub-menu">
+                    <span>
+                      <a href="#" tabindex="-1" role="menuitem">Today</a>
+                    </span>
+                  </div>
+                  <div class="sub-menu">
+                    <span>
+                      <a href="#" tabindex="-1" role="menuitem">Last 7 days</a>
+                    </span>
+                  </div>
+                  <div class="sub-menu">
+                    <span>
+                      <a href="#" tabindex="-1" role="menuitem">This Month</a>
+                    </span>
+                  </div>
+                  <div class="sub-menu">
+                    <span>
+                      <a href="#" tabindex="-1" role="menuitem">October</a>
+                    </span>
+                  </div>
+                  <div class="sub-menu">
+                    <span>
+                      <a href="#" tabindex="-1" role="menuitem">This year</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-and-arrow  panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title ">
+                  <a href="#collapseSix" data-parent="#accordion-dropdown" data-toggle="collapse" class="accordion-toggle collapsed" aria-expanded="false">
+                    <span class="label">Show shipped / unshipped orders</span>
+                    <span class="list-link">
+                      <span class="arrow-right-circle-green"></span>
+                    </span>
+                  </a>
+                </h4>
+              </div>
+              <div class="panel-collapse collapse" id="collapseSix" aria-expanded="false" role="menu">
+                <div class="panel-body">
+                  <div class="sub-menu">
+                    <span>
+                      <a href="#" tabindex="-1" role="menuitem">Show shipped orders</a>
+                    </span>
+                  </div>
+                  <div class="sub-menu">
+                    <span>
+                      <a href="#" tabindex="-1" role="menuitem">Show unshipped orders</a>
+                    </span>
+                  </div>
+                  <div class="sub-menu">
+                    <span>
+                      <a href="#" tabindex="-1" role="menuitem">Show by customer name</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </li>
+
+      </ul>
+    </li>
+
+  </ul>
+
+  <ul class="list-with-icon orders">
+    <li>
+      <a class="list-link" href="#">
+        <span class="img-radio-not-shipped"></span>
+        <span class="list-text">
+          <span class="one-row">
+            <span class="title-red">Not Shipped</span>
+            <span class="orders-date">February, 4  8:21am</span>
+          </span>
+          <span class="one-row">
+            <span class="orders-store">Store name</span>
+            <span class="orders-number">123-123-123</span>
+            <span class="orders-price">
+              <img src="images/Price.png" height="24" width="24" alt=""> <i>CAD$</i> <b>671.85</b>
+            </span>
+          </span>
+        </span>
+        <span class="arrow-right"></span>
+      </a>
+    </li>
+    <li>
+      <a class="list-link" href="#">
+        <span class="img-radio-shipped"></span>
+        <span class="list-text">
+          <span class="one-row">
+            <span class="title-green">Shipped</span>
+            <span class="orders-date">February, 4  8:21am</span>
+          </span>
+          <span class="one-row">
+            <span class="orders-store">
+              Here is a long Store name may be because of the weather or something like this
+            </span>
+            <span class="orders-number">123-123-123</span>
+            <span class="orders-price">
+              <img src="images/Price.png" height="24" width="24" alt=""> <i>CAD$</i> <b>671.85</b>
+            </span>
+          </span>
+        </span>
+        <span class="arrow-right"></span>
+      </a>
+    </li>
+
+  </ul>
+</div>
+<!-- ./page-content -->
+
+</body>
+</html>

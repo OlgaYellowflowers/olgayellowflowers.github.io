@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Automatic Email</title>
+
+	<link href="fonts/fonts.css" rel="stylesheet" />
+	<link href="css/bootstrap.css" rel="stylesheet" />
+
+	<script type='text/javascript' src='js/jquery-1.11.3.js'></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+
+	<!-- Admin stylesheet -->
+	<link href="css/starReviewsAdmin.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="css/c3.css" rel="stylesheet" type="text/css"/>
+	<!-- Merchant Dashboard Theme-->
+	<link href="css/dashboard.css" rel="stylesheet">
+
+
+	<!-- 
+	New css made by me
+	 Hi, Larry :) 
+	 -->
+	<!-- I made separate css files, I am not sure whether you use LESS or SCCS, or plain CSS, 
+so I made just separated css files -->
+	<link href="css/bootstrap-fileinput.css" rel="stylesheet" />
+	<link href="css/bootstrap-select.css" rel="stylesheet" />
+	<link href="css/table-styling.css" rel="stylesheet">
+	<link href="css/override-your-styles.css" rel="stylesheet">
+	<link href="css/styledash-additional.css" rel="stylesheet">
+
+	<!-- New js files  -->
+	<script type='text/javascript' src='js/bootstrap.file-input.js'></script>
+	<script type='text/javascript' src='js/bootstrap-select.min.js'></script>
+	<script type='text/javascript' src='js/scripts.js'></script>
+
+</head>
+
+<body>
+
+	<div class="content">
+		<div class="page-header">
+			<h2>Automatic Email Settings</h2>
+		</div>
+		<div class="error"></div>
+		<div>
+			<p>
+				The Automatic Email service allows your customers to receive an review request a few days after they've made their purchases. Below you'll be able to change a few basic business rules for this email in addition to the content.
+				<a href="#">Visit the Design Center</a>
+				to update the design of your email template.
+			</p>
+		</div>
+		<div class="chart-wrap">
+			<div class="chart-panel">
+				<p class="chart-title"> <i class="fa fa-envelope-o"></i>
+					Content
+				</p>
+				<span class="chart-title-right-text">Automatic Email Template</span>
+			</div>
+
+			<!-- Inputs of email content -->
+
+			<div class="emailSenderForm">
+				<form class="form-horizontal wrapper-inner-md">
+					<div class="form-group">
+						<label class="control-label col-sm-2">Subject Line:</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" placeholder="Please review your recent purchase at (store_name)"></div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">Body:</label>
+						<div class="col-sm-8">
+							<textarea rows="6" class="form-control">
+Hello (customer_name)
+
+You've recently completed a purchase on our site (store_name). We'd love to get your feedback on your experience shopping with us!
+							</textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">Signature:</label>
+						<div class="col-sm-8">
+							<textarea rows="4" class="form-control">
+We sincerely apperciate the time you've taken to review our business.
+Thank you,
+(store_name)
+							</textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2">Send Email:</label>
+						<div class="col-sm-8">
+							<div class="form-inline">
+								<div class="form-group">
+									<input type="number" class="input-short form-control" placeholder="1"></div>
+								<div class="form-group">Days after purchase</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-8 text-center">
+							<button type="submit" class="btn btn-lg btn-success">Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!-- Preview of email -->
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="well well-lg">
+							<div class="row">
+								<div class="col-sm-8 col-sm-offset-2">
+									<div class="box-preview-logo">
+										<img src="img/logo.png" height="66" width="292"></div>
+									<div class="box-preview-top">
+										<div class="row">
+											<div class="col-sm-7">
+												<h2>Hello, (customer_name)</h2>
+											</div>
+											<div class="col-sm-5 text-right"> <i class="fa fa-star fa-2x yellow"></i>
+												<i class="fa fa-star fa-2x yellow"></i>
+												<i class="fa fa-star fa-2x yellow"></i>
+												<i class="fa fa-star fa-2x lightgrey"></i>
+												<i class="fa fa-star fa-2x lightgrey"></i>
+											</div>
+										</div>
+									</div>
+
+									<div class="box-preview-body">
+
+										<p>
+											You've recently completed a purchase on our site (store_name). We'd love to get your feedback on your experience shopping with us!
+										</p>
+										<p class="text-center wrapper-inner-md">
+											<button disabled="disabled" class="btn btn-lg btn-primary">Leave a review</button>
+										</p>
+										<p>
+											We sincerely apperciate the time you've taken to review our business.
+										</p>
+										<p>
+											Thank you,
+											<br>(store_name)</p>
+									</div>
+
+								</div>
+							</div>
+							
+						</div>
+
+						<div class="row wrapper-outer-lg">
+								<div class="col-md-12 text-center">
+									<!-- Trigger the modal with a button -->
+									<button type="button" class="btn btn-lg btn-default" data-toggle="modal" data-target="#ModalSendTestEmail">Send test email</button>
+									<!-- Modal -->
+									<div id="ModalSendTestEmail" class="modal fade" role="dialog">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title">Test email sent</h4>
+												</div>
+												<div class="modal-body">
+													<p>Your test email was successfully sent to (account-email)!</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary center-block" data-dismiss="modal">Ok</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<!-- Trigger the modal with a button -->
+									<button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#SaveEmail">Save</button>
+									<!-- Modal -->
+									<div id="SaveEmail" class="modal fade" role="dialog">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title">Email saved</h4>
+												</div>
+												<div class="modal-body">
+													<p>Your email was successfully saved</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary center-block" data-dismiss="modal">Ok</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+</html>

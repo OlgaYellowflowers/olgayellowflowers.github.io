@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <title></title>
+    <!-- CSS files -->
+    <link type="text/css" rel="Stylesheet" href="Styles/bootstrap.css" />
+    <link type="text/css" rel="Stylesheet" href="Styles/BSFStyles.css" />
+</head>
+<body style="margin:0;padding:0;">
+    <form name="aspnetForm" method="post" action="EditStoreSettings.aspx" id="aspnetForm" enctype="multipart/form-data">
+        <div>
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTM4NjI0NDkyOQ9kFgJmD2QWAgIDDxYCHgdlbmN0eXBlBRNtdWx0aXBhcnQvZm9ybS1kYXRhFgICAQ9kFiICBw8PFgIeBFRleHQFATVkZAILDw8WBB4IUmVhZE9ubHlnHwEFCFNLeSBNYWxsZGQCEw8PFgIfAQUUNS8yMi8yMDE0IDQ6Mjk6NTIgQU1kZAIXDw8WAh8BBRQ2LzIzLzIwMTQgNzo1NzoyMCBBTWRkAhsPDxYCHwEFFDcvMTIvMjAxNCA2OjM2OjQ3IEFNZGQCHw8PFgIfAQUUNy8xMi8yMDE1IDY6MzY6NDcgQU1kZAIjDxAPFgIeB0VuYWJsZWRoZGQWAWZkAicPDxYCHwEFEUJzZiBTZWxsZXIxLSBuaWNrZGQCKw8PFgIfAQUXYnNmc2VsbGVyMTExMUBnbWFpbC5jb21kZAIvDxAPFgQeDURhdGFUZXh0RmllbGQFEENhbmFkaWFuIERvbGxhcnMeC18hRGF0YUJvdW5kZ2QPFhoCAQICAgMCBAIFAgYCBwIIAgkCCgILAgwCDQIOAg8CEAIRAhICEwIUAhUCFgIXAhgCGQIaFhoQBRBDYW5hZGlhbiBEb2xsYXJzBRBDYW5hZGlhbiBEb2xsYXJzZxAFFVVuaXRlZCBTdGF0ZXMgRG9sbGFycwUVVW5pdGVkIFN0YXRlcyBEb2xsYXJzZxAFEkF1c3RyYWxpYW4gRG9sbGFycwUSQXVzdHJhbGlhbiBEb2xsYXJzZxAFDkJyYXppbGlhbiBSZWFsBQ5CcmF6aWxpYW4gUmVhbGcQBQ5Ccml0aXNoIFBvdW5kcwUOQnJpdGlzaCBQb3VuZHNnEAUMQ3plY2ggS29ydW5hBQxDemVjaCBLb3J1bmFnEAUMRGFuaXNoIEtyb25lBQxEYW5pc2ggS3JvbmVnEAUFRXVyb3MFBUV1cm9zZxAFEEhvbmcgS29uZyBEb2xsYXIFEEhvbmcgS29uZyBEb2xsYXJnEAUQSHVuZ2FyaWFuIEZvcmludAUQSHVuZ2FyaWFuIEZvcmludGcQBRJJc3JhZWxpIE5ldyBTaGVxZWwFEklzcmFlbGkgTmV3IFNoZXFlbGcQBQxKYXBhbmVzZSBZZW4FDEphcGFuZXNlIFllbmcQBRFNYWxheXNpYW4gUmluZ2dpdAURTWFsYXlzaWFuIFJpbmdnaXRnEAUMTWV4aWNhbiBQZXNvBQxNZXhpY2FuIFBlc29nEAUPTm9yd2VnaWFuIEtyb25lBQ9Ob3J3ZWdpYW4gS3JvbmVnEAUSTmV3IFplYWxhbmQgRG9sbGFyBRJOZXcgWmVhbGFuZCBEb2xsYXJnEAUPUGhpbGlwcGluZSBQZXNvBQ9QaGlsaXBwaW5lIFBlc29nEAUMUG9saXNoIFpsb3R5BQxQb2xpc2ggWmxvdHlnEAUNUnVzc2lhbiBSdWJsZQUNUnVzc2lhbiBSdWJsZWcQBRBTaW5nYXBvcmUgRG9sbGFyBRBTaW5nYXBvcmUgRG9sbGFyZxAFDVN3ZWRpc2ggS3JvbmEFDVN3ZWRpc2ggS3JvbmFnEAULU3dpc3MgRnJhbmMFC1N3aXNzIEZyYW5jZxAFEVRhaXdhbiBOZXcgRG9sbGFyBRFUYWl3YW4gTmV3IERvbGxhcmcQBQlUaGFpIEJhaHQFCVRoYWkgQmFodGcQBQxJbmRpYW4gUnVwZWUFDEluZGlhbiBSdXBlZWcQBQxDaGluZXNlIFl1YW4FDENoaW5lc2UgWXVhbmcWAQIBZAJBDxAPFgQfBAUGQ2FuYWRhHwVnZA8WzAECAQICAgMCBAIFAgYCBwIIAgkCCgILAgwCDQIOAg8CEAIRAhICEwIUAhUCFgIXAhgCGQIaAhsCHAIdAh4CHwIgAiECIgIjAiQCJQImAicCKAIpAioCKwIsAi0CLgIvAjACMQIyAjMCNAI1AjYCNwI4AjkCOgI7AjwCPQI+Aj8CQAJBAkICQwJEAkUCRgJHAkgCSQJKAksCTAJNAk4CTwJQAlECUgJTAlQCVQJWAlcCWAJZAloCWwJcAl0CXgJfAmACYQJiAmMCZAJlAmYCZwJoAmkCagJrAmwCbQJuAm8CcAJxAnICcwJ0AnUCdgJ3AngCeQJ6AnsCfAJ9An4CfwKAAQKBAQKCAQKDAQKEAQKFAQKGAQKHAQKIAQKJAQKKAQKLAQKMAQKNAQKOAQKPAQKQAQKRAQKSAQKTAQKUAQKVAQKWAQKXAQKYAQKZAQKaAQKbAQKcAQKdAQKeAQKfAQKgAQKhAQKiAQKjAQKkAQKlAQKmAQKnAQKoAQKpAQKqAQKrAQKsAQKtAQKuAQKvAQKwAQKxAQKyAQKzAQK0AQK1AQK2AQK3AQK4AQK5AQK6AQK7AQK8AQK9AQK+AQK/AQLAAQLBAQLCAQLDAQLEAQLFAQLGAQLHAQLIAQLJAQLKAQLLAQLMARbMARAFBkNhbmFkYQUGQ2FuYWRhZxAFDVVuaXRlZCBTdGF0ZXMFDVVuaXRlZCBTdGF0ZXNnEAUOVW5pdGVkIEtpbmdkb20FDlVuaXRlZCBLaW5nZG9tZxAFBUluZGlhBQVJbmRpYWcQBQtBZmdoYW5pc3RhbgULQWZnaGFuaXN0YW5nEAUHQWxiYW5pYQUHQWxiYW5pYWcQBQdBbGdlcmlhBQdBbGdlcmlhZxAFB0FuZG9ycmEFB0FuZG9ycmFnEAUGQW5nb2xhBQZBbmdvbGFnEAUTQW50aWd1YSBhbmQgQmFyYnVkYQUTQW50aWd1YSBhbmQgQmFyYnVkYWcQBQlBcmdlbnRpbmEFCUFyZ2VudGluYWcQBQdBcm1lbmlhBQdBcm1lbmlhZxAFCUF1c3RyYWxpYQUJQXVzdHJhbGlhZxAFB0F1c3RyaWEFB0F1c3RyaWFnEAUKQXplcmJhaWphbgUKQXplcmJhaWphbmcQBQdCYWhhbWFzBQdCYWhhbWFzZxAFB0JhaHJhaW4FB0JhaHJhaW5nEAUKQmFuZ2xhZGVzaAUKQmFuZ2xhZGVzaGcQBQhCYXJiYWRvcwUIQmFyYmFkb3NnEAUHQmVsYXJ1cwUHQmVsYXJ1c2cQBQdCZWxnaXVtBQdCZWxnaXVtZxAFBkJlbGl6ZQUGQmVsaXplZxAFBUJlbmluBQVCZW5pbmcQBQdCZXJtdWRhBQdCZXJtdWRhZxAFBkJodXRhbgUGQmh1dGFuZxAFH0JvbGl2aWEsIFBsdXJpbmF0aW9uYWwgU3RhdGUgT2YFH0JvbGl2aWEsIFBsdXJpbmF0aW9uYWwgU3RhdGUgT2ZnEAUgQm9uYWlyZSwgU2ludCBFdXN0YXRpdXMgYW5kIFNhYmEFIEJvbmFpcmUsIFNpbnQgRXVzdGF0aXVzIGFuZCBTYWJhZxAFFkJvc25pYSBhbmQgSGVyemVnb3ZpbmEFFkJvc25pYSBhbmQgSGVyemVnb3ZpbmFnEAUIQm90c3dhbmEFCEJvdHN3YW5hZxAFBkJyYXppbAUGQnJhemlsZxAFEUJydW5laSBEYXJ1c3NhbGFtBRFCcnVuZWkgRGFydXNzYWxhbWcQBQhCdWxnYXJpYQUIQnVsZ2FyaWFnEAUMQnVya2luYSBGYXNvBQxCdXJraW5hIEZhc29nEAUHQnVydW5kaQUHQnVydW5kaWcQBQhDYW1ib2RpYQUIQ2FtYm9kaWFnEAUIQ2FtZXJvb24FCENhbWVyb29uZxAFCkNhcGUgVmVyZGUFCkNhcGUgVmVyZGVnEAUOQ2F5bWFuIElzbGFuZHMFDkNheW1hbiBJc2xhbmRzZxAFGENlbnRyYWwgQWZyaWNhbiBSZXB1YmxpYwUYQ2VudHJhbCBBZnJpY2FuIFJlcHVibGljZxAFBENoYWQFBENoYWRnEAUFQ2hpbGUFBUNoaWxlZxAFBUNoaW5hBQVDaGluYWcQBQhDb2xvbWJpYQUIQ29sb21iaWFnEAUHQ29tb3JvcwUHQ29tb3Jvc2cQBQVDb25nbwUFQ29uZ29nEAUlQ29uZ28sIFRoZSBEZW1vY3JhdGljIFJlcHVibGljIE9mIFRoZQUlQ29uZ28sIFRoZSBEZW1vY3JhdGljIFJlcHVibGljIE9mIFRoZWcQBQpDb3N0YSBSaWNhBQpDb3N0YSBSaWNhZxAFB0Nyb2F0aWEFB0Nyb2F0aWFnEAUEQ3ViYQUEQ3ViYWcQBQZDeXBydXMFBkN5cHJ1c2cQBQ5DemVjaCBSZXB1YmxpYwUOQ3plY2ggUmVwdWJsaWNnEAUOQ8O0dGUgRCdJdm9pcmUFDkPDtHRlIEQnSXZvaXJlZxAFB0Rlbm1hcmsFB0Rlbm1hcmtnEAUIRGppYm91dGkFCERqaWJvdXRpZxAFCERvbWluaWNhBQhEb21pbmljYWcQBRJEb21pbmljYW4gUmVwdWJsaWMFEkRvbWluaWNhbiBSZXB1YmxpY2cQBQdFY3VhZG9yBQdFY3VhZG9yZxAFBUVneXB0BQVFZ3lwdGcQBQtFbCBTYWx2YWRvcgULRWwgU2FsdmFkb3JnEAURRXF1YXRvcmlhbCBHdWluZWEFEUVxdWF0b3JpYWwgR3VpbmVhZxAFB0VyaXRyZWEFB0VyaXRyZWFnEAUHRXN0b25pYQUHRXN0b25pYWcQBQhFdGhpb3BpYQUIRXRoaW9waWFnEAUERmlqaQUERmlqaWcQBQdGaW5sYW5kBQdGaW5sYW5kZxAFBkZyYW5jZQUGRnJhbmNlZxAFG0ZyZW5jaCBTb3V0aGVybiBUZXJyaXRvcmllcwUbRnJlbmNoIFNvdXRoZXJuIFRlcnJpdG9yaWVzZxAFBUdhYm9uBQVHYWJvbmcQBQZHYW1iaWEFBkdhbWJpYWcQBQdHZW9yZ2lhBQdHZW9yZ2lhZxAFB0dlcm1hbnkFB0dlcm1hbnlnEAUFR2hhbmEFBUdoYW5hZxAFBkdyZWVjZQUGR3JlZWNlZxAFCUdyZWVubGFuZAUJR3JlZW5sYW5kZxAFB0dyZW5hZGEFB0dyZW5hZGFnEAUJR3VhdGVtYWxhBQlHdWF0ZW1hbGFnEAUGR3VpbmVhBQZHdWluZWFnEAUNR3VpbmVhLUJpc3NhdQUNR3VpbmVhLUJpc3NhdWcQBQZHdXlhbmEFBkd1eWFuYWcQBQVIYWl0aQUFSGFpdGlnEAUISG9uZHVyYXMFCEhvbmR1cmFzZxAFB0h1bmdhcnkFB0h1bmdhcnlnEAUHSWNlbGFuZAUHSWNlbGFuZGcQBQlJbmRvbmVzaWEFCUluZG9uZXNpYWcQBRlJcmFuLCBJc2xhbWljIFJlcHVibGljIE9mBRlJcmFuLCBJc2xhbWljIFJlcHVibGljIE9mZxAFBElyYXEFBElyYXFnEAUHSXJlbGFuZAUHSXJlbGFuZGcQBQZJc3JhZWwFBklzcmFlbGcQBQVJdGFseQUFSXRhbHlnEAUHSmFtYWljYQUHSmFtYWljYWcQBQVKYXBhbgUFSmFwYW5nEAUGSm9yZGFuBQZKb3JkYW5nEAUKS2F6YWtoc3RhbgUKS2F6YWtoc3RhbmcQBQVLZW55YQUFS2VueWFnEAUIS2lyaWJhdGkFCEtpcmliYXRpZxAFJktvcmVhLCBEZW1vY3JhdGljIFBlb3BsZSdzIFJlcHVibGljIE9mBSZLb3JlYSwgRGVtb2NyYXRpYyBQZW9wbGUncyBSZXB1YmxpYyBPZmcQBRJLb3JlYSwgUmVwdWJsaWMgb2YFEktvcmVhLCBSZXB1YmxpYyBvZmcQBQZLdXdhaXQFBkt1d2FpdGcQBQpLeXJneXpzdGFuBQpLeXJneXpzdGFuZxAFIExhbyBQZW9wbGUncyBEZW1vY3JhdGljIFJlcHVibGljBSBMYW8gUGVvcGxlJ3MgRGVtb2NyYXRpYyBSZXB1YmxpY2cQBQZMYXR2aWEFBkxhdHZpYWcQBQdMZWJhbm9uBQdMZWJhbm9uZxAFB0xlc290aG8FB0xlc290aG9nEAUHTGliZXJpYQUHTGliZXJpYWcQBQVMaWJ5YQUFTGlieWFnEAUNTGllY2h0ZW5zdGVpbgUNTGllY2h0ZW5zdGVpbmcQBQlMaXRodWFuaWEFCUxpdGh1YW5pYWcQBQpMdXhlbWJvdXJnBQpMdXhlbWJvdXJnZxAFBU1hY2FvBQVNYWNhb2cQBSpNYWNlZG9uaWEsIHRoZSBGb3JtZXIgWXVnb3NsYXYgUmVwdWJsaWMgT2YFKk1hY2Vkb25pYSwgdGhlIEZvcm1lciBZdWdvc2xhdiBSZXB1YmxpYyBPZmcQBQpNYWRhZ2FzY2FyBQpNYWRhZ2FzY2FyZxAFBk1hbGF3aQUGTWFsYXdpZxAFCE1hbGF5c2lhBQhNYWxheXNpYWcQBQhNYWxkaXZlcwUITWFsZGl2ZXNnEAUETWFsaQUETWFsaWcQBQVNYWx0YQUFTWFsdGFnEAUQTWFyc2hhbGwgSXNsYW5kcwUQTWFyc2hhbGwgSXNsYW5kc2cQBQpNYXVyaXRhbmlhBQpNYXVyaXRhbmlhZxAFCU1hdXJpdGl1cwUJTWF1cml0aXVzZxAFBk1leGljbwUGTWV4aWNvZxAFH01pY3JvbmVzaWEsIEZlZGVyYXRlZCBTdGF0ZXMgT2YFH01pY3JvbmVzaWEsIEZlZGVyYXRlZCBTdGF0ZXMgT2ZnEAUUTW9sZG92YSwgUmVwdWJsaWMgb2YFFE1vbGRvdmEsIFJlcHVibGljIG9mZxAFBk1vbmFjbwUGTW9uYWNvZxAFCE1vbmdvbGlhBQhNb25nb2xpYWcQBQpNb250ZW5lZ3JvBQpNb250ZW5lZ3JvZxAFB01vcm9jY28FB01vcm9jY29nEAUKTW96YW1iaXF1ZQUKTW96YW1iaXF1ZWcQBQdNeWFubWFyBQdNeWFubWFyZxAFB05hbWliaWEFB05hbWliaWFnEAUFTmF1cnUFBU5hdXJ1ZxAFBU5lcGFsBQVOZXBhbGcQBQtOZXRoZXJsYW5kcwULTmV0aGVybGFuZHNnEAULTmV3IFplYWxhbmQFC05ldyBaZWFsYW5kZxAFCU5pY2FyYWd1YQUJTmljYXJhZ3VhZxAFBU5pZ2VyBQVOaWdlcmcQBQdOaWdlcmlhBQdOaWdlcmlhZxAFBk5vcndheQUGTm9yd2F5ZxAFBE9tYW4FBE9tYW5nEAUIUGFraXN0YW4FCFBha2lzdGFuZxAFBVBhbGF1BQVQYWxhdWcQBR9QYWxlc3RpbmlhbiBUZXJyaXRvcnksIE9jY3VwaWVkBR9QYWxlc3RpbmlhbiBUZXJyaXRvcnksIE9jY3VwaWVkZxAFBlBhbmFtYQUGUGFuYW1hZxAFEFBhcHVhIE5ldyBHdWluZWEFEFBhcHVhIE5ldyBHdWluZWFnEAUIUGFyYWd1YXkFCFBhcmFndWF5ZxAFBFBlcnUFBFBlcnVnEAULUGhpbGlwcGluZXMFC1BoaWxpcHBpbmVzZxAFBlBvbGFuZAUGUG9sYW5kZxAFCFBvcnR1Z2FsBQhQb3J0dWdhbGcQBQVRYXRhcgUFUWF0YXJnEAUHUm9tYW5pYQUHUm9tYW5pYWcQBRJSdXNzaWFuIEZlZGVyYXRpb24FElJ1c3NpYW4gRmVkZXJhdGlvbmcQBQZSd2FuZGEFBlJ3YW5kYWcQBSxTYWludCBIZWxlbmEsIEFzY2Vuc2lvbiBhbmQgVHJpc3RhbiBEYSBDdW5oYQUsU2FpbnQgSGVsZW5hLCBBc2NlbnNpb24gYW5kIFRyaXN0YW4gRGEgQ3VuaGFnEAUVU2FpbnQgS2l0dHMgQW5kIE5ldmlzBRVTYWludCBLaXR0cyBBbmQgTmV2aXNnEAULU2FpbnQgTHVjaWEFC1NhaW50IEx1Y2lhZxAFIFNhaW50IFZpbmNlbnQgQW5kIFRoZSBHcmVuYWRpbmVzBSBTYWludCBWaW5jZW50IEFuZCBUaGUgR3JlbmFkaW5lc2cQBQVTYW1vYQUFU2Ftb2FnEAUKU2FuIE1hcmlubwUKU2FuIE1hcmlub2cQBRVTYW8gVG9tZSBhbmQgUHJpbmNpcGUFFVNhbyBUb21lIGFuZCBQcmluY2lwZWcQBQxTYXVkaSBBcmFiaWEFDFNhdWRpIEFyYWJpYWcQBQdTZW5lZ2FsBQdTZW5lZ2FsZxAFBlNlcmJpYQUGU2VyYmlhZxAFClNleWNoZWxsZXMFClNleWNoZWxsZXNnEAUMU2llcnJhIExlb25lBQxTaWVycmEgTGVvbmVnEAUJU2luZ2Fwb3JlBQlTaW5nYXBvcmVnEAUIU2xvdmFraWEFCFNsb3Zha2lhZxAFCFNsb3ZlbmlhBQhTbG92ZW5pYWcQBQ9Tb2xvbW9uIElzbGFuZHMFD1NvbG9tb24gSXNsYW5kc2cQBQdTb21hbGlhBQdTb21hbGlhZxAFDFNvdXRoIEFmcmljYQUMU291dGggQWZyaWNhZxAFC1NvdXRoIFN1ZGFuBQtTb3V0aCBTdWRhbmcQBQVTcGFpbgUFU3BhaW5nEAUJU3JpIExhbmthBQlTcmkgTGFua2FnEAUFU3VkYW4FBVN1ZGFuZxAFCFN1cmluYW1lBQhTdXJpbmFtZWcQBQlTd2F6aWxhbmQFCVN3YXppbGFuZGcQBQZTd2VkZW4FBlN3ZWRlbmcQBQtTd2l0emVybGFuZAULU3dpdHplcmxhbmRnEAUUU3lyaWFuIEFyYWIgUmVwdWJsaWMFFFN5cmlhbiBBcmFiIFJlcHVibGljZxAFGVRhaXdhbiwgUHJvdmluY2UgT2YgQ2hpbmEFGVRhaXdhbiwgUHJvdmluY2UgT2YgQ2hpbmFnEAUKVGFqaWtpc3RhbgUKVGFqaWtpc3RhbmcQBRxUYW56YW5pYSwgVW5pdGVkIFJlcHVibGljIG9mBRxUYW56YW5pYSwgVW5pdGVkIFJlcHVibGljIG9mZxAFCFRoYWlsYW5kBQhUaGFpbGFuZGcQBQtUaW1vci1MZXN0ZQULVGltb3ItTGVzdGVnEAUEVG9nbwUEVG9nb2cQBQVUb25nYQUFVG9uZ2FnEAUTVHJpbmlkYWQgYW5kIFRvYmFnbwUTVHJpbmlkYWQgYW5kIFRvYmFnb2cQBQdUdW5pc2lhBQdUdW5pc2lhZxAFBlR1cmtleQUGVHVya2V5ZxAFDFR1cmttZW5pc3RhbgUMVHVya21lbmlzdGFuZxAFBlR1dmFsdQUGVHV2YWx1ZxAFBlVnYW5kYQUGVWdhbmRhZxAFB1VrcmFpbmUFB1VrcmFpbmVnEAUUVW5pdGVkIEFyYWIgRW1pcmF0ZXMFFFVuaXRlZCBBcmFiIEVtaXJhdGVzZxAFJFVuaXRlZCBTdGF0ZXMgTWlub3IgT3V0bHlpbmcgSXNsYW5kcwUkVW5pdGVkIFN0YXRlcyBNaW5vciBPdXRseWluZyBJc2xhbmRzZxAFB1VydWd1YXkFB1VydWd1YXlnEAUKVXpiZWtpc3RhbgUKVXpiZWtpc3RhbmcQBQdWYW51YXR1BQdWYW51YXR1ZxAFIVZlbmV6dWVsYSwgQm9saXZhcmlhbiBSZXB1YmxpYyBvZgUhVmVuZXp1ZWxhLCBCb2xpdmFyaWFuIFJlcHVibGljIG9mZxAFCFZpZXQgTmFtBQhWaWV0IE5hbWcQBQ5XZXN0ZXJuIFNhaGFyYQUOV2VzdGVybiBTYWhhcmFnEAUFWWVtZW4FBVllbWVuZxAFBlphbWJpYQUGWmFtYmlhZxAFCFppbWJhYndlBQhaaW1iYWJ3ZWcWAQIBZAJFDxAPFgQfBWcfBAUHQWxiZXJ0YWQPFg1mAgECAgIDAgQCBQIGAgcCCAIJAgoCCwIMFg0QBRRQcmluY2UgRWR3YXJkIElzbGFuZAUUUHJpbmNlIEVkd2FyZCBJc2xhbmRnEAUHT250YXJpbwUHT250YXJpb2cQBQdOdW5hdnV0BQdOdW5hdnV0ZxAFC05vdmEgU2NvdGlhBQtOb3ZhIFNjb3RpYWcQBRVOb3J0aHdlc3QgVGVycml0b3JpZXMFFU5vcnRod2VzdCBUZXJyaXRvcmllc2cQBRlOZXdmb3VuZGxhbmQgYW5kIExhYnJhZG9yBRlOZXdmb3VuZGxhbmQgYW5kIExhYnJhZG9yZxAFDU5ldyBCcnVuc3dpY2sFDU5ldyBCcnVuc3dpY2tnEAUITWFuaXRvYmEFCE1hbml0b2JhZxAFEEJyaXRpc2ggQ29sdW1iaWEFEEJyaXRpc2ggQ29sdW1iaWFnEAUHQWxiZXJ0YQUHQWxiZXJ0YWcQBQ9ZdWtvbiBUZXJyaXRvcnkFD1l1a29uIFRlcnJpdG9yeWcQBQxTYXNrYXRjaGV3YW4FDFNhc2thdGNoZXdhbmcQBQZRdWViZWMFBlF1ZWJlY2cWAQIJZAJNDw8WAh4ISW1hZ2VVcmwFXmh0dHBzOi8vczMtdXMtd2VzdC0xLmFtYXpvbmF3cy5jb20vYnV5c2VsbGZhc3QvSW1hZ2VzL1RfRl85NzQxYzhjZTE4MWE0Y2YwODE5MzkyM2ZiN2UwZGIxYy5qcGdkZAJXDw8WAh8GZWRkAnUPDxYCHwEFJE1vbmRheSwgMDEgSmFudWFyeSAwMDAxIDAwOjAwOjAwIEVTVGRkAnkPEA8WAh8FZ2QQFQUETm9uZSEkMTBDRE4gLSAxLDAwMCB5ZWFybHkgaW1wcmVzc2lvbnMhJDUwQ0ROIC0gNSwwMDAgeWVhcmx5IGltcHJlc3Npb25zIyQxMDBDRE4gLSAxMCwwMDAgeWVhcmx5IGltcHJlc3Npb25zIyQ1MDBDRE4gLSA1MCwwMDAgeWVhcmx5IGltcHJlc3Npb25zFQUETm9uZSEkMTBDRE4gLSAxLDAwMCB5ZWFybHkgaW1wcmVzc2lvbnMhJDUwQ0ROIC0gNSwwMDAgeWVhcmx5IGltcHJlc3Npb25zIyQxMDBDRE4gLSAxMCwwMDAgeWVhcmx5IGltcHJlc3Npb25zIyQ1MDBDRE4gLSA1MCwwMDAgeWVhcmx5IGltcHJlc3Npb25zFCsDBWdnZ2dnFgFmZAJ/DxAPFgIeB0NoZWNrZWRoZGRkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUgY3RsMDAkYm9keSRjaGtCYW5uZXJDb25maXJtYXRpb24FFGN0bDAwJGJvZHkkY2hrRW5hYmxlEa3PsgaVuEsEHpwStaOg+m+lef2Jg24qgzJn1e8UDz4=" />
+        </div>
+
+        <script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+        <div>
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E70E9BCE" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+        </div>
+
+        <div class="admin-panel-wrap">
+            <div class="admin-panel">
+
+                <header class="admin-header">
+                    <!-- Logo -->
+                    <div class="top-bar-logo">
+                        <a href="/">
+                            <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+                    </div>
+
+                    <!-- Admin controls -->
+                    <div class="top-bar-admin">
+                        <div class="blue btn-admin fl-left">
+                            <input type="submit" name="ctl00$body$btnBack" value="" id="ctl00_body_btnBack"  />
+                            <span class="btn-circle-back"></span>
+                            <span class="blue">Back</span>
+                        </div>
+                        <div class="red btn-admin fl-right">
+                            <input type="submit" name="ctl00$body$btnLogOut" value="" id="ctl00_body_btnLogOut"  />
+                            <span class="btn-circle-signout"></span>
+                            <span class="red">Log Out</span>
+                        </div>
+                    </div>
+
+                </header>
+
+                <div class="page-content">
+                    <div class="lilac-title">Edit Store Settings</div>
+
+                    <script type = "text/javascript">
+    function Confirm() {
+        var confirm_value = document.createElement("INPUT");
+        confirm_value.type = "hidden";
+        confirm_value.name = "confirm_value";
+        if (confirm("Are you sure you want to delete this store banner?")) {
+            confirm_value.value = "Yes";
+        }
+        else {
+            confirm_value.value = "No";
+        }
+        document.forms[0].appendChild(confirm_value);
+    }
+    </script>
+                    <script type="text/javascript">
+        function alertMessage() {
+            var confirm_value = document.createElement("INPUT");
+            confirm_value.type = "hidden";
+            confirm_value.name = "confirm_value";
+            if (confirm("Please select a file to upload")) {
+                confirm_value.value = "Yes";
+            }
+            else {
+                confirm_value.value = "No";
+            }
+            document.forms[0].appendChild(confirm_value);
+        }
+
+    </script>
+
+                    <div class="box fl-left">
+                        <table class="styled-table">
+                            <tr>
+                                <td colspan="2" class="styled-table-title">Store Details</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblId" class="rightAlign">Store ID:</span>
+                                </td>
+                                <td>
+                                    <input name="ctl00$body$txtId" type="text" value="5" readonly="readonly" id="ctl00_body_txtId" disabled="disabled" class="textbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblStoreName" class="rightAlign">Store Name:</span>
+                                </td>
+                                <td>
+                                    <textarea name="ctl00$body$txtStoreName" rows="2" cols="20" readonly="readonly" id="ctl00_body_txtStoreName" class="textbox">SKy Mall</textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblStoreDesc" class="rightAlign">Store Description:</span>
+                                </td>
+                                <td>
+                                    <textarea name="ctl00$body$txtStoreDesc" rows="2" cols="20" id="ctl00_body_txtStoreDesc" class="textbox">Test  description</textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblDateCreated" class="rightAlign">Date Created:</span>
+                                </td>
+                                <td>
+                                    <input name="ctl00$body$txtDateCreated" type="text" value="5/22/2014 4:29:52 AM" readonly="readonly" id="ctl00_body_txtDateCreated" disabled="disabled" class="textbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblDateModified" class="rightAlign">Date Modified:</span>
+                                </td>
+                                <td>
+                                    <input name="ctl00$body$txtDateModified" type="text" value="6/23/2014 7:57:20 AM" readonly="readonly" id="ctl00_body_txtDateModified" disabled="disabled" class="textbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblPurchaseDate" class="rightAlign">Store Purchase:</span>
+                                </td>
+                                <td>
+                                    <input name="ctl00$body$txtPurchaseDate" type="text" value="7/12/2014 6:36:47 AM" readonly="readonly" id="ctl00_body_txtPurchaseDate" disabled="disabled" class="textbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblExpiryDate" class="rightAlign">Store Expiry:</span>
+                                </td>
+                                <td>
+                                    <input name="ctl00$body$txtExpiryDate" type="text" value="7/12/2015 6:36:47 AM" readonly="readonly" id="ctl00_body_txtExpiryDate" disabled="disabled" class="textbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblStatus" class="rightAlign">Store Status:</span>
+                                </td>
+                                <td>
+                                    <select name="ctl00$body$ddlStoreStatus" id="ctl00_body_ddlStoreStatus" disabled="disabled" class="dropdownlist">
+                                        <option selected="selected" value="1">Active</option>
+                                        <option value="2">Not Active</option>
+
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblNickname" class="rightAlign">Seller's Nickname:</span>
+                                </td>
+                                <td>
+                                    <input name="ctl00$body$txtNickname" type="text" value="Bsf Seller1- nick" readonly="readonly" id="ctl00_body_txtNickname" class="textbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblEmailID" class="rightAlign">Seller's Email:</span>
+                                </td>
+                                <td>
+                                    <input name="ctl00$body$txtEmailID" type="text" value="bsfseller1111@gmail.com" readonly="readonly" id="ctl00_body_txtEmailID" class="textbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblCurrency" class="rightAlign">Store's Currency:</span>
+                                </td>
+                                <td>
+                                    <select name="ctl00$body$ddlCurrency" id="ctl00_body_ddlCurrency" class="dropdownlist">
+                                        <option value="">-Select-</option>
+                                        <option selected="selected" value="Canadian Dollars">Canadian Dollars</option>
+                                        <option value="United States Dollars">United States Dollars</option>
+                                        <option value="Australian Dollars">Australian Dollars</option>
+                                        <option value="Brazilian Real">Brazilian Real</option>
+                                        <option value="British Pounds">British Pounds</option>
+                                        <option value="Czech Koruna">Czech Koruna</option>
+                                        <option value="Danish Krone">Danish Krone</option>
+                                        <option value="Euros">Euros</option>
+                                        <option value="Hong Kong Dollar">Hong Kong Dollar</option>
+                                        <option value="Hungarian Forint">Hungarian Forint</option>
+                                        <option value="Israeli New Sheqel">Israeli New Sheqel</option>
+                                        <option value="Japanese Yen">Japanese Yen</option>
+                                        <option value="Malaysian Ringgit">Malaysian Ringgit</option>
+                                        <option value="Mexican Peso">Mexican Peso</option>
+                                        <option value="Norwegian Krone">Norwegian Krone</option>
+                                        <option value="New Zealand Dollar">New Zealand Dollar</option>
+                                        <option value="Philippine Peso">Philippine Peso</option>
+                                        <option value="Polish Zloty">Polish Zloty</option>
+                                        <option value="Russian Ruble">Russian Ruble</option>
+                                        <option value="Singapore Dollar">Singapore Dollar</option>
+                                        <option value="Swedish Krona">Swedish Krona</option>
+                                        <option value="Swiss Franc">Swiss Franc</option>
+                                        <option value="Taiwan New Dollar">Taiwan New Dollar</option>
+                                        <option value="Thai Baht">Thai Baht</option>
+                                        <option value="Indian Rupee">Indian Rupee</option>
+                                        <option value="Chinese Yuan">Chinese Yuan</option>
+
+                                    </select>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="box fl-right">
+                        <table class="styled-table">
+                            <tr>
+                                <td colspan="2" class="styled-table-title">
+                                    <span id="ctl00_body_lbl">Seller's Profile(Location)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblAddress1">Address 1:</span>
+                                </td>
+                                <td>
+                                    <textarea name="ctl00$body$txtAddress1" rows="2" cols="20" id="ctl00_body_txtAddress1" class="textbox">Address1</textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblAddress2">Address 2:</span>
+                                </td>
+                                <td>
+                                    <textarea name="ctl00$body$txtAddress2" rows="2" cols="20" id="ctl00_body_txtAddress2" class="textbox">Address2</textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblPostalZip">Postal Code/State:</span>
+                                </td>
+                                <td>
+                                    <input name="ctl00$body$txtPostalZip" type="text" value="123456" id="ctl00_body_txtPostalZip" class="textbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblCountry">Country:</span>
+                                </td>
+                                <td>
+                                    <select name="ctl00$body$ddlCountry" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$body$ddlCountry\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_body_ddlCountry" class="dropdownlist">
+                                        <option value="">-Select-</option>
+                                        <option selected="selected" value="Canada">Canada</option>
+                                        <option value="United States">United States</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="India">India</option>
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Albania">Albania</option>
+                                        <option value="Algeria">Algeria</option>
+                                        <option value="Andorra">Andorra</option>
+                                        <option value="Angola">Angola</option>
+                                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                        <option value="Argentina">Argentina</option>
+                                        <option value="Armenia">Armenia</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="Austria">Austria</option>
+                                        <option value="Azerbaijan">Azerbaijan</option>
+                                        <option value="Bahamas">Bahamas</option>
+                                        <option value="Bahrain">Bahrain</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="Barbados">Barbados</option>
+                                        <option value="Belarus">Belarus</option>
+                                        <option value="Belgium">Belgium</option>
+                                        <option value="Belize">Belize</option>
+                                        <option value="Benin">Benin</option>
+                                        <option value="Bermuda">Bermuda</option>
+                                        <option value="Bhutan">Bhutan</option>
+                                        <option value="Bolivia, Plurinational State Of">Bolivia, Plurinational State Of</option>
+                                        <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+                                        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                        <option value="Botswana">Botswana</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="Brunei Darussalam">Brunei Darussalam</option>
+                                        <option value="Bulgaria">Bulgaria</option>
+                                        <option value="Burkina Faso">Burkina Faso</option>
+                                        <option value="Burundi">Burundi</option>
+                                        <option value="Cambodia">Cambodia</option>
+                                        <option value="Cameroon">Cameroon</option>
+                                        <option value="Cape Verde">Cape Verde</option>
+                                        <option value="Cayman Islands">Cayman Islands</option>
+                                        <option value="Central African Republic">Central African Republic</option>
+                                        <option value="Chad">Chad</option>
+                                        <option value="Chile">Chile</option>
+                                        <option value="China">China</option>
+                                        <option value="Colombia">Colombia</option>
+                                        <option value="Comoros">Comoros</option>
+                                        <option value="Congo">Congo</option>
+                                        <option value="Congo, The Democratic Republic Of The">Congo, The Democratic Republic Of The</option>
+                                        <option value="Costa Rica">Costa Rica</option>
+                                        <option value="Croatia">Croatia</option>
+                                        <option value="Cuba">Cuba</option>
+                                        <option value="Cyprus">Cyprus</option>
+                                        <option value="Czech Republic">Czech Republic</option>
+                                        <option value="Côte D&#39;Ivoire">C&#244;te D&#39;Ivoire</option>
+                                        <option value="Denmark">Denmark</option>
+                                        <option value="Djibouti">Djibouti</option>
+                                        <option value="Dominica">Dominica</option>
+                                        <option value="Dominican Republic">Dominican Republic</option>
+                                        <option value="Ecuador">Ecuador</option>
+                                        <option value="Egypt">Egypt</option>
+                                        <option value="El Salvador">El Salvador</option>
+                                        <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                        <option value="Eritrea">Eritrea</option>
+                                        <option value="Estonia">Estonia</option>
+                                        <option value="Ethiopia">Ethiopia</option>
+                                        <option value="Fiji">Fiji</option>
+                                        <option value="Finland">Finland</option>
+                                        <option value="France">France</option>
+                                        <option value="French Southern Territories">French Southern Territories</option>
+                                        <option value="Gabon">Gabon</option>
+                                        <option value="Gambia">Gambia</option>
+                                        <option value="Georgia">Georgia</option>
+                                        <option value="Germany">Germany</option>
+                                        <option value="Ghana">Ghana</option>
+                                        <option value="Greece">Greece</option>
+                                        <option value="Greenland">Greenland</option>
+                                        <option value="Grenada">Grenada</option>
+                                        <option value="Guatemala">Guatemala</option>
+                                        <option value="Guinea">Guinea</option>
+                                        <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                        <option value="Guyana">Guyana</option>
+                                        <option value="Haiti">Haiti</option>
+                                        <option value="Honduras">Honduras</option>
+                                        <option value="Hungary">Hungary</option>
+                                        <option value="Iceland">Iceland</option>
+                                        <option value="Indonesia">Indonesia</option>
+                                        <option value="Iran, Islamic Republic Of">Iran, Islamic Republic Of</option>
+                                        <option value="Iraq">Iraq</option>
+                                        <option value="Ireland">Ireland</option>
+                                        <option value="Israel">Israel</option>
+                                        <option value="Italy">Italy</option>
+                                        <option value="Jamaica">Jamaica</option>
+                                        <option value="Japan">Japan</option>
+                                        <option value="Jordan">Jordan</option>
+                                        <option value="Kazakhstan">Kazakhstan</option>
+                                        <option value="Kenya">Kenya</option>
+                                        <option value="Kiribati">Kiribati</option>
+                                        <option value="Korea, Democratic People&#39;s Republic Of">Korea, Democratic People&#39;s Republic Of</option>
+                                        <option value="Korea, Republic of">Korea, Republic of</option>
+                                        <option value="Kuwait">Kuwait</option>
+                                        <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                        <option value="Lao People&#39;s Democratic Republic">Lao People&#39;s Democratic Republic</option>
+                                        <option value="Latvia">Latvia</option>
+                                        <option value="Lebanon">Lebanon</option>
+                                        <option value="Lesotho">Lesotho</option>
+                                        <option value="Liberia">Liberia</option>
+                                        <option value="Libya">Libya</option>
+                                        <option value="Liechtenstein">Liechtenstein</option>
+                                        <option value="Lithuania">Lithuania</option>
+                                        <option value="Luxembourg">Luxembourg</option>
+                                        <option value="Macao">Macao</option>
+                                        <option value="Macedonia, the Former Yugoslav Republic Of">Macedonia, the Former Yugoslav Republic Of</option>
+                                        <option value="Madagascar">Madagascar</option>
+                                        <option value="Malawi">Malawi</option>
+                                        <option value="Malaysia">Malaysia</option>
+                                        <option value="Maldives">Maldives</option>
+                                        <option value="Mali">Mali</option>
+                                        <option value="Malta">Malta</option>
+                                        <option value="Marshall Islands">Marshall Islands</option>
+                                        <option value="Mauritania">Mauritania</option>
+                                        <option value="Mauritius">Mauritius</option>
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="Micronesia, Federated States Of">Micronesia, Federated States Of</option>
+                                        <option value="Moldova, Republic of">Moldova, Republic of</option>
+                                        <option value="Monaco">Monaco</option>
+                                        <option value="Mongolia">Mongolia</option>
+                                        <option value="Montenegro">Montenegro</option>
+                                        <option value="Morocco">Morocco</option>
+                                        <option value="Mozambique">Mozambique</option>
+                                        <option value="Myanmar">Myanmar</option>
+                                        <option value="Namibia">Namibia</option>
+                                        <option value="Nauru">Nauru</option>
+                                        <option value="Nepal">Nepal</option>
+                                        <option value="Netherlands">Netherlands</option>
+                                        <option value="New Zealand">New Zealand</option>
+                                        <option value="Nicaragua">Nicaragua</option>
+                                        <option value="Niger">Niger</option>
+                                        <option value="Nigeria">Nigeria</option>
+                                        <option value="Norway">Norway</option>
+                                        <option value="Oman">Oman</option>
+                                        <option value="Pakistan">Pakistan</option>
+                                        <option value="Palau">Palau</option>
+                                        <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                                        <option value="Panama">Panama</option>
+                                        <option value="Papua New Guinea">Papua New Guinea</option>
+                                        <option value="Paraguay">Paraguay</option>
+                                        <option value="Peru">Peru</option>
+                                        <option value="Philippines">Philippines</option>
+                                        <option value="Poland">Poland</option>
+                                        <option value="Portugal">Portugal</option>
+                                        <option value="Qatar">Qatar</option>
+                                        <option value="Romania">Romania</option>
+                                        <option value="Russian Federation">Russian Federation</option>
+                                        <option value="Rwanda">Rwanda</option>
+                                        <option value="Saint Helena, Ascension and Tristan Da Cunha">Saint Helena, Ascension and Tristan Da Cunha</option>
+                                        <option value="Saint Kitts And Nevis">Saint Kitts And Nevis</option>
+                                        <option value="Saint Lucia">Saint Lucia</option>
+                                        <option value="Saint Vincent And The Grenadines">Saint Vincent And The Grenadines</option>
+                                        <option value="Samoa">Samoa</option>
+                                        <option value="San Marino">San Marino</option>
+                                        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                        <option value="Saudi Arabia">Saudi Arabia</option>
+                                        <option value="Senegal">Senegal</option>
+                                        <option value="Serbia">Serbia</option>
+                                        <option value="Seychelles">Seychelles</option>
+                                        <option value="Sierra Leone">Sierra Leone</option>
+                                        <option value="Singapore">Singapore</option>
+                                        <option value="Slovakia">Slovakia</option>
+                                        <option value="Slovenia">Slovenia</option>
+                                        <option value="Solomon Islands">Solomon Islands</option>
+                                        <option value="Somalia">Somalia</option>
+                                        <option value="South Africa">South Africa</option>
+                                        <option value="South Sudan">South Sudan</option>
+                                        <option value="Spain">Spain</option>
+                                        <option value="Sri Lanka">Sri Lanka</option>
+                                        <option value="Sudan">Sudan</option>
+                                        <option value="Suriname">Suriname</option>
+                                        <option value="Swaziland">Swaziland</option>
+                                        <option value="Sweden">Sweden</option>
+                                        <option value="Switzerland">Switzerland</option>
+                                        <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                                        <option value="Taiwan, Province Of China">Taiwan, Province Of China</option>
+                                        <option value="Tajikistan">Tajikistan</option>
+                                        <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                                        <option value="Thailand">Thailand</option>
+                                        <option value="Timor-Leste">Timor-Leste</option>
+                                        <option value="Togo">Togo</option>
+                                        <option value="Tonga">Tonga</option>
+                                        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                        <option value="Tunisia">Tunisia</option>
+                                        <option value="Turkey">Turkey</option>
+                                        <option value="Turkmenistan">Turkmenistan</option>
+                                        <option value="Tuvalu">Tuvalu</option>
+                                        <option value="Uganda">Uganda</option>
+                                        <option value="Ukraine">Ukraine</option>
+                                        <option value="United Arab Emirates">United Arab Emirates</option>
+                                        <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                        <option value="Uruguay">Uruguay</option>
+                                        <option value="Uzbekistan">Uzbekistan</option>
+                                        <option value="Vanuatu">Vanuatu</option>
+                                        <option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option>
+                                        <option value="Viet Nam">Viet Nam</option>
+                                        <option value="Western Sahara">Western Sahara</option>
+                                        <option value="Yemen">Yemen</option>
+                                        <option value="Zambia">Zambia</option>
+                                        <option value="Zimbabwe">Zimbabwe</option>
+
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblState">State:</span>
+                                </td>
+                                <td>
+                                    <select name="ctl00$body$ddlState" id="ctl00_body_ddlState" class="dropdownlist">
+                                        <option value="Prince Edward Island">Prince Edward Island</option>
+                                        <option value="Ontario">Ontario</option>
+                                        <option value="Nunavut">Nunavut</option>
+                                        <option value="Nova Scotia">Nova Scotia</option>
+                                        <option value="Northwest Territories">Northwest Territories</option>
+                                        <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                                        <option value="New Brunswick">New Brunswick</option>
+                                        <option value="Manitoba">Manitoba</option>
+                                        <option value="British Columbia">British Columbia</option>
+                                        <option selected="selected" value="Alberta">Alberta</option>
+                                        <option value="Yukon Territory">Yukon Territory</option>
+                                        <option value="Saskatchewan">Saskatchewan</option>
+                                        <option value="Quebec">Quebec</option>
+
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ctl00_body_lblCity">City:</span>
+                                </td>
+                                <td>
+                                    <input name="ctl00$body$txtCity" type="text" value="Cold lake" id="ctl00_body_txtCity" class="textbox" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="box fl-left">
+                    <table class="styled-table">
+                        <tr>
+                            <td colspan="3" class="styled-table-title">
+                                <span id="ctl00_body_lblBanner">Store Banner:</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <img id="ctl00_body_StoreBannerImage" src="https://s3-us-west-1.amazonaws.com/buysellfast/Images/T_F_9741c8ce181a4cf08193923fb7e0db1c.jpg" style="border-width:0px;" />
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <input type="file" name="ctl00$body$UploadStoreBanner" id="ctl00_body_UploadStoreBanner" class="btn btn-sm btn-default" />
+                            </td>
+                            <td>
+                                <input type="submit" name="ctl00$body$btnUploadBanner" value="Upload" id="ctl00_body_btnUploadBanner" class="btn btn-sm btn-primary" />
+                            </td>
+                            <td>
+                                <input type="submit" name="ctl00$body$btnDeleteStoreBanner" value="Delete" onclick="Confirm();" id="ctl00_body_btnDeleteStoreBanner" class="btn btn-sm btn-danger"  />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="box fl-right">
+                    <table class="styled-table">
+                        <tr>
+                            <td class="styled-table-title">
+                                <span id="ctl00_body_lblBannerAd">Banner Ad Details</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img id="ctl00_body_BannerAdImage" src="" style="border-width:0px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="width100">
+                                    <tr>
+                                        <td>
+                                            <input type="file" name="ctl00$body$UploadBannerAd" id="ctl00_body_UploadBannerAd" class="btn btn-sm btn-default" />
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <input type="submit" name="ctl00$body$btnUploaadBannerAd" value="Upload" id="ctl00_body_btnUploaadBannerAd" class="btn btn-sm btn-primary" />
+                                        </td>
+                                        <td>
+                                            <input type="submit" name="ctl00$body$btnDeleteBannerAd" value="Delete" onclick="Confirm();" id="ctl00_body_btnDeleteBannerAd" class="btn btn-sm btn-danger" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <table cellspacing="4">
+                                        <tr>
+                                            <td>
+                                                <span id="ctl00_body_lblAdText" class="rightAlign">Banner Ad Text:</span>
+                                            </td>
+                                            <td>
+                                                <textarea name="ctl00$body$txtAdText" rows="2" cols="20" id="ctl00_body_txtAdText" class="textbox" style="height:49px;width:189px;"></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span id="ctl00_body_lblUrl" class="rightAlign">Banner Ad Target URL:</span>
+                                            </td>
+                                            <td>
+                                                <input name="ctl00$body$txtUrl" type="text" id="ctl00_body_txtUrl" class="textbox" style="width:190px;" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="style1">
+                                                <span id="ctl00_body_lblBlnk" style="display:inline-block;background-color:Transparent;width:120px;"></span>
+                                            </td>
+                                            <td class="style1">
+                                                <span id="ctl00_body_lblAdDescription">
+                                                    Input target URL for when a user clicks on the seller's banner (this could go to an external website if you wish). If nothing is entered, this will go to seller's storefront screen.
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span id="ctl00_body_lblBlnk1" style="display:inline-block;background-color:Transparent;width:120px;"></span>
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_body_lblImpressionCount">Banner Impressions Remaining:</span>
+                                                <input name="ctl00$body$txtImpCount" type="text" value="0" id="ctl00_body_txtImpCount" style="width:42px;" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span id="ctl00_body_lblBlnk2" style="display:inline-block;background-color:Transparent;width:120px;"></span>
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_body_lblExpDate">Banner Expiration Date:</span>
+                                                <span id="ctl00_body_lblDate" style="display:inline-block;width:333px;">Monday, 01 January 0001 00:00:00 EST</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span id="ctl00_body_lbladOption" style="display:inline-block;width:145px;">Add More Impressions:</span>
+                                            </td>
+                                            <td>
+                                                <select name="ctl00$body$ddlAdOption" id="ctl00_body_ddlAdOption" class="dropdownlist">
+                                                    <option selected="selected" value="None">None</option>
+                                                    <option value="$10CDN - 1,000 yearly impressions">$10CDN - 1,000 yearly impressions</option>
+                                                    <option value="$50CDN - 5,000 yearly impressions">$50CDN - 5,000 yearly impressions</option>
+                                                    <option value="$100CDN - 10,000 yearly impressions">$100CDN - 10,000 yearly impressions</option>
+                                                    <option value="$500CDN - 50,000 yearly impressions">$500CDN - 50,000 yearly impressions</option>
+
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span id="ctl00_body_lblBlnk3" style="display:inline-block;background-color:Transparent;width:120px;"></span>
+                                            </td>
+                                            <td>
+                                                <input id="ctl00_body_chkBannerConfirmation" type="checkbox" name="ctl00$body$chkBannerConfirmation" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$body$chkBannerConfirmation\&#39;,\&#39;\&#39;)&#39;, 0)" />
+                                                <label for="ctl00_body_chkBannerConfirmation">
+                                                    Confirm adding more banner impressions for seller (with selection above)
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input id="ctl00_body_chkEnable" type="checkbox" name="ctl00$body$chkEnable" />
+                                <label for="ctl00_body_chkEnable">Enable display of banner ad (seller has paid)</label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+<div class="clear"></div>
+<div class="text-center">
+    <input type="submit" name="ctl00$body$btnSave" value="Save" id="ctl00_body_btnSave" class="btn btn-primary" />
+</div>
+
+</div>
+</div>
+
+</form>
+</body>
+</html>

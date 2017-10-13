@@ -1,0 +1,253 @@
+// Summary page
+.main-summary {
+	.text-uppercase;
+
+}
+.team {
+	height: 240px; 
+	overflow: hidden;
+}
+.main-summary .people-chart-wrap {
+		@media (max-width:@screen-xs) {
+	width: 100%; 
+
+} 
+}
+.main-summary .people-chart {
+	width: 340px; 
+	@media (max-width:@screen-xs) {
+	width: 250px; 
+
+}
+}
+.people-chart-wrap, .team-choise, .btn-team-statistic-wrap {
+	float: left;
+}
+
+.team-statistic {
+	padding: 10px; 
+height: 240px;
+overflow: hidden;
+display: none;
+}
+.team-statistic-wrap {
+	float: right;
+}
+.team-statistic .row {
+	font-size: 13px;
+display: table-row;
+}
+.team-statistic .row .pull-right {
+	padding-left: 10px; 
+}
+.team-statistic .row .pull-left, .team-statistic .row .pull-right {
+	display: table-cell;
+	float: none !important;
+	vertical-align: bottom;
+		padding-bottom: 2px; 
+
+}
+.btn-team-statistic-wrap {
+	position: relative;
+	width: 54px;
+	overflow: hidden;
+	height: 240px; 
+
+
+
+}
+.btn-team-statistic-arrow {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	color: @activeColor;
+	cursor: pointer;
+	.icon {
+	font-size: 20px; }
+}
+
+.team-statistic-wrap-open .btn-team-statistic-arrow {
+	left: 0; 
+}
+.team-statistic-wrap-open .icon-arrow-left {
+	.icon-arrow-right;
+}
+.team-statistic-wrap-open .btn-team-statistic {
+	display: none !important;
+}
+.team-statistic-wrap-open .btn-team-statistic-wrap {
+	width: 19px;
+}
+
+.team-statistic-wrap-open .team-statistic {
+	border-left: 1px @baseBorderColor solid; 
+	border-right: 1px @baseBorderColor solid; 
+	border-bottom: 1px @baseBorderColor solid; 
+
+}
+
+
+.btn-team-statistic {
+	display: block;
+	height: 36px;
+	width: 240px;
+position: absolute;
+top: 102px;
+left: -85px;
+text-align: center;
+padding-top: 6px; 
+background: #fcfcfc;
+}
+.team-choise {
+	float: right;
+	height: 100%;
+				@media (min-width: 916px) (max-width: 940px){
+			padding: 10px 0 0 2px;
+		}
+	.styled-radio {
+		margin: 5px 5px 10px;
+			@media (max-width: 940px){
+			margin: 0;
+		}
+
+	}
+}
+@media (max-width: 940px){
+.people-chart-wrap, .team-statistic-wrap, .team-choise {
+	float: none;
+margin: 0 auto 20px;
+}
+.team-statistic-wrap, .team-choise {
+	width: 300px; 
+}
+.team-choise {
+	height: auto; 
+}
+.team-statistic {
+	display: block;
+
+}
+.btn-team-statistic-wrap {
+	display: none;
+}
+
+
+.team {
+	height: auto;
+}
+}
+
+
+.statistic-table {
+	overflow: hidden;
+
+clear: both;
+}
+.box-stat {
+	border: 1px @baseBorderColor solid;
+	float: left;
+	margin-right: -1px; 
+width: 17%;
+}
+
+.box-stat-wide {
+	border: 1px @baseBorderColor solid;
+	float: left;
+        width:calc(~'32% + 4px');
+}
+
+.box-stat-title {
+padding: 10px; 
+border-bottom: 1px @baseBorderColor solid;
+text-align: center;
+}
+.box-stat-body {
+padding: 10px 10px 0 10px; 
+}
+.box-stat-padding {
+	padding-left: 10%; 
+	padding-right: 10%; 
+
+}
+
+
+
+.box-stat-name {
+	padding-left: 20px;
+	padding-bottom: 5px;
+	font-size: 12px;
+}
+.box-stat-name-icon {
+		 
+	.icon { color: @activeColor; font-size: 10px; padding-right: 7px; margin-left: -20px; }
+}
+
+.box-stat-body-total {
+	position: relative;
+	padding-bottom: 45px;
+}
+
+.box-stat-total {
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	width: 100%;
+	.text-colored;
+	padding: 0 30px 0 10px;
+		font-size: 15px;
+		line-height: 20px;
+	.pull-right {font-size: 18px; }
+	overflow: hidden;
+	clear: both;	
+}
+.box-stat-wide .box-stat-total {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.box-stat-with-value {
+	padding: 0 5px 10px 10px;
+		font-size: 15px;
+		line-height: 20px;
+	.pull-right {font-size: 18px; }
+	overflow: hidden;
+	clear: both;	
+
+}
+.total-with-value {
+		padding: 0 10px 10px 20px;
+
+}
+.box-stat .box-stat-with-value:last-child {
+		padding-bottom: 10px;
+}
+.box-stat-with-value .icon {
+	font-size: 20px !important;
+}
+.box-stat .row-stars {
+	width: auto; 
+	min-width: auto;
+span {
+margin-left: 0;
+margin-right: 0;
+}
+}
+
+@media (max-width: @screen-sm) {
+	.box-stat {
+	float: left;
+width: 50%;
+}
+
+.box-stat-wide {
+	float: left;
+width: 100%;
+
+}
+.box-stat-padding, .box-stat-wide .box-stat-total  {
+	padding-left: 4%;
+	padding-right: 4%;
+}
+}
+
+
+

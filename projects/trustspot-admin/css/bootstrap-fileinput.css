@@ -1,0 +1,22 @@
+.file-input-wrapper {
+	position: relative;
+	overflow: hidden;
+	float: left;
+	margin-right: 10px;
+}
+.file-input-wrapper span {
+	white-space: normal;
+}
+.file-input-name {
+	display: block;
+}
+.file-input-wrapper input {
+	margin: 0;
+	padding-left: 0;
+	padding-right: 0;
+	max-width: 365px;
+}
+.form-inline .input-file-styled {
+	margin-top: -5px;
+	margin-bottom: 20px;
+}

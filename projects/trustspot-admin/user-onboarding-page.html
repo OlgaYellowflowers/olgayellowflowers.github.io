@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Account Setup</title>
+
+	<link href="fonts/fonts.css" rel="stylesheet" />
+	<link href="css/bootstrap.css" rel="stylesheet" />
+
+	<script type='text/javascript' src='js/jquery-1.11.3.js'></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+
+	<!-- Admin stylesheet -->
+	<link href="css/starReviewsAdmin.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="css/c3.css" rel="stylesheet" type="text/css"/>
+	<!-- Merchant Dashboard Theme-->
+	<link href="css/dashboard.css" rel="stylesheet">
+
+	<!--  css -->
+	<link href="css/bootstrap-fileinput.css" rel="stylesheet" />
+	<link href="css/bootstrap-select.css" rel="stylesheet" />
+	<link href="css/table-styling.css" rel="stylesheet">
+	<link href="css/override-your-styles.css" rel="stylesheet">
+	<link href="css/styledash-additional.css" rel="stylesheet">
+
+	<!--  js -->
+	<script src="js/chart.min.js"></script>
+
+</head>
+
+<body>
+
+	<div class="content">
+		<div class="page-header">
+			<h2>Account Setup</h2>
+		</div>
+		<div class="error"></div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<div class="acc-setup-diagram paragraph-md">
+					<div class="donut-holder"></div>
+					<div class="donut-chart">
+						<canvas id="AccChart" width="215" height="215"></canvas>
+					</div>
+					<div class="donut-inner">
+						<div class="donut-inner-title">Full account</div>
+						<div class="donut-inner-percent">60%</div>
+					</div>
+					<script>
+ 
+					    var data = [{
+					        value: 60,
+					        color: "#68ac3c",
+					        highlight: "#58cb0e"
+					    }, {
+					        value: 40,
+					        color: "transparent"
+					    }
+
+					    ]
+
+					    var options = {
+					    	showTooltips: false,    	 
+					        percentageInnerCutout: 93,
+					        segmentShowStroke : false
+					    };
+
+					    
+					    var c = $('#AccChart');
+					    var ct = c.get(0).getContext('2d');
+					    var ctx = document.getElementById("AccChart").getContext("2d"); 
+
+					    myNewChart = new Chart(ct).Doughnut(data, options);
+
+               		</script>
+				</div>
+			</div>
+			<div class="col-md-8">
+
+				<div class="bg-white wrapper-inner-lg paragraph-md">
+					<div class="title-sm">Main Items to Review</div>
+					<ul class="list-tick">
+
+						<li>Sign up for TrustSpot, Thank you for becoming a customer!</li>
+						<li>
+							Add your Business Details
+							<a href="#" class="link-styled pull-right">View</a>
+						</li>
+						<li class="inactive">
+							Configure your Email Settings
+							<a href="#" class="link-styled pull-right">View</a>
+						</li>
+						<li class="inactive">
+							Choose an Integration type to automate review requests
+							<a href="#" class="link-styled pull-right">View</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="bg-white wrapper-inner-lg paragraph-md">
+					<div class="title-sm">Few suggestions to improve your experience (optional)</div>
+					<ul class="list-tick">
+						<li>
+							Invite your existing customers to leave a review
+							<a href="#" class="link-styled pull-right">View</a>
+						</li>
+						<li>
+							Share one of your reviews on Facebook or Twitter
+							<a href="#" class="link-styled pull-right">View</a>
+						</li>
+						<li>
+							Respond to a customer's review
+							<a href="#" class="link-styled pull-right">View</a>
+						</li>
+						<li>
+							Add a Trust Seal, Badge or Widget to your site
+							<a href="#" class="link-styled pull-right">View</a>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+</body>
+</html>

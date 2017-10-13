@@ -1,0 +1,160 @@
+
+// Custom Icon Fons
+//////////////////////////////////////////////////////
+
+// Правила для лучшего рендеринга шрифта
+.icon {
+    text-rendering: auto; // optimizelegibility throws things off #1094
+    transform: translate(0, 0);
+    -moz-osx-font-smoothing: grayscale;
+    // включаем самый "жирный" режим сглаживания
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}
+
+
+// http://fontello.com/
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-crm_icons-01:before { content: '\e800'; } /* '' */
+.icon-crm_icons-02:before { content: '\e801'; } /* '' */
+.icon-crm_icons-03:before { content: '\e802'; } /* '' */
+.icon-crm_icons-04:before { content: '\e803'; } /* '' */
+.icon-crm_icons-05:before { content: '\e804'; } /* '' */
+.icon-crm_icons-06:before { content: '\e805'; } /* '' */
+.icon-crm_icons-07:before { content: '\e806'; } /* '' */
+.icon-crm_icons-08:before { content: '\e807'; } /* '' */
+.icon-crm_icons-09:before { content: '\e808'; } /* '' */
+.icon-crm_icons-10:before { content: '\e809'; } /* '' */
+.icon-crm_icons-11:before { content: '\e80a'; } /* '' */
+.icon-crm_icons-12:before { content: '\e80b'; } /* '' */
+.icon-crm_icons-13:before { content: '\e80c'; } /* '' */
+.icon-crm_icons-14:before { content: '\e80d'; } /* '' */
+.icon-crm_icons-15:before { content: '\e80e'; } /* '' */
+.icon-crm_icons-16:before { content: '\e80f'; } /* '' */
+.icon-crm_icons-17:before { content: '\e810'; } /* '' */
+.icon-crm_icons-19:before { content: '\e811'; } /* '' */
+.icon-crm_icons-20:before { content: '\e812'; } /* '' */
+.icon-crm_icons-18:before { content: '\e813'; } /* '' */
+.icon-crm_icons-21:before { content: '\e814'; } /* '' */
+.icon-crm_icons-22:before { content: '\e815'; } /* '' */
+.icon-crm_icons-23:before { content: '\e816'; } /* '' */
+.icon-crm_icons-24:before { content: '\e817'; } /* '' */
+.icon-crm_icons-25:before { content: '\e818'; } /* '' */
+.icon-crm_icons-26:before { content: '\e819'; } /* '' */
+.icon-crm_icons-27:before { content: '\e81a'; } /* '' */
+.icon-crm_icons-28:before { content: '\e81b'; } /* '' */
+.icon-crm_icons-29:before { content: '\e81c'; } /* '' */
+.icon-crm_icons-30:before { content: '\e81d'; } /* '' */
+.icon-crm_icons-31:before { content: '\e81d'; } /* '' */
+.icon-crm_icons-32:before { content: '\e81e'; } /* '' */
+.icon-crm_icons-33:before { content: '\e81f'; } /* '' */
+
+
+
+span.icon:before, [class^="icon-"]:before, [class*=" icon-"]:before {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.icon-menu{&:before{content:'\e800';}
+}
+.icon-vertical-line{&:before{content:'\e801';}
+}
+.icon-plus{&:before{content:'\e802';}
+}
+.icon-three-circles{&:before{content:'\e803';}
+}
+.icon-arrow-right{&:before{content:'\e804';}
+}
+.icon-square{&:before{content:'\e805';}
+}
+.icon-arrow-up{&:before{content:'\e806';}
+}
+.icon-smile{&:before{content:'\e807';}
+}
+.icon-not-smile{&:before{content:'\e808';}
+}
+.icon-search{&:before{content:'\e809';}
+}
+.icon-star{&:before{content:'\e80a';}
+}
+.icon-calendar{&:before{content:'\e80b';}
+}
+.icon-arrow-down{&:before{content:'\e80c';}
+}
+.icon-camera{&:before{content:'\e80d';}
+}
+.icon-coffee-break{&:before{content:'\e80e';}
+}
+.icon-bell{&:before{content:'\e80f';}
+}
+.icon-three-squares{&:before{content:'\e810';}
+}
+.icon-zet{&:before{content:'\e811';}
+}
+.icon-half-round{&:before{content:'\e812';}
+}
+.icon-list{&:before{content:'\e813';}
+}
+.icon-men{&:before{content:'\e814';}
+}
+.icon-settings{&:before{content:'\e815';}
+}
+.icon-envelope{&:before{content:'\e816';}
+}
+.icon-arrow-left{&:before{content:'\e817';}
+}
+.icon-arrow-right {.rotate(180)}
+.icon-circlearrow-right{&:before{content:'\e818';}
+}
+.icon-circlearrow-left{&:before{content:'\e819';}
+}
+.icon-close{&:before{content:'\e81a';}
+}
+.icon-cross{&:before{content:'\e81b';}
+}
+.icon-basket{&:before{content:'\e81c';}
+}
+.icon-clip{&:before{content:'\e81d';}
+}
+.icon-time{&:before{content:'\e81e';}
+}
+.icon-girl{&:before{content:'\e81f';}
+}
+.icon-boy{&:before{content:'\e820';}
+}
+.icon-out{&:before{content:'\e821';}
+}
+
+span.icon:before,[class^="icon-"]:before,[class*=" icon-"]:before{margin-left:0;margin-right:0;}

@@ -1,0 +1,1517 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="{{ description }}" />
+    <meta name="keywords" content="{{ keywords }}" />
+    <title>Metal Industry Expo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+    <!-- CSS -->
+    <!--     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    -->
+    <!-- LESS -->
+    <link href="less/styles.less" rel="stylesheet/less" type="text/css">
+
+    <script>
+      less = {
+        env: "development",
+        async: false,
+        fileAsync: false,
+        poll: 1000,
+        functions: {},
+        dumpLineNumbers: "comments",
+        relativeUrls: false,
+        rootpath: ""
+      };
+    </script>
+
+    <!--Load the AJAX API для графиков -->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+    <!-- GEO CHART -->
+    <!-- https://developers.google.com/chart/interactive/docs/gallery/geochart#Regions -->
+    <script type="text/javascript">
+     google.load("visualization", "1", {packages:["geochart"]});
+      google.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Contacts'],
+          ['Germany', 9],
+          ['United States', 3],
+          ['Brazil', 4],
+          ['Canada', 5],
+          ['France', 6],
+          ['Russia', 1]
+        ]);
+
+        var options = {
+            colorAxis: {colors: ['#f5f5f5','#ff2e2e']},
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('map-summary'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <!-- CHART CATEGORIES -->
+    <!-- https://google-developers.appspot.com/chart/interactive/docs/gallery/columnchart#Overview -->
+    <script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Element", "Contacts", { role: "style" } ],
+        ["Potential Clients", 150, "#ff2626"],
+        ["Potential Partners", 100, "#8d8d8d"],
+        ["Acompanying", 50, "#b5b5b5"],
+        ["Other", 20, "color: #d7d7d7"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        chartArea: {width: '100%', height: '100%'},
+        bar: {groupWidth: "55%"},
+        legend: { position: "none" },
+        annotations: { alwaysOutside: "true" },
+        width: 500
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+      chart.draw(view, options);
+
+  }
+  </script>
+
+    <!-- LINE CHART -->
+    <!-- https://google-developers.appspot.com/chart/interactive/docs/gallery/linechart -->
+    <script>
+        google.load("visualization", "1", {packages:["corechart"]});
+
+      google.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Days', 'Filled', 'Not filled'],
+          ['Day 1',  10,      40],
+          ['Day 2',  20,      30],
+          ['Day 3',  30,      35],
+          ['Day 4',  40,      10]
+        ]);
+
+        var options = {
+          legend: { alignment: 'end' },
+          legend: { position: 'in' },
+          series: {
+            0: { color: '#ff3636' },
+            1: { color: '#454545' }
+          }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script src="bower_components/less/dist/less.min.js" type="text/javascript"></script>
+    <!--     <script type="text/javascript">less.watch();</script>
+-->
+<!--[if lt IE 9]>
+<link href="./css/ie8.min.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if lt IE 10]>
+<script src="./js/respond.min.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="./js/html5shiv.min.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+<link rel="icon" type="image/jpeg" href="./img/favicon.jpg" />
+
+</head>
+<body>
+
+<!-- page content -->
+
+<header role="banner" class="fixedHeader">
+    <div class="container-fluid">
+        <a href="/" id="sixSquareBlock">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <h1 class="withIcon">Summary</h1>
+        <h3>
+            <a href="#" class="decor">
+                <span class="icon icon-crm_icons-24"></span>
+                Back
+            </a>
+        </h3>
+        <div class="account">
+            <a href="#">Robin Fox</a>
+            <a href="#" class="logo"></a>
+        </div>
+    </div>
+</header>
+
+<section id="leftMenu" class='onInnerpage close'>
+    <nav role="navigation">
+        <ul>
+            <li class="icoItem">
+                <a href="#" id="leftMenuControlBtn">
+                    <span class="icon icon-crm_icons-01"></span>
+                </a>
+            </li>
+            <li class="dropdown oneString">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Venue Stand</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li class="icoItem">
+                            <!--<a href="#">
+                            <span class="icon icon-crm_icons-18"></span>
+                        </a>
+                        --> <i><span class="icon icon-crm_icons-18"></span></i> 
+                    </li>
+                    <li>
+                        <a href="#">
+                            Exhibitor service Manual
+                            <span>216</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Stand check list
+                            <span>0</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Inventory List
+                            <span>3</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="itemDivider">
+            <div></div>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Company
+                <br class="hidden-xs" />
+                <span class="hidden-sm hidden-md hidden-lg"></span>
+                Info
+            </a>
+            <div class="dropdown-menu">
+                <ul>
+                    <li class="icoItem"> <i><span class="icon icon-crm_icons-19"></span></i> 
+                    </li>
+                    <li>
+                        <a href="#">
+                            Supporting materials
+                            <span>46</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Company Products
+                            <span>50</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Events / Press / Presentation
+                            <span>67</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Messaging
+                            <span>12</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="itemDivider">
+            <div></div>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Expo
+                <br class="hidden-xs" />
+                <span class="hidden-sm hidden-md hidden-lg"></span>
+                Visitors
+            </a>
+            <div class="dropdown-menu">
+                <ul>
+                    <li class="icoItem">
+                        <i>
+                            <span class="icon icon-crm_icons-20"></span>
+                        </i>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contacts
+                            <span>56</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            New Contact
+                            <span>34</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Hot Contacts
+                            <span>134</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Wishes and Offers
+                            <span>23</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Complaints
+                            <span>23</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Specific Interests</a>
+                    </li>
+                    <li>
+                        <a href="#">Follow up Protocol</a>
+                    </li>
+                    <li>
+                        <a href="#">Email sender</a>
+                    </li>
+                    <li>
+                        <a href="#">Survey</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="itemDivider">
+            <div></div>
+        </li>
+        <li class="dropdown oneString">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">My info</a>
+            <div class="dropdown-menu">
+                <ul>
+                    <li class="icoItem">
+                        <i>
+                            <span class="icon icon-crm_icons-21"></span>
+                        </i>
+                    </li>
+                    <li>
+                        <a href="#">My Schedule</a>
+                    </li>
+                    <li>
+                        <a href="#">My score</a>
+                    </li>
+                    <li>
+                        <a href="#">My notes</a>
+                    </li>
+                    <li>
+                        <a href="#">Buzz online</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="itemDivider">
+            <div></div>
+        </li>
+        <li class="dropdown oneString">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">My settings</a>
+            <div class="dropdown-menu">
+                <ul>
+                    <li class="icoItem">
+                        <i>
+                            <span class="icon icon-crm_icons-22"></span>
+                        </i>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</nav>
+</section>
+
+<main role="main" class='main-summary fixedHeader'>
+
+<h1 class="text-uppercase text-colored">The Name of Expo 2015</h1>
+<div class="title-white">
+    <div class="text-uppercase strong">Message: Find buyers from Germany</div>
+</div>
+
+<!-- ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
+<!-- ooooooooooooooooooooooooooooo КОМАНДА ooooooooooooooooooooooooooooooooooo -->
+<div class="container-fluid">
+    <section class="team">
+        <!-- График с человечками -->
+        <div class="people-chart-wrap">
+            <div class="people-chart">
+                <div class="people-chart-item">
+                    <div class="people-chart-body">
+                        <div class="people-chart-item-name">Mary</div>
+                        <div class="people-chart-item-arrow">
+                            <span class="icon icon-arrow-down"></span>
+                        </div>
+                        <div class="people-chart-item-gender">
+                            <span class="icon icon-girl"></span>
+                        </div>
+                        <div class="people-chart-item-value" style="height: 30px;">45</div>
+                    </div>
+                </div>
+
+                <div class="people-chart-item">
+                    <div class="people-chart-body">
+                        <div class="people-chart-item-name">Mary</div>
+                        <div class="people-chart-item-arrow">
+                            <span class="icon icon-arrow-down"></span>
+                        </div>
+                        <div class="people-chart-item-gender">
+                            <span class="icon icon-girl"></span>
+                        </div>
+                        <div class="people-chart-item-value" style="height: 20px;">45</div>
+                    </div>
+                </div>
+
+                <div class="people-chart-item text-colored">
+                    <div class="people-chart-body">
+                        <div class="people-chart-item-name">Mary Susanna Stafford</div>
+                        <div class="people-chart-item-arrow">
+                            <span class="icon icon-arrow-down"></span>
+                        </div>
+                        <div class="people-chart-item-gender">
+                            <span class="icon icon-girl"></span>
+                        </div>
+                        <div class="people-chart-item-value" style="height: 40px;">45</div>
+                    </div>
+                </div>
+
+                <div class="people-chart-item">
+                    <div class="people-chart-body">
+                        <div class="people-chart-item-name">Ivan</div>
+                        <div class="people-chart-item-arrow">
+                            <span class="icon icon-arrow-down"></span>
+                        </div>
+                        <div class="people-chart-item-gender">
+                            <span class="icon icon-boy"></span>
+                        </div>
+                        <div class="people-chart-item-value" style="height: 80px;">45</div>
+                    </div>
+                </div>
+                <div class="people-chart-item">
+                    <div class="people-chart-body">
+                        <div class="people-chart-item-name">Ivan</div>
+                        <div class="people-chart-item-arrow">
+                            <span class="icon icon-arrow-down"></span>
+                        </div>
+                        <div class="people-chart-item-gender">
+                            <span class="icon icon-boy"></span>
+                        </div>
+                        <div class="people-chart-item-value" style="height: 70px;">45</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Фильтр контактов команды -->
+        <div class="team-choise grayBlock">
+            <div class="styled-radio">
+                <input id="radioContAll" type="radio" name="optTeamChoise" value="1" checked="checked">
+                <label for="radioContAll" >
+                    <span>
+                        <span></span>
+                    </span>
+                    All Contacts
+                </label>
+            </div>
+            <div class="styled-radio">
+                <input id="radioContUncomp" type="radio" name="optTeamChoise" value="1" checked="checked">
+                <label for="radioContUncomp">
+                    <span>
+                        <span></span>
+                    </span>
+                    Uncomplete Contacts
+                </label>
+            </div>
+            <div class="styled-radio">
+                <input id="radioContHot" type="radio" name="optTeamChoise" value="1" checked="checked">
+                <label for="radioContHot">
+                    <span>
+                        <span></span>
+                    </span>
+                    Hot Contacts
+                </label>
+            </div>
+            <div class="styled-radio">
+                <input id="radioContMeet" type="radio" name="optTeamChoise" value="1" checked="checked">
+                <label for="radioContMeet" >
+                    <span>
+                        <span></span>
+                    </span>
+                    Meetings
+                </label>
+            </div>
+            <div class="styled-radio">
+                <input id="radioContGerm" type="radio" name="optTeamChoise" value="1" checked="checked">
+                <label for="radioContGerm" >
+                    <span>
+                        <span></span>
+                    </span>
+                    Contacts from Germany
+                </label>
+            </div>
+        </div>
+
+        <!-- Больше людей из команды -->
+
+        <div class=" team-statistic-wrap">
+
+            <div class="btn-team-statistic-wrap">
+                <div class="btn-team-statistic-arrow">
+                    <div class="icon icon-arrow-left"></div>
+                </div>
+                <div class="btn-textvertical btn-team-statistic">More People From Team</div>
+            </div>
+
+            <div class=" team-statistic ">
+                <div class="row">
+                    <div class="pull-left border-bottom-colored text-colored">Robin Fox</div>
+                    <div class="pull-right text-colored">45</div>
+                </div>
+                <div class="row">
+                    <div class="pull-left">Robin Fox</div>
+                    <div class="pull-right">45</div>
+                </div>
+                <div class="row">
+                    <div class="pull-left">Robin Fox</div>
+                    <div class="pull-right">45</div>
+                </div>
+                <div class="row">
+                    <div class="pull-left">Robin Fox</div>
+                    <div class="pull-right">45</div>
+                </div>
+                <div class="row">
+                    <div class="pull-left">Robin Fox</div>
+                    <div class="pull-right">45</div>
+                </div>
+                <div class="row">
+                    <div class="pull-left">Robin Fox</div>
+                    <div class="pull-right">45</div>
+                </div>
+                <div class="row">
+                    <div class="pull-left">Robin very looong namek</div>
+                    <div class="pull-right">45</div>
+                </div>
+                <div class="row">
+                    <div class="pull-left">Robin Fox</div>
+                    <div class="pull-right">45</div>
+                </div>
+                <div class="row">
+                    <div class="pull-left">Robin Fox</div>
+                    <div class="pull-right">45</div>
+                </div>
+                <div class="row">
+                    <div class="pull-left">Robin Fox</div>
+                    <div class="pull-right">45</div>
+                </div>
+                <div class="row">
+                    <div class="pull-left">Robin Fox</div>
+                    <div class="pull-right">45</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
+<!-- ooooooooooooooooooooooooooooo ГЕОГРАФИЯ ooooooooooooooooooooooooooooooooooo -->
+
+<section class="geography">
+    <div class="title-darkgrey">
+        <div class="text-uppercase">Contacts Geography</div>
+    </div>
+
+    <!-- Выбор страны -->
+    <div class="container-fluid topbotm20">
+        <div class="row">
+            <label class="col-md-3 col-sm-3 col-xs-12 control-label  text-left">Select / pick country</label>
+            <div class="col-md-3 col-sm-3 col-xs-12 ">
+                <div class="input-group">
+                    <input type="text" placeholder="All" class="form-control" id="countryInput">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-sm btn-default dropdown-toggle squareIco" data-toggle="dropdown">
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu pull-right">
+                            <li>
+                                <a href="#">Ссылка 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Ссылка 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Ссылка 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- КАРТА -->
+    <div id="map-summary"></div>
+
+    <div class="container-fluid">
+
+        <!-- Таблица со статистикой после карты-->
+        <div class="statistic-table">
+
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 1</div>
+                <div class="box-stat-body">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                            <span class="icon icon-men"></span>
+                            12
+                        </div>
+                    </div>
+                    <div class="progress-desc">Germany</div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="icon icon-men"></span>
+                            12
+                        </div>
+                    </div>
+                    <div class="progress-desc">Germany</div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                            <span class="icon icon-men"></span>
+                            12
+                        </div>
+                    </div>
+                    <div class="progress-desc">Germany</div>
+                    <a class="more text-colored" data-toggle="collapse" href="#collapseOther1" aria-expanded="false" aria-controls="collapseOther1">
+                        Other
+                        <div class="icon icon-arrow-down pull-right"></div>
+                    </a>
+                    <div class="collapse" id="collapseOther1">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="icon icon-men"></span>
+                                12
+                            </div>
+                        </div>
+                        <div class="progress-desc">Germany</div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="icon icon-men"></span>
+                                12
+                            </div>
+                        </div>
+                        <div class="progress-desc">Germany</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 2</div>
+                <div class="box-stat-body">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="icon icon-men"></span>
+                            12
+                        </div>
+                    </div>
+                    <div class="progress-desc">Germany</div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="icon icon-men"></span>
+                            12
+                        </div>
+                    </div>
+                    <div class="progress-desc">Germany</div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="icon icon-men"></span>
+                            12
+                        </div>
+                    </div>
+                    <div class="progress-desc">Germany</div>
+                    <a class="more text-colored" data-toggle="collapse" href="#collapseOther2" aria-expanded="false" aria-controls="collapseOther2">
+                        Other
+                        <div class="icon icon-arrow-down pull-right"></div>
+                    </a>
+                    <div class="collapse" id="collapseOther2">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="icon icon-men"></span>
+                                12
+                            </div>
+                        </div>
+                        <div class="progress-desc">Germany</div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="icon icon-men"></span>
+                                12
+                            </div>
+                        </div>
+                        <div class="progress-desc">Germany</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 3</div>
+                <div class="box-stat-body">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="icon icon-men"></span>
+                            12
+                        </div>
+                    </div>
+                    <div class="progress-desc">Germany</div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="icon icon-men"></span>
+                            12
+                        </div>
+                    </div>
+                    <div class="progress-desc">Germany</div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="icon icon-men"></span>
+                            12
+                        </div>
+                    </div>
+                    <div class="progress-desc">Germany</div>
+                    <a class="more text-colored" data-toggle="collapse" href="#collapseOther3" aria-expanded="false" aria-controls="collapseOther3">
+                        Other
+                        <div class="icon icon-arrow-down pull-right"></div>
+                    </a>
+                    <div class="collapse" id="collapseOther3">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="icon icon-men"></span>
+                                12
+                            </div>
+                        </div>
+                        <div class="progress-desc">Germany</div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="icon icon-men"></span>
+                                12
+                            </div>
+                        </div>
+                        <div class="progress-desc">Germany</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 4</div>
+                <div class="box-stat-body">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="icon icon-men"></span>
+                            12
+                        </div>
+                    </div>
+                    <div class="progress-desc">Germany</div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="icon icon-men"></span>
+                            12
+                        </div>
+                    </div>
+                    <div class="progress-desc">Germany</div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="icon icon-men"></span>
+                            12
+                        </div>
+                    </div>
+                    <div class="progress-desc">Germany</div>
+                    <a class="more text-colored" data-toggle="collapse" href="#collapseOther4" aria-expanded="false" aria-controls="collapseOther4">
+                        Other
+                        <div class="icon icon-arrow-down pull-right"></div>
+                    </a>
+                    <div class="collapse" id="collapseOther4">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="icon icon-men"></span>
+                                12
+                            </div>
+                        </div>
+                        <div class="progress-desc">Germany</div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="icon icon-men"></span>
+                                12
+                            </div>
+                        </div>
+                        <div class="progress-desc">Germany</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Широкая последняя колонка таблицы со статитикой -->
+            <div class="box-stat-wide">
+                <div class="box-stat-title">Summary</div>
+                <div class="box-stat-body bg-basegrey">
+                    <div class="box-stat-padding">
+                        <div class="progress progress-white-bg">
+                            <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="icon icon-men"></span>
+                                12
+                            </div>
+                        </div>
+                        <div class="progress-desc">Germany</div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="icon icon-men"></span>
+                                12
+                            </div>
+                        </div>
+                        <div class="progress-desc">Germany</div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="icon icon-men"></span>
+                                12
+                            </div>
+                        </div>
+                        <div class="progress-desc">Germany</div>
+                        <a class="more text-colored" data-toggle="collapse" href="#collapseOther5" aria-expanded="false" aria-controls="collapseOther5">
+                            Other
+                            <div class="icon icon-arrow-down pull-right"></div>
+                        </a>
+                        <div class="collapse" id="collapseOther5">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                    <span class="icon icon-men"></span>
+                                    12
+                                </div>
+                            </div>
+                            <div class="progress-desc">Germany</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-colored" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                    <span class="icon icon-men"></span>
+                                    12
+                                </div>
+                            </div>
+                            <div class="progress-desc">Germany</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- END Таблица со статистикой после карты --> </section>
+<!-- ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
+<!-- ooooooooooooooooooooooooooooo КАТЕГОРИИ ooooooooooooooooooooooooooooooooooo -->
+<div class="container-fluid">
+    <section class="summary-category">
+        <div class="title-colored">
+            <div class="text-uppercase">Message: Find buyers from Germany</div>
+        </div>
+        <div class="row">
+            <div class="col-md-9 col-sm-8 col-xs-12">
+
+                <div class="category-chart">
+
+                    <div id="columnchart_values" ></div>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12">
+
+                <!-- Фильтр дней для графика категорий -->
+                <div class="category-chart-filter grayBlock">
+                    <div class="styled-radio">
+                        <input type="radio" checked="checked" value="1" name="optTeamChoise" id="radioCatDayAll">
+                        <label for="radioCatDayAll">
+                            <span>
+                                <span></span>
+                            </span>
+                            All
+                        </label>
+                    </div>
+                    <div class="styled-radio">
+                        <input type="radio" checked="checked" value="1" name="optTeamChoise" id="radioCatDay1">
+                        <label for="radioCatDay1">
+                            <span>
+                                <span></span>
+                            </span>
+                            Day 1
+                        </label>
+                    </div>
+                    <div class="styled-radio">
+                        <input type="radio" checked="checked" value="1" name="optTeamChoise" id="radioCatDay2">
+                        <label for="radioCatDay2">
+                            <span>
+                                <span></span>
+                            </span>
+                            Day 2
+                        </label>
+                    </div>
+                    <div class="styled-radio">
+                        <input type="radio" checked="checked" value="1" name="optTeamChoise" id="radioCatDay3">
+                        <label for="radioCatDay3">
+                            <span>
+                                <span></span>
+                            </span>
+                            Day 3
+                        </label>
+                    </div>
+                    <div class="styled-radio">
+                        <input type="radio" checked="checked" value="1" name="optTeamChoise" id="radioCatDay4">
+                        <label for="radioCatDay4">
+                            <span>
+                                <span></span>
+                            </span>
+                            Day 4
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+<!-- ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
+<!-- ooooooooooooooooooooooooooooo Contacts meetings ooooooooooooooooooooooooooooooooooo -->
+<div class="container-fluid">
+
+    <section class="summary-meetings">
+
+        <div class="title-darkgrey">
+            <div class="text-uppercase">Contacts meetings</div>
+        </div>
+
+        <!-- Таблица со статистикой после графика категорий -->
+        <div class="statistic-table statistic-table-height-aligner">
+
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 1</div>
+                <div class="box-stat-body box-stat-body-total">
+                    <div class="box-stat-name">Pepsi</div>
+                    <div class="box-stat-name box-stat-name-icon">
+                        <span class="icon icon-men"></span>
+                        Richard Zero
+                    </div>
+                    <div class="box-stat-name">Coca-cola</div>
+                    <div class="box-stat-name box-stat-name-icon">
+                        <span class="icon icon-men"></span>
+                        Richard Zero
+                    </div>
+                    <div class="box-stat-name">Coca-cola</div>
+                    <div class="box-stat-total">
+                        <div class="pull-left">Total</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 2</div>
+                <div class="box-stat-body box-stat-body-total">
+                    <div class="box-stat-name">Pepsi</div>
+                    <div class="box-stat-name box-stat-name-icon">
+                        <span class="icon icon-men"></span>
+                        Richard Zero
+                    </div>
+                    <div class="box-stat-name">Coca-cola</div>
+                    <div class="box-stat-name box-stat-name-icon">
+                        <span class="icon icon-men"></span>
+                        Richard Zero
+                    </div>
+                    <div class="box-stat-name">Coca-cola</div>
+                    <div class="box-stat-total">
+                        <div class="pull-left">Total</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 3</div>
+                <div class="box-stat-body box-stat-body-total">
+                    <div class="box-stat-name">Pepsi</div>
+                    <div class="box-stat-name box-stat-name-icon">
+                        <span class="icon icon-men"></span>
+                        Richard Zero
+                    </div>
+                    <div class="box-stat-name">Coca-cola</div>
+                    <div class="box-stat-name box-stat-name-icon">
+                        <span class="icon icon-men"></span>
+                        Richard Zero
+                    </div>
+                    <div class="box-stat-name">Coca-cola</div>
+                    <div class="box-stat-total">
+                        <div class="pull-left">Total</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 4</div>
+                <div class="box-stat-body box-stat-body-total">
+                    <div class="box-stat-name">Pepsi</div>
+                    <div class="box-stat-name box-stat-name-icon">
+                        <span class="icon icon-men"></span>
+                        Richard Zero
+                    </div>
+                    <div class="box-stat-name">Coca-cola</div>
+                    <div class="box-stat-total">
+                        <div class="pull-left">Total</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Широкая последняя колонка таблицы со статитикой -->
+            <div class="box-stat-wide">
+                <div class="box-stat-title">Summary</div>
+                <div class="box-stat-body box-stat-body-total bg-basegrey">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="box-stat-name">Pepsi</div>
+                            <div class="box-stat-name box-stat-name-icon">
+                                <span class="icon icon-men"></span>
+                                Richard Zero
+                            </div>
+                            <div class="box-stat-name">Coca-cola</div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="box-stat-name">Pepsi</div>
+                            <div class="box-stat-name box-stat-name-icon">
+                                <span class="icon icon-men"></span>
+                                Richard Zero
+                            </div>
+                            <div class="box-stat-name">Coca-cola</div>
+                        </div>
+
+                        <div class="box-stat-total clearfix">
+                            <div class="pull-left">Total</div>
+                            <div class="pull-right">5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Таблица со статистикой после графика категорий --> </section>
+</div>
+
+<!-- ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
+<!-- ooooooooooooooooooooooooooooo Contacts status ooooooooooooooooooooooooooooooooooo -->
+<div class="container-fluid">
+
+    <section class="summary-status">
+        <div class="title-darkgrey">
+            <div class="text-uppercase">Contacts status</div>
+        </div>
+
+        <!-- Таблица со статистикой Contacts Status -->
+        <div class="statistic-table">
+
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 1</div>
+                <div class="box-stat-body ">
+                    <div class="box-stat-with-value text-colored">
+                        <div class="pull-left">New</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">Old</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 2</div>
+                <div class="box-stat-body ">
+                    <div class="box-stat-with-value text-colored">
+                        <div class="pull-left">New</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">Old</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 3</div>
+                <div class="box-stat-body ">
+                    <div class="box-stat-with-value text-colored">
+                        <div class="pull-left">New</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">Old</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 4</div>
+                <div class="box-stat-body ">
+                    <div class="box-stat-with-value text-colored">
+                        <div class="pull-left">New</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">Old</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Широкая последняя колонка таблицы со статитикой -->
+            <div class="box-stat-wide">
+                <div class="box-stat-title">Summary</div>
+                <div class="box-stat-body bg-basegrey">
+                    <div class="box-stat-padding">
+                        <div class="box-stat-with-value text-colored">
+                            <div class="pull-left">New</div>
+                            <div class="pull-right">5</div>
+                        </div>
+                        <div class="box-stat-with-value">
+                            <div class="pull-left">Old</div>
+                            <div class="pull-right">5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Таблица со статистикой Contacts Status --> </section>
+</div>
+<!-- ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
+<!-- ooooooooooooooooooooooooooooo ГРАФИК с рожицами  ooooooooooooooooooooooooooooooooooo -->
+<div class="container-fluid">
+
+    <section class="summary-completeness">
+        <div class="title-darkgrey">
+            <div class="text-uppercase">Contacts Completeness</div>
+        </div>
+
+        <div id="curve_chart"></div>
+
+        <!-- Таблица со статистикой после графика с рожицами -->
+        <div class="statistic-table">
+
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 1</div>
+                <div class="box-stat-body ">
+                    <div class="box-stat-with-value text-colored">
+                        <div class="pull-left">
+                            <span class="icon icon-smile"></span>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <span class="icon icon-not-smile"></span>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 2</div>
+                <div class="box-stat-body ">
+                    <div class="box-stat-with-value text-colored">
+                        <div class="pull-left">
+                            <span class="icon icon-smile"></span>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <span class="icon icon-not-smile"></span>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 3</div>
+                <div class="box-stat-body ">
+                    <div class="box-stat-with-value text-colored">
+                        <div class="pull-left">
+                            <span class="icon icon-smile"></span>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <span class="icon icon-not-smile"></span>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 4</div>
+                <div class="box-stat-body ">
+                    <div class="box-stat-with-value text-colored">
+                        <div class="pull-left">
+                            <span class="icon icon-smile"></span>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <span class="icon icon-not-smile"></span>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Широкая последняя колонка таблицы со статитикой -->
+            <div class="box-stat-wide">
+                <div class="box-stat-title">Summary</div>
+                <div class="box-stat-body bg-basegrey">
+                    <div class="box-stat-padding">
+                        <div class="box-stat-with-value text-colored">
+                            <div class="pull-left">
+                                <span class="icon icon-smile"></span>
+                            </div>
+                            <div class="pull-right">5</div>
+                        </div>
+                        <div class="box-stat-with-value">
+                            <div class="pull-left">
+                                <span class="icon icon-not-smile"></span>
+                            </div>
+                            <div class="pull-right">5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Таблица со статистикой после графика с рожицами --> </section>
+</div>
+<!-- ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
+<!-- ooooooooooooooooooooooooooooo Contacts Importance ooooooooooooooooooooooooooooooooooo -->
+<div class="container-fluid">
+
+    <section class="summary-importance">
+        <div class="title-darkgrey">
+            <div class="text-uppercase">Contacts Importance</div>
+        </div>
+
+        <!-- Таблица со статистикой  со звездочками -->
+        <div class="statistic-table  statistic-table-height-aligner">
+
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 1</div>
+                <div class="box-stat-body  box-stat-body-total">
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="icon icon-crm_icons-11"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-total total-with-value">
+                        <div class="pull-left">Total</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 2</div>
+                <div class="box-stat-body  box-stat-body-total">
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="icon icon-crm_icons-11"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-total total-with-value">
+                        <div class="pull-left">Total</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 3</div>
+                <div class="box-stat-body  box-stat-body-total">
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="icon icon-crm_icons-11"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-total total-with-value">
+                        <div class="pull-left">Total</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Одна колонка таблицы со статитикой -->
+            <div class="box-stat">
+                <div class="box-stat-title">Day 4</div>
+                <div class="box-stat-body  box-stat-body-total">
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-with-value">
+                        <div class="pull-left">
+                            <div class="row-stars">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="icon icon-crm_icons-11"></span>
+                            </div>
+                        </div>
+                        <div class="pull-right">5</div>
+                    </div>
+                    <div class="box-stat-total total-with-value">
+                        <div class="pull-left">Total</div>
+                        <div class="pull-right">5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Широкая последняя колонка таблицы со статитикой -->
+            <div class="box-stat-wide">
+                <div class="box-stat-title">Summary</div>
+                <div class="box-stat-body box-stat-body-total bg-basegrey">
+                    <div class="box-stat-padding">
+                        <div class="box-stat-with-value">
+                            <div class="pull-left">
+                                <div class="row-stars">
+                                    <span class="star-empty"></span>
+                                    <span class="star-empty"></span>
+                                    <span class="star-empty"></span>
+                                </div>
+                            </div>
+                            <div class="pull-right">5</div>
+                        </div>
+                        <div class="box-stat-with-value">
+                            <div class="pull-left">
+                                <div class="row-stars">
+                                    <span class="icon icon-crm_icons-11"></span>
+                                    <span class="star-empty"></span>
+                                    <span class="star-empty"></span>
+                                </div>
+                            </div>
+                            <div class="pull-right">5</div>
+                        </div>
+                        <div class="box-stat-with-value">
+                            <div class="pull-left">
+                                <div class="row-stars">
+                                    <span class="icon icon-crm_icons-11"></span>
+                                    <span class="icon icon-crm_icons-11"></span>
+                                    <span class="star-empty"></span>
+                                </div>
+                            </div>
+                            <div class="pull-right">5</div>
+                        </div>
+                        <div class="box-stat-with-value">
+                            <div class="pull-left">
+                                <div class="row-stars">
+                                    <span class="icon icon-crm_icons-11"></span>
+                                    <span class="icon icon-crm_icons-11"></span>
+                                    <span class="icon icon-crm_icons-11"></span>
+                                </div>
+                            </div>
+                            <div class="pull-right">5</div>
+                        </div>
+                        <div class="box-stat-total total-with-value">
+                            <div class="pull-left">Total</div>
+                            <div class="pull-right">5</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Таблица со статистикой со звездочками--> </section>
+
+</div>
+</main>
+
+<!-- /page content -->
+
+<script src="js/app.min.js"></script>
+
+
+<script src="js/scripts.js"></script>
+
+<!--[if lt IE 9]>
+<script src="./js/app-lt-ie9.min.js"></script>
+<![endif]-->
+
+</body>
+</html>

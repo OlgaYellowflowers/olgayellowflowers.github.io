@@ -1,0 +1,346 @@
+.theme16
+{
+.btn-primary {
+	background-color: @activeColor;
+
+	&:hover {
+		.base-hover (@activeColor);
+	}
+}
+.chosen-container-active .chosen-choices {
+	border: 1px solid @activeColor;
+}
+.linebox-item-link .edit-link-edit {
+	.base-hover-textlink (@activeColor);
+}
+input, textarea {
+	&.form-control {
+		&:active, &:focus {
+			border-color: @activeColor;
+		}
+	}
+}
+.switch {
+	.switchBody {
+		> span {
+			background: @activeColor;
+		}
+	}
+}
+.ratingBlock {
+	> * {
+		&.active {
+			color: @activeColor;
+		}
+	}
+}
+.decor {
+	border-bottom: @borderWidth solid @activeColor;
+}
+.has-feedback {
+	.form-control-feedback {
+		color: @activeColor;
+	}
+}
+header {
+	#sixSquareBlock {
+		> span {
+			&:nth-child(5) {
+				background: @activeColor;
+			}
+		}
+	}
+	h3 {
+		> a {
+			color: @activeColor;
+		}
+	}
+}
+#leftMenu {
+	> nav > ul {
+		> li {
+			&:not([class*="icoItem"]) {
+				&:hover, &:active, &:focus {
+					background: @activeColor;
+				}
+			}
+		}
+	}
+}
+main {
+	&.onMain {
+		section {
+			.row {
+				> div {
+					&:nth-child(5) > div {
+						background: @activeColor;
+
+						&:hover, &:active {
+							background: @activeColor;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#newContactButtonsBlock {
+	.mainButtons {
+		&:hover, &:active {
+			background: @activeColor;
+		}
+	}
+}
+#newContactBtn {
+	.colorButton(@white, @activeColor);
+}
+.carousel-newContact-controlTop {
+	> div {
+		&:not(:last-child) {
+			> a {
+				color: @activeColor;
+			}
+		}
+	}
+	.plusMinusBlock {
+		> a {
+			color: @activeColor;
+		}
+	}
+}
+#carousel-newContact {
+	.carousel-control {
+		.icon-crm_icons-24, .icon-crm_icons-05 {
+			color: @activeColor;
+		}
+	}
+}
+#carousel-newContact {
+	.carousel-control-text {
+		color: @activeColor;
+	}
+}
+
+.slick-prev, .slick-next {
+border-bottom: 7px @activeColor solid;
+color: @activeColor;
+}
+.slick-dots li.slick-active button { background: @activeColor; border:  1px @activeColor solid;  }
+.text-colored {
+	color: @activeColor;
+}
+.btn.bg-colored {
+	.colorButton(@white, @activeColor);
+}
+.bg-colored {
+	background-color: @activeColor;
+	color: #fff !important;
+}
+.border-colored {
+	border: 1px @activeColor solid;
+}
+.border-bottom-colored {
+	border-bottom: 1px @activeColor solid;
+}
+.border-top-colored {
+	border-top: 1px @activeColor solid;
+}
+.border-left-colored {
+	border-left: 1px @activeColor solid;
+}
+.border-right-colored {
+	border-right: 1px @activeColor solid;
+}
+.title-colored {
+	border: 1px @activeColor solid;
+	background: @activeColor;
+}
+.grey-box {
+	.rating-stars label:hover,
+	.rating-stars label:hover ~ label {
+		background: url(../img/star-wrap-grey-box.png) @activeColor top left no-repeat;
+	}
+	.rating-stars input:checked ~ label {
+		background: url(../img/star-wrap-grey-box.png) top left no-repeat @activeColor;
+	}
+}
+.btn-plus {
+	.icon {
+		border-bottom: 1px @activeColor solid;
+		.base-hover-textlink (@activeColor);
+		.base-hover-border (@activeColor);
+	}
+}
+.btn-colored {
+	background-color: @activeColor;
+
+	&:hover {
+		background-color: darken(@activeColor, 5%);
+	}
+	&:focus,
+	&:active {
+		background-color: lighten(@activeColor, 5%);
+	}
+}
+.icon-button-notsmile {
+	color: @activeColor;
+}
+.divtable-title {
+	background-color: @activeColor;
+}
+.styled-radio {
+	input[type=radio]:not(old):checked +  label > span > span {
+		background: @activeColor;
+	}
+}
+.styled-checkbox {
+	input[type=checkbox]:not(old):checked +  label > span > span {
+		color: @activeColor;
+	}
+}
+.row-stars {
+	.icon {
+		font-size: 19px;
+		color: @activeColor;
+		margin: 0 3px;
+		width: 20px;
+	}
+}
+.modal-title {
+	color: @activeColor;
+	border-bottom: 1px @activeColor solid;
+}
+.modal-title2 {
+	color: @activeColor;
+	border-bottom: 1px @activeColor solid;
+}
+.media-line-link a {
+	background: @activeColor;
+	.base-hover(@activeColor);
+}
+.link-icon-pdf:hover .icon-clip,
+.link-icon-pdf:active .icon-clip,
+.link-icon-pdf-added  .icon-clip {
+	color: @activeColor !important;
+}
+.link-icon-pdf .media-link-text {
+	background: @activeColor;
+}
+.link-icon-pdf-added .media-link-text {
+	background: @activeColor !important;
+}
+.link-icon-pdf:hover .media-link-text,
+.link-icon-pdf:active .media-link-text {
+	background: @activeColor !important;
+}
+.link-icon-video:hover .icon-clip,
+.link-icon-video:active .icon-clip {
+	color: @activeColor !important;
+}
+.link-icon-video:hover .media-link-text,
+.link-icon-video:active .media-link-text,
+.link-icon-video-added .media-link-text {
+	background: @activeColor !important;
+}
+.link-icon-video-added .icon-clip {
+	color: @activeColor !important;
+}
+.people-chart-item-value {
+	color: @activeColor;
+}
+.progress-bar-colored {
+	background: @activeColor;
+}
+// Styled tabs
+.styled-tabs {
+	.nav-tabs > li.active > a,
+	.nav-tabs > li.active > a:hover,
+	.nav-tabs > li.active > a:focus {
+		.base-hover(@activeColor);
+	}
+}
+.linebox-item-link a {
+	.base-hover-textlink (@activeColor);
+}
+.linebox-item-del .icon {
+	.base-hover-textlink(@activeColor);
+}
+.box-with-bookmark h2::after {
+	border-bottom: 36px solid @activeColor;
+	border-left: 1px solid @activeColor;
+}
+.box-with-bookmark h2 {
+	background: none repeat scroll 0 0 @activeColor;
+}
+.box-with-bookmark-inner {
+	border: 14px solid @activeColor;
+}
+.linebox-item-with-bookmark {
+	.linebox-item-name,
+	.linebox-item-link {
+		.base-hover-textlink(@activeColor);
+	}
+	.linebox-item-del {
+		.base-hover-textlink(@activeColor);
+	}
+}
+.socials {
+	i {
+		color: @activeColor;
+	}
+	span {
+		.base-hover-textlink (@activeColor);
+	}
+	.base-hover-textlink (@activeColor);
+	.base-hover-border (@activeColor);
+}
+.product-item-del {
+	.base-hover-textlink (@activeColor);
+}
+.linebox-item-link .edit-link-edit {
+	.base-hover-textlink (@activeColor);
+	
+}
+.contacts-td-stars {
+	.icon {
+		color: @activeColor;
+	}
+}
+.other-filters-arrow-up {
+	color: @activeColor;
+}
+.other-filters-arrow-down {
+	color: @activeColor;
+}
+.contacts-table {
+	.icon-not-smile {
+		color: @activeColor;
+	}
+}
+.schedule-table-title {
+	background-color: @activeColor;
+}
+.schedule-table .icon-coffee-break {
+	color: @activeColor;
+}
+.event-box-item {
+	border: 1px @activeColor solid;
+	.boxShadowInset (0, 0, 1px, 1px, @activeColor);
+}
+.event-box .icon-bell {
+	color: @activeColor;
+}
+.vertical-box {
+background: @activeColor;
+}
+.btn-team-statistic-arrow {
+
+	color: @activeColor;
+
+}
+.box-stat-name-icon {
+		 
+	.icon { color: @activeColor; }
+}
+
+}

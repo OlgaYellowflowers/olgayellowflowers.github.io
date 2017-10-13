@@ -1,0 +1,140 @@
+.ct-label {
+    fill: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1;
+}
+.ct-label.ct-horizontal.ct-start,
+.ct-label.ct-horizontal.ct-end ,
+.ct-label.ct-vertical.ct-start,
+.ct-label.ct-vertical.ct-end,
+.ct-chart-bar .ct-label.ct-horizontal.ct-start,
+.ct-chart-bar .ct-label.ct-horizontal.ct-end,
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-start,
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-end,
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-start,
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-end {
+    fill: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.4);
+}
+
+
+.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut {
+    stroke: #003157;
+}
+
+.ct-series-a .ct-slice-pie, .ct-series-a .ct-area {
+    fill: #003157;
+}
+
+.ct-series-b .ct-point, .ct-series-b .ct-line, .ct-series-b .ct-bar, .ct-series-b .ct-slice-donut {
+    stroke: #9d4481;
+}
+
+.ct-series-b .ct-slice-pie, .ct-series-b .ct-area {
+    fill: #9d4481;
+}
+
+.ct-series-c .ct-point, .ct-series-c .ct-line, .ct-series-c .ct-bar, .ct-series-c .ct-slice-donut {
+    stroke: #6b417f;
+}
+
+.ct-series-c .ct-slice-pie, .ct-series-c .ct-area {
+    fill: #6b417f;
+}
+
+.ct-series-d .ct-point, .ct-series-d .ct-line, .ct-series-d .ct-bar, .ct-series-d .ct-slice-donut {
+    stroke: #393b70;
+}
+
+.ct-series-d .ct-slice-pie, .ct-series-d .ct-area {
+    fill: #393b70;
+}
+
+.ct-series-e .ct-point, .ct-series-e .ct-line, .ct-series-e .ct-bar, .ct-series-e .ct-slice-donut {
+    stroke: #ca4977;
+}
+
+.ct-series-e .ct-slice-pie, .ct-series-e .ct-area {
+    fill: #ca4977;
+}
+
+.ct-series-f .ct-point, .ct-series-f .ct-line, .ct-series-f .ct-bar, .ct-series-f .ct-slice-donut {
+    stroke: #eb5a63;
+}
+
+.ct-series-f .ct-slice-pie, .ct-series-f .ct-area {
+    fill: #eb5a63;
+}
+
+.ct-series-g .ct-point, .ct-series-g .ct-line, .ct-series-g .ct-bar, .ct-series-g .ct-slice-donut {
+    stroke: #ff9d29;
+}
+
+.ct-series-g .ct-slice-pie, .ct-series-g .ct-area {
+    fill: #ff9d29;
+}
+
+.ct-series-h .ct-point, .ct-series-h .ct-line, .ct-series-h .ct-bar, .ct-series-h .ct-slice-donut {
+    stroke: #ff835b;
+}
+
+.ct-series-h .ct-slice-pie, .ct-series-h .ct-area {
+    fill: #ff835b;
+}
+
+.ct-series-i .ct-point, .ct-series-i .ct-line, .ct-series-i .ct-bar, .ct-series-i .ct-slice-donut {
+    stroke: #ff748b;
+}
+
+.ct-series-i .ct-slice-pie, .ct-series-i .ct-area {
+    fill: #ff748b;
+}
+
+.ct-series-j .ct-point, .ct-series-j .ct-line, .ct-series-j .ct-bar, .ct-series-j .ct-slice-donut {
+    stroke: #ff75b8;
+}
+
+.ct-series-j .ct-slice-pie, .ct-series-j .ct-area {
+    fill: #ff75b8;
+}
+
+.ct-series-k .ct-point, .ct-series-k .ct-line, .ct-series-k .ct-bar, .ct-series-k .ct-slice-donut {
+    stroke: #da82da;
+}
+
+.ct-series-k .ct-slice-pie, .ct-series-k .ct-area {
+    fill: #da82da;
+}
+
+.ct-series-l .ct-point, .ct-series-l .ct-line, .ct-series-l .ct-bar, .ct-series-l .ct-slice-donut {
+    stroke: #a291ec;
+}
+
+.ct-series-l .ct-slice-pie, .ct-series-l .ct-area {
+    fill: #a291ec;
+}
+.ct-series-m .ct-point, .ct-series-m .ct-line, .ct-series-m .ct-bar, .ct-series-m .ct-slice-donut {
+    stroke: #609beb;
+}
+
+.ct-series-m .ct-slice-pie, .ct-series-m .ct-area {
+    fill: #609beb;
+}
+
+.ct-series-n .ct-point, .ct-series-n .ct-line, .ct-series-n .ct-bar, .ct-series-n .ct-slice-donut {
+    stroke: #bf8ae6;
+}
+
+.ct-series-n .ct-slice-pie, .ct-series-n .ct-area {
+    fill: #bf8ae6;
+}
+
+.ct-series-o .ct-point, .ct-series-o .ct-line, .ct-series-o .ct-bar, .ct-series-o .ct-slice-donut {
+    stroke: #3b9de4;
+}
+
+.ct-series-o .ct-slice-pie, .ct-series-o .ct-area {
+    fill: #8296ee;
+}
+

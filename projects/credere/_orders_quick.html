@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title -->
+    <title>Quick Invest Order</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/select2-3.5.2/select2.css" />
+    <link rel="stylesheet" href="vendor/select2-bootstrap/select2-bootstrap.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-datepicker-master/dist/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="vendor/chartist/custom/chartist.css" />
+    <link rel="stylesheet" href="vendor/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css">
+    <link rel="stylesheet" href="vendor/datatables.net-bs/css/dataTables.bootstrap.min.css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_extend.css">
+
+</head>
+<body class="fixed-navbar fixed-sidebar">
+
+<!-- Simple splash screen-->
+<div class="splash">
+    <div class="splash-title"><h1>CREDERE</h1><p>Credere Loan Trader</p></div>
+    <div class="spinner"> 
+        <div class="rect1"></div> <div class="rect2"></div> <div class="rect3"></div> <div class="rect4"></div> <div class="rect5"></div> 
+    </div> 
+</div>
+<!--[if lt IE 7]>
+<p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Header -->
+<div id="header" >
+<!-- <div class="color-line" style="background:#eee;"></div> -->
+    <div id="logo" class="light-version">
+        <span class="logo_credere"></span>
+    </div>
+    <nav role="navigation">
+        <div class="header-link hide-menu"><i class="fa fa-bars"></i></div>
+        <div class="small-logo">
+            <span class="text-primary">CREDERE</span>
+        </div>
+<!--         <form role="search" class="navbar-form-custom" method="post" action="#">
+            <div class="form-group">
+                <input type="text" placeholder="Search something special" class="form-control" name="search">
+            </div>
+        </form> -->
+        <div class="mobile-menu">
+            <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
+                <i class="fa fa-chevron-down"></i>
+            </button>
+            <div class="collapse mobile-navbar" id="mobile-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="" href="login.html">Login</a>
+                    </li>
+                    <li>
+                        <a class="" href="login.html">Logout</a>
+                    </li>
+                    <li>
+                        <a class="" href="profile.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-left">
+            <div class="small-header transition animated fadeIn">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <!-- <div id="hbreadcrumb" class="pull-right">
+                            <ol class="hbreadcrumb breadcrumb">
+                                <li><a href="index.html">Dashboard</a></li>
+                                <li>
+                                    <span>Forms</span>
+                                </li>
+                                <li class="active">
+                                    <span>Forms elements </span>
+                                </li>
+                            </ol>
+                        </div> -->
+                        <h2 class="font-light m-b-xs">
+                            Quick Invest Order
+                        </h2>
+                        <small>Invest into selected active loans</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <ul class="nav navbar-nav no-borders">
+                <li class="dropdown">
+                    <a class="dropdown-toggle label-menu-corner" href="#" data-toggle="dropdown">
+                        <i class="pe-7s-speaker"></i>
+                        <span class="label label-success">4</span>
+                    </a>
+                    <ul class="dropdown-menu hdropdown notification animated flipInX">
+                        <li>
+                            <a>
+                                <span class="label label-success">NEW</span> It is a long established.
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span class="label label-warning">WAR</span> There are many variations.
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span class="label label-danger">ERR</span> Contrary to popular belief.
+                            </a>
+                        </li>
+                        <li class="summary"><a href="#">See all notifications</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="sidebar" class="right-sidebar-toggle">
+                         <h5 class="nav-label">Hi Alex!</h5>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="login.html">
+                        <i class="pe-7s-upload pe-rotate-90"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- Navigation -->
+<aside id="menu">
+    <div id="navigation">
+        <ul class="nav" id="side-menu">
+            <li>
+                <a href="#"> <span class="nav-label">Auctions</span> <!-- <span class="label label-success pull-right">v.1</span> --> </a>
+            </li>
+            <li class="active">
+                <a href="#"> <span class="nav-label">Orders</span><span class="fa arrow"></span><!-- <span class="label label-warning pull-right">NEW</span>  --></a>
+                <ul class="nav nav-second-level">
+                    <li><a href="panels.html">Active Orders</a></li>
+                    <li><a href="typography.html">Trade History</a></li>
+                    <li class="active"><a href="buttons.html">New Order</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"> <span class="nav-label">Portfolio</span></a>
+            </li>
+            <li>
+                <a href="#"> <span class="nav-label">Backtesting</span></a>
+            </li>
+        </ul>
+    </div>
+</aside>
+
+<!-- Main Wrapper -->
+<div id="wrapper">
+<div class="content animate-panel">
+    <div>
+        <div class="small-header transition animated fadeIn mobile-only">
+            <div class="hpanel">
+                <div class="panel-body">
+                    <h2 class="font-light m-b-xs">
+                        Prosper Whole Loan Auction
+                    </h2>
+                    <!-- <small>Examples of various form controls.</small> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- row with full panel -->
+<form method="get" class="form-horizontal">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="hpanel">
+                <div class="panel-heading">
+                            Place New Order
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Select Order Type</label>
+                            <div class="btn-group col-sm-6">
+                                <a class="btn btn-default col-sm-4" href="#step1" data-toggle="tab">Auto Invest Order</a>
+                                <a class="btn btn-primary col-sm-4" href="#step2" data-toggle="tab">Quick Invest Order</a>
+                                <a class="btn btn-default col-sm-4" href="#step3" data-toggle="tab">Credit Model Order</a>
+                            </div>
+<!--                             <select name="" id="" class="form-control">
+                                <option value="">Auto Invest Order</option>
+                                <option value="">Quick Invest Order</option>
+                                <option value="">Prosper Credit Scoring</option>
+                            </select> -->
+                        
+                    </div>
+                </div>
+
+
+                <div class="panel-body">
+                    
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Order account</label>
+                        <div class="col-sm-6">
+                            <select name="" id="" class="form-control">
+                                <option value="">Acura Fintech Credit fund PLC</option>
+                                <option value="">Toyota Fintech Credit fund PLC</option>
+                                <option value="">BMW Fintech Credit fund PLC</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Loan originator</label>
+                        <div class="col-sm-6">
+                            <select name="" id="" class="form-control">
+                                <option value="">Prosper Marketplace LLC</option>
+                                <option value="">Toyota Fintech Credit fund PLC</option>
+                                <option value="">BMW Fintech Credit fund PLC</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Loan Market</label>
+                        <div class="col-sm-6">
+                            <select name="" id="" class="form-control">
+                                <option value="">Whole</option>
+                                <option value="">Fractional</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Order duration</label>
+                        <div class="col-sm-6">
+                            
+                                <select name="" id="" class="form-control">
+                                    <option value="">GTC</option>
+                                    
+                                    <option value="">1 day</option>
+                                    <option value="">1 Month</option>
+                                </select>
+                            
+                            
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Loan IDs</label>
+                        <div class="col-sm-6">
+                            <textarea ROWS=1 placeholder="Search by Loan IDs, separate multiple IDs with comma, Max 500 Loans" class="form-control"></textarea>
+                        </div>
+                    </div>
+                                <!-- <div class="hr-line-dashed"></div> -->
+                </div>
+            </div>
+
+            
+
+
+            <div class="hpanel">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                       <!--  <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                        <a class="closebox"><i class="fa fa-times"></i></a> -->
+                    </div>
+                    Loan Order Detail (122 loans selected)
+                </div>
+                <div class="panel-body">
+
+                
+
+                <table id="example2" class="table table-striped table-hover"><!-- table-bordered  -->
+                <thead>
+                <tr>
+                    <th><div class="checkbox checkbox-success"><input id="checkbox-all" type="checkbox" ><label for="checkbox-all"></label></div></th>
+                    <th>Listing number</th>
+                    <th>Loan Purpose</th>
+                    <th>Loan Amount</th>
+                    <th>Borrower Yield</th>
+                    <th>Term</th>
+                    <th>Grade</th>
+                    <th>Investment Type</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox" checked><label for="checkbox1"></label></div></th>
+                        <td>481892</td>
+                        <td>Debt Consolidation</td>
+                        <td>$15,000</td>
+                        <td>9.5%</td>
+                        <td>36</td>
+                        <td><span class="btn-xs btn-success btn-circle"><strong>A</strong></span></td>
+                        <td>Fractional</td>
+                    </tr>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox2" type="checkbox" checked><label for="checkbox2"></label></div></th>
+                        <td>481895</td>
+                        <td>Home Improvement</td>
+                        <td>$5,000</td>
+                        <td>10.5%</td>
+                        <td>24</td>
+                        <td><span class="btn-xs btn-warning btn-circle"><strong>B</strong></span></td>
+                        <td>Whole</td>
+                    </tr>
+                     <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox" checked><label for="checkbox1"></label></div></th>
+                        <td>481892</td>
+                        <td>Debt Consolidation</td>
+                        <td>$15,000</td>
+                        <td>9.5%</td>
+                        <td>36</td>
+                        <td><span class="btn-xs btn-success btn-circle"><strong>AA</strong></span></td>
+                        <td>Fractional</td>
+                    </tr>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox2" type="checkbox" checked><label for="checkbox2"></label></div></th>
+                        <td>481895</td>
+                        <td>Home Improvement</td>
+                        <td>$5,000</td>
+                        <td>10.5%</td>
+                        <td>24</td>
+                        <td><span class="btn-xs btn-warning2 btn-circle"><strong>C</strong></span></td>
+                        <td>Whole</td>
+                    </tr>
+                     <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox" checked><label for="checkbox1"></label></div></th>
+                        <td>481892</td>
+                        <td>Debt Consolidation</td>
+                        <td>$15,000</td>
+                        <td>9.5%</td>
+                        <td>36</td>
+                        <td><span class="btn-xs btn-success btn-circle"><strong>A</strong></span></td>
+                        <td>Fractional</td>
+                    </tr>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox2" type="checkbox" checked><label for="checkbox2"></label></div></th>
+                        <td>481895</td>
+                        <td>Home Improvement</td>
+                        <td>$5,000</td>
+                        <td>10.5%</td>
+                        <td>24</td>
+                        <td><span class="btn-xs btn-warning btn-circle"><strong>B</strong></span></td>
+                        <td>Whole</td>
+                    </tr>
+                     <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox" checked><label for="checkbox1"></label></div></th>
+                        <td>481892</td>
+                        <td>Debt Consolidation</td>
+                        <td>$15,000</td>
+                        <td>9.5%</td>
+                        <td>36</td>
+                        <td><span class="btn-xs btn-success btn-circle"><strong>A</strong></span></td>
+                        <td>Fractional</td>
+                    </tr>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox2" type="checkbox" checked><label for="checkbox2"></label></div></th>
+                        <td>481895</td>
+                        <td>Home Improvement</td>
+                        <td>$5,000</td>
+                        <td>10.5%</td>
+                        <td>24</td>
+                        <td><span class="btn-xs btn-warning btn-circle"><strong>B</strong></span></td>
+                        <td>Whole</td>
+                    </tr>
+                     <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox" checked><label for="checkbox1"></label></div></th>
+                        <td>481892</td>
+                        <td>Debt Consolidation</td>
+                        <td>$15,000</td>
+                        <td>9.5%</td>
+                        <td>36</td>
+                        <td><span class="btn-xs btn-success btn-circle"><strong>A</strong></span></td>
+                        <td>Fractional</td>
+                    </tr>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox2" type="checkbox" checked><label for="checkbox2"></label></div></th>
+                        <td>481895</td>
+                        <td>Home Improvement</td>
+                        <td>$5,000</td>
+                        <td>10.5%</td>
+                        <td>24</td>
+                        <td><span class="btn-xs btn-warning btn-circle"><strong>B</strong></span></td>
+                        <td>Whole</td>
+                    </tr>
+                     <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox" checked><label for="checkbox1"></label></div></th>
+                        <td>481892</td>
+                        <td>Debt Consolidation</td>
+                        <td>$15,000</td>
+                        <td>9.5%</td>
+                        <td>36</td>
+                        <td><span class="btn-xs btn-success btn-circle"><strong>A</strong></span></td>
+                        <td>Fractional</td>
+                    </tr>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox2" type="checkbox" checked><label for="checkbox2"></label></div></th>
+                        <td>481895</td>
+                        <td>Home Improvement</td>
+                        <td>$5,000</td>
+                        <td>10.5%</td>
+                        <td>24</td>
+                        <td><span class="btn-xs btn-warning btn-circle"><strong>B</strong></span></td>
+                        <td>Whole</td>
+                    </tr>
+                     <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox" checked><label for="checkbox1"></label></div></th>
+                        <td>481892</td>
+                        <td>Debt Consolidation</td>
+                        <td>$15,000</td>
+                        <td>9.5%</td>
+                        <td>36</td>
+                        <td><span class="btn-xs btn-success btn-circle"><strong>A</strong></span></td>
+                        <td>Fractional</td>
+                    </tr>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox2" type="checkbox" checked><label for="checkbox2"></label></div></th>
+                        <td>481895</td>
+                        <td>Home Improvement</td>
+                        <td>$5,000</td>
+                        <td>10.5%</td>
+                        <td>24</td>
+                        <td><span class="btn-xs btn-warning btn-circle"><strong>B</strong></span></td>
+                        <td>Whole</td>
+                    </tr>
+                     <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox" checked><label for="checkbox1"></label></div></th>
+                        <td>481892</td>
+                        <td>Debt Consolidation</td>
+                        <td>$15,000</td>
+                        <td>9.5%</td>
+                        <td>36</td>
+                        <td><span class="btn-xs btn-success btn-circle"><strong>A</strong></span></td>
+                        <td>Fractional</td>
+                    </tr>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox2" type="checkbox" checked><label for="checkbox2"></label></div></th>
+                        <td>481895</td>
+                        <td>Home Improvement</td>
+                        <td>$5,000</td>
+                        <td>10.5%</td>
+                        <td>24</td>
+                        <td><span class="btn-xs btn-warning btn-circle"><strong>B</strong></span></td>
+                        <td>Whole</td>
+                    </tr>
+                     <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox" checked><label for="checkbox1"></label></div></th>
+                        <td>481892</td>
+                        <td>Debt Consolidation</td>
+                        <td>$15,000</td>
+                        <td>9.5%</td>
+                        <td>36</td>
+                        <td><span class="btn-xs btn-success btn-circle"><strong>A</strong></span></td>
+                        <td>Fractional</td>
+                    </tr>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox2" type="checkbox" checked><label for="checkbox2"></label></div></th>
+                        <td>481895</td>
+                        <td>Home Improvement</td>
+                        <td>$5,000</td>
+                        <td>10.5%</td>
+                        <td>24</td>
+                        <td><span class="btn-xs btn-warning btn-circle"><strong>B</strong></span></td>
+                        <td>Whole</td>
+                    </tr>
+                     <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox" checked><label for="checkbox1"></label></div></th>
+                        <td>481892</td>
+                        <td>Debt Consolidation</td>
+                        <td>$15,000</td>
+                        <td>9.5%</td>
+                        <td>36</td>
+                        <td><span class="btn-xs btn-success btn-circle"><strong>A</strong></span></td>
+                        <td>Fractional</td>
+                    </tr>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox2" type="checkbox" checked><label for="checkbox2"></label></div></th>
+                        <td>481895</td>
+                        <td>Home Improvement</td>
+                        <td>$5,000</td>
+                        <td>10.5%</td>
+                        <td>24</td>
+                        <td><span class="btn-xs btn-warning btn-circle"><strong>B</strong></span></td>
+                        <td>Whole</td>
+                    </tr>
+                     <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox" checked><label for="checkbox1"></label></div></th>
+                        <td>481892</td>
+                        <td>Debt Consolidation</td>
+                        <td>$15,000</td>
+                        <td>9.5%</td>
+                        <td>36</td>
+                        <td><span class="btn-xs btn-success btn-circle"><strong>A</strong></span></td>
+                        <td>Fractional</td>
+                    </tr>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox2" type="checkbox" checked><label for="checkbox2"></label></div></th>
+                        <td>481895</td>
+                        <td>Home Improvement</td>
+                        <td>$5,000</td>
+                        <td>10.5%</td>
+                        <td>24</td>
+                        <td><span class="btn-xs btn-warning btn-circle"><strong>B</strong></span></td>
+                        <td>Whole</td>
+                    </tr>
+                     <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox" checked><label for="checkbox1"></label></div></th>
+                        <td>481892</td>
+                        <td>Debt Consolidation</td>
+                        <td>$15,000</td>
+                        <td>9.5%</td>
+                        <td>36</td>
+                        <td><span class="btn-xs btn-success btn-circle"><strong>A</strong></span></td>
+                        <td>Fractional</td>
+                    </tr>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox2" type="checkbox" checked><label for="checkbox2"></label></div></th>
+                        <td>481895</td>
+                        <td>Home Improvement</td>
+                        <td>$5,000</td>
+                        <td>10.5%</td>
+                        <td>24</td>
+                        <td><span class="btn-xs btn-warning btn-circle"><strong>B</strong></span></td>
+                        <td>Whole</td>
+                    </tr>
+                     <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox" checked><label for="checkbox1"></label></div></th>
+                        <td>481892</td>
+                        <td>Debt Consolidation</td>
+                        <td>$15,000</td>
+                        <td>9.5%</td>
+                        <td>36</td>
+                        <td><span class="btn-xs btn-success btn-circle"><strong>A</strong></span></td>
+                        <td>Fractional</td>
+                    </tr>
+                    <tr>
+                        <th><div class="checkbox checkbox-success"><input id="checkbox2" type="checkbox" checked><label for="checkbox2"></label></div></th>
+                        <td>481895</td>
+                        <td>Home Improvement</td>
+                        <td>$5,000</td>
+                        <td>10.5%</td>
+                        <td>24</td>
+                        <td><span class="btn-xs btn-warning btn-circle"><strong>B</strong></span></td>
+                        <td>Whole</td>
+                    </tr>
+ 
+                </tbody>
+                </table>
+
+                
+
+                </div>
+<!--                 <div class="panel-footer">
+                <span class="pull-right">
+                      Some other text?
+                </span>
+                    Last update: 21.05.2015
+                </div> -->
+            </div>
+
+                <div class="hpanel">   
+                        
+                <div class="panel-body">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="col-sm-10 col-sm-offset-1 text-center">
+                            <h2>Total Order: $5,000,000</h2>
+                        </div>
+                        <button class="btn btn-primary col-sm-10 col-sm-offset-1 btn-lg" type="submit">Place Order</button>
+                    </div>
+                </div>
+
+                    
+            </div>
+
+        </div>
+    </div>
+</form>
+
+
+
+
+
+
+    <!-- Right sidebar -->
+    <div id="right-sidebar" class="animated fadeInRight">
+
+        <div class="p-m">
+            <button id="sidebar-close" class="right-sidebar-toggle sidebar-button btn btn-default m-b-md"><i class="pe pe-7s-close"></i>
+            </button>
+            <div>
+                <span class="font-bold no-margins"> Analytics </span>
+                <br>
+                <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.</small>
+            </div>
+            <div class="row m-t-sm m-b-sm">
+                <div class="col-lg-6">
+                    <h3 class="no-margins font-extra-bold text-success">300,102</h3>
+
+                    <div class="font-bold">98% <i class="fa fa-level-up text-success"></i></div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="no-margins font-extra-bold text-success">280,200</h3>
+
+                    <div class="font-bold">98% <i class="fa fa-level-up text-success"></i></div>
+                </div>
+            </div>
+            <div class="progress m-t-xs full progress-small">
+                <div style="width: 25%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar"
+                     class=" progress-bar progress-bar-success">
+                    <span class="sr-only">35% Complete (success)</span>
+                </div>
+            </div>
+        </div>
+        <div class="p-m bg-light border-bottom border-top">
+            <span class="font-bold no-margins"> Social talks </span>
+            <br>
+            <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.</small>
+            <div class="m-t-md">
+                <div class="social-talk">
+                    <div class="media social-profile clearfix">
+                        <a class="pull-left">
+                            <img src="images/a1.jpg" alt="profile-picture">
+                        </a>
+
+                        <div class="media-body">
+                            <span class="font-bold">John Novak</span>
+                            <small class="text-muted">21.03.2015</small>
+                            <div class="social-content small">
+                                Injected humour, or randomised words which don't look even slightly believable.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-talk">
+                    <div class="media social-profile clearfix">
+                        <a class="pull-left">
+                            <img src="images/a3.jpg" alt="profile-picture">
+                        </a>
+
+                        <div class="media-body">
+                            <span class="font-bold">Mark Smith</span>
+                            <small class="text-muted">14.04.2015</small>
+                            <div class="social-content">
+                                Many desktop publishing packages and web page editors.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-talk">
+                    <div class="media social-profile clearfix">
+                        <a class="pull-left">
+                            <img src="images/a4.jpg" alt="profile-picture">
+                        </a>
+
+                        <div class="media-body">
+                            <span class="font-bold">Marica Morgan</span>
+                            <small class="text-muted">21.03.2015</small>
+
+                            <div class="social-content">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-m">
+            <span class="font-bold no-margins"> Sales in last week </span>
+            <div class="m-t-xs">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <small>Today</small>
+                        <h4 class="m-t-xs">$170,20 <i class="fa fa-level-up text-success"></i></h4>
+                    </div>
+                    <div class="col-xs-6">
+                        <small>Last week</small>
+                        <h4 class="m-t-xs">$580,90 <i class="fa fa-level-up text-success"></i></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <small>Today</small>
+                        <h4 class="m-t-xs">$620,20 <i class="fa fa-level-up text-success"></i></h4>
+                    </div>
+                    <div class="col-xs-6">
+                        <small>Last week</small>
+                        <h4 class="m-t-xs">$140,70 <i class="fa fa-level-up text-success"></i></h4>
+                    </div>
+                </div>
+            </div>
+            <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.
+                Many desktop publishing packages and web page editors.
+            </small>
+        </div>
+
+    </div>
+
+    <!-- Footer-->
+    <footer class="footer">
+        <span class="pull-right">
+            Help Terms and Conditions
+        </span>
+        Credere 2016
+    </footer>
+</div>
+</div>
+
+
+
+
+<!-- Vendor scripts -->
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+<script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
+<script src="vendor/iCheck/icheck.min.js"></script>
+<script src="vendor/sparkline/index.js"></script>
+<script src="vendor/moment/moment.js"></script>
+<script src="vendor/select2-3.5.2/select2.min.js"></script>
+<script src="vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+<script src="vendor/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+
+<!-- Charts -->
+<script src="vendor/chartist/dist/chartist.min.js"></script>
+<!-- DataTables -->
+<script src="vendor/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="vendor/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- App scripts -->
+<script src="scripts/homer.js"></script>
+
+
+<script>
+
+    $(function () {
+
+        // Wait until all panels will be render
+        // Remove setTimeout if you don't use animate-panel effect
+
+        setTimeout(function(){
+        //     c3.generate({
+        //         bindto: '#lineChart',
+        //         data:{
+        //             columns: [
+        //                 ['data1', 30, 200, 100, 400, 150, 250],
+        //                 ['data2', 50, 20, 10, 40, 15, 25]
+        //             ],
+        //             colors:{
+        //                 data1: '#62cb31',
+        //                 data2: '#BABABA'
+        //             }
+        //         }
+        //     });
+
+        //     c3.generate({
+        //         bindto: '#areaChart',
+        //         data:{
+        //             columns: [
+        //                 ['data1', 300, 350, 300, 0, 0, 0],
+        //                 ['data2', 130, 100, 140, 200, 150, 50]
+        //             ],
+        //             types: {
+        //                 data1: 'area',
+        //                 data2: 'area-spline'
+        //             },
+        //             colors:{
+        //                 data1: '#62cb31',
+        //                 data2: '#BABABA'
+        //             }
+        //         }
+        //     });
+
+        //     c3.generate({
+        //         bindto: '#scatter',
+        //         data:{
+        //             xs:{
+        //                 data1: 'data1_x',
+        //                 data2: 'data2_x'
+        //             },
+        //             columns: [
+        //                 ["data1_x", 3.2, 3.2, 3.1, 2.3, 2.8, 2.8, 3.3, 2.4, 2.9, 2.7, 2.0, 3.0, 2.2, 2.9, 2.9, 3.1, 3.0, 2.7, 2.2, 2.5, 3.2, 2.8, 2.5, 2.8, 2.9, 3.0, 2.8, 3.0, 2.9, 2.6, 2.4, 2.4, 2.7, 2.7, 3.0, 3.4, 3.1, 2.3, 3.0, 2.5, 2.6, 3.0, 2.6, 2.3, 2.7, 3.0, 2.9, 2.9, 2.5, 2.8],
+        //                 ["data2_x", 3.3, 2.7, 3.0, 2.9, 3.0, 3.0, 2.5, 2.9, 2.5, 3.6, 3.2, 2.7, 3.0, 2.5, 2.8, 3.2, 3.0, 3.8, 2.6, 2.2, 3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3.0, 2.8, 3.0, 2.8, 3.8, 2.8, 2.8, 2.6, 3.0, 3.4, 3.1, 3.0, 3.1, 3.1, 3.1, 2.7, 3.2, 3.3, 3.0, 2.5, 3.0, 3.4, 3.0],
+        //                 ["data1", 1.4, 1.5, 1.5, 1.3, 1.5, 1.3, 1.6, 1.0, 1.3, 1.4, 1.0, 1.5, 1.0, 1.4, 1.3, 1.4, 1.5, 1.0, 1.5, 1.1, 1.8, 1.3, 1.5, 1.2, 1.3, 1.4, 1.4, 1.7, 1.5, 1.0, 1.1, 1.0, 1.2, 1.6, 1.5, 1.6, 1.5, 1.3, 1.3, 1.3, 1.2, 1.4, 1.2, 1.0, 1.3, 1.2, 1.3, 1.3, 1.1, 1.3],
+        //                 ["data2", 2.5, 1.9, 2.1, 1.8, 2.2, 2.1, 1.7, 1.8, 1.8, 2.5, 2.0, 1.9, 2.1, 2.0, 2.4, 2.3, 1.8, 2.2, 2.3, 1.5, 2.3, 2.0, 2.0, 1.8, 2.1, 1.8, 1.8, 1.8, 2.1, 1.6, 1.9, 2.0, 2.2, 1.5, 1.4, 2.3, 2.4, 1.8, 1.8, 2.1, 2.4, 2.3, 1.9, 2.3, 2.5, 2.3, 1.9, 2.0, 2.3, 1.8]
+        //             ],
+        //             colors:{
+        //                 data1: '#62cb31',
+        //                 data2: '#BABABA'
+        //             },
+        //             type: 'scatter'
+        //         }
+        //     });
+
+        //     c3.generate({
+        //         bindto: '#stocked',
+        //         data:{
+        //             columns: [
+        //                 ['data1', 30,200,100,400,150,250],
+        //                 ['data2', 50,20,10,40,15,25]
+        //             ],
+        //             colors:{
+        //                 data1: '#62cb31',
+        //                 data2: '#BABABA'
+        //             },
+        //             type: 'bar',
+        //             groups: [
+        //                 ['data1', 'data2']
+        //             ]
+        //         }
+        //     });
+
+        //     c3.generate({
+        //         bindto: '#gauge',
+        //         data:{
+        //             columns: [
+        //                 ['data', 91.4]
+        //             ],
+
+        //             type: 'gauge'
+        //         },
+        //         color:{
+        //             pattern: ['#62cb31', '#BABABA']
+
+        //         }
+        //     });
+
+        //     c3.generate({
+        //         bindto: '#pie',
+        //         data:{
+        //             columns: [
+        //                 ['data1', 30],
+        //                 ['data2', 120]
+        //             ],
+        //             colors:{
+        //                 data1: '#62cb31',
+        //                 data2: '#CFCFCF'
+        //             },
+        //             type : 'pie'
+        //         }
+        //     });
+        // },700);
+
+        // Stocked bar chart
+
+        new Chartist.Bar('#ct-chart3', {
+            labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+            series: [
+                [800000, 1200000, 1400000, 1200000],
+        //        [200000, 400000, 500000, 300000],
+                [300000, 300000, 400000, 600000]
+            ]
+        }, {
+            stackBars: true,
+            axisY: {
+                labelInterpolationFnc: function(value) {
+                    return (value / 1000) + 'k';
+                }
+            }
+        }).on('draw', function(data) {
+                    if(data.type === 'bar') {
+                        data.element.attr({
+                            style: 'stroke-width: 30px'
+                        });
+                    }
+                });
+
+
+        // Stocked horizontal bar
+
+        new Chartist.Bar('#ct-chart4', {
+            labels: ['1000', '900', '800', '700', '600', '500', '400'],//['11 May', '12 May', '13 May', '14 May', '15 May', '16 May', '17 May'],
+            series: [
+                [6, 4, 12, 9, 7, 8, 9],
+                [5, 3, 11, 6, 6, 7, 8],
+            ]
+        }, {
+            seriesBarDistance: 15,
+            reverseData: false,
+            horizontalBars: false,
+            axisY: {
+                // offset: 70
+            }
+        });
+         $('#example2').dataTable();
+
+    });
+});
+
+</script>
+
+<script>
+
+    $(function(){
+
+        $('.input-group.date').datepicker();
+
+        $("#demo1").TouchSpin({
+            min: 0,
+            max: 100,
+            step: 0.1,
+            decimals: 2,
+            boostat: 5,
+            maxboostedstep: 10
+        });
+
+        $("#demo2").TouchSpin({
+            verticalbuttons: true
+        });
+
+        $(".select2").select2();
+
+    });
+
+</script>
+
+</body>
+</html>

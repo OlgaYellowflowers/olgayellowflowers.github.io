@@ -1,0 +1,432 @@
+@font-face {
+	font-family: 'HelveticaLTStd-Light';
+	src: url('../fonts/HelveticaLTStd-Light.eot');
+	src: local('☺'), url('../fonts/HelveticaLTStd-Light.woff') format('woff'), url('../fonts/HelveticaLTStd-Light.ttf') format('truetype'), url('../fonts/HelveticaLTStd-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal !important;
+}
+@font-face {
+	font-family: 'PlutoSansCondLight';
+	src: url('../fonts/PlutoSansCondLight.eot');
+	src: local('☺'), url('../fonts/PlutoSansCondLight.woff') format('woff'), url('../fonts/PlutoSansCondLight.ttf') format('truetype'), url('../fonts/PlutoSansCondLight.svg') format('svg');
+	font-weight: normal;
+	font-style: normal !important;
+}
+@font-face {
+	font-family: 'PlutoSansCondRegular';
+	src: url('../fonts/PlutoSansCondRegular.eot');
+	src: local('☺'), url('../fonts/PlutoSansCondRegular.woff') format('woff'), url('../fonts/PlutoSansCondRegular.ttf') format('truetype'), url('../fonts/PlutoSansCondRegular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal !important;
+}
+@font-face {
+	font-family: 'PlutoSansCondMedium';
+	src: local('☺'), url('../fonts/PlutoSansCondMedium.woff') format('woff'), url('../fonts/PlutoSansCondMedium.ttf') format('truetype'), url('../fonts/PlutoSansCondMedium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal !important;
+}
+@font-face {
+	font-family: 'PlutoSansCondBold';
+	src: url('../fonts/PlutoSansCondBold.eot');
+	src: local('☺'), url('../fonts/PlutoSansCondBold.woff') format('woff'), url('../fonts/PlutoSansCondBold.ttf') format('truetype'), url('../fonts/PlutoSansCondBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal !important;
+}
+@font-face {
+	font-family: 'pt_sansregular';
+	src: url('../fonts/PTS55F-webfont.eot');
+	src: url('../fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTS55F-webfont.woff2') format('woff2'), url('../fonts/PTS55F-webfont.woff') format('woff'), url('../fonts/PTS55F-webfont.ttf') format('truetype'), url('../fonts/PTS55F-webfont.svg#pt_sansregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Myriad-Pro';
+	src: url('../fonts/Myriad-Pro.eot');
+	src: url('../fonts/Myriad-Pro.eot?#iefix') format('embedded-opentype'), url('../fonts/Myriad-Pro.woff') format('woff'), url('../fonts/Myriad-Pro.ttf') format('truetype'), url('../fonts/Myriad-Pro.svg#Myriad-Pro') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.reseller-page {
+	width: 80%;
+	margin: 0 auto;
+}
+.reseller-page-wrap {
+	min-width: 1200px;
+	width: 100%;
+	overflow: hidden;
+}
+.admin-header {
+	clear: both;
+	display: table;
+	margin-bottom: 50px;
+	padding: 20px 0;
+	width: 100%;
+	-webkit-box-shadow: 0 10px 6px -6px #2e2e2e;
+	-moz-box-shadow: 0 10px 6px -6px #e2e2e2;
+	box-shadow: 0 10px 6px -6px #e2e2e2;
+}
+.admin-header .top-bar-logo {
+	float: left;
+	margin-right: 20%;
+}
+.reseller-page label {
+	color: #747474;
+}
+.btn-admin {
+	display: block;
+	width: 160px;
+	text-align: center;
+	font-family: "PlutoSansCondRegular";
+	font-size: 15px !important;
+}
+.btn-circle-back {
+	width: 48px;
+	height: 48px;
+	display: block;
+	background: url(../images/btn-admin-back.png) center center  no-repeat;
+	margin: 0 auto 10px auto;
+	border: 1px #c8d4f0 solid;
+	background-color: #fafcfe;
+	border-radius: 50%;
+}
+a:hover .btn-circle-back {
+	background-color: #e3ebf3;
+}
+a:focus .btn-circle-back {
+	background-color: #e5f1fc;
+}
+.btn-circle-seller {
+	width: 48px;
+	height: 48px;
+	display: block;
+	background: url(../images/btn-admin-sellers.png) center center  no-repeat;
+	margin: 0 auto 10px auto;
+	background-color: #f9f7fa;
+	border: 1px #d2b6dc solid;
+	border-radius: 50%;
+}
+a:hover .btn-circle-seller {
+	background-color: #eae0ef;
+}
+a:focus .btn-circle-seller {
+	background-color: #e8d1f3;
+}
+.btn-circle-signout {
+	width: 48px;
+	height: 48px;
+	display: block;
+	background: url(../images/btn-admin-out.png) center center  no-repeat;
+	margin: 0 auto 10px auto;
+	background-color: #fdeded;
+	border: 1px #ffc5c5 solid;
+	border-radius: 50%;
+}
+a:hover .btn-circle-signout {
+	background-color: #fce0e0;
+}
+a:focus .btn-circle-signout {
+	background-color: #ffd3d6;
+}
+.title-h2 {
+	background: #f3edf7;
+	border-bottom: 1px #e8dfed solid;
+	border-top: 1px #dbcde4 solid;
+	margin-bottom: 20px !important;
+}
+.full-width {
+	margin: 30px -20% 0;
+	padding: 15px 20%;
+	overflow: hidden;
+	width: auto;
+}
+.title-h2  h2 {
+	margin: 5px 0 0 0;
+}
+.title-h2 .icon-list {
+	display: block;
+	float: left;
+	background-position: center left;
+	height: 30px;
+}
+.input-row {
+	display: table;
+	width: 100%;
+	padding: 10px 0;
+}
+.input-row label {
+	display: table-cell;
+	width: 30%;
+	padding-right: 10px;
+	color: #747474;
+	vertical-align: middle;
+	font-weight: normal;
+}
+.input-line {
+	display: table-cell;
+	vertical-align: middle;
+}
+.input-row input {
+	font-size: 18px;
+	padding: 10px 12px;
+	height: 42px;
+}
+.input-row input[type="file"] {
+	padding: 0;
+}
+.input-row input[type="checkbox"] {
+	height: auto;
+}
+.input-row .styled-checkbox label {
+	width: auto;
+	padding-right: 0;
+}
+.input-row .styled-checkbox-label {
+	color: #747474;
+}
+.input-row div.styled-checkbox input[type="checkbox"]:not(old) + label {
+	margin-left: -29px;
+	padding-left: 29px;
+}
+.input-store-login {
+	background: url("../images/Store-2.png") no-repeat scroll 20px center #fff !important;
+}
+.store-id input {
+	font-size: 18px !important;
+}
+.store-id {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+h2.grey-text {
+	font-size: 24px;
+}
+.btn-big-circle {
+	width: 96px;
+	height: 96px;
+	display: block;
+	border-radius: 50%;
+	margin: 0 auto 10px auto;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.btn-admin-big {
+	width: 20%; 
+	margin-top: 20px; 
+
+}
+.btn-admin-big .grey {
+		font-family: 'PlutoSansCondLight';
+	color: #8f8f8f;
+	font-size: 17px;
+	
+}
+.btn-circle-edit {
+	background: url(../images/btn-admin-edit.png) center center  no-repeat;
+	background-color: #885998;
+}
+a:hover .btn-circle-edit {
+	background-color: #6c377e;
+}
+a:focus .btn-circle-edit {
+	background-color: #6d2885;
+}
+.btn-circle-othermenu {
+	background: url(../images/btn-admin-othermenu.png) center center  no-repeat;
+	background-color: #9dcb44;
+}
+a:hover .btn-circle-othermenu {
+	background-color: #92bf3a;
+}
+a:focus .btn-circle-othermenu {
+	background-color: #98cb36;
+}
+.btn-green {
+	background-color: #96e26d;
+}
+.btn-green:hover {
+	background-color: #7ecd54;
+}
+.btn-green:focus, .btn-green:active {
+	background-color: #61a63b;
+}
+.icon-addedit {
+	background-image: url(../images/I-AddEdit.png);
+}
+.icon-addstore {
+	background-image: url(../images/I-AddStore.png);
+}
+.icon-mapstore {
+	background-image: url(../images/I-Map-Store.png);
+}
+.icon-editview {
+	background-image: url(../images/I-EditView.png);
+}
+.icon-history {
+	background-image: url(../images/I-History.png);
+}
+.big-circle-icon {
+	width: 52px;
+	height: 52px;
+	display: block;
+	border-radius: 50%;
+	margin: 0 30px 0 0;
+	float: left;
+}
+.title-big-icon {
+	display: table;
+	margin: 0 0 20px 0;
+}
+.big-icon-store-items {
+	background: url(../images/box.png) center center  no-repeat #fcf2ff;
+	border: 1px #c2aaca solid;
+}
+.title-after-icon {
+	font-family: 'pt_sansregular';
+	font-size: 20px;
+	color: #885998;
+	display: table-cell;
+	vertical-align: middle;
+}
+table.th-table,
+table.ttable {
+	width: 100%;
+}
+.th-table td,
+.ttable td {
+	padding: 10px;
+	font-size: 14px;
+	font-family: 'pt_sansregular';
+}
+.th-table thead td {
+	background: #885998;
+	color: #fff;
+}
+.th-table thead td:first-child {
+	border-radius: 4px 0 0 0;
+}
+.th-table thead td:last-child {
+	border-radius: 0 4px 0 0;
+}
+.th-table tbody td {
+	border-bottom: 1px #f3f3f3 solid;
+}
+.btn-sm,
+.btn-group-sm > .btn {
+	padding: 5px 10px;
+	font-size: 14px;
+	line-height: 1.5;
+	border-radius: 3px;
+	margin: 0 10px;
+	font-family: 'pt_sansregular';
+}
+.th-table .btn-danger,
+.ttable .btn-danger {
+	background: #ed3b3b;
+}
+.th-table .btn-primary,
+.ttable .btn-primary {
+	background: #95c430;
+}
+.th-table .btn-primary:hover,
+.th-table .btn-primary:focus,
+.ttable .btn-primary:hover,
+.ttable .btn-primary:focus {
+	background: #7fba00;
+	border: 1px #7fba00 solid;
+}
+.th-table .btn-danger:hover,
+.th-table .btn-danger:focus,
+.ttable .btn-danger:hover,
+.ttable .btn-danger:focus {
+	background: #e51d1d;
+	border: 1px #ef2424 solid;
+}
+.btn-inline {
+	float: left;
+	margin-right: 20px;
+}
+.sm-link-icon {
+	padding-left: 30px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	display: block;
+	color: #fff;
+	height: 33px;
+	vertical-align: middle;
+	padding-top: 8px;
+}
+.sm-link-icon:hover,
+.sm-link-icon:focus {
+	color: #fff;
+	text-decoration: underline;
+}
+.sm-link-icon-add {
+	background-image: url(../images/AddIcon.png);
+}
+.sm-link-icon-edit {
+	background-image: url(../images/EditIcon.png);
+}
+.sm-link-icon.sm-link-icon-edit {
+	margin-right: 0;
+}
+.btn-inline-divider {
+	width: 1px;
+	background: #9970a7;
+	height: 33px;
+	display: block;
+	float: left;
+	margin: 0 20px 0 0;
+}
+.ttable td {
+	border-bottom: 1px #d2d2d2 solid;
+}
+.ttable tr:last-child td {
+	border-bottom: 0;
+}
+.fixed-table-rounded {
+	border-radius: 0 0 4px 4px;
+	border: 1px #d2d2d2 solid;
+	margin: 0 0 40px 0;
+}
+.ttable tr:nth-child(even) {
+	background: #fafafa
+}
+.ttable tr:nth-child(odd) {
+	background: #FFF
+}
+label.styled-checkbox-sm {
+	display: table-cell;
+	font-weight: normal;
+}
+div.styled-checkbox-sm {
+	display: block;
+	vertical-align: middle;
+	height: 23px;
+	width: 23px;
+	text-align: right;
+}
+div.styled-checkbox-sm input[type=checkbox]:not(old) {
+	width: 23px;
+	height: 23px;
+	display: none;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+}
+div.styled-checkbox-sm input[type=checkbox]:not(old) + label {
+	display: inline-block;
+	background: url('../images/checkbox-lilac-small.png') no-repeat 0 0;
+	width: 23px;
+	height: 23px;
+}
+div.styled-checkbox-sm input[type=checkbox]:not(old):checked + label {
+	background-position: 0 -23px;
+}
+div.styled-checkbox-sm label {
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+.td-checkbox {
+	width: 23px;
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Kehoots</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+	<link href="css/animations.css" rel="stylesheet" type="text/css">
+
+	<script src='js/jquery-1.11.3.js'></script>
+
+	<script src='js/jquery.flexslider-min.js'></script>
+
+	<script type="text/javascript">
+jQuery(document).ready(function() {
+
+ 	//flexslider
+	if (jQuery().flexslider) {
+		jQuery("#mainslider .flexslider").flexslider({
+			animation: "fade",
+			slideshow: false,
+			useCSS: true,
+			controlNav: true,   
+			directionNav: false,
+		    prevText: "",
+		    nextText: "",
+			smoothHeight: false,
+			slideshowSpeed:8000,
+			animationSpeed:300
+		});
+
+
+	}
+;
+    });
+  </script>
+
+	<!-- LESS -->
+	<link href="less/style.less" rel="stylesheet/less" type="text/css">
+
+	<script>
+	  less = {
+	    env: "development",
+	    async: false,
+	    fileAsync: false,
+	    poll: 1000,
+	    functions: {},
+	    dumpLineNumbers: "comments",
+	    relativeUrls: false,
+	    rootpath: ""
+	  };
+	</script>
+	<script src="js/less.min.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+<body>
+
+	<nav class="navbar navbar-fixed-top navbar-custom">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"></a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">How to apply</a>
+					</li>
+					<li>
+						<a href="#">Instagramers</a>
+					</li>
+					<li>
+						<a href="#">Stream</a>
+					</li>
+					<li>
+						<a href="#">Things to do</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Section: #ShareYourJordan-->
+	<section class="intro intro-home">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-8 col-xs-12 fadeIn">
+					<h1>#ShareYourJordan</h1>
+					<h2 >Win 2 tickets to Jordan's Wonders and much more!</h2>
+					<p> <strong>To participate in the contest all you have to do is:</strong>
+
+						<div class="li-dash">
+							Post any picture of Jordan with the #ShareYourJordan and mention @visitjordan in
+						</div>
+						<div class="li-dash">If it is not your originak image credit the Photographer!</div>
+						<div class="li-dash">
+							Mention a friend in the comments section on the @visitjordan account
+						</div>
+						<div class="li-dash">Follow @visitjordan obviously!</div>
+					</p>
+					<p>
+						And Boom! You automatically get into a draw to win 2 Tickets to Jordan and a chance to win weekly gifts. See you soon winners!
+					</p>
+					<a href="#" class="btn-login-instagram"></a>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12 fadeIn">
+					<div class="pic-landing"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Coffee and Polaroid cards -->
+	<section class="intro intro-cards">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 ">
+					<img src="images/coffee.png" alt="" class="img-cofee img-responsive"></div>
+				<div class="col-md-3 col-sm-6">
+					<a href="#" class="polaroid-card polaroid-card1">
+						<img src="images/polaroid1.jpg" alt="image">
+						<span class="polaroid-card-text">See what others have done</span>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 ">
+					<a href="#" class="polaroid-card polaroid-card2">
+						<img src="images/polaroid2.jpg" alt="image">
+						<span class="polaroid-card-text">Meet our source of inspiration</span>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 ">
+					<a href="#" class="polaroid-card polaroid-card3">
+						<img src="images/polaroid3.jpg" alt="image">
+						<span class="polaroid-card-text">Things to do</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Slider -->
+<section id="mainslider">
+<div class="flexslider">
+	<ul class="slides">
+		<li>
+			<img src="images/slider1.jpg" alt="">
+			<div class="slide_description_wrapper slide1" >
+				<div class="slide_description">
+						<h2>Trending on Instagram</h2>
+						<h3>Sofia Yang</h3>
+						<p>@sofiayang @travelyang</p>
+				</div>
+			</div>
+		</li>
+		<li>
+			<img src="images/slider1.jpg" alt="">
+			<div class="slide_description_wrapper slide2" >
+				<div class="slide_description">
+						<h2>Trending on Instagram</h2>
+						<h3>Sofia Yang</h3>
+						<p>@sofiayang @travelyang</p>
+				</div>
+			</div>
+		</li>
+		<li>
+			<img src="images/slider1.jpg" alt="">
+			<div class="slide_description_wrapper slide3" >
+				<div class="slide_description">
+						<h2>Trending on Instagram</h2>
+						<h3>Sofia Yang</h3>
+						<p>@sofiayang @travelyang</p>
+				</div>
+			</div>
+		</li>
+
+	</ul>
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer class="page-footer">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="footer-links text-right">
+				<a href="#">Contact Us</a>
+				<a href="#">Site map</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+</footer>
+
+</body>
+
+</html>

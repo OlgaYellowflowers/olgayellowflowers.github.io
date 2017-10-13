@@ -1,0 +1,2202 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title -->
+    <title>Auctions - Lending Club Whole Loans - US Primary</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+    -->
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-datepicker-master/dist/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="vendor/select2-3.5.2/select2.css" />
+    <link rel="stylesheet" href="vendor/select2-bootstrap/select2-bootstrap.css" />
+    <link rel="stylesheet" href="vendor/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css">
+    <link rel="stylesheet" href="vendor/c3/c3.min.css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_extend.css"></head>
+<body class="fixed-navbar fixed-sidebar">
+
+    <!-- Simple splash screen-->
+    <div class="splash">
+        <div class="splash-title">
+            <h1>CREDERE</h1>
+            <p>Credere Loan Trader</p>
+        </div>
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    <!--[if lt IE 7]>
+    <p class="alert alert-danger">
+        You are using an <strong>outdated</strong>
+        browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a>
+        to improve your experience.
+    </p>
+    <![endif]-->
+
+    <!-- Header -->
+    <div id="header" >
+
+        <div id="logo" class="light-version">
+            <span class="logo_credere"></span>
+        </div>
+        <nav role="navigation">
+            <div class="header-link hide-menu"> <i class="fa fa-bars"></i>
+            </div>
+            <div class="small-logo">
+                <span class="text-primary">CREDERE</span>
+            </div>
+
+            <div class="mobile-menu">
+                <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse"> <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="collapse mobile-navbar" id="mobile-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="" href="login.html">Login</a>
+                        </li>
+                        <li>
+                            <a class="" href="login.html">Logout</a>
+                        </li>
+                        <li>
+                            <a class="" href="profile.html">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-left">
+                <div class="small-header transition animated fadeIn">
+                    <div class="hpanel">
+                        <div class="panel-body">
+
+                            <h2 class="font-light m-b-xs">Lending Club Whole Loan Auction</h2>
+                            <small>Description text</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav no-borders">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle label-menu-corner" href="#" data-toggle="dropdown">
+                            <i class="pe-7s-speaker"></i>
+                            <span class="label label-success">4</span>
+                        </a>
+                        <ul class="dropdown-menu hdropdown notification animated flipInX">
+                            <li>
+                                <a>
+                                    <span class="label label-success">NEW</span>
+                                    It is a long established.
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="label label-warning">WAR</span>
+                                    There are many variations.
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="label label-danger">ERR</span>
+                                    Contrary to popular belief.
+                                </a>
+                            </li>
+                            <li class="summary">
+                                <a href="#">See all notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" id="sidebar" class="right-sidebar-toggle">
+                            <h5 class="nav-label">Hi Alex!</h5>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="login.html">
+                            <i class="pe-7s-upload pe-rotate-90"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <aside id="menu">
+        <div id="navigation">
+            <ul class="nav"  id="side-menu">
+                <li class="active">
+                    <a href="#" aria-expanded="true">
+                        Auctions
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapde" aria-expanded="true">
+                        <li  class="active">
+                            <a href="#" aria-expanded="true">
+                                Lending Club
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-third-level" aria-expanded="true">
+                                <li  class="active">
+                                    <a href="_auctionsWholeLendingClub.html">Whole Loans</a>
+                                </li>
+                                <li>
+                                    <a href="_auctionsFractionalLendingClub.html">Fractional Loans</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" aria-expanded="false">
+                                Prosper
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-third-level" aria-expanded="false">
+                                <li>
+                                    <a href="_auctionsWholeProsper.html">Whole Loans</a>
+                                </li>
+                                <li>
+                                    <a href="_auctionsFractionalProsper.html">Fractional Loans</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Custom Search</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" aria-expanded="false">
+                        Orders
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level" aria-expanded="false">
+                        <li>
+                            <a href="#">Active Orders</a>
+                        </li>
+                        <li>
+                            <a href="#">Trade History</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-expanded="false">
+                                New Order
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-third-level" aria-expanded="false">
+                                <li>
+                                    <a href="#">Auto Invest Order</a>
+                                </li>
+                                <li>
+                                    <a href="#">Quick Invest Order</a>
+                                </li>
+                                <li>
+                                    <a href="#">Credit Score Order</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" aria-expanded="false">
+                        Portfolio
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level" aria-expanded="false">
+                        <li>
+                            <a href="#">Performance</a>
+                        </li>
+                        <li>
+                            <a href="#">Cashflow</a>
+                        </li>
+                        <li>
+                            <a href="#">Positions</a>
+                        </li>
+                        <li>
+                            <a href="#">Risk</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" aria-expanded="false">
+                        Backtesting
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level" aria-expanded="false">
+                        <li>
+                            <a href="#">Load Data</a>
+                        </li>
+                        <li>
+                            <a href="#">Load Assumptions</a>
+                        </li>
+                        <li>
+                            <a href="#">Model Overview</a>
+                        </li>
+                        <li>
+                            <a href="#">Risk Report</a>
+                        </li>
+                        <li>
+                            <a href="#">Amortization Report</a>
+                        </li>
+                        <li>
+                            <a href="#">Saved Portfolios</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div id="wrapper">
+        <div class="content">
+            <form method="get" class="form-horizontal">
+                <div>
+                    <div class="small-header transition animated fadeIn mobile-only">
+                        <div class="hpanel">
+                            <div class="panel-body">
+                                <h2 class="font-light m-b-xs">Lending Club Whole Loan Auction</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                <h3 class="m-b">
+                                    Lending Club Whole Loan Auction <b class="caret"></b>
+                                </h3>
+                            </a>
+                            <ul class="dropdown-menu animated flipInX m-t-xs">
+
+                                <li class="active">
+                                    <a href="_auctionsWholeLendingClub.html">Lending Club Whole Loan Auction</a>
+                                </li>
+                                <li>
+                                    <a href="_auctionsFractionalLendingClub.html">Lending Club Fractional Loan Auction</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- row with full panel -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="hpanel hblue hpanel-opacity">
+                            <div class="panel-heading">
+                                <div class="panel-tools">
+                                    <a class="showhide">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                </div>
+                                <h4 class="font-extra-bold">Lending Club Streaming Data</h4>
+                            </div>
+
+                            <div class="panel-body">
+
+                                <!-- inside panel content -->
+                                <div class="col-md-12">
+
+                                    <div class="form-group">
+
+                                        <div class="row">
+                                            <div class="control-label font-extra-bold col-xs-6 col-sm-2 col-md-2 text-left">Select Date Range</div>
+                                            <div class="col-xs-6 col-sm-2 col-md-2 m-b">
+                                                <select class="form-control" >
+                                                    <option value="">Live Auction</option>
+                                                    <option value="">Last Auction</option>
+                                                    <option value="">Last 24 hours</option>
+                                                    <option value="">Last 7 days</option>
+                                                    <option value="">Last 30 days</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-sm-offset-3 col-md-3 col-md-offset-5">
+                                                <div class="hpanel">
+                                                    <div class="panel-body">
+                                                        <h3 class="text-center no-margins">
+                                                            <small>Status</small>
+                                                        </h3>
+                                                        <h3 class="text-center text-info font-bold">Live Auction</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- tiles with stats -->
+                                <div class="row row-tile">
+                                    <div class="col-sm-3 col-md-2 col-tile" >
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Numbers of Loans</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-info live">40</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Amount</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-info live">
+                                                        <small class="text-info">$</small>
+                                                        1,500,000
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Remaining</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-info live">
+                                                        <small class="text-info">$</small>
+                                                        90,000
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Number of loans remaining</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-info live">24</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Average Borrower Rate</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-success live">
+                                                        6,89
+                                                        <small class="text-success">%</small>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>WA FICO</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-info live">675</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Prosper auction streaming data CHARTS -->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-4">
+                                                        <div class="hpanel">
+                                                            <div class="panel-heading ">
+                                                                <div class="dropdown">
+                                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                                        <span>
+                                                                            Numbers of Loans Released <b class="caret"></b>
+                                                                        </span>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu animated flipInX m-t-xs">
+
+                                                                        <li class="active">
+                                                                            <a href="#">Numbers of Loans Released</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Numbers of Loans Released</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Numbers of Loans Released</a>
+                                                                        </li>
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel-body">
+                                                                <div>
+                                                                    <div class="flot-chart">
+                                                                        <div class="flot-chart-content" id="numberLoansReleased"></div>
+                                                                        <div class="text-center">Seconds After Auction Start</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-4">
+                                                        <div class="hpanel">
+                                                            <div class="panel-heading ">
+                                                                <div class="dropdown">
+                                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                                        <span>
+                                                                            Listing amount of loans released
+                                                                            <b class="caret"></b>
+                                                                        </span>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu animated flipInX m-t-xs">
+
+                                                                        <li class="active">
+                                                                            <a href="#">Listing amount of loans released</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Listing amount of loans released</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Listing amount of loans released</a>
+                                                                        </li>
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel-body">
+                                                                <div>
+                                                                    <div class="flot-chart">
+                                                                        <div class="flot-chart-content" id="listingLoansReleased"></div>
+                                                                        <div class="text-center">Seconds After Auction Start</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-4 m-t-xxxl">
+                                                        <div class="row m-t-xxxl">
+                                                            <div class="col-xs-6 border-right border-bottom">
+                                                                <div class="contact-stat">
+                                                                    <span>Auction Start</span>
+                                                                    <h4 class="text-success live">10:00:00</h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-5  border-bottom">
+                                                                <div class="contact-stat">
+                                                                    <span>Auction Ended</span>
+                                                                    <h4  class="text-danger">10:08:03</h4>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-6 border-right">
+                                                                <div class="contact-stat m-t">
+                                                                    <span>Average Bid Time</span>
+                                                                    <h4  class="text-info live">00:00:04</h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-5">
+                                                                <div class="contact-stat m-t">
+                                                                    <span>Bid Completion</span>
+                                                                    <h4 class="live">75%</h4>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+                                                                <button class="m-t-xxxl btn btn-primary btn-lg width100" type="button">Place Order</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lending Club Whole Loan Listing Overview -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="hpanel hyellow hpanel-opacity">
+                            <div class="panel-heading">
+                                <div class="panel-tools">
+                                    <a class="showhide">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                </div>
+                                <h4 class="font-extra-bold">Lending Club Whole Loan Listing Overview</h4>
+                            </div>
+
+                            <div class="panel-body">
+
+                                <div class="col-md-12">
+
+                                    <div class="form-group">
+
+                                        <div class="row">
+                                            <div class="control-label font-extra-bold col-xs-6 col-sm-2 col-md-2 text-left">Select Date Range</div>
+                                            <div class="col-xs-6 col-sm-2 col-md-2 m-b">
+                                                <select class="form-control" >
+                                                    <option value="">Live Auction</option>
+                                                    <option value="">Last Auction</option>
+                                                    <option value="">Last 24 hours</option>
+                                                    <option value="">Last 7 days</option>
+                                                    <option value="">Last 30 days</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-sm-offset-3 col-md-3 col-md-offset-5">
+                                                <div class="hpanel">
+                                                    <div class="panel-body">
+                                                        <h3 class="text-center no-margins">
+                                                            <small>Status</small>
+                                                        </h3>
+                                                        <h3 class="text-center text-info font-bold">Live Auction</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- tiles with stats -->
+                                <div class="row row-tile">
+                                    <div class="col-sm-3 col-md-2 col-tile" >
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Numbers of Loans</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-info live">134</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Amount</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-info live">
+                                                        <small class="text-info">$</small>
+                                                        1,99 M
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Average Term</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-success live">
+                                                        41
+                                                        <small class="text-success">Months</small>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>FA FICO Score</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-info live">700</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Average Borrower Rate</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-success live">
+                                                        12,71
+                                                        <small class="text-success">%</small>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Internal Risk Adjusted - Expected Return</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-success live">
+                                                        5,29
+                                                        <small class="text-success">%</small>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- CHARTS -->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="hpanel">
+
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="hpanel">
+                                                            <div class="panel-heading ">
+
+                                                                <div class="dropdown">
+                                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                                        <span>
+                                                                            Internal Risk Adjusted ER by Grade
+                                                                            <b class="caret"></b>
+                                                                        </span>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu animated flipInX m-t-xs">
+                                                                        <li class="active">
+                                                                            <a href="#">Internal Risk Adjusted ER by Grade</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Lender Yield by Grade</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Borrower Rate by Grade</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Internal Expected Loss Rate by Grade</a>
+                                                                        </li>
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel-body">
+                                                                <div>
+                                                                    <div id="loansChartsByGrade" class="c3"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="hpanel">
+                                                            <div class="panel-heading ">
+                                                                <div class="panel-tools"></div>
+
+                                                                <div class="dropdown">
+                                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                                        <span>
+                                                                            Internal Risk Adjusted ER by Term
+                                                                            <b class="caret"></b>
+                                                                        </span>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu animated flipInX m-t-xs">
+                                                                        <li class="active">
+                                                                            <a href="#">Internal Risk Adjusted ER by Term</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Lender Yeld by Term</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Borrower Rate by Term</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Internal Expected Loss Rate by Term</a>
+                                                                        </li>
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel-body">
+                                                                <div>
+                                                                    <div id="loansChartsByTerm" class="c3"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="hpanel">
+                                                            <div class="panel-heading ">
+                                                                <div class="panel-tools"></div>
+                                                                <div class="dropdown">
+                                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                                        <span>
+                                                                            Number of Loans by Grade
+                                                                            <b class="caret"></b>
+                                                                        </span>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu animated flipInX m-t-xs">
+                                                                        <li class="active">
+                                                                            <a href="#">Number of Loans by Grade</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">$ Amount of Loans by Grade</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel-body">
+                                                                <div>
+                                                                    <div id="countingLoansByGrade" class="c3"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="hpanel">
+                                                            <div class="panel-heading ">
+                                                                <div class="panel-tools"></div>
+                                                                <div class="dropdown">
+                                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                                        <span>
+                                                                            Number of Loans by Term
+                                                                            <b class="caret"></b>
+                                                                        </span>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu animated flipInX m-t-xs">
+                                                                        <li class="active">
+                                                                            <a href="#">Number of Loans by Term</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">$ Amount of Loans by Term</a>
+                                                                        </li>
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel-body">
+                                                                <div>
+                                                                    <div id="countingloansByTerm" class="c3"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="hpanel">
+                                                            <div class="panel-heading ">
+                                                                <div class="panel-tools"></div>
+                                                                <div class="dropdown">
+                                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                                        <span>
+                                                                            Avg. Expected Default Rate and Borrower Rate (by Grade)
+                                                                            <b class="caret"></b>
+                                                                        </span>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu animated flipInX m-t-xs">
+                                                                        <li class="active">
+                                                                            <a href="#">Avg. Expected Default Rate and Borrower Rate (by Grade)</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">
+                                                                                Avg. Expected Default Rate and Internal Risk Adjusted ER (by Grade)
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel-body">
+                                                                <div>
+                                                                    <div id="avgExpectedRate" class="c3"></div>
+                                                                    <div class="text-center">Average of borrower rate</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="panel-footer">
+                                                <span class="pull-right"></span>
+                                                Last updated: 21.05.2015
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lending Club Whole Loan Borrower Overview -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="hpanel hgreen hpanel-opacity">
+                            <div class="panel-heading">
+                                <div class="panel-tools">
+                                    <a class="showhide">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                </div>
+                                <h4 class="font-extra-bold">Lending Club Whole Loan Borrower Overview</h4>
+                            </div>
+                            <div class="panel-body">
+
+                                <!-- tiles with stats -->
+                                <div class="row row-tile">
+
+                                    <div  class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Median Bankcard Utilisation</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-info live">
+                                                        45.5
+                                                        <small class="text-info">%</small>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div  class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Median DTI</h4>
+                                                </div>
+                                                <div class="m-t-xs live">
+                                                    <h3 class="text-info">0.26</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div  class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Median Open Credit Lines</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-info live">10</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div  class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Average Months Employed</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-success live">91</h3>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div  class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Average Monthly Payments</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-success live">
+                                                        <small class="text-success">$</small>
+                                                        456.80
+                                                    </h3>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div  class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Median Listing Amount</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-info live" >
+                                                        <small class="text-info">$</small>
+                                                        15.00K
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div  class="col-sm-3 col-md-2 col-tile">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <div class="stats-title">
+                                                    <h4>Median Monthly Income</h4>
+                                                </div>
+                                                <div class="m-t-xs">
+                                                    <h3 class="text-info live">
+                                                        <small class="text-info">$</small>
+                                                        4.38K
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="hpanel">
+
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="hpanel">
+                                                            <div class="panel-heading ">
+                                                                <div class="panel-tools"></div>
+                                                                <div class="dropdown">
+                                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                                        <span >
+                                                                            Funded Amount by FICO
+                                                                            <b class="caret"></b>
+                                                                        </span>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu animated flipInX m-t-xs">
+                                                                        <li class="active">
+                                                                            <a href="#">Funded Amount by FICO</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Funded Amount by FICO</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Funded Amount by FICO</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel-body">
+                                                                <div>
+                                                                    <div id="borrowerOverviewChart1" class="c3"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="hpanel">
+                                                            <div class="panel-heading ">
+                                                                <div class="panel-tools"></div>
+                                                                <div class="dropdown">
+                                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                                        <span >
+                                                                            Avg. Delinquencies by Grade
+                                                                            <b class="caret"></b>
+                                                                        </span>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu animated flipInX m-t-xs">
+                                                                        <li class="active">
+                                                                            <a href="#">Avg. Delinquencies by Grade</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Avg. Delinquencies by Grade</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Avg. Delinquencies by Grade</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel-body">
+                                                                <div>
+                                                                    <div id="borrowerOverviewChart2" class="c3"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="hpanel">
+                                                            <div class="panel-heading ">
+                                                                <div class="panel-tools"></div>
+                                                                <div class="dropdown">
+                                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                                        <span >
+                                                                            Avg. Revolving Balance by Grade
+                                                                            <b class="caret"></b>
+                                                                        </span>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu animated flipInX m-t-xs">
+                                                                        <li class="active">
+                                                                            <a href="#">Avg. Revolving Balance by Grade</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Avg. Revolving Balance by Grade</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Avg. Revolving Balance by Grade</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel-body">
+                                                                <div>
+                                                                    <div id="borrowerOverviewChart3" class="c3"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lending Club Whole Loan Auction Table -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="hpanel hblue hpanel-opacity">
+                            <div class="panel-heading">
+                                <div class="panel-tools">
+                                    <a class="showhide">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                </div>
+                                <h4 class="font-extra-bold">Lending Club Whole Loan Auction Table</h4>
+                            </div>
+                            <div class="panel-body">
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="control-label font-extra-bold col-xs-6 col-sm-2 col-md-2 text-left">Select Date Range</div>
+                                            <div class="col-xs-6 col-sm-3 col-md-2 m-b">
+                                                <select class="form-control" >
+                                                    <option value="">Live Auction</option>
+                                                    <option value="">Last Auction</option>
+                                                    <option value="">Last 24 hours</option>
+                                                    <option value="">Last 7 days</option>
+                                                    <option value="">Last 30 days</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-md-offset-2">
+                                                <div class="hpanel">
+                                                    <div class="panel-body">
+                                                        <h3 class="text-center no-margins">
+                                                            <small>Status</small>
+                                                        </h3>
+                                                        <h3 class="text-center text-info font-bold">Live Auction</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-3 col-md-3">
+                                                <div class="hpanel">
+                                                    <div class="panel-body">
+                                                        <h3 class="text-center no-margins">
+                                                            <small>Listings</small>
+                                                        </h3>
+                                                        <h3 class="text-center text-info font-bold">134</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="hpanel">
+                                            <div class="panel-body">
+                                                <table id="ProsperWholeLoanAuctionTable" class="table table-striped table-hover table-with-checkbox table-condensed display responsive nowrap">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="checkbox checkbox-success">
+                                                                    <input  value="0" id="ProsperWholeLoanAuctionTable-select-all" type="checkbox" />
+                                                                    <label for="ProsperWholeLoanAuctionTable-select-all"></label>
+                                                                </div>
+                                                            </th>
+                                                            <th>Listing Number</th>
+                                                            <th>FICO</th>
+                                                            <th>STATE</th>
+                                                            <th>B/S Status</th>
+                                                            <th>Loan Amount</th>
+                                                            <th>Borrower Rate</th>
+                                                            <th>Term</th>
+                                                            <th>Grade</th>
+                                                            <th>Date Created</th>
+                                                            <th>Timestamp</th>
+                                                            <th>Live Status</th>
+                                                            <th>Risk Adjusted ER</th>
+                                                            <th>Internal Credit Rating</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>481892</td>
+                                                            <td>670-674</td>
+                                                            <td>CA</td>
+                                                            <td>Bought</td>
+                                                            <td>$ 5000</td>
+                                                            <td>10.5 %</td>
+                                                            <td>36</td>
+                                                            <td>
+                                                                <span class="btn-xs btn-success btn-circle"> <strong>A</strong>
+                                                                </span>
+                                                            </td>
+                                                            <td>9 May 2016</td>
+                                                            <td>10:00:00</td>
+                                                            <td>Sold</td>
+                                                            <td>7.8%</td>
+                                                            <td>225</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>481892</td>
+                                                            <td>670-674</td>
+                                                            <td>CA</td>
+                                                            <td>Bought</td>
+                                                            <td>$ 5000</td>
+                                                            <td>10.5 %</td>
+                                                            <td>36</td>
+                                                            <td>
+                                                                <span class="btn-xs btn-success btn-circle">
+                                                                    <strong>B</strong>
+                                                                </span>
+                                                            </td>
+                                                            <td>9 May 2016</td>
+                                                            <td>10:00:00</td>
+                                                            <td>Sold</td>
+                                                            <td>7.8%</td>
+                                                            <td>225</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>481892</td>
+                                                            <td>670-674</td>
+                                                            <td>CA</td>
+                                                            <td>Sold</td>
+                                                            <td>$ 5000</td>
+                                                            <td>10.5 %</td>
+                                                            <td>36</td>
+                                                            <td>
+                                                                <span class="btn-xs btn-success btn-circle">
+                                                                    <strong>AA</strong>
+                                                                </span>
+                                                            </td>
+                                                            <td>9 May 2016</td>
+                                                            <td>10:00:00</td>
+                                                            <td>Sold</td>
+                                                            <td>7.8%</td>
+                                                            <td>225</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>481892</td>
+                                                            <td>670-674</td>
+                                                            <td>CA</td>
+                                                            <td>Bought</td>
+                                                            <td>$ 5000</td>
+                                                            <td>10.5 %</td>
+                                                            <td>36</td>
+                                                            <td>
+                                                                <span class="btn-xs btn-success btn-circle">
+                                                                    <strong>HR</strong>
+                                                                </span>
+                                                            </td>
+                                                            <td>9 May 2016</td>
+                                                            <td>10:00:00</td>
+                                                            <td>Sold</td>
+                                                            <td>7.8%</td>
+                                                            <td>225</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>481892</td>
+                                                            <td>670-674</td>
+                                                            <td>CA</td>
+                                                            <td>Bought</td>
+                                                            <td>$ 5000</td>
+                                                            <td>10.5 %</td>
+                                                            <td>36</td>
+                                                            <td>
+                                                                <span class="btn-xs btn-warning btn-circle">
+                                                                    <strong>B</strong>
+                                                                </span>
+                                                            </td>
+                                                            <td>9 May 2016</td>
+                                                            <td>10:00:00</td>
+                                                            <td>Sold</td>
+                                                            <td>7.8%</td>
+                                                            <td>225</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>481892</td>
+                                                            <td>670-674</td>
+                                                            <td>CA</td>
+                                                            <td>Bought</td>
+                                                            <td>$ 5000</td>
+                                                            <td>10.5 %</td>
+                                                            <td>36</td>
+                                                            <td>
+                                                                <span class="btn-xs btn-warning btn-circle">
+                                                                    <strong>C</strong>
+                                                                </span>
+                                                            </td>
+                                                            <td>9 May 2016</td>
+                                                            <td>10:00:00</td>
+                                                            <td>Sold</td>
+                                                            <td>7.8%</td>
+                                                            <td>225</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>481892</td>
+                                                            <td>670-674</td>
+                                                            <td>CA</td>
+                                                            <td>Bought</td>
+                                                            <td>$ 5000</td>
+                                                            <td>10.5 %</td>
+                                                            <td>36</td>
+                                                            <td>
+                                                                <span class="btn-xs btn-warning2 btn-circle">
+                                                                    <strong>D</strong>
+                                                                </span>
+                                                            </td>
+                                                            <td>9 May 2016</td>
+                                                            <td>10:00:00</td>
+                                                            <td>Sold</td>
+                                                            <td>7.8%</td>
+                                                            <td>225</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>481892</td>
+                                                            <td>670-674</td>
+                                                            <td>CA</td>
+                                                            <td>Bought</td>
+                                                            <td>$ 5000</td>
+                                                            <td>10.5 %</td>
+                                                            <td>36</td>
+                                                            <td>
+                                                                <span class="btn-xs btn-danger btn-circle">
+                                                                    <strong>E</strong>
+                                                                </span>
+                                                            </td>
+                                                            <td>9 May 2016</td>
+                                                            <td>10:00:00</td>
+                                                            <td>Sold</td>
+                                                            <td>7.8%</td>
+                                                            <td>225</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>481892</td>
+                                                            <td>670-674</td>
+                                                            <td>CA</td>
+                                                            <td>Bought</td>
+                                                            <td>$ 5000</td>
+                                                            <td>10.5 %</td>
+                                                            <td>36</td>
+                                                            <td>
+                                                                <span class="btn-xs btn-danger2 btn-circle">
+                                                                    <strong>F</strong>
+                                                                </span>
+                                                            </td>
+                                                            <td>9 May 2016</td>
+                                                            <td>10:00:00</td>
+                                                            <td>Sold</td>
+                                                            <td>7.8%</td>
+                                                            <td>225</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>481893</td>
+                                                            <td>670-674</td>
+                                                            <td>CA</td>
+                                                            <td>Bought</td>
+                                                            <td>$ 5000</td>
+                                                            <td>10.5 %</td>
+                                                            <td>36</td>
+                                                            <td>
+                                                                <span class="btn-xs btn-success btn-circle">
+                                                                    <strong>B</strong>
+                                                                </span>
+                                                            </td>
+                                                            <td>9 May 2016</td>
+                                                            <td>10:00:00</td>
+                                                            <td>Sold</td>
+                                                            <td>7.8%</td>
+                                                            <td>225</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>481894</td>
+                                                            <td>670-674</td>
+                                                            <td>CA</td>
+                                                            <td>Bought</td>
+                                                            <td>$ 5000</td>
+                                                            <td>10.5 %</td>
+                                                            <td>36</td>
+                                                            <td>
+                                                                <span class="btn-xs btn-success btn-circle">
+                                                                    <strong>B</strong>
+                                                                </span>
+                                                            </td>
+                                                            <td>9 May 2016</td>
+                                                            <td>10:00:00</td>
+                                                            <td>Sold</td>
+                                                            <td>7.8%</td>
+                                                            <td>225</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+
+                                                <div class="m-t-md m-b-md">
+                                                    <hr></div>
+                                                <div class="m-t-md m-b-md">
+                                                    <h2 class="text-danger text-center">Total Order:&nbsp;&nbsp;&nbsp;$ 1,999,999</h2>
+                                                </div>
+                                                <div class="m-t-md m-b-md">
+                                                    <hr></div>
+
+                                                <div class="row m-b">
+                                                    <div class="col-sm-6 col-md-3 col-md-offset-3">
+                                                        <button class="m-t btn btn-info btn-outline btn-lg width100" type="button">Export Full Results (Excel)</button>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-3">
+                                                        <button class="m-t btn btn-primary btn-lg width100" type="button">Place Order</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Vendor scripts -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="vendor/iCheck/icheck.min.js"></script>
+    <script src="vendor/sparkline/index.js"></script>
+    <script src="vendor/moment/moment.js"></script>
+    <script src="vendor/select2-3.5.2/select2.min.js"></script>
+    <script src="vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="vendor/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+
+    <!-- DataTables -->
+    <script src="http://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="http://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js"></script>
+    <script src="http://cdn.datatables.net/responsive/2.0.0/js/dataTables.responsive.min.js"></script>
+    <script src="http://cdn.datatables.net/responsive/2.0.0/js/responsive.bootstrap.min.js"></script>
+
+    <link href="http://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.datatables.net/responsive/2.0.0/css/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- App scripts -->
+    <script src="scripts/homer.js"></script>
+
+    <script src="vendor/d3/d3.min.js"></script>
+    <script src="vendor/c3/c3.min.js"></script>
+
+    <script src="vendor/jquery-flot/jquery.flot.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.resize.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.pie.js"></script>
+    <script src="vendor/flot.curvedlines/curvedLines.js"></script>
+    <script src="vendor/jquery.flot.spline/index.js"></script>
+    <script src="vendor/iCheck/icheck.min.js"></script>
+    <script src="vendor/sparkline/index.js"></script>
+
+    <script>
+
+    $(function() {
+
+
+        /**
+         * Flot charts data and options
+         * "Number of loans released"
+         */
+
+                        // // Generate data for chart numberLoansReleased and listingnLoansReleased
+                        // // - uncomment function below : 
+
+
+                        // function generateDataForChart () {
+
+                        //     function getRandomArbitary (max) {
+                        //           return Math.random() *  max;
+                        //     }
+
+                        //     $('#wrapper').prepend('<div class="data-generator"></div>')
+                            
+                        //     for (i = 1; i < 400; i++) { 
+                        //         txt = i ;
+
+                        //         Math.logb = function(number, base) {
+                        //             return Math.log(number) / Math.log(base);
+                        //         };
+
+                        //         txt2 = Math.round( ( Math.logb(i, 200) ) * 1000 );
+
+                        //         if ( txt2/10 > getRandomArbitary (400) ) {
+                        //                     txt2 = 0;
+                        //         }
+
+                        //         $('.data-generator').append( '[' + txt + ',' + txt2 + '],');
+                        //     }
+                        // }
+                        // generateDataForChart ();
+
+
+
+        var data_numberLoansReleased = [
+            {
+                label: "bar",
+                data: [ [1,0],[2,131],[3,207],[4,262],[5,304],[6,338],[7,367],[8,392],[9,415],[10,435],[11,453],[12,0],[13,484],[14,498],[15,0],[16,0],[17,535],[18,546],[19,556],[20,565],[21,0],[22,583],[23,0],[24,600],[25,608],[26,615],[27,622],[28,629],[29,636],[30,642],[31,0],[32,654],[33,660],[34,666],[35,0],[36,676],[37,682],[38,0],[39,0],[40,696],[41,701],[42,705],[43,710],[44,714],[45,0],[46,723],[47,727],[48,731],[49,735],[50,738],[51,0],[52,746],[53,749],[54,753],[55,756],[56,760],[57,763],[58,0],[59,770],[60,773],[61,776],[62,779],[63,782],[64,785],[65,788],[66,791],[67,794],[68,796],[69,0],[70,802],[71,805],[72,807],[73,810],[74,0],[75,815],[76,817],[77,820],[78,822],[79,0],[80,827],[81,829],[82,832],[83,834],[84,836],[85,0],[86,841],[87,843],[88,845],[89,847],[90,0],[91,851],[92,853],[93,855],[94,0],[95,859],[96,0],[97,863],[98,865],[99,867],[100,869],[101,871],[102,873],[103,875],[104,877],[105,878],[106,0],[107,882],[108,884],[109,0],[110,887],[111,889],[112,0],[113,892],[114,894],[115,896],[116,897],[117,899],[118,900],[119,902],[120,904],[121,905],[122,907],[123,908],[124,0],[125,911],[126,913],[127,0],[128,916],[129,917],[130,919],[131,920],[132,922],[133,923],[134,924],[135,926],[136,927],[137,0],[138,930],[139,931],[140,933],[141,934],[142,0],[143,937],[144,938],[145,939],[146,941],[147,942],[148,0],[149,944],[150,946],[151,947],[152,0],[153,949],[154,951],[155,0],[156,953],[157,954],[158,956],[159,0],[160,958],[161,959],[162,960],[163,0],[164,963],[165,964],[166,965],[167,966],[168,0],[169,968],[170,969],[171,970],[172,972],[173,0],[174,974],[175,975],[176,976],[177,977],[178,978],[179,979],[180,0],[181,981],[182,0],[183,983],[184,984],[185,985],[186,0],[187,987],[188,988],[189,989],[190,0],[191,0],[192,992],[193,0],[194,994],[195,995],[196,0],[197,997],[198,0],[199,0],[200,1000],[201,1001],[202,1002],[203,1003],[204,1004],[205,1005],[206,0],[207,0],[208,1007],[209,0],[210,1009],[211,1010],[212,1011],[213,1012],[214,1013],[215,1014],[216,0],[217,1015],[218,1016],[219,1017],[220,0],[221,1019],[222,0],[223,1021],[224,0],[225,1022],[226,1023],[227,1024],[228,1025],[229,0],[230,0],[231,1027],[232,0],[233,1029],[234,1030],[235,1030],[236,1031],[237,1032],[238,1033],[239,1034],[240,1034],[241,0],[242,0],[243,0],[244,1038],[245,1038],[246,0],[247,1040],[248,0],[249,1041],[250,1042],[251,1043],[252,1044],[253,1044],[254,0],[255,1046],[256,1047],[257,1047],[258,1048],[259,1049],[260,1050],[261,1050],[262,1051],[263,1052],[264,0],[265,1053],[266,1054],[267,1055],[268,0],[269,1056],[270,1057],[271,0],[272,1058],[273,0],[274,1059],[275,1060],[276,1061],[277,1061],[278,0],[279,0],[280,0],[281,1064],[282,1065],[283,1066],[284,0],[285,1067],[286,0],[287,1068],[288,1069],[289,1069],[290,1070],[291,1071],[292,1071],[293,1072],[294,1073],[295,1073],[296,1074],[297,1075],[298,0],[299,1076],[300,0],[301,1077],[302,1078],[303,1078],[304,1079],[305,1080],[306,1080],[307,1081],[308,1081],[309,1082],[310,1083],[311,1083],[312,0],[313,0],[314,1085],[315,1086],[316,1086],[317,0],[318,1088],[319,1088],[320,1089],[321,0],[322,1090],[323,1090],[324,1091],[325,1092],[326,0],[327,1093],[328,0],[329,1094],[330,1095],[331,1095],[332,1096],[333,1096],[334,1097],[335,1097],[336,1098],[337,1098],[338,1099],[339,1100],[340,1100],[341,1101],[342,1101],[343,0],[344,1102],[345,1103],[346,0],[347,0],[348,0],[349,1105],[350,0],[351,1106],[352,1107],[353,1107],[354,0],[355,1108],[356,1109],[357,1109],[358,1110],[359,1110],[360,1111],[361,1111],[362,0],[363,1113],[364,1113],[365,1114],[366,1114],[367,1115],[368,1115],[369,1116],[370,1116],[371,1117],[372,1117],[373,1118],[374,1118],[375,1119],[376,1119],[377,1120],[378,0],[379,1121],[380,1121],[381,1122],[382,1122],[383,1123],[384,1123],[385,1124],[386,1124],[387,1125],[388,0],[389,1126],[390,0],[391,1127],[392,1127],[393,1127],[394,0],[395,1128],[396,1129],[397,1129],[398,1130],[399,1130],]
+            }
+        ];
+
+        var options_numberLoansReleased = {
+            series: {
+                bars: {
+                    show: true,
+                    barWidth: 1,
+                    fill: true,
+                    fillColor: {
+                        colors: [ { opacity: 1 }, { opacity: 1 } ]
+                    },
+                    lineWidth: 1
+                }
+            },
+            xaxis: {
+               tickSize: 100
+            },
+            yaxis: {
+                show: false
+            },
+            colors: ["#2A5271"],
+            grid: {
+                color: "#ff0000",
+                hoverable: true,
+                clickable: true,
+                tickColor: "#ffffff",
+                borderWidth: 0,
+                borderColor: '#ffffff',
+            },
+            legend: {
+                show: false
+            },
+            tooltip: true,
+            tooltipOpts: {
+                content: "x: %x, y: %y"
+            }
+        };
+
+        $.plot($("#numberLoansReleased"), data_numberLoansReleased, options_numberLoansReleased);
+
+
+
+
+       /**
+         * Flot charts data and options
+         * "Listing amount of loans released"
+         */
+
+        var data_listingLoansReleased = [
+            {
+                label: "bar",
+                data: [ [1,0],[2,131],[3,207],[4,262],[5,304],[6,338],[7,367],[8,392],[9,415],[10,435],[11,453],[12,0],[13,484],[14,498],[15,0],[16,0],[17,535],[18,546],[19,556],[20,565],[21,0],[22,583],[23,0],[24,600],[25,608],[26,615],[27,622],[28,629],[29,636],[30,642],[31,0],[32,654],[33,660],[34,666],[35,0],[36,676],[37,682],[38,0],[39,0],[40,696],[41,701],[42,705],[43,710],[44,714],[45,0],[46,723],[47,727],[48,731],[49,735],[50,738],[51,0],[52,746],[53,749],[54,753],[55,756],[56,760],[57,763],[58,0],[59,770],[60,773],[61,776],[62,779],[63,782],[64,785],[65,788],[66,791],[67,794],[68,796],[69,0],[70,802],[71,805],[72,807],[73,810],[74,0],[75,815],[76,817],[77,820],[78,822],[79,0],[80,827],[81,829],[82,832],[83,834],[84,836],[85,0],[86,841],[87,843],[88,845],[89,847],[90,0],[91,851],[92,853],[93,855],[94,0],[95,859],[96,0],[97,863],[98,865],[99,867],[100,869],[101,871],[102,873],[103,875],[104,877],[105,878],[106,0],[107,882],[108,884],[109,0],[110,887],[111,889],[112,0],[113,892],[114,894],[115,896],[116,897],[117,899],[118,900],[119,902],[120,904],[121,905],[122,907],[123,908],[124,0],[125,911],[126,913],[127,0],[128,916],[129,917],[130,919],[131,920],[132,922],[133,923],[134,924],[135,926],[136,927],[137,0],[138,930],[139,931],[140,933],[141,934],[142,0],[143,937],[144,938],[145,939],[146,941],[147,942],[148,0],[149,944],[150,946],[151,947],[152,0],[153,949],[154,951],[155,0],[156,953],[157,954],[158,956],[159,0],[160,958],[161,959],[162,960],[163,0],[164,963],[165,964],[166,965],[167,966],[168,0],[169,968],[170,969],[171,970],[172,972],[173,0],[174,974],[175,975],[176,976],[177,977],[178,978],[179,979],[180,0],[181,981],[182,0],[183,983],[184,984],[185,985],[186,0],[187,987],[188,988],[189,989],[190,0],[191,0],[192,992],[193,0],[194,994],[195,995],[196,0],[197,997],[198,0],[199,0],[200,1000],[201,1001],[202,1002],[203,1003],[204,1004],[205,1005],[206,0],[207,0],[208,1007],[209,0],[210,1009],[211,1010],[212,1011],[213,1012],[214,1013],[215,1014],[216,0],[217,1015],[218,1016],[219,1017],[220,0],[221,1019],[222,0],[223,1021],[224,0],[225,1022],[226,1023],[227,1024],[228,1025],[229,0],[230,0],[231,1027],[232,0],[233,1029],[234,1030],[235,1030],[236,1031],[237,1032],[238,1033],[239,1034],[240,1034],[241,0],[242,0],[243,0],[244,1038],[245,1038],[246,0],[247,1040],[248,0],[249,1041],[250,1042],[251,1043],[252,1044],[253,1044],[254,0],[255,1046],[256,1047],[257,1047],[258,1048],[259,1049],[260,1050],[261,1050],[262,1051],[263,1052],[264,0],[265,1053],[266,1054],[267,1055],[268,0],[269,1056],[270,1057],[271,0],[272,1058],[273,0],[274,1059],[275,1060],[276,1061],[277,1061],[278,0],[279,0],[280,0],[281,1064],[282,1065],[283,1066],[284,0],[285,1067],[286,0],[287,1068],[288,1069],[289,1069],[290,1070],[291,1071],[292,1071],[293,1072],[294,1073],[295,1073],[296,1074],[297,1075],[298,0],[299,1076],[300,0],[301,1077],[302,1078],[303,1078],[304,1079],[305,1080],[306,1080],[307,1081],[308,1081],[309,1082],[310,1083],[311,1083],[312,0],[313,0],[314,1085],[315,1086],[316,1086],[317,0],[318,1088],[319,1088],[320,1089],[321,0],[322,1090],[323,1090],[324,1091],[325,1092],[326,0],[327,1093],[328,0],[329,1094],[330,1095],[331,1095],[332,1096],[333,1096],[334,1097],[335,1097],[336,1098],[337,1098],[338,1099],[339,1100],[340,1100],[341,1101],[342,1101],[343,0],[344,1102],[345,1103],[346,0],[347,0],[348,0],[349,1105],[350,0],[351,1106],[352,1107],[353,1107],[354,0],[355,1108],[356,1109],[357,1109],[358,1110],[359,1110],[360,1111],[361,1111],[362,0],[363,1113],[364,1113],[365,1114],[366,1114],[367,1115],[368,1115],[369,1116],[370,1116],[371,1117],[372,1117],[373,1118],[374,1118],[375,1119],[376,1119],[377,1120],[378,0],[379,1121],[380,1121],[381,1122],[382,1122],[383,1123],[384,1123],[385,1124],[386,1124],[387,1125],[388,0],[389,1126],[390,0],[391,1127],[392,1127],[393,1127],[394,0],[395,1128],[396,1129],[397,1129],[398,1130],[399,1130], ]
+            }
+        ];
+
+        var options_listingLoansReleased = {
+            series: {
+                bars: {
+                    show: true,
+                    barWidth: 1,
+                    fill: true,
+                    fillColor: {
+                        colors: [ { opacity: 1 }, { opacity: 1 } ]
+                    },
+                    lineWidth: 1
+                }
+            },
+            xaxis: {
+                tickSize: 100
+            },
+            yaxis: {
+                show: false
+            },
+            colors: ["#2A5271"],
+            grid: {
+
+                color: "#ff0000",
+                hoverable: true,
+                clickable: true,
+                tickColor: "#ffffff",
+                borderWidth: 0,
+                borderColor: '#ffffff',
+            },
+            legend: {
+                show: false
+            },
+            tooltip: true,
+            tooltipOpts: {
+                content: "x: %x, y: %y"
+            }
+        };
+
+        $.plot($("#listingLoansReleased"), data_listingLoansReleased, options_listingLoansReleased);
+
+
+});
+
+</script>
+
+    <script>
+
+    $(function() {
+
+        // Wait until all panels will be render
+        // Remove setTimeout if you don't use animate-panel effect
+
+        
+
+           c3.generate({
+                bindto: '#loansChartsByGrade',
+                data:{
+                    x : 'x',
+                    columns: [
+                        ['x', 'A', 'B', 'C', 'D', 'E', 'F', 'G'],
+                        ['Loans', 1941,150,371,391,74,58,10],
+                    ],
+                    colors:{
+                        Loans: '#2A5271',
+                    },
+                    type: 'bar',
+                    labels: true,
+                    labels: {
+                        format: function (v, id, i, j) { return "$" + v + "K"; },  
+                    }
+
+                    
+                },
+                 axis: {    
+                    rotated: true,
+                    x: {
+                        type: 'category', // this needed to load string x value
+                        tick: {
+                          centered: true
+                        } 
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 
+                    }
+                },    
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+                tooltip: {
+                    format: {
+                        value: function (value, ratio, id) {
+                            var format = id === 'Data' ? d3.format(',') : d3.format('$');
+                            return format(value)+'M';
+                        }
+                    }
+                }
+
+            });
+
+            c3.generate({
+                bindto: '#loansChartsByTerm',
+                data:{
+                    x : 'x',
+                    columns: [
+                        ['x', '60', '55', '50', '45', '40', '35'],
+                        ['Loans', 1.54, NaN, NaN, NaN, NaN,2.46]
+                    ],
+                    empty: {
+                        label: {
+                          text: "No Data"
+                        }
+                    },
+                    colors:{
+                        Loans: '#2A5271'
+                    },
+                    labels: {
+                        format: function (v, id, i, j) {
+                            var format = v == null ? a = "" : (a = "$" + v + "M");
+                            return (a);
+                        }
+                    },
+                    type: 'bar'
+                    
+                },
+                 axis: {    
+                    rotated: true,
+                    x: {
+                        type: 'category', // this needed to load string x value
+                        tick: {
+                          centered: true
+                        } 
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 
+                    },
+                    
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+                tooltip: {
+                    format: {
+                        value: function (value, ratio, id) {
+                            var format = id === 'Data' ? d3.format(',') : d3.format('$');
+                            return format(value) + 'M';
+                        }
+                    }
+                }
+
+            });
+
+
+
+            c3.generate({
+                bindto: '#countingLoansByGrade',
+                data:{
+                    x : 'x',
+                    columns: [
+                        ['x', 'A', 'B', 'C', 'D', 'E', 'F', 'G'],
+                        ['Loans', 49, 15, 22, 29, 10, 17, 5]
+                    ],
+                    empty: {
+                        label: {
+                          text: "No Data"
+                        }
+                    },
+                    colors:{
+                        Loans: '#2A5271'
+                    },
+                    labels: {
+                        format: function (v, id, i, j) {
+                            
+                            return (v);
+                        }
+                    },
+                    type: 'bar'
+                    
+                },
+                 axis: {    
+                    x: {
+                        type: 'category', // this needed to load string x value
+                        tick: {
+                          centered: true
+                        } 
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 
+                    },
+                    
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+                tooltip: {
+                    format: {
+                        value: function (value, ratio, id) {
+                            var format = id === 'Data' ? d3.format(',') : d3.format('');
+                            return format(value) + '';
+                        }
+                    }
+                }
+
+            });
+
+
+
+            c3.generate({
+                bindto: '#countingloansByTerm',
+                data:{
+                    x : 'x',
+                    columns: [
+                        ['x', '12', '24', '36', '48', '60'],
+                        ['Loans', 50, 20, 12, 19, 40]
+                    ],
+                    empty: {
+                        label: {
+                          text: "No Data"
+                        }
+                    },
+                    colors:{
+                        Loans: '#2A5271'
+                    },
+                    labels: {
+                        format: function (v, id, i, j) {
+                            
+                            return (v);
+                        }
+                    },
+                    type: 'bar'
+                    
+                },
+                 axis: {    
+                    x: {
+                        type: 'category', // this needed to load string x value
+                        tick: {
+                          centered: true
+                        } 
+                   }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 
+                    },
+                    
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+                tooltip: {
+                    format: {
+                        value: function (value, ratio, id) {
+                            var format = id === 'Data' ? d3.format(',') : d3.format('');
+                            return format(value) + '';
+                        }
+                    }
+                }
+            });
+
+           c3.generate({
+                bindto: '#avgExpectedRate',
+                data:{
+                    x : 'x',
+                    columns: [
+                        ['x', 'AA', 'A', 'B', 'C', 'D', 'E', 'F'],
+                        ["AA", 3.2,],
+                        ["A", NaN, 4.5,],
+                        ["B", NaN, NaN, 4.9,],
+                        ["C", NaN, NaN, NaN, 7.5,],
+                        ["D", NaN, NaN, NaN, NaN, 8.5,],
+                        ["E", NaN, NaN, NaN, NaN, NaN, 9.5,],
+                        ["F", NaN, NaN, NaN, NaN, NaN, NaN, 12.5,],
+                    ],
+                    order: null,
+                    colors:{
+                        AA: '#1E9743',
+                        A: '#26BD54', 
+                        B:'#b0b240',
+                        C:'#FF9D29',
+                        D:'#f47735',
+                        E:'#E74C3C',
+                        F:'#C0392B',
+                        G:'#A92518'
+                    },
+                    labels: {
+                        format: function (v, id, i, j) {
+                            var format = v == null ? a = "" : (a = v + "%");
+                            return (a);
+                        }
+                    },
+                },
+                 axis: {    
+                    x: {
+                        type: 'category', // this needed to load string x value
+                        tick: {
+                          centered: true
+                        }
+                    },
+                    y: {
+                        tick:{
+                            format:d3.format("")
+                        },
+                    }
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+                point: {
+                    r: 5
+                },
+                tooltip: {
+                    format: {
+                        value: function (value, ratio, id) {
+                            var format = id === 'Data' ? d3.format(',') : d3.format('');
+                            return format(value) + "%";
+                        }
+                    }
+                }
+                
+            });
+
+            c3.generate({
+                bindto: '#borrowerOverviewChart1',
+                data:{
+                    x : 'x',
+                    columns: [
+                        ['x', '600-619', '620-639', '640-649', '650-664', '665-689', '690-701', '702-723', '724-747', '748-777', '778+'],
+                        ['Funded', 0.00, 66.00, 70.00, 119.00, 150.00, 102.60, 337.35, 335.70, 449.00, 325.50],
+                    ],
+                    empty: {
+                        label: {
+                          text: "No Data"
+                        }
+                    },
+                    colors:{
+                        Funded: '#2A5271',
+                    },
+                    labels: {
+                        format: function (v, id, i, j) {
+                            var format = v == null ? a = "" : (a = "$" + v + "K");
+                            return (a);
+                        }
+                    },
+                    type: 'bar',
+                },
+                 axis: {    
+                    rotated: true,
+                    x: {
+                        type: 'category', // this needed to load string x value
+                        tick: {
+                          centered: true
+                        } 
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.5 
+                    },
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+                tooltip: {
+                    format: {
+                        value: function (value, ratio, id) {
+                            var format = id === 'Data' ? d3.format(',') : d3.format('$');
+                            return format(value) + 'M';
+                        }
+                    }
+                }
+
+            });
+
+
+           c3.generate({
+                bindto: '#borrowerOverviewChart2',
+                data:{
+                    x : 'x',
+                    columns: [
+                        ['x', 'AA', 'A', 'B', 'C', 'D', 'E'],
+                        ['Remaining', 300, 350, 300, 230, 180, 70],
+                    ],
+                    types: {
+                        Remaining: 'line',
+                        Funded: 'area'
+                    },
+                    labels: true,
+                    labels: {
+                        format: function (v, id, i, j) { return "$" + v + "M"; },
+                    },
+                    groups: [
+                        ['Remaining', 'Funded']
+                    ],
+                    colors:{
+                        Remaining: '#009FD9',
+                        Funded: '#26BD54'
+                    }
+                },
+                axis: {    
+                    x: {
+                        type: 'category',
+                        tick: {
+                          centered: true
+                        }
+                    }
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+                tooltip: {
+                    format: {
+                        value: function (value, ratio, id) {
+                            var format = id === 'Data' ? d3.format(',') : d3.format('$');
+                            return format(value) + 'M';
+                        }
+                    }
+                }
+            });
+
+            c3.generate({
+                bindto: '#borrowerOverviewChart3',
+                data:{
+                    x : 'x',
+                    columns: [
+                        ['x', 'AA', 'A', 'B', 'C', 'D', 'E'],
+                        ['Remaining', 200, 150, 200, 230, 180, 170],
+                    ],
+                    types: {
+                        Remaining: 'area',
+                        Funded: 'area'
+                    },
+                    labels: true,
+                    labels: {
+                        format: function (v, id, i, j) { return "$" + v + "M"; },
+                    },
+                    groups: [
+                        ['Remaining', 'Funded']
+                    ],
+                    colors:{
+                        Remaining: '#26BD54',
+                        Funded: '#26BD54'
+                    }
+                },
+                axis: {    
+                    x: {
+                        type: 'category',
+                        tick: {
+                          centered: true
+                        }
+                    }
+                },
+                grid: {
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        show: true
+                    }
+                },
+                tooltip: {
+                    format: {
+                        value: function (value, ratio, id) {
+                            var format = id === 'Data' ? d3.format(',') : d3.format('$');
+                            return format(value) + 'M';
+                        }
+                    }
+                }
+            });
+ 
+
+
+
+
+
+    });
+
+</script>
+
+    <script>
+
+
+$(document).ready(function (){   
+
+
+
+   var table = $('#ProsperWholeLoanAuctionTable').DataTable({
+        paging: false,
+        scrollY: 380,
+        searching: false,
+        info: false,
+        responsive: true,
+
+        // Options for checkbox column
+        columnDefs: [{
+             'targets': 0,
+             'searchable':false,
+             'orderable':false,
+             'className': 'checkbox-column',
+             'render': function (data, type, full, meta, row){
+                 return '<div class="checkbox checkbox-success"><input type="checkbox" name="id[]" value="' + $('<div/>').text(data).html() + '"><label for="id[]"></label></div>';
+             }
+          }],
+        order: [1, 'asc']
+   });
+
+   // Handle click on "Select all" control
+   $('#ProsperWholeLoanAuctionTable-select-all').on('click', function(){
+      // Check/uncheck all checkboxes in the table
+      var rows = table.rows({ 'search': 'applied' }).nodes();
+      $('input[type="checkbox"]', rows).prop('checked', this.checked);
+   });
+
+   // Handle click on checkbox to set state of "Select all" control
+   $('#ProsperWholeLoanAuctionTable tbody').on('change', 'input[type="checkbox"]', function(){
+      // If checkbox is not checked
+      if(!this.checked){
+         var el = $('#ProsperWholeLoanAuctionTable-select-all').get(0);
+         // If "Select all" control is checked and has 'indeterminate' property
+         if(el && el.checked && ('indeterminate' in el)){
+            // Set visual state of "Select all" control 
+            // as 'indeterminate'
+            el.indeterminate = true;
+         }
+      }
+   });
+    
+
+ // $('form').on('submit', function(e){
+ //      var form = this;
+
+ //      // Iterate over all checkboxes in the table
+ //      table.$('input[type="checkbox"]').each(function(){
+ //         // If checkbox doesn't exist in DOM
+ //         if(!$.contains(document, this)){
+ //            // If checkbox is checked
+ //            if(this.checked){
+ //               // Create a hidden element 
+ //               $(form).append(
+ //                  $('<input>')
+ //                     .attr('type', 'hidden')
+ //                     .attr('name', this.name)
+ //                     .val(this.value)
+ //               );
+ //            }
+ //         } 
+ //      });
+
+
+
+
+    $('.input-group.date').datepicker();
+
+
+    });
+
+
+</script>
+
+</body>
+</html>

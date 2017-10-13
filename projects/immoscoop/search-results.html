@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+
+<!-- language Dutch -->
+<html lang="nl">
+	<!-- When language is changing, so change also "lang" attribute - it is good for search engines
+language English: <html lang="en">
+	language French:
+	<html lang="fr">
+		-->
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Search results</title>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- CSS -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="css/select2.css" rel="stylesheet" type="text/css">
+		<link href="css/asCheck.css" rel="stylesheet" type="text/css"></head>
+
+		<link href="css/style.css" rel="stylesheet" type="text/css"></head>
+<body>
+
+		<!-- Navbar BEGIN -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-header" id="bs-navbar-collapse-1">
+
+					<ul class="nav navbar-nav navbar-right nav-soc">
+						<li>
+							<a href="#">
+								<span class="fa-circled"> <i class="fa fa-facebook"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa-circled"> <i class="fa fa-twitter"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-bars"></i>
+							</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right nav-lang">
+						<li class="active">
+							<a href="#">NL</a>
+						</li>
+						<li>
+							<a href="#">FR</a>
+						</li>
+						<li>
+							<a href="#">EN</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right nav-main">
+						<li class="active">
+							<a href="#">Aanmelden</a>
+						</li>
+						<li>
+							<a href="#">Professionals</a>
+						</li>
+						<li>
+							<a href="#">Alle Makelaars</a>
+						</li>
+						<li>
+							<a href="#">Nieuws</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon-custom-cog"></span>
+								Mijn Favorieten
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<!-- Navbar END -->
+
+
+<div id="wrapper">
+		<div class="bg-grey screen-box">
+			<div class="container">
+				<div class="row">
+					<!-- Sidebar BEGIN -->
+					<div class="col-md-4 sidebar">
+						<div class="title-inverse">Filter de selectie:</div>
+
+						<form action="">
+							<div class="filters-block">
+								<div class="filters-block-title">Soort aanbod</div>
+								<ul class="list-filters">
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-aanbod-1" />
+										<label for="filters-aanbod-1" >Huis</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-aanbod-2" />
+										<label for="filters-aanbod-2" >Appartement</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-aanbod-3" />
+										<label for="filters-aanbod-3" >Grond</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-aanbod-4" />
+										<label for="filters-aanbod-4" >Winkelpand</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-aanbod-5" />
+										<label for="filters-aanbod-5" >Parkeergelegenheid</label>
+									</li>
+									<li class="show-hide-line"></li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-aanbod-6" />
+										<label for="filters-aanbod-6" >More aanbod 1</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-aanbod-7" />
+										<label for="filters-aanbod-7" >More aanbod 2</label>
+									</li>
+									<li class="show-hide-more">
+										<i class="fa fa-caret-down"></i>
+										Alle soorten aanbod
+									</li>
+								</ul>
+								<div class="horizontal-line-small"></div>
+							</div>
+
+							<div class="filters-block">
+								<div class="filters-block-title">Aantal Slaapkamers</div>
+								<ul class="list-filters">
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-slpk-1" />
+										<label for="filters-slpk-1" >1 slpk</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-slpk-2" />
+										<label for="filters-slpk-2" >2 slpks</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-slpk-3" />
+										<label for="filters-slpk-3" >3 slpks</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-slpk-4" />
+										<label for="filters-slpk-4" >4 slpks</label>
+									</li>
+									<li class="show-hide-line"></li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-slpk-5" />
+										<label for="filters-slpk-5" >More slpks</label>
+									</li>
+									<li class="show-hide-more">
+										<i class="fa fa-caret-down"></i>
+										Meer slpks
+									</li>
+								</ul>
+								<div class="horizontal-line-small"></div>
+							</div>
+
+							<div class="filters-block">
+								<div class="filters-block-title">Andere opties</div>
+								<ul class="list-filters">
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-opties-1" />
+										<label for="filters-opties-1" >Tuin</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-opties-2" />
+										<label for="filters-opties-2" >Terras of balkan</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-opties-3" />
+										<label for="filters-opties-3" >Open bebouwing</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-opties-4" />
+										<label for="filters-opties-4" >Half open bebouwing</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-opties-5" />
+										<label for="filters-opties-5" >Gesloten bebouwing</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-opties-6" />
+										<label for="filters-opties-6" >Garage</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-opties-7" />
+										<label for="filters-opties-7" >Bemeubeld</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-opties-8" />
+										<label for="filters-opties-8" >Keld</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-opties-9" />
+										<label for="filters-opties-9" >Lift</label>
+									</li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-opties-10" />
+										<label for="filters-opties-10" >Zolder</label>
+									</li>
+									<li class="show-hide-line"></li>
+									<li>
+										<input class="checkbox" type="checkbox" id="filters-opties-11" />
+										<label for="filters-opties-11" >More optie</label>
+									</li>
+									<li class="show-hide-more">
+										<i class="fa fa-caret-down"></i>
+										Meer slpks
+									</li>
+								</ul>
+								<div class="horizontal-line-small"></div>
+							</div>
+						</form>
+
+					</div>
+		<!-- Sidebar END -->
+
+		<!-- Content BEGIN -->
+		<div class="col-md-8 content">
+
+			<div class="content-top">
+				<div class="pull-left">
+					Zoek door <b>4,169</b>
+					resultaten in Schoten
+				</div>
+				<div class="pull-right">
+					<div class="select-small">
+						<select name="" id="filterResults"></select>
+					</div>
+				</div>
+			</div>
+
+			<div class="search-results-list">
+
+				<!-- One search result BEGIN -->
+				<div class="search-result">
+					<div class="row">
+						<div class="col-xs-5 search-result-img-wrapper">
+							<a href="#">
+								<img src="images/image-example.jpg" alt="" class="img-responsive">
+								<div class="search-result-favorites">
+									<span class="icon-custom-cog"></span>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-7 search-result-info-wrapper">
+							<div class="search-result-title">2990 Schoten</div>
+							<div class="search-result-info">
+								Slaapkameers: <b>3</b>
+							</div>
+							<div class="search-result-info">
+								Bewoonbare opp.:
+								<b>150</b>
+								m <sup>2</sup>
+							</div>
+							<div class="search-result-info">
+								Grondopp:
+								<b>200</b>
+								m <sup>2</sup>
+							</div>
+						</div>
+						<div class="search-result-price">
+							€
+							<b>350 000</b>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-xs-12 search-result-bottom-wrapper">
+							<div class="search-result-legend">4 uuh delegen toegevoegd door Makelaar X</div>
+							<div class="search-result-more">
+								<a href="#">
+									Meer info
+									<i class="fa fa-play"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- One search result END -->
+
+				<!-- One search result BEGIN -->
+				<div class="search-result">
+					<div class="row">
+						<div class="col-xs-5 search-result-img-wrapper">
+							<a href="#">
+								<img src="images/image-example.jpg" alt="" class="img-responsive">
+								<div class="search-result-favorites">
+									<span class="icon-custom-cog"></span>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-7 search-result-info-wrapper">
+							<div class="search-result-title">2990 Schoten</div>
+							<div class="search-result-info">
+								Slaapkameers:
+								<b>3</b>
+							</div>
+							<div class="search-result-info">
+								Bewoonbare opp.:
+								<b>150</b>
+								m
+								<sup>2</sup>
+							</div>
+							<div class="search-result-info">
+								Grondopp:
+								<b>200</b>
+								m
+								<sup>2</sup>
+							</div>
+						</div>
+						<div class="search-result-price">
+							€
+							<b>350 000</b>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-xs-12 search-result-bottom-wrapper">
+							<div class="search-result-legend">4 uuh delegen toegevoegd door Makelaar X</div>
+							<div class="search-result-more">
+								<a href="#">
+									Meer info
+									<i class="fa fa-play"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- One search result END -->
+
+				<!-- One search result BEGIN -->
+				<div class="search-result">
+					<div class="row">
+						<div class="col-xs-5 search-result-img-wrapper">
+							<a href="#">
+								<img src="images/image-example.jpg" alt="" class="img-responsive">
+								<div class="search-result-favorites">
+									<span class="icon-custom-cog"></span>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-7 search-result-info-wrapper">
+							<div class="search-result-title">2990 Schoten</div>
+							<div class="search-result-info">
+								Slaapkameers:
+								<b>3</b>
+							</div>
+							<div class="search-result-info">
+								Bewoonbare opp.:
+								<b>150</b>
+								m
+								<sup>2</sup>
+							</div>
+							<div class="search-result-info">
+								Grondopp:
+								<b>200</b>
+								m
+								<sup>2</sup>
+							</div>
+						</div>
+						<div class="search-result-price">
+							€
+							<b>350 000</b>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-xs-12 search-result-bottom-wrapper">
+							<div class="search-result-legend">4 uuh delegen toegevoegd door Makelaar X</div>
+							<div class="search-result-more">
+								<a href="#">
+									Meer info
+									<i class="fa fa-play"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- One search result END -->
+
+				<!-- One search result BEGIN -->
+				<div class="search-result">
+					<div class="row">
+						<div class="col-xs-5 search-result-img-wrapper">
+							<a href="#">
+								<img src="images/image-example.jpg" alt="" class="img-responsive">
+								<div class="search-result-favorites">
+									<span class="icon-custom-cog"></span>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-7 search-result-info-wrapper">
+							<div class="search-result-title">2990 Schoten</div>
+							<div class="search-result-info">
+								Slaapkameers:
+								<b>3</b>
+							</div>
+							<div class="search-result-info">
+								Bewoonbare opp.:
+								<b>150</b>
+								m
+								<sup>2</sup>
+							</div>
+							<div class="search-result-info">
+								Grondopp:
+								<b>200</b>
+								m
+								<sup>2</sup>
+							</div>
+						</div>
+						<div class="search-result-price">
+							€
+							<b>350 000</b>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-xs-12 search-result-bottom-wrapper">
+							<div class="search-result-legend">4 uuh delegen toegevoegd door Makelaar X</div>
+							<div class="search-result-more">
+								<a href="#">
+									Meer info
+									<i class="fa fa-play"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- One search result END -->
+
+				<!-- One search result BEGIN -->
+				<div class="search-result">
+					<div class="row">
+						<div class="col-xs-5 search-result-img-wrapper">
+							<a href="#">
+								<img src="images/image-example.jpg" alt="" class="img-responsive">
+								<div class="search-result-favorites">
+									<span class="icon-custom-cog"></span>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-7 search-result-info-wrapper">
+							<div class="search-result-title">2990 Schoten</div>
+							<div class="search-result-info">
+								Slaapkameers:
+								<b>3</b>
+							</div>
+							<div class="search-result-info">
+								Bewoonbare opp.:
+								<b>150</b>
+								m
+								<sup>2</sup>
+							</div>
+							<div class="search-result-info">
+								Grondopp:
+								<b>200</b>
+								m
+								<sup>2</sup>
+							</div>
+						</div>
+						<div class="search-result-price">
+							€
+							<b>350 000</b>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-xs-12 search-result-bottom-wrapper">
+							<div class="search-result-legend">4 uuh delegen toegevoegd door Makelaar X</div>
+							<div class="search-result-more">
+								<a href="#">
+									Meer info
+									<i class="fa fa-play"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- One search result END -->
+			</div>
+
+<ul class="pagination">
+
+                  <li class="active">
+                    <a href="#">1</a>
+                  </li>
+                  <li>
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#">4</a>
+                  </li>
+                  <li>
+                    <a href="#">5</a>
+                  </li>
+                  <li>...</li>
+                   <li>
+                    <a href="#">84</a>
+                  </li>
+                </ul>
+
+
+		</div>
+		<!-- Content END -->
+	</div>
+</div>
+</div>
+
+<!-- Screen with cities list BEGIN -->
+<div class="container screen-box">
+<div class="row">
+	<div class="col-md-12">
+		<h2 class="text-center">Snel zoeken in</h2>
+		<div class="double-line">
+			<div class="double-line-inside"></div>
+		</div>
+	</div>
+</div>
+<div class="row links-list">
+	<div class="col-md-3 col-xs-6">
+		<a href="#">Aartselaar</a>
+		<a href="#">Antwerpen</a>
+		<a href="#">Arendonk</a>
+		<a href="#">Baarle-Hertog</a>
+		<a href="#">Balen</a>
+		<a href="#">Beerse</a>
+		<a href="#">Berlaar</a>
+		<a href="#">Boechout</a>
+		<a href="#">Bonheiden</a>
+		<a href="#">Boom</a>
+		<a href="#">Bornem</a>
+		<a href="#">Borsbeek</a>
+		<a href="#">Brasschaat</a>
+		<a href="#">Brecht</a>
+		<a href="#">Dessel</a>
+		<a href="#">Duffel</a>
+		<a href="#">Edegem</a>
+		<a href="#">Essen</a>
+	</div>
+	<div class="col-md-3 col-xs-6">
+		<a href="#">Geel</a>
+		<a href="#">Grobbendonk</a>
+		<a href="#">Heist-op-den-Berg</a>
+		<a href="#">Hemiksem</a>
+		<a href="#">Herentals</a>
+		<a href="#">Herenthout</a>
+		<a href="#">Herselt</a>
+		<a href="#">Hoogstraten</a>
+		<a href="#">Hove</a>
+		<a href="#">Hulshout</a>
+		<a href="#">Kalmthout</a>
+		<a href="#">Kapellen</a>
+		<a href="#">Kasterlee</a>
+		<a href="#">Kontich</a>
+		<a href="#">Laakdal</a>
+		<a href="#">Lier</a>
+		<a href="#">Lilie</a>
+		<a href="#">Lint</a>
+	</div>
+	<div class="col-md-3 col-xs-6">
+		<a href="#">Malle</a>
+		<a href="#">Mechelen</a>
+		<a href="#">Meerhout</a>
+		<a href="#">Merksplas</a>
+		<a href="#">Mol</a>
+		<a href="#">Motrsel</a>
+		<a href="#">Niel</a>
+		<a href="#">Nijlen</a>
+		<a href="#">Olen</a>
+		<a href="#">Oud-Turnhout</a>
+		<a href="#">Putte</a>
+		<a href="#">Puurs</a>
+		<a href="#">Ranst</a>
+		<a href="#">Ravels</a>
+		<a href="#">Retie</a>
+		<a href="#">Rijkevorsel</a>
+		<a href="#">Rumst</a>
+		<a href="#">Schelle</a>
+
+	</div>
+	<div class="col-md-3 col-xs-6">
+		<a href="#">Schilde</a>
+		<a href="#">Schoten</a>
+		<a href="#">Sint-Amands</a>
+		<a href="#">Sint-Katelijne-Waver</a>
+		<a href="#">Stabroek</a>
+		<a href="#">Turnhout</a>
+		<a href="#">Vorselaar</a>
+		<a href="#">Vosselaar</a>
+		<a href="#">Westerlo</a>
+		<a href="#">Wijnegem</a>
+		<a href="#">Willebroek</a>
+		<a href="#">Wommelgem</a>
+		<a href="#">Wuustwezel</a>
+		<a href="#">Zandhoven</a>
+		<a href="#">Zoersel</a>
+		<a href="#">Zwijndrecht</a>
+	</div>
+</div>
+</div>
+<!-- Screen with cities list END -->
+
+
+</div>
+
+<!--  JavaScript Files -->
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery-asCheck.js"></script>
+
+<script src="js/scripts.js"></script>
+
+</body>
+
+</html>

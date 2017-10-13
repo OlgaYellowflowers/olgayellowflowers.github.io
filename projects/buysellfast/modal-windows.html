@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Buy Sell Fast</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- JavaScripts -->
+  <script src='js/jquery-1.10.2.min.js'></script>
+  <script src='js/bootstrap.min.js'></script>
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="top-bar-logo">
+      <a href="/">
+        <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+    </div>
+
+    <!-- Cart on the top bar -->
+    <div class="top-bar-cart">
+      <a href="#">
+        <span class="top-bar-cart-items">95</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="nav-buy">
+              <span class="nav-name">Buy</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-explore">
+              <span class="nav-name">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-sell">
+              <span class="nav-name">Sell</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-contacts">
+              <span class="nav-name">Contacts</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-messages">
+              <span class="nav-name">Messages</span>
+              <span class="nav-quantity">89</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-reports">
+              <span class="nav-name">Reports</span>
+            </a>
+          </li>
+          <li  class="active">
+            <a href="#" class="nav-settings">
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ./navbar -->
+  <!-- Page-content -->
+  <div id="page-content">
+    <!-- Container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#SuccessModal">Success modal window</button>
+
+          <!-- Modal -->
+          <div class="modal fade success-modal" id="SuccessModal" tabindex="-1" role="dialog" aria-labelledby="SuccessModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-body">
+                  <img src="images/Success-Popup-Icon.png" height="75" width="75" alt="">
+                  <div class="font36light">Success!</div>
+                  <div class="font24medium">Thank you.</div>
+                  <div class="lightgreen">
+                    Your order is complete, the store has been notified.
+                    <br>You will recive an email receipt momentarily.</div>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#WarningModal">Warning modal window</button>
+
+          <!-- Modal -->
+          <div class="modal fade warning-modal" id="WarningModal" tabindex="-1" role="dialog" aria-labelledby="WarningModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-body">
+                  <img src="images/Incomomplete-PopUp-Icon.png" height="69" width="82" alt="">
+                  <div class="font36light">Incomplete entry</div>
+                  <div class="lightred">
+                    The following entry cannot be blank:
+                    <br>Enter the item name.</div>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#QuestionModal">Billing address modal window</button>
+
+          <!-- Modal -->
+          <div class="modal fade question-modal" id="QuestionModal" tabindex="-1" role="dialog" aria-labelledby="QuestionModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-body">
+                  <img src="images/Billing-Popup-Icon.png" height="72" width="72" alt="">
+                  <div class="font36light">Billing Address</div>
+                  <div class="lightlilac">
+                    Did you want to also update the billing address in your Buyer's Profile with the billing address just entered?
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <div class="buttons-in-row">
+                    <button type="button" class="btn btn-darklilac" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-success">Yes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- ./container --> </div>
+  <!-- ./page-content -->
+</body>
+</html>

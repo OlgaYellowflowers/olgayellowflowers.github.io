@@ -1,0 +1,49 @@
+.width100 { width: 100%; }
+.table-one-row { border-bottom: 1px @darkGrey solid; padding: 5px; }
+.rounded { -webkit-border-radius: 5px; border-radius: 5px; padding: 15px 15px 15px 30px; }
+.with-border { border: 1px @baseBorderColor solid; padding: 15px 15px 15px 30px;
+	@media (max-width:768px) {
+	padding: 15px; }
+}
+.clear { clear: both; }
+// Colors
+
+.lightblue { color: @lightblue; }
+.bg-lightblue { background-color: @lightblue; color: @baseLightColor; }
+.bg-blue { background-color: @blue; color: @baseLightColor; }
+.blue { color: @blue; }
+.bg-orange { background-color: @orange; color: @baseLightColor; }
+.orange { color: @orange; }
+.bg-green { background-color: @green; color: @baseLightColor; }
+.green { color: @green; }
+.dirtyOrange { color: @dirtyOrange; }
+.bg-dirtyOrange { background-color: @dirtyOrange; color: @baseLightColor; }
+.bg-lightblue a:hover, .bg-lightblue a:focus, .bg-green a:hover, .bg-green a:focus, .bg-blue a:hover, .bg-blue a:focus, .bg-orange a:hover, .bg-orange a:focus, .bg-dirtyOrange a:hover, .bg-dirtyOrange a:focus
+a.bg-lightblue:hover, a.bg-lightblue:focus, a.bg-green:hover, a.bg-green:focus, a.bg-blue:hover, a.bg-blue:focus, a.bg-orange:hover, a.bg-orange:focus
+a.bg-dirtyOrange:hover, a.bg-dirtyOrange:focus { color: @baseLightColor !important; }
+a.bg-lightblue:hover, a.bg-lightblue:focus { background: darken(@lightblue, 10%); color: @baseLightFontColor !important; }
+a.bg-blue:hover, a.bg-blue:focus { background: darken(@blue, 10%); color: @baseLightFontColor !important; }
+a.bg-green:hover, a.bg-green:focus { background: darken(@green, 10%); color: @baseLightFontColor !important; }
+a.bg-orange:hover, a.bg-orange:focus { background: darken(@orange, 10%); color: @baseLightFontColor !important; }
+a.bg-dirtyOrange:hover, a.bg-dirtyOrange:focus { background: darken(@dirtyOrange, 10%); color: @baseLightFontColor !important; }
+
+/* margins */
+.marginbot-0 { margin-bottom: 0 !important; }
+.marginbot-5 { margin-bottom: 5px !important; }
+.marginbot-10 { margin-bottom: 10px !important; }
+.marginbot-20 { margin-bottom: 20px !important; }
+.marginbot-30 { margin-bottom: 30px !important; }
+.marginbot-40 { margin-bottom: 40px !important; }
+.marginbot-50 { margin-bottom: 50px !important; }
+.margintop-5 { margin-top: 5px !important; }
+.margintop-10 { margin-top: 10px !important; }
+.margintop-20 { margin-top: 20px !important; }
+.margintop-30 { margin-top: 30px !important; }
+.more { margin-bottom: -8px; }
+.more-aligned-right { color: #fff; position: absolute; bottom: 15px; right: 20px;
+	&:hover, &:focus { color: #fff !important; }
+}
+.underline { text-decoration: underline; }
+a.underline { text-decoration: underline !important;
+	&:hover, &:focus { text-decoration: none !important; }
+}

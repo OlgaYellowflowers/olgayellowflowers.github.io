@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Account Overview</title>
+
+	<link href="fonts/fonts.css" rel="stylesheet" />
+	<link href="css/bootstrap.css" rel="stylesheet" />
+
+	<script type='text/javascript' src='js/jquery-1.11.3.js'></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+
+	<!-- Admin stylesheet -->
+	<link href="css/starReviewsAdmin.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="css/c3.css" rel="stylesheet" type="text/css"/>
+	<!-- Merchant Dashboard Theme-->
+	<link href="css/dashboard.css" rel="stylesheet">
+
+	<!--  css -->
+	<link href="css/bootstrap-fileinput.css" rel="stylesheet" />
+	<link href="css/bootstrap-select.css" rel="stylesheet" />
+	<link href="css/table-styling.css" rel="stylesheet">
+	<link href="css/override-your-styles.css" rel="stylesheet">
+	<link href="css/styledash-additional.css" rel="stylesheet">
+
+	<!--  js -->
+	<script type='text/javascript' src='js/bootstrap.file-input.js'></script>
+	<script type='text/javascript' src='js/bootstrap-select.min.js'></script>
+	<script type='text/javascript' src='js/scripts-user-profile.js'></script>
+
+</head>
+
+<body>
+
+	<div class="content">
+		<div class="page-header">
+			<h2>Account Overview</h2>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+
+				<ul class="nav nav-tabs nav-tabs-styled">
+					<li class="active">
+						<a data-toggle="tab" href="#Profile">Profile</a>
+					</li>
+					<li >
+						<a data-toggle="tab" href="#Billing">Billing</a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#Settings">Settings</a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#EmailNotification">Email Notification</a>
+					</li>
+
+				</ul>
+				<div class="tab-content tab-content-styled">
+
+					<!-- Profile tab begin -->
+					<div id="Profile" class="tab-pane fade  active in">
+
+						<h2 class="no-margin">About Your Company</h2>
+
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label class="control-label">Company Name</label>
+									<input type="text"  class="form-control" placeholder="Add Company Name"></div>
+								<div class="form-group">
+									<label class="control-label">Company Website</label>
+									<input type="url"  class="form-control" placeholder="Add Company Website"></div>
+								<div class="form-group">
+									<label class="control-label">Company Category</label>
+									<select class="form-control selectpicker select-white" data-width="100%">
+										<option>Company Category</option>
+										<option>Company Category1</option>
+										<option>Company Category2</option>
+										<option>Company Category3</option>
+
+									</select>
+								</div>
+							</div>
+
+							<div class="col-sm-4 col-sm-offset-2">
+
+								<!-- Logo preview block with empty image -->
+								<div class="logo-preview-block img-thumbnail">
+									<div class="logo-preview-block-empty">Company Logo Preview</div>
+								</div>
+
+								<!-- Here is logo preview block with image inside, uncomment and use this block instead previous block when you put image inside
+							-->
+								<!-- 								<div class="logo-preview-block img-thumbnail">
+								<div class="logo-preview-block-img">
+									<img src="img/logo.png"></div>
+							</div>
+							-->
+							<div class="logo-preview-controls">
+								<div class="pull-left">
+									<input type="file" class="input-file-styled btn btn-primary " data-filename-placement="outside" title="BROWSE"></div>
+								<div class="logo-preview-controls-text">125 x 125px</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-12">
+
+							<div class="form-group">
+								<label class="control-label">Description</label>
+								<textarea class="form-control" rows="6"></textarea>
+							</div>
+						</div>
+					</div>
+
+					<div class="line-separator paragraph-lg"></div>
+					<h2>Contact Information</h2>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label class="control-label">Account Email</label>
+								<input type="email"  class="form-control" placeholder="Add Your Account Email"></div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group control-label-empty">
+								<div class="btn btn-green disabled">Verified</div>
+								<button class="btn btn-danger">Verify email</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label class="control-label">First & Last Name</label>
+								<input type="text"  class="form-control" placeholder="Add Your First & Last Name"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label class="control-label">Street Address</label>
+								<input type="text"  class="form-control" placeholder="Add Street Address"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label class="control-label">City</label>
+								<input type="text"  class="form-control" placeholder="Add City"></div>
+						</div>
+						<div class="col-sm-3">
+							<div class="form-group">
+								<label class="control-label">State</label>
+								<!-- I copied the state options from here 
+http://www.freeformatter.com/usa-state-list-html-select.html
+ -->
+								<select class="form-control selectpicker select-white" data-width="100%">
+									<option value="AL">Alabama</option>
+									<option value="AK">Alaska</option>
+									<option value="AZ">Arizona</option>
+									<option value="AR">Arkansas</option>
+									<option value="CA">California</option>
+									<option value="CO">Colorado</option>
+									<option value="CT">Connecticut</option>
+									<option value="DE">Delaware</option>
+									<option value="DC">District Of Columbia</option>
+									<option value="FL">Florida</option>
+									<option value="GA">Georgia</option>
+									<option value="HI">Hawaii</option>
+									<option value="ID">Idaho</option>
+									<option value="IL">Illinois</option>
+									<option value="IN">Indiana</option>
+									<option value="IA">Iowa</option>
+									<option value="KS">Kansas</option>
+									<option value="KY">Kentucky</option>
+									<option value="LA">Louisiana</option>
+									<option value="ME">Maine</option>
+									<option value="MD">Maryland</option>
+									<option value="MA">Massachusetts</option>
+									<option value="MI">Michigan</option>
+									<option value="MN">Minnesota</option>
+									<option value="MS">Mississippi</option>
+									<option value="MO">Missouri</option>
+									<option value="MT">Montana</option>
+									<option value="NE">Nebraska</option>
+									<option value="NV">Nevada</option>
+									<option value="NH">New Hampshire</option>
+									<option value="NJ">New Jersey</option>
+									<option value="NM">New Mexico</option>
+									<option value="NY">New York</option>
+									<option value="NC">North Carolina</option>
+									<option value="ND">North Dakota</option>
+									<option value="OH">Ohio</option>
+									<option value="OK">Oklahoma</option>
+									<option value="OR">Oregon</option>
+									<option value="PA">Pennsylvania</option>
+									<option value="RI">Rhode Island</option>
+									<option value="SC">South Carolina</option>
+									<option value="SD">South Dakota</option>
+									<option value="TN">Tennessee</option>
+									<option value="TX">Texas</option>
+									<option value="UT">Utah</option>
+									<option value="VT">Vermont</option>
+									<option value="VA">Virginia</option>
+									<option value="WA">Washington</option>
+									<option value="WV">West Virginia</option>
+									<option value="WI">Wisconsin</option>
+									<option value="WY">Wyoming</option>
+
+								</select>
+
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="form-group">
+								<label class="control-label">Zip Code</label>
+								<input type="text"  class="form-control" placeholder="Zip Code"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label class="control-label">Country</label>
+								<!-- I copied the ISO country list from this page
+http://www.freeformatter.com/iso-country-list-html-select.html
+   -->
+								<select class="form-control selectpicker select-white" data-width="100%">
+									<option value="0">Company Country</option>
+									<option value="AF">Afghanistan</option>
+									<option value="AX">Åland Islands</option>
+									<option value="AL">Albania</option>
+									<option value="DZ">Algeria</option>
+									<option value="AS">American Samoa</option>
+									<option value="AD">Andorra</option>
+									<option value="AO">Angola</option>
+									<option value="AI">Anguilla</option>
+									<option value="AQ">Antarctica</option>
+									<option value="AG">Antigua and Barbuda</option>
+									<option value="AR">Argentina</option>
+									<option value="AM">Armenia</option>
+									<option value="AW">Aruba</option>
+									<option value="AU">Australia</option>
+									<option value="AT">Austria</option>
+									<option value="AZ">Azerbaijan</option>
+									<option value="BS">Bahamas</option>
+									<option value="BH">Bahrain</option>
+									<option value="BD">Bangladesh</option>
+									<option value="BB">Barbados</option>
+									<option value="BY">Belarus</option>
+									<option value="BE">Belgium</option>
+									<option value="BZ">Belize</option>
+									<option value="BJ">Benin</option>
+									<option value="BM">Bermuda</option>
+									<option value="BT">Bhutan</option>
+									<option value="BO">Bolivia, Plurinational State of</option>
+									<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+									<option value="BA">Bosnia and Herzegovina</option>
+									<option value="BW">Botswana</option>
+									<option value="BV">Bouvet Island</option>
+									<option value="BR">Brazil</option>
+									<option value="IO">British Indian Ocean Territory</option>
+									<option value="BN">Brunei Darussalam</option>
+									<option value="BG">Bulgaria</option>
+									<option value="BF">Burkina Faso</option>
+									<option value="BI">Burundi</option>
+									<option value="KH">Cambodia</option>
+									<option value="CM">Cameroon</option>
+									<option value="CA">Canada</option>
+									<option value="CV">Cape Verde</option>
+									<option value="KY">Cayman Islands</option>
+									<option value="CF">Central African Republic</option>
+									<option value="TD">Chad</option>
+									<option value="CL">Chile</option>
+									<option value="CN">China</option>
+									<option value="CX">Christmas Island</option>
+									<option value="CC">Cocos (Keeling) Islands</option>
+									<option value="CO">Colombia</option>
+									<option value="KM">Comoros</option>
+									<option value="CG">Congo</option>
+									<option value="CD">Congo, the Democratic Republic of the</option>
+									<option value="CK">Cook Islands</option>
+									<option value="CR">Costa Rica</option>
+									<option value="CI">Côte d'Ivoire</option>
+									<option value="HR">Croatia</option>
+									<option value="CU">Cuba</option>
+									<option value="CW">Curaçao</option>
+									<option value="CY">Cyprus</option>
+									<option value="CZ">Czech Republic</option>
+									<option value="DK">Denmark</option>
+									<option value="DJ">Djibouti</option>
+									<option value="DM">Dominica</option>
+									<option value="DO">Dominican Republic</option>
+									<option value="EC">Ecuador</option>
+									<option value="EG">Egypt</option>
+									<option value="SV">El Salvador</option>
+									<option value="GQ">Equatorial Guinea</option>
+									<option value="ER">Eritrea</option>
+									<option value="EE">Estonia</option>
+									<option value="ET">Ethiopia</option>
+									<option value="FK">Falkland Islands (Malvinas)</option>
+									<option value="FO">Faroe Islands</option>
+									<option value="FJ">Fiji</option>
+									<option value="FI">Finland</option>
+									<option value="FR">France</option>
+									<option value="GF">French Guiana</option>
+									<option value="PF">French Polynesia</option>
+									<option value="TF">French Southern Territories</option>
+									<option value="GA">Gabon</option>
+									<option value="GM">Gambia</option>
+									<option value="GE">Georgia</option>
+									<option value="DE">Germany</option>
+									<option value="GH">Ghana</option>
+									<option value="GI">Gibraltar</option>
+									<option value="GR">Greece</option>
+									<option value="GL">Greenland</option>
+									<option value="GD">Grenada</option>
+									<option value="GP">Guadeloupe</option>
+									<option value="GU">Guam</option>
+									<option value="GT">Guatemala</option>
+									<option value="GG">Guernsey</option>
+									<option value="GN">Guinea</option>
+									<option value="GW">Guinea-Bissau</option>
+									<option value="GY">Guyana</option>
+									<option value="HT">Haiti</option>
+									<option value="HM">Heard Island and McDonald Islands</option>
+									<option value="VA">Holy See (Vatican City State)</option>
+									<option value="HN">Honduras</option>
+									<option value="HK">Hong Kong</option>
+									<option value="HU">Hungary</option>
+									<option value="IS">Iceland</option>
+									<option value="IN">India</option>
+									<option value="ID">Indonesia</option>
+									<option value="IR">Iran, Islamic Republic of</option>
+									<option value="IQ">Iraq</option>
+									<option value="IE">Ireland</option>
+									<option value="IM">Isle of Man</option>
+									<option value="IL">Israel</option>
+									<option value="IT">Italy</option>
+									<option value="JM">Jamaica</option>
+									<option value="JP">Japan</option>
+									<option value="JE">Jersey</option>
+									<option value="JO">Jordan</option>
+									<option value="KZ">Kazakhstan</option>
+									<option value="KE">Kenya</option>
+									<option value="KI">Kiribati</option>
+									<option value="KP">Korea, Democratic People's Republic of</option>
+									<option value="KR">Korea, Republic of</option>
+									<option value="KW">Kuwait</option>
+									<option value="KG">Kyrgyzstan</option>
+									<option value="LA">Lao People's Democratic Republic</option>
+									<option value="LV">Latvia</option>
+									<option value="LB">Lebanon</option>
+									<option value="LS">Lesotho</option>
+									<option value="LR">Liberia</option>
+									<option value="LY">Libya</option>
+									<option value="LI">Liechtenstein</option>
+									<option value="LT">Lithuania</option>
+									<option value="LU">Luxembourg</option>
+									<option value="MO">Macao</option>
+									<option value="MK">Macedonia, the former Yugoslav Republic of</option>
+									<option value="MG">Madagascar</option>
+									<option value="MW">Malawi</option>
+									<option value="MY">Malaysia</option>
+									<option value="MV">Maldives</option>
+									<option value="ML">Mali</option>
+									<option value="MT">Malta</option>
+									<option value="MH">Marshall Islands</option>
+									<option value="MQ">Martinique</option>
+									<option value="MR">Mauritania</option>
+									<option value="MU">Mauritius</option>
+									<option value="YT">Mayotte</option>
+									<option value="MX">Mexico</option>
+									<option value="FM">Micronesia, Federated States of</option>
+									<option value="MD">Moldova, Republic of</option>
+									<option value="MC">Monaco</option>
+									<option value="MN">Mongolia</option>
+									<option value="ME">Montenegro</option>
+									<option value="MS">Montserrat</option>
+									<option value="MA">Morocco</option>
+									<option value="MZ">Mozambique</option>
+									<option value="MM">Myanmar</option>
+									<option value="NA">Namibia</option>
+									<option value="NR">Nauru</option>
+									<option value="NP">Nepal</option>
+									<option value="NL">Netherlands</option>
+									<option value="NC">New Caledonia</option>
+									<option value="NZ">New Zealand</option>
+									<option value="NI">Nicaragua</option>
+									<option value="NE">Niger</option>
+									<option value="NG">Nigeria</option>
+									<option value="NU">Niue</option>
+									<option value="NF">Norfolk Island</option>
+									<option value="MP">Northern Mariana Islands</option>
+									<option value="NO">Norway</option>
+									<option value="OM">Oman</option>
+									<option value="PK">Pakistan</option>
+									<option value="PW">Palau</option>
+									<option value="PS">Palestinian Territory, Occupied</option>
+									<option value="PA">Panama</option>
+									<option value="PG">Papua New Guinea</option>
+									<option value="PY">Paraguay</option>
+									<option value="PE">Peru</option>
+									<option value="PH">Philippines</option>
+									<option value="PN">Pitcairn</option>
+									<option value="PL">Poland</option>
+									<option value="PT">Portugal</option>
+									<option value="PR">Puerto Rico</option>
+									<option value="QA">Qatar</option>
+									<option value="RE">Réunion</option>
+									<option value="RO">Romania</option>
+									<option value="RU">Russian Federation</option>
+									<option value="RW">Rwanda</option>
+									<option value="BL">Saint Barthélemy</option>
+									<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+									<option value="KN">Saint Kitts and Nevis</option>
+									<option value="LC">Saint Lucia</option>
+									<option value="MF">Saint Martin (French part)</option>
+									<option value="PM">Saint Pierre and Miquelon</option>
+									<option value="VC">Saint Vincent and the Grenadines</option>
+									<option value="WS">Samoa</option>
+									<option value="SM">San Marino</option>
+									<option value="ST">Sao Tome and Principe</option>
+									<option value="SA">Saudi Arabia</option>
+									<option value="SN">Senegal</option>
+									<option value="RS">Serbia</option>
+									<option value="SC">Seychelles</option>
+									<option value="SL">Sierra Leone</option>
+									<option value="SG">Singapore</option>
+									<option value="SX">Sint Maarten (Dutch part)</option>
+									<option value="SK">Slovakia</option>
+									<option value="SI">Slovenia</option>
+									<option value="SB">Solomon Islands</option>
+									<option value="SO">Somalia</option>
+									<option value="ZA">South Africa</option>
+									<option value="GS">South Georgia and the South Sandwich Islands</option>
+									<option value="SS">South Sudan</option>
+									<option value="ES">Spain</option>
+									<option value="LK">Sri Lanka</option>
+									<option value="SD">Sudan</option>
+									<option value="SR">Suriname</option>
+									<option value="SJ">Svalbard and Jan Mayen</option>
+									<option value="SZ">Swaziland</option>
+									<option value="SE">Sweden</option>
+									<option value="CH">Switzerland</option>
+									<option value="SY">Syrian Arab Republic</option>
+									<option value="TW">Taiwan, Province of China</option>
+									<option value="TJ">Tajikistan</option>
+									<option value="TZ">Tanzania, United Republic of</option>
+									<option value="TH">Thailand</option>
+									<option value="TL">Timor-Leste</option>
+									<option value="TG">Togo</option>
+									<option value="TK">Tokelau</option>
+									<option value="TO">Tonga</option>
+									<option value="TT">Trinidad and Tobago</option>
+									<option value="TN">Tunisia</option>
+									<option value="TR">Turkey</option>
+									<option value="TM">Turkmenistan</option>
+									<option value="TC">Turks and Caicos Islands</option>
+									<option value="TV">Tuvalu</option>
+									<option value="UG">Uganda</option>
+									<option value="UA">Ukraine</option>
+									<option value="AE">United Arab Emirates</option>
+									<option value="GB">United Kingdom</option>
+									<option value="US">United States</option>
+									<option value="UM">United States Minor Outlying Islands</option>
+									<option value="UY">Uruguay</option>
+									<option value="UZ">Uzbekistan</option>
+									<option value="VU">Vanuatu</option>
+									<option value="VE">Venezuela, Bolivarian Republic of</option>
+									<option value="VN">Viet Nam</option>
+									<option value="VG">Virgin Islands, British</option>
+									<option value="VI">Virgin Islands, U.S.</option>
+									<option value="WF">Wallis and Futuna</option>
+									<option value="EH">Western Sahara</option>
+									<option value="YE">Yemen</option>
+									<option value="ZM">Zambia</option>
+									<option value="ZW">Zimbabwe</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label class="control-label">Phone</label>
+								<input type="text" placeholder="Add Phone Number" class="form-control"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="wrapper-outer-lg text-center">
+								<button class="btn btn-lg btn-primary" type="submit">Save changes</button>
+								<!-- Or you can use not button but input if it is more comfortable -->
+								<!-- <input type="submit" value="Save changes" class="btn btn-lg btn-success">--></div>
+						</div>
+					</div>
+
+					<div class="line-separator"></div>
+					<h2>API Credentials</h2>
+					<div class="paragraph-sm">
+						<div class="width-sm pull-left">API Key:</div>
+						<div class="width-lg-mega pull-left">ESIJRGSE4243634T34GIGSERG-4T349T3GISE4GS</div>
+						<div class="btn-inline-group">
+							<button class="btn btn-info btn-sm separator-after">Copy</button>
+							<div class="vertical-line-separator"></div>
+							<button class="btn btn-warning btn-sm ">Regenerate Key</button>
+						</div>
+					</div>
+					<div class="paragraph-sm">
+						<div class="width-sm pull-left">API Secret:</div>
+						<div class="width-lg-mega pull-left">WEGAWE34634634</div>
+						<div class="btn-inline-group">
+							<button class="btn btn-info btn-sm separator-after">Copy</button>
+						</div>
+					</div>
+
+				</div>
+				<!-- Profile tab end -->
+
+				<!-- Billing tab begin -->
+				<div id="Billing" class="tab-pane fade in">
+
+					<div class="alert alert-danger">
+						<div class="row">
+							<div class="col-sm-9">
+
+								<h2 class="no-margin">Enhance your reviews experience with Premium!</h2>
+								<div class="text-md">
+									upsell message here Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="paragraph-sm text-right">
+									<a href="#" class="btn btn-danger btn-lg">UPGRADE NOW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-12">
+							<h2 class="no-margin">Overview</h2>
+						</div>
+					</div>
+
+					<div class="row">
+						<!-- Your current plan -->
+						<div class="col-sm-8">
+							<div class="paragraph-sm">
+								<div class="width-md pull-left">Your current plan:</div>
+								Lite  ($30 per month)
+							</div>
+							<div class="paragraph-sm">
+								<div class="width-md pull-left">Kickstart Credits:</div>
+								250
+							</div>
+							<div class="paragraph-md">
+								<div class="width-md pull-left">Payment Method:</div>
+								<div class="payment-method-wrap">
+									<img src="img/icon-visa.png" alt="Visa">
+									<!-- For maestro card use next icon -->
+									<!-- <img src="img/icon-maestro.png" alt="Maestro">
+									-->
+									<span class="cc-number">*5499</span>
+									<a class="btn btn-primary" href="#">Update CC</a>
+								</div>
+							</div>
+							<div class="cancel-subscr-wrap">
+								<a class="link-text" href="#">Cancel subscription</a>
+							</div>
+
+						</div>
+
+						<!-- Billing Questions -->
+						<div class="col-sm-4">
+							<div class="well help-questions-wrap" >
+								<h3 class="no-margin">Billing Questions</h3>
+								<div class="line-separator paragraph-xs"></div>
+								<div class="paragraph-sm text-xs">
+									1.
+									<a href="#" class="link-text" target="_blank">How do I change my payment method?</a>
+								</div>
+								<div class="paragraph-sm  text-xs">
+									2.
+									<a href="#" class="link-text" target="_blank">How much are your premium plans?</a>
+								</div>
+								<div class="paragraph-sm  text-xs">
+									3.
+									<a href="#" class="link-text" target="_blank">Which Credit Cards are accepted?</a>
+								</div>
+								<div class="wrapper-inner-sm block-rounded">
+									Have questions?
+									<a href="#" class="link-text" target="_blank">Contact Support</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="line-separator paragraph-xs"></div>
+
+					<!-- Billing History table -->
+
+					<div class="row">
+						<div class="col-sm-12">
+							<h2>Billing History</h2>
+							<table class="table table-striped table-styled">
+								<thead>
+									<tr>
+										<th>Bill Date</th>
+										<th>Description</th>
+										<th>Amount</th>
+										<th style="width: 160px;">Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 1, 2015</td>
+										<td>Lite Plan (renewal)</td>
+										<td>$30</td>
+										<td>
+											<a class="btn btn-styled-darker width100" href="#">View</a>
+										</td>
+									</tr>
+									<tr>
+										<td>Oct 1, 2015</td>
+										<td>Lite Plan (renewal)</td>
+										<td>$30</td>
+										<td>
+											<a class="btn btn-styled-darker width100" href="#">View</a>
+										</td>
+									</tr>
+									<tr>
+										<td>Sept 1, 2015</td>
+										<td>Lite Plan (initial upgrade)</td>
+										<td>$30</td>
+										<td>
+											<a class="btn btn-styled-darker width100" href="#">View</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<!-- Pagination -->
+					<div class="dataTables_paginate paging_bootstrap pagination">
+						<ul class="pagination">
+							<li class="prev disabled">
+								<a href="#">← Previous</a>
+							</li>
+							<li class="active">
+								<a href="#">1</a>
+							</li>
+							<li>
+								<a href="#">2</a>
+							</li>
+							<li class="next">
+								<a href="#">Next →</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<!-- Billing tab end -->
+
+				<!-- Settings tab begin -->
+				<div id="Settings" class="tab-pane fade ">
+					<h2 class="no-margin">Password</h2>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label class="control-label">Current Password</label>
+								<input type="password" placeholder="Add Current Password" class="form-control"></div>
+							<div class="form-group">
+								<label class="control-label">New Password</label>
+								<input type="password" placeholder="Add New Password" class="form-control"></div>
+							<div class="form-group">
+								<label class="control-label">Confirm New Password</label>
+
+								<input type="password" placeholder="Confirm New Password" class="form-control"></div>
+							<input type="submit" class="btn btn-primary" value="Save Changes"></div>
+					</div>
+
+				</div>
+				<!-- Settings tab end -->
+
+				<!-- EmailNotification tab begin -->
+				<div id="EmailNotification" class="tab-pane fade">
+					<h2 class="no-margin">Activity Notifications</h2>
+					<div class="paragraph-xs">Send me an email when the following events occur:</div>
+
+					<div class="checkbox-block paragraph-md">
+						<div class="checkbox-styled pull-left spacer-after">
+							<input type="checkbox" checked="checked" name="check" id="checkbox1" value="None">
+							<label for="checkbox1"></label>
+						</div>
+						<div class="checkbox-label"> <b>System Notification</b>
+							<div>
+								Receive important system notifications about your account and email campaigns.
+							</div>
+						</div>
+					</div>
+
+					<div class="checkbox-block">
+						<div class="checkbox-styled pull-left spacer-after">
+							<input type="checkbox" checked="checked" name="check" id="checkbox2" value="None">
+							<label for="checkbox2"></label>
+						</div>
+						<div class="checkbox-label"> <b>Review Notifications</b>
+							<div>
+								Receive email notifications for new reviews and comments on reviews, with the star ratings that are ticked below.
+							</div>
+
+							<div class="paragraph-sm">
+								<div class="checkbox-inline">
+									<div class="checkbox-grey pull-left spacer-after">
+										<input type="checkbox" checked="checked" name="check" id="checkboxStar1" value="None">
+										<label for="checkboxStar1"></label>
+									</div>
+									<div class="checkbox-label"> <i class="fa fa-star yellow"></i>
+									</div>
+								</div>
+
+								<div class="checkbox-inline">
+									<div class="checkbox-grey pull-left spacer-after">
+										<input type="checkbox" checked="checked" name="check" id="checkboxStar2" value="None">
+										<label for="checkboxStar2"></label>
+									</div>
+									<div class="checkbox-label"> <i class="fa fa-star yellow"></i>
+										<i class="fa fa-star yellow"></i>
+									</div>
+								</div>
+
+								<div class="checkbox-inline">
+									<div class="checkbox-grey pull-left spacer-after">
+										<input type="checkbox" checked="checked" name="check" id="checkboxStar3" value="None">
+										<label for="checkboxStar3"></label>
+									</div>
+									<div class="checkbox-label">
+										<i class="fa fa-star yellow"></i>
+										<i class="fa fa-star yellow"></i>
+										<i class="fa fa-star yellow"></i>
+									</div>
+								</div>
+
+								<div class="checkbox-inline">
+									<div class="checkbox-grey pull-left spacer-after">
+										<input type="checkbox" checked="checked" name="check" id="checkboxStar4" value="None">
+										<label for="checkboxStar4"></label>
+									</div>
+									<div class="checkbox-label">
+										<i class="fa fa-star yellow"></i>
+										<i class="fa fa-star yellow"></i>
+										<i class="fa fa-star yellow"></i>
+										<i class="fa fa-star yellow"></i>
+									</div>
+								</div>
+
+								<div class="checkbox-inline">
+									<div class="checkbox-grey pull-left spacer-after">
+										<input type="checkbox" checked="checked" name="check" id="checkboxStar5" value="None">
+										<label for="checkboxStar5"></label>
+									</div>
+									<div class="checkbox-label">
+										<i class="fa fa-star yellow"></i>
+										<i class="fa fa-star yellow"></i>
+										<i class="fa fa-star yellow"></i>
+										<i class="fa fa-star yellow"></i>
+										<i class="fa fa-star yellow"></i>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<h2 class="no-margin">TrustSpot Emails</h2>
+					<div class="paragraph-xs">Subscribe me to the following emails:</div>
+
+					<div class="checkbox-block paragraph-md">
+						<div class="checkbox-styled pull-left spacer-after">
+							<input type="checkbox" checked="checked" name="check" id="checkbox3" value="None">
+							<label for="checkbox3"></label>
+						</div>
+						<div class="checkbox-label">
+							<b>Newsletter</b>
+							<div>
+								We continually update our platform with amazing new features. Stay up to date on all that TrustSpot has to offer.
+							</div>
+						</div>
+					</div>
+
+					<div class="checkbox-block paragraph-md">
+						<div class="checkbox-styled pull-left spacer-after">
+							<input type="checkbox" checked="checked" name="check" id="checkbox4" value="None">
+							<label for="checkbox4"></label>
+						</div>
+						<div class="checkbox-label">
+							<b>Marketplace</b>
+							<div>
+								Receive an weekly email with the latest offers and discounts from the marketplace.
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- EmailNotification tab end -->
+
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>

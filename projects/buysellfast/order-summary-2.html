@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Buy Sell Fast</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- JavaScripts -->
+  <script src='js/jquery.min.js'></script>
+  <script src='js/bootstrap.min.js'></script>
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="top-bar-logo">
+      <a href="/">
+        <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+    </div>
+
+    <!-- Cart on the top bar -->
+    <div class="top-bar-cart">
+      <a href="#">
+        <span class="top-bar-cart-items">95</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="nav-buy">
+              <span class="nav-name">Buy</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-explore">
+              <span class="nav-name">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-sell">
+              <span class="nav-name">Sell</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-contacts">
+              <span class="nav-name">Contacts</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-messages">
+              <span class="nav-name">Messages</span>
+              <span class="nav-quantity">89</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-reports">
+              <span class="nav-name">Reports</span>
+            </a>
+          </li>
+          <li  class="active">
+            <a href="#" class="nav-settings">
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ./navbar -->
+
+  <div id="page-content">
+
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="breadcrumbs-wrap">
+        <div class="back-link">
+          <a href="#">Back</a>
+        </div>
+        <div class="page-title icon-order-summary">
+          <span>Order Summary</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="lilac-title">
+      <span class="lilac-title-text">Billing/Shipping address</span>
+    </div>
+
+    <ul class="list-with-icon list-autoheight">
+      <li>
+        <a href="#" class="list-link checked">
+          <span class="img-radio"></span>
+          <span class="list-text">Billing address</span>
+          <span class="list-link-value">Wills Magic Store</span>
+          <span class="arrow-right"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="list-link">
+          <span class="img-radio"></span>
+          <span class="list-text">Where is the order being sent?</span>
+          <span class="list-link-value"></span>
+          <span class="arrow-right"></span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="lilac-title">Order Summary</div>
+
+    <div class="lightgreen-title">Geekinfication</div>
+
+    <table class="incart">
+      <thead>
+        <tr>
+          <td>Items in cart</td>
+          <td>QTY</td>
+          <td>Cost</td>
+        </tr>
+      </thead>
+
+      <!-- Items in shopping cart -->
+      <tr>
+        <td class="incart-item-first">
+          <div class="incart-item-name">iPhone5</div>
+        </td>
+        <td class="incart-item-quantity">
+          <div>2</div>
+        </td>
+        <td class="incart-item-price">$&nbsp;300.00</td>
+      </tr>
+      <tr>
+        <td class="incart-item-first">
+          <div class="incart-item-name">2009 Ford Mustang Blue and this is very long long long</div>
+        </td>
+        <td class="incart-item-quantity">
+          <div>2</div>
+        </td>
+        <td class="incart-item-price">$&nbsp;7300.00</td>
+      </tr>
+
+      <!-- Calculating amount -->
+      <tr class="calc-amount">
+        <td colspan="2">
+          <img src="images/SubTotal.png" height="24" width="24" alt="">Subtotal</td>
+        <td class="incart-item-price">$&nbsp;7600.00</td>
+      </tr>
+      <tr class="calc-line">
+        <td colspan="3">
+          <div></div>
+        </td>
+      </tr>
+      <tr class="calc-amount">
+        <td colspan="2">
+          <img src="images/Tax.png" height="24" width="24" alt="">Tax</td>
+        <td class="incart-item-price">$&nbsp;500.00</td>
+      </tr>
+      <tr class="calc-line">
+        <td colspan="3">
+          <div></div>
+        </td>
+      </tr>
+      <tr class="calc-amount">
+        <td colspan="2">
+          <img src="images/ShippingDetail.png" height="24" width="24" alt="">Shipping</td>
+        <td class="incart-item-price">$&nbsp;700.00</td>
+      </tr>
+      <tr class="calc-line">
+        <td colspan="3">
+          <div></div>
+        </td>
+      </tr>
+
+      <!-- TOTAL AMOUNT -->
+      <tr class="calc-total bg-grey">
+        <td colspan="2">Total (CAD)</td>
+        <td class="incart-item-price">$&nbsp;700.00</td>
+      </tr>
+    </table>
+
+    <div class="bg-lightpeach">
+      Once you confirm your order, you may select various payment options to complete your order.
+    </div>
+
+    <div class="center-block">
+      <button class="btn btn-primary " type="submit">Confirm Order</button>
+    </div>
+
+  </div>
+  <!-- ./page-content -->
+
+</body>
+</html>

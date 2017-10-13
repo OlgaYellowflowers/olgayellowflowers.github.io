@@ -1,0 +1,49 @@
+.actions .popover-content {
+	padding: 20px 40px;
+}
+.actions .popup-window,
+.action-link {
+	display: inline-block;
+	margin-right: 5px;
+	line-height: 20px;
+	border-radius: 5px;
+	padding: 7px;
+	width: 34px;
+	height: 34px;
+	background-color: #2fa0e5;
+	color: #fff;
+	cursor: pointer;
+}
+.actions .popup-window:hover,
+.actions .popup-window:focus,
+.action-link:hover,
+.action-link:focus {
+	opacity: 0.85;
+}
+.action-link:last-child,
+.actions .popup-window:last-child {
+	margin-right: 0;
+}
+.btn-popup.fa {
+	font-size: 20px;
+	cursor: pointer;
+}
+.actions .popover-title {
+	background-color: transparent;
+	border-color: transparent;
+	float: right;
+}
+.actions .popover-content .form-group:first-child {
+	margin-top: 10px;
+}
+.actions .popover-content .well {
+	background-color: transparent;
+	border-color: transparent;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	box-shadow: none;
+}
+.actions .popover-content .well a {
+	margin: 0 10px 0 0;
+}

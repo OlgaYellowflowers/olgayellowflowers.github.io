@@ -1,0 +1,115 @@
+// Page title
+.page-title-wrap { margin: 5px 0 30px; clear: both; overflow: hidden; }
+.page-title { float: left; margin-right: 40px;
+	h1 { margin: 0 0 7px; }
+}
+.page-title-button { float: left; }
+// Info box
+.info-block { line-height: 20px; position: relative; display: block; min-height: 130px; width: 100%; padding: 10px 15px 10px 25px;
+	.progress-styled { margin-right: 10px !important; width: 160px; }
+	.progress-bar { background: #fff !important; }
+}
+.info-block-title { font-size: 17px; width: 100%; }
+.info-block-refresh { float: right; margin: 5px 0 5px 5px; }
+.info-block-refresh a { display: block; width: 18px; height: 17px; background: url('@{imagePath}refresh.png'); }
+.info-block-refresh a:hover, .info-block-refresh a:focus { opacity: 0.7; }
+.info-block-number { font-size: 17px; margin-top: 15px; }
+.info-block-number-aligned { position: absolute; margin: 0; left: 25px; bottom: 40px; }
+.info-block-text { overflow: hidden; clear: both; line-height: 20px; }
+.info-block a.btn-transparent { white-space: normal; font-size: 13px; margin-top: 10px; margin-left: -10px; }
+.minh-145 { min-height: 145px; height: 100%; }
+// Progress bar
+.progress-styled.progress { background: #3d91b2; border-radius: 0; height: 6px; margin: 5px 0 2px; box-shadow: none;
+	.progress-bar { background: @lightblue; box-shadow: none; }
+}
+.progress-styled.blue-progress { background: #0080b1 !important; }
+// Responsive tables
+
+@media only screen and (max-width:800px) {
+
+	/* Force table to not be like tables anymore */
+	.responsive-tables table, .responsive-tables thead, .responsive-tables tbody, .responsive-tables th, .responsive-tables td, .responsive-tables tr { display: block; }
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.responsive-tables thead tr { position: absolute; top: -9999px; left: -9999px; }
+	.responsive-tables tr { border-bottom: 1px @darkGrey solid; }
+	.responsive-tables td {		/* Behave  like a "row" */
+	border: none; position: relative; padding-left: 50%; white-space: normal; text-align: left; }
+	.responsive-tables td:before {		/* Now like a table header */
+	position: absolute;		/* Top/left values mimic padding */ top: 6px; left: 6px; width: 45%; padding-right: 10px; white-space: nowrap; text-align: left; font-weight: bold; }
+	.responsive-tables .fixed-long-th td { padding-left: 65% !important; }
+	.responsive-tables .fixed-long-th td:before { width: 35% !important; }
+
+	/*
+	Label the data
+	*/
+	.responsive-tables td:before { content: attr(data-title); }
+}
+.responsive-tables th { border-bottom: 1px @darkGrey solid; }
+.responsive-tables .btn { min-width: 82px; margin-bottom: 5px; margin-right: 6px; }
+.responsive-tables .btn:last-child { margin-right: 6px; }
+.table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > th { padding: 10px 5px; }
+.responsive-tables td { vertical-align: top; min-height: 20px; }
+.table-condensed > tbody > tr > .td-with-btn, .table-condensed > tfoot > tr > .td-with-btn, .table-condensed > thead > tr > .td-with-btn { padding-bottom: 0; padding-right: 0 !important; }
+@media (min-width:801px) {
+	.responsive-tables td { padding-top: 10px; padding-bottom: 10px; }
+}
+.text-center-inside td, .text-center-inside th { text-align: center; }
+.responsive-tables th:first-child, .responsive-tables tr > td:first-child { text-align: left; }
+.responsive-tables th:last-child, .responsive-tables tr > td:last-child { text-align: right; }
+@media (max-width:800px) {
+	.text-center-inside td, .responsive-tables th:last-child, .responsive-tables tr > td:last-child { text-align: left; }
+}
+// Complicated block with dropdown select and progress bars
+.complicated-block { overflow: hidden; }
+.complicated-block-title { font-size: 17px; float: left; margin: 0 0 15px 0; }
+.complicated-block-select { float: left; margin: 0 0 15px 15px; }
+.complicated-block-progress { overflow: hidden; clear: both; float: none; width: 100%; }
+.complicated-block-progress-label, .complicated-block-progress-progress, .complicated-block-progress-desc { float: left; margin: 5px 10px; }
+.complicated-block-progress-label { margin-left: 0; text-align: right; width: 150px; }
+.complicated-block-progress-progress { width: 160px; }
+@media (max-width:540px) {
+	.complicated-block-progress-label { margin-left: 0; text-align: left; width: 100%; }
+	.complicated-block-select { margin-left: 0; }
+	.complicated-block-progress-desc { width: 100%; padding-bottom: 10px; margin-bottom: 8px !important; border-bottom: 1px @baseBorderColor solid; }
+	.complicated-block-progress-label, .complicated-block-progress-progress, .complicated-block-progress-desc { margin: 5px 0; }
+}
+// Blocks with big number at the left
+.number-block { height: 108px; max-height: 108px; display: table; width: 100%; }
+.number-block-number { display: table-cell; vertical-align: middle; width: 108px; max-width: 108px; text-align: center; font-size: 75px; color: #fff; font-weight: bold; }
+.number-block-text { display: table-cell; vertical-align: middle; border: #919191 1px solid; border-left: 0; padding: 10px 20px; }
+// Arrow box (arrow at the top)
+.box-with-arrow-top-wrap { position: absolute; z-index: 100000; max-width: 300px; }
+.box-with-arrow-top { position: relative; background: #ffffff; border: 1px solid #919191; padding: 10px; -webkit-border-radius: 4px; border-radius: 4px; line-height: 24px; }
+.box-with-arrow-top:after, .box-with-arrow-top:before { bottom: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
+.box-with-arrow-top:after { border-color: rgba(255, 255, 255, 0); border-bottom-color: #ffffff; border-width: 25px; margin-left: -25px; }
+.box-with-arrow-top:before { border-color: rgba(145, 145, 145, 0); border-bottom-color: #919191; border-width: 27px; margin-left: -27px; }
+.box-with-arrow-top .pull-right { margin: 0 0 10px 10px; }
+// Five columns in a row
+
+.row-fluid-5 { width: 100%; *zoom: 1; }
+.row-fluid-5:before, .row-fluid-5:after { display: table; line-height: 0; content: ""; }
+.row-fluid-5:after { clear: both; }
+.row-fluid-5 [class*="span"] { display: block; float: left; width: 101%; min-height: 30px; margin-left: 1.875%; *margin-left: 1.875%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.row-fluid-5 .controls-row [class*="span"] + [class*="span"] { margin-left: 1.875%; }
+.row-fluid-5 [class*="span"]:first-child { margin-left: 0; }
+.row-fluid-5 .span2 { width: 18.5%; *width: 18.5%; margin-bottom: 20px; min-width: 180px; }
+@media (max-width:500px) {
+	.row-fluid-5 [class*="span"] { margin-left: 0; float: left; width: 101%; }
+}
+@media (min-width:501px) and (max-width:943px) {
+	.row-fluid-5 [class*="span"] { margin-left: 0; float: left; width: 50%; padding: 0 20px 0 0; }
+}
+@media (min-width:942px) and (max-width:1250px) {
+	.row-fluid-5 [class*="span"] { margin-left: 0; float: left; width: 33.33%; padding: 0 10px; }
+}
+// Big number in circle
+.big-number-circle span { display: table; padding: 8px 15px; border: 1px #fff solid; text-align: center; font-size: 48px; border-radius: 50%; margin: 0 auto; }
+// Styled file input  
+.file-input-wrapper { position: relative; overflow: hidden; display: block; }
+.file-input-wrapper span { white-space: normal; }
+.file-input-name-title { display: block; margin: 0 0 -9px 0; padding: 0; line-height: 13px; }
+.file-input-name { font-size: 13px; margin: 0; line-height: 13px; padding: 0; }
+.file-input-wrapper input { margin: 0; padding-left: 0; padding-right: 0; }
+.styled-file-input .btn { border: 0 !important; }
+h2 input.btn { margin-top: 0 !important; }

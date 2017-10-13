@@ -1,0 +1,51 @@
+{
+  "name": "kist-stylefileinput",
+  "version": "0.1.5",
+  "description": "Style file input elements.",
+  "authors": [
+    "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com/)"
+  ],
+  "license": "MIT",
+  "main": [
+    "dist/kist-stylefileinput.js",
+    "dist/kist-stylefileinput.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "lib",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "jquery": ">=1"
+  },
+  "devDependencies": {
+    "jquery": "1"
+  },
+  "homepage": "https://github.com/niksy/kist-stylefileinput",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "kist",
+    "fileinput",
+    "style",
+    "browserify"
+  ],
+  "_release": "0.1.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.5",
+    "commit": "1638370a76bfb09f3d85710f16e69dbfb9a7fb39"
+  },
+  "_source": "git://github.com/niksy/kist-stylefileinput.git",
+  "_target": "~0.1.5",
+  "_originalSource": "kist-stylefileinput",
+  "_direct": true
+}

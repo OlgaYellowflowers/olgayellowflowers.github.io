@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Buy Sell Fast</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/jquery.selectBoxIt.css" />
+
+  <!-- JavaScripts -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/jquery-ui-1.10.3.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.selectBoxIt.min.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="top-bar-logo">
+      <a href="/">
+        <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+    </div>
+
+    <!-- Cart on the top bar -->
+    <div class="top-bar-cart">
+      <a href="#">
+        <span class="top-bar-cart-items">95</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="nav-buy">
+              <span class="nav-name">Buy</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-explore">
+              <span class="nav-name">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-sell">
+              <span class="nav-name">Sell</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-contacts">
+              <span class="nav-name">Contacts</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-messages">
+              <span class="nav-name">Messages</span>
+              <span class="nav-quantity">89</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-reports">
+              <span class="nav-name">Reports</span>
+            </a>
+          </li>
+          <li  class="active">
+            <a href="#" class="nav-settings">
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ./navbar -->
+
+  <div id="page-content">
+
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="breadcrumbs-wrap">
+        <div class="back-link">
+          <a href="#">Back</a>
+        </div>
+        <div class="page-title icon-exchange-refund">
+          <span>Exchange / Refunds</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exchange-refunds">
+      <div class="grey-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center darkgrey-text3 font20">
+              <div class="wrapper30">
+                Please enter the invoice number of the items within the invoice you wish to exchange/refund
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row wrapper30 border-bottom">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="label-vmiddle">Invoice Number</div>
+            </div>
+            <div class="col-md-7 col-sm-7 col-xs-10">
+              <div class="form-group base-styling-input">
+                <input type="text" class="form-control font30" id="" placeholder=""></div>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2 exchange-radio">
+              <div class="label-vmiddle">
+                <span class="img-radio-checked"></span>
+              </div>
+            </div>
+          </div>
+
+        <!-- If invoice is validated, please show/hide next div -->
+        <div id="#show-if-invoice-true">
+          <div class="row wrapper15 border-bottom">
+            <div class="col-md-4 col-sm-4 col-xs-12">Please select the type of return you are requesting</div>
+            <div class="col-md-7 col-sm-7 col-xs-10 wrapper10">
+              <div class="like-select ">
+                <span class="img-radio"></span>
+                <span class="select-text">Refund</span>
+              </div>
+              <div class="like-select">
+                <span class="img-radio"></span>
+                <span class="select-text">Exchange</span>
+              </div>
+            </div>
+          </div>
+          <div class="row wrapper15 border-bottom">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="label-vmiddle">Select the reason for your refund/exchange</div>
+            </div>
+            <div class="col-md-7 col-sm-7 col-xs-10">
+              <div class="reason-ref-exch-select">
+                <select name="reason-ref-exch-select" id="reason-ref-exch-select">
+                  <option  selected="selected" value="0">Please Select One</option>
+                  <option value="Wrong Color">Wrong Color</option>
+                  <option value="Wrong Size">Wrong Size</option>
+                  <option value="Received Wrong Product">Received Wrong Product</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea placeholder="" class="form-control input-pencil"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-12">
+              <div class="center-block wrapper50">
+                <button class="btn btn-primary " type="submit">Submit Request</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- end div #show-if-invoice-true -->
+      
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- ./page-content -->
+
+<script>
+
+$(document).ready(function() {
+
+    // Selects styling
+    $("select").selectBoxIt();
+
+    // Select switching
+    $(".like-select").click(function () {
+        if(!$(this).hasClass('selected'))
+        {
+            $(".like-select.selected").removeClass("selected");
+            $(this).addClass("selected");        
+        }
+    });
+
+    // Select show other textarea
+    $("#reason-ref-exch-select").bind("change", function (e) { 
+      if( $("#reason-ref-exch-select").val() == "Other") {
+        $(".exchange-refunds textarea").show();
+      }
+      else{
+        $(".exchange-refunds textarea").hide();
+      }         
+    }).trigger("change");
+
+    // Fixing select width
+    $(window).on("resize", function () {
+          var selectWidth = $(".reason-ref-exch-select").parent().width();
+          $("#reason-ref-exch-selectSelectBoxIt").css("width", selectWidth);
+          $("#reason-ref-exch-selectSelectBoxItOptions").css("width", selectWidth);
+    }).resize();
+
+
+});
+</script>
+
+</body>
+</html>

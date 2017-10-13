@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Buy Sell Fast</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/jquery.switch.css" rel="stylesheet">
+
+  <!-- JavaScripts -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src='js/bootstrap.min.js'></script>
+
+  <script src="js/jquery.switch.js"></script>
+  <script src="js/main.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="top-bar-logo">
+      <a href="/">
+        <img src="images/BuySellFast.png" height="31" width="187" alt="Logo"></a>
+    </div>
+
+    <!-- Cart on the top bar -->
+    <div class="top-bar-cart">
+      <a href="#">
+        <span class="top-bar-cart-items">95</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="nav-buy">
+              <span class="nav-name">Buy</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-explore">
+              <span class="nav-name">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-sell">
+              <span class="nav-name">Sell</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-contacts">
+              <span class="nav-name">Contacts</span>
+              <span class="nav-quantity">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-messages">
+              <span class="nav-name">Messages</span>
+              <span class="nav-quantity">89</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-reports">
+              <span class="nav-name">Reports</span>
+            </a>
+          </li>
+          <li  class="active">
+            <a href="#" class="nav-settings">
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ./navbar -->
+
+  <div id="page-content" data-role="page" data-quicklinks="true">
+
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="breadcrumbs-wrap">
+        <div class="back-link">
+          <a href="#">Back</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="buy-page">
+
+      <!-- Search -->
+
+      <div class="bg-darklilac">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="form-group">
+            <input type="text" class="form-control lilac-search" placeholder="What are you looking to buy today?"></div>
+        </div>
+        <p class="text-center">
+          There are currently
+          <span class="yellow-bold">40</span>
+          sellers
+        </p>
+      </div>
+
+      <!-- Filters -->
+      <div class="bg-lilac">
+        <h2>Filters</h2>
+      </div>
+
+      <div class="list panel-group" id="accordion5">
+
+        <div class="list-with-collapse">
+
+          <!-- item -->
+          <div class="list-with-collapse-row">
+            <a href="#" class="list-link">
+              <span class="list-text">Any country</span>
+              <span class="arrow-right arrow-right-lightgrey"></span>
+            </a>
+          </div>
+
+          <!-- item -->
+          <div class="list-with-collapse-row">
+            <a href="#" class="list-link">
+              <span class="list-text">Any State</span>
+              <span class="arrow-right arrow-right-lightgrey"></span>
+            </a>
+          </div>
+
+          <!-- item -->
+          <div class="list-with-collapse-row">
+            <a href="#" class="list-link">
+              <span class="list-text">Enter a city name</span>
+              <span class="arrow-right arrow-right-lightgrey"></span>
+            </a>
+          </div>
+
+          <!-- item -->
+          <div class="list-with-collapse-row">
+            <div class="list-link">
+              <span class="list-text">Show results from city only</span>
+              <div id="show-from-city" class="list-switcher">
+                <select disabled="disabled">
+                  <option value="1">Off</option>
+                  <option value="0">On</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- collapsed item -->
+          <div class="panel panel-default">
+            <div class="panel-heading" >
+              <h4 class="panel-title ">
+                <span class="list-with-collapse-row">
+                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion-location" href="#collapseOne">
+                    <span class="list-link">
+                      <span class="label">City</span>
+                      <span class="choose-value">Vancouver, Canada</span>
+                      <span class="arrow-right arrow-right-lightgrey"></span>
+                    </span>
+                  </a>
+                </span>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse ">
+              <div class="panel-body">
+                <div class="text">
+                  <a href="#">Vancouver</a>
+                </div>
+                <div class="text">
+                  <a href="#">Vancouver</a>
+                </div>
+                <div class="text">
+                  <a href="#">Vancouver</a>
+                </div>
+                <div class="text">
+                  <a href="#">Vancouver</a>
+                </div>
+                <div class="text">
+                  <a href="#">Vancouver</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ./collapsed item -->
+
+          <!-- item -->
+          <div class="list-with-collapse-row">
+            <div class="list-link">
+              <span class="list-text">Item Condition</span>
+            </div>
+          </div>
+
+          <!-- item -->
+          <div class="list-with-collapse-row list-with-icon icon-no-bottom">
+            <div class="list-link">
+              <span class="icon-new"></span>
+              <span class="list-text">New</span>
+              <div id="item-condition-new" class="list-switcher">
+                <select>
+                  <option value="0">On</option>
+                  <option  value="1">Off</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- item -->
+          <div class="list-with-collapse-row list-with-icon">
+            <div class="list-link">
+              <span class="icon-used"></span>
+              <span class="list-text">Used</span>
+              <div id="item-condition-used" class="list-switcher">
+                <select>
+                  <option value="0">On</option>
+                  <option  value="1">Off</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- item -->
+          <div class="list-with-collapse-row list-no-bottom">
+            <div class="list-link">
+              <span class="list-text">Search for store by store name</span>
+              <div id="search-store-name" class="list-switcher">
+                <select>
+                  <option value="0">On</option>
+                  <option  value="1">Off</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="bg-lilac no-space-bottom">
+        <button class="btn btn-primary " type="submit">Clear Search</button>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- ./page-content -->
+
+</body>
+</html>

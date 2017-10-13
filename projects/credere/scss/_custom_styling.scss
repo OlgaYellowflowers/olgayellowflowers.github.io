@@ -1,0 +1,55 @@
+.logo_credere{
+    background-image: url('../images/logo.svg');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 5px 0;
+    width: 120px;
+    height: 20px;
+    display: inline-block;
+}
+nav[role="navigation"] .navbar-left{
+	border-left: 1px solid #e4e5e7;
+}
+nav[role="navigation"] .hide-menu{
+	display: none;
+}
+nav[role="navigation"] .navbar-left .small-header .panel-body{
+	padding: 11px 25px;
+	border-bottom-width: 0px;
+}
+.fixed-sidebar #menu{
+	padding-right: 0;
+}
+.mobile-only{
+	display: none;
+}
+#header{
+	height: 56px;
+}
+.fixed-navbar #wrapper {
+    top: 56px;
+}
+#menu {
+	top: 55px;
+}
+.panel-off{
+	background-color: #f6f6f6 !important;
+}
+.form-horizontal{
+	.control-label{
+		&.text-center{
+			text-align: center;
+		}
+	}
+}
+@media (max-width: 768px) {
+	nav[role="navigation"] .hide-menu{
+		display: block;
+	}
+	nav[role="navigation"] .navbar-left .small-header{
+		display: none;
+	}
+	.mobile-only{
+		display: block;
+	}
+}

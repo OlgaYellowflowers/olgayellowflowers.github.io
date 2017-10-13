@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="{{ description }}" />
+    <meta name="keywords" content="{{ keywords }}" />
+    <title>Metal Industry Expo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+         <script src="./js/app.min.js"></script>
+        <script src="./js/scripts.js"></script>
+
+
+  <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+ <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+ 
+
+    <!-- LESS -->
+    <link href="less/styles.less" rel="stylesheet/less" type="text/css">
+
+    <script>
+      less = {
+        env: "development",
+        async: false,
+        fileAsync: false,
+        poll: 1000,
+        functions: {},
+        dumpLineNumbers: "comments",
+        relativeUrls: false,
+        rootpath: ""
+      };
+    </script>
+
+    <script src="bower_components/less/dist/less.min.js" type="text/javascript"></script>
+    <script type="text/javascript">// less.watch();</script>
+
+    <!--[if lt IE 9]>
+    <link href="./css/ie8.min.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if lt IE 10]>
+    <script src="./js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="./js/html5shiv.min.js"></script>
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <link rel="icon" type="image/jpeg" href="./img/favicon.jpg" />
+</head>
+<body>
+
+    <!-- page content -->
+
+    <header role="banner" class="fixedHeader">
+        <div class="container-fluid">
+            <div id="sixSquareBlock">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <h1 class="withIcon">New Contact</h1>
+            <h3>
+                <a href="#" class="decor">
+                    <span class="icon icon-crm_icons-24"></span>
+                    Back
+                </a>
+            </h3>
+            <div class="account">
+                <a href="#">Robin Fox</a>
+                <a href="#" class="logo"></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="leftMenu" class='onInnerpage close'>
+        <nav role="navigation">
+            <ul>
+                <li class="icoItem">
+                    <a href="#" id="leftMenuControlBtn">
+                        <span class="icon icon-crm_icons-01"></span>
+                    </a>
+                </li>
+                <li class="dropdown oneString">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Venue Stand</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li class="icoItem"> <i><span class="icon icon-crm_icons-18"></span></i> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Exhibitor service Manual
+                                    <span>216</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Stand check list
+                                    <span>0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Inventory List
+                                    <span>3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="itemDivider">
+                    <div></div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Company
+                        <br class="hidden-xs" />
+                        <span class="hidden-sm hidden-md hidden-lg"></span>
+                        Info
+                    </a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li class="icoItem"> <i><span class="icon icon-crm_icons-19"></span></i> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Supporting materials
+                                    <span>46</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Company Products
+                                    <span>50</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Events / Press / Presentation
+                                    <span>67</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Messaging
+                                    <span>12</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="itemDivider">
+                    <div></div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Expo
+                        <br class="hidden-xs" />
+                        <span class="hidden-sm hidden-md hidden-lg"></span>
+                        Visitors
+                    </a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li class="icoItem">
+                                <i>
+                                    <span class="icon icon-crm_icons-20"></span>
+                                </i>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Contacts
+                                    <span>56</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    New Contact
+                                    <span>34</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Hot Contacts
+                                    <span>134</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Wishes and Offers
+                                    <span>23</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Complaints
+                                    <span>23</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Specific Interests</a>
+                            </li>
+                            <li>
+                                <a href="#">Follow up Protocol</a>
+                            </li>
+                            <li>
+                                <a href="#">Email sender</a>
+                            </li>
+                            <li>
+                                <a href="#">Survey</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="itemDivider">
+                    <div></div>
+                </li>
+                <li class="dropdown oneString">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">My info</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li class="icoItem">
+                                <i>
+                                    <span class="icon icon-crm_icons-21"></span>
+                                </i>
+                            </li>
+                            <li>
+                                <a href="#">My Schedule</a>
+                            </li>
+                            <li>
+                                <a href="#">My score</a>
+                            </li>
+                            <li>
+                                <a href="#">My notes</a>
+                            </li>
+                            <li>
+                                <a href="#">Buzz online</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="itemDivider">
+                    <div></div>
+                </li>
+                <li class="dropdown oneString">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">My settings</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li class="icoItem">
+                                <i>
+                                    <span class="icon icon-crm_icons-22"></span>
+                                </i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <main role="main" class='onNewContactPage fixedHeader'>
+
+        <section class="contacts-header">
+            <div class="container grey-box">
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <!-- Search input -->
+                                <label class="control-label  text-right col-md-3 col-sm-3  col-xs-12">Search</label>
+                                <div class="col-md-9  col-sm-9  col-xs-12">
+                                    <div class="input-group">
+                                        <input type="text" id="searchInput" class="form-control" placeholder="e.g. Name Surname or Company Name">
+                                        <div class="input-group-btn">
+                                            <button data-toggle="dropdown" class="btn btn-sm btn-default dropdown-toggle squareIco" type="button">
+                                                <span class="icon icon-search"></span>
+                                            </button>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li>
+                                                    <a href="#">Ссылка 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Ссылка 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Ссылка 3</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other filters titles shows only on small screens -->
+                    <div class="other-filters ">
+                        <div class="other-filters-title">Other filters</div>
+                        <div class="other-filters-arrow">
+                            <div class="other-filters-arrow-up"></div>
+                        </div>
+                    </div>
+
+                    <div class="other-filters-hide  col-md-6 col-sm-6 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <!-- Calendar input -->
+                                <label class="control-label text-right col-md-4  col-sm-4  col-xs-12">Exhibition day</label>
+                                <div class="col-md-8  col-sm-8  col-xs-12 ">
+
+                                        <!-- ЭТО СТАРЫЙ КОД, его надо удалить -->
+
+<!--                                     <div class="input-group">
+                                        <span class="input-group-value-left"></span>
+                                        <input type="text" id="exhibitionOnlyDay" placeholder="All" class="form-control">
+                                        <div class="input-group-btn">
+                                            <button data-toggle="dropdown" class="btn btn-sm btn-default dropdown-toggle squareIco" type="button">
+                                                <span class="icon icon-crm_icons-12"></span>
+                                            </button>
+                                            <ul class="dropdown-menu pull-right"></ul>
+                                        </div>
+                                    </div> -->
+                                    <!-- НОВЫЙ КОД - НАЧАЛО -->
+
+                <div class='input-group date' id='datetimepickerNewContact'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="icon icon-calendar"></span>
+                    </span>
+                </div>
+
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepickerNewContact').datetimepicker({
+                format : "DD.MM.YYYY",
+                sideBySide: true,
+                icons: {
+                    time: 'icon icon-time',
+                    date: 'icon icon-calendar',
+                    up: 'icon icon-arrow-up',
+                    down: 'icon icon-arrow-down',
+                    previous: 'icon icon-arrow-left',
+                    next: 'icon icon-arrow-right'               
+                }
+                });
+            });
+        </script>
+
+<!-- НОВЫЙ КОД - КОНЕЦ -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row other-filters-hide ">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <!-- Filter Clients -->
+
+                                <label class="col-md-3 col-sm-2 col-xs-12 control-label  text-right">Clients</label>
+                                <div class="col-md-9 col-sm-10 col-xs-12">
+                                    <div class="styled-radio">
+                                        <input id="radioClientsAll" type="radio" name="optClients" value="1" checked="checked">
+                                        <label for="radioClientsAll" >
+                                            <span>
+                                                <span></span>
+                                            </span>
+                                            All
+                                        </label>
+                                        <input id="radioClientsNew" type="radio" name="optClients" value="1" checked="checked">
+                                        <label for="radioClientsNew">
+                                            <span>
+                                                <span></span>
+                                            </span>
+                                            New
+                                        </label>
+                                        <input id="radioClientsOld" type="radio" name="optClients" value="1" checked="checked">
+                                        <label for="radioClientsOld">
+                                            <span>
+                                                <span></span>
+                                            </span>
+                                            Old
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <!-- Filter Visited -->
+                                <label class="col-md-3 col-sm-2 col-xs-12  control-label text-right ">Visited</label>
+                                <div class="col-md-9  col-sm-10  col-xs-12 ">
+                                    <div class="styled-radio">
+                                        <input id="radioVisitedAll" type="radio" name="optVisited" value="1" checked="checked">
+                                        <label for="radioClientsAll" >
+                                            <span>
+                                                <span></span>
+                                            </span>
+                                            All
+                                        </label>
+                                        <input id="radioVisitedNew" type="radio" name="optVisited" value="1" checked="checked">
+                                        <label for="radioClientsNew">
+                                            <span>
+                                                <span></span>
+                                            </span>
+                                            New
+                                        </label>
+                                        <input id="radioVisitedOld" type="radio" name="optVisited" value="1" checked="checked">
+                                        <label for="radioClientsOld">
+                                            <span>
+                                                <span></span>
+                                            </span>
+                                            Old
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <!-- Country select -->
+                        <label class="col-md-4 col-sm-4 col-xs-12 control-label  text-right contacts-filter-country-aligner">Country</label>
+                        <div class="col-md-8 col-sm-8 col-xs-12 ">
+                            <div class="input-group contacts-filter-country-aligner">
+
+                                <input type="text" placeholder="All" class="form-control" id="countryInput">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-sm btn-default dropdown-toggle squareIco" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li>
+                                            <a href="#">Ссылка 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ссылка 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ссылка 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row other-filters-hide ">
+                    <div class="col-md-6 col-sm-7 col-xs-12">
+                        <!-- Filter Hot Contact - STARS -->
+                        <label class="col-md-3 col-sm-4 col-xs-12  control-label  text-right">Hot Contact</label>
+                        <div class="col-md-9  col-sm-8  col-xs-12 ">
+
+                            <span class="styled-radio">
+                                <input id="radioVisitedAll" type="radio" name="hotContact" value="1" checked="checked">
+                                <label for="radioClientsAll" >
+                                    <span>
+                                        <span></span>
+                                    </span>
+                                    All
+                                </label>
+                            </span>
+                            <div class="rating-stars inline">
+                                <input type="radio" name="hotContact" id="group-1-0" value="5" />
+                                <label for="group-1-0"></label>
+                                <input type="radio" name="hotContact" id="group-1-1" value="4" />
+                                <label for="group-1-1"></label>
+                                <input type="radio" name="hotContact" id="group-1-2" value="3" />
+                                <label for="group-1-2"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-5 col-xs-12">
+                        <!-- Category select -->
+                        <label class="col-md-4 col-sm-4 col-xs-12 control-label  text-right">Category</label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <div class="input-group">
+                                <input type="text" placeholder="All" class="form-control" id="categoryInput">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-sm btn-default dropdown-toggle squareIco" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li>
+                                            <a href="#">Ссылка 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ссылка 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ссылка 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- КНОПКИ ПОСЛЕ ФОРМЫ ПОИСКА -->
+        <section class="contacts-buttons">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12  col-sm-12  col-xs-12">
+
+                        <a href="#" class="btn btn-grey btn-left">
+                            <span class="icon-btn icon icon-button-smile"></span>
+                            <span class="icon-btn-text">I'm ok</span>
+                        </a>
+                        <a href="#" class="btn btn-grey btn-left">
+                            <span class="icon-btn icon icon-button-notsmile"></span>
+                            <span class="icon-btn-text">Please complete me!</span>
+                        </a>
+                        <a href="#" class="btn btn-grey btn-left">
+                            <span class="icon-btn icon icon-button-camera"></span>
+                            <span class="icon-btn-text">Picture available</span>
+                        </a>
+                        <a href="#" class="btn btn-colored btn-right ">+ New contact</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Таблица -->
+        <section class="contacts-table">
+            <div class="container">
+                <div class="row">
+                    <!-- Table header -->
+                    <div class="divtable divtable-header">
+                        <div class="divtable-row">
+
+                            <div class="divtable-col width100  " >
+                                Day 10.04.2017
+                                <span class="vertical-line">|</span>
+                                57 Contacts
+                            </div>
+
+                            <div class="divtable-col contacts-td-stars hidden-xs">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                            <div class="divtable-col contacts-td-time hidden-xs">14:00</div>
+                        </div>
+                    </div>
+
+                    <div class="divtable">
+
+                        <!-- One contact row -->
+                        <div class="divtable-row">
+                            <div class="divtable-col icon-table-first">
+                                <span class="icon-table icon-not-smile"></span>
+                            </div>
+                            <div class="divtable-col vertical-label-wrap bg-colored">
+                                <span class="vertical-label">new</span>
+                            </div>
+                            <div class="divtable-col contacts-td-name">
+                                John Smith very long very long very longvery longveryvery long
+                            </div>
+                            <div class="divtable-col icon-table-after">
+                                <span class="icon-camera"></span>
+                            </div  >
+                            <div class="divtable-col contacts-td-company">Coca-Cola very long  very long very long very long</div>
+                            <div class="divtable-col contacts-td-location">UK, London very long very longvery longvery long very long</div>
+                            <div class="divtable-col contacts-td-stars hidden-xs">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                            <div class="divtable-col contacts-td-time hidden-xs">14:00</div>
+                        </div>
+                        <!-- One contact row -->
+                        <div class="divtable-row">
+                            <div class="divtable-col icon-table-first">
+                                <span class="icon-table icon-smile"></span>
+                            </div>
+                            <div class="divtable-col vertical-label-wrap bg-grey">
+                                <span class="vertical-label">old</span>
+                            </div>
+                            <div class="divtable-col contacts-td-name">
+                                <span class="icon icon-camera-big"></span>
+                            </div>
+                            <div class="divtable-col icon-table-after"></div  >
+                            <div class="divtable-col contacts-td-company">Coca-Cola</div>
+                            <div class="divtable-col contacts-td-location">UK, London</div>
+                            <div class="divtable-col contacts-td-stars hidden-xs">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                            <div class="divtable-col contacts-td-time hidden-xs">14:00</div>
+                        </div>
+                        <!-- One contact row -->
+                        <div class="divtable-row">
+                            <div class="divtable-col icon-table-first">
+                                <span class="icon-table icon-notsmile"></span>
+                            </div>
+                            <div class="divtable-col vertical-label-wrap bg-colored">
+                                <span class="vertical-label">new</span>
+                            </div>
+                            <div class="divtable-col contacts-td-name">
+                                John Smith very long very long very longvery longveryvery long
+                            </div>
+                            <div class="divtable-col icon-table-after">
+                                <span class="icon icon-camera-small"></span>
+                            </div  >
+                            <div class="divtable-col contacts-td-company">Coca-Cola very long  very long very long very long</div>
+                            <div class="divtable-col contacts-td-location">UK, London very long very longvery longvery long very long</div>
+                            <div class="divtable-col contacts-td-stars hidden-xs">
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="icon icon-crm_icons-11"></span>
+                                <span class="icon icon-crm_icons-11"></span>
+                            </div>
+                            <div class="divtable-col contacts-td-time hidden-xs">14:00</div>
+                        </div>
+                        <!-- One contact row -->
+                        <div class="divtable-row">
+                            <div class="divtable-col icon-table-first">
+                                <span class="icon-table icon-smile"></span>
+                            </div>
+                            <div class="divtable-col vertical-label-wrap bg-grey">
+                                <span class="vertical-label">old</span>
+                            </div>
+                            <div class="divtable-col contacts-td-name">
+                                <span class="icon icon-camera-big"></span>
+                            </div>
+                            <div class="divtable-col icon-table-after"></div  >
+                            <div class="divtable-col contacts-td-company"></div>
+                            <div class="divtable-col contacts-td-location"></div>
+                            <div class="divtable-col contacts-td-stars hidden-xs">
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                                <span class="star-empty"></span>
+                            </div>
+                            <div class="divtable-col contacts-td-time hidden-xs">14:00</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- /page content -->
+
+
+    <!--[if lt IE 9]>
+    <script src="./js/app-lt-ie9.min.js"></script>
+    <![endif]-->
+
+</body>
+</html>

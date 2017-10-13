@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+
+<!-- language Dutch -->
+<html lang="nl">
+	<!-- When language is changing, so change also "lang" attribute - it is good for search engines
+language English: <html lang="en">
+	language French:
+	<html lang="fr">
+		-->
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Immoscoop</title>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- CSS -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="css/select2.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css"></head>
+<body>
+
+		<!-- Navbar BEGIN -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-header" id="bs-navbar-collapse-1">
+
+					<ul class="nav navbar-nav navbar-right nav-soc">
+						<li>
+							<a href="#">
+								<span class="fa-circled"> <i class="fa fa-facebook"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa-circled"> <i class="fa fa-twitter"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-bars"></i>
+							</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right nav-lang">
+						<li class="active">
+							<a href="#">NL</a>
+						</li>
+						<li>
+							<a href="#">FR</a>
+						</li>
+						<li>
+							<a href="#">EN</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right nav-main">
+						<li class="active">
+							<a href="#">Aanmelden</a>
+						</li>
+						<li>
+							<a href="#">Professionals</a>
+						</li>
+						<li>
+							<a href="#">Alle Makelaars</a>
+						</li>
+						<li>
+							<a href="#">Nieuws</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon-custom-cog"></span>
+								Mijn Favorieten
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<!-- Navbar END -->
+
+		<!-- Welcome screen with big photo and search BEGIN -->
+		<div class="screen-welcome">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>
+							de hotspot
+							<br>voor vastgoedprimeurs</h1>
+
+						<!-- Counter on welcome screen -->
+						<div class="counter-sight">
+							<div class="counter-sight-top">013.074</div>
+							<div class="counter-sight-bottom">
+								panden in
+								<br>portefeuille</div>
+						</div>
+
+						<div class="search-tabs  tabs-styled">
+							<!-- Tabs search -->
+
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<a data-toggle="tab" href="#search-koop">Te coop</a>
+								</li>
+								<li>
+									<a data-toggle="tab" href="#search-huur">Te huur</a>
+								</li>
+							</ul>
+
+							<div class="tab-content">
+								<div id="search-koop" class="tab-pane fade in active">
+									<div class="row">
+										<div class="col-sm-7 col-xs-12 border-right">
+											<select name="" id="selectKoop" class="select2-styled"></select>
+										</div>
+										<div class="col-sm-3 col-xs-6">
+											<select name="" id="selectKoopPrice" class="select2-styled"></select>
+										</div>
+										<div class="col-sm-2 col-xs-6">
+											<input type="submit" class="submit-search" value="Zoeken"></div>
+									</div>
+								</div>
+
+								<div id="search-huur" class="tab-pane fade">
+									<div class="row">
+										<div class="col-sm-7 col-xs-12 border-right">
+											<select name="" id="selectHuur" class="select2-styled"></select>
+										</div>
+										<div class="col-sm-3 col-xs-6">
+											<select name="" id="selectHuurPrice" class="select2-styled"></select>
+										</div>
+										<div class="col-sm-2 col-xs-6">
+											<input type="submit" class="submit-search" value="Zoeken"></div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Welcome screen with big photo and search END -->
+
+		<!-- Button "scroll down" BEGIN -->
+		<!-- Button "scroll down" END -->
+
+		<!-- Screen with 3 columns BEGIN -->
+		<div class="container screen-box">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-center big-title">
+						To ipideles sum alibus eos nobitio
+						<br>rrores rumet faceat.</h2>
+					<div class="horizontal-line-small center-block"></div>
+					<p class="screen-box-p text-center">
+						To ipideles sum alibus eos nobitio rrores aut alibusam liquiatem aut
+						<br>magnatesed estrum ut volore acia a sam acepus nonse.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card-content">
+						<div class="card-content-img">
+							<img class="img-responsive" src="images/icon-in-circle-people.png" alt=""></div>
+						<div class="card-content-title">
+							Wie is
+							<br>Immoscoop?</div>
+						<div class="horizontal-line-small center-block"></div>
+						<div class="card-content-text">
+							To ipideles sum alibus eos nobi tio rrores aut alibusam liqui atem aut aborerumet faceat...
+						</div>
+						<div class="card-content-link">
+							<a class="btn btn-success" href="#">
+								Lees meer
+								<i class="fa fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card-content">
+						<div class="card-content-img">
+							<img class="img-responsive" src="images/icon-in-circle-sale.png" alt=""></div>
+						<div class="card-content-title">Kan ik als particulier een pand plaatsen?</div>
+						<div class="horizontal-line-small center-block"></div>
+						<div class="card-content-text">
+							To ipideles sum alibus eos nobi tio rrores aut alibusam liqui atem aut aborerumet faceat...
+						</div>
+						<div class="card-content-link">
+							<a class="btn btn-success" href="#">
+								Lees meer
+								<i class="fa fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card-content">
+						<div class="card-content-img">
+							<img class="img-responsive" src="images/icon-in-circle-envelope.png" alt=""></div>
+						<div class="card-content-title">Ontvang primeurs in je mailbox</div>
+						<div class="horizontal-line-small center-block"></div>
+						<div class="card-content-text">
+							To ipideles sum alibus eos nobi tio rrores aut alibusam liqui atem aut aborerumet faceat...
+						</div>
+						<div class="card-content-link">
+							<a class="btn btn-success" href="#">
+								Lees meer
+								<i class="fa fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Screen with 3 columns END -->
+
+		<!-- Screen with 3 recent houses BEGIN -->
+		<div class="container screen-box">
+
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-center">De meest recente primeurs</h2>
+					<div class="double-line">
+						<div class="double-line-inside"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card-realty">
+						<div class="card-realty-image">
+							<a href="">
+								<img src="images/image-example.jpg" alt=""></a>
+						</div>
+						<div class="card-realty-legend">4 uuh delegen toegevoegd</div>
+						<div class="card-realty-title">SCHOTEN</div>
+						<div class="card-realty-address">Eksterdreef 23</div>
+						<div class="card-realty-info">3 slpk</div>
+						<div class="card-realty-price">
+							€ <b>350 000</b>
+						</div>
+						<div class="horizontal-line"></div>
+						<div class="card-realty-more">
+							<a href="#" class="btn btn-success">
+								Lees verder
+								<i class="fa fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card-realty">
+						<div class="card-realty-image">
+							<a href="">
+								<img src="images/image-example.jpg" alt=""></a>
+						</div>
+						<div class="card-realty-legend">4 uuh delegen toegevoegd</div>
+						<div class="card-realty-title">SCHOTEN</div>
+						<div class="card-realty-address">Eksterdreef 23</div>
+						<div class="card-realty-info">3 slpk</div>
+						<div class="card-realty-price">
+							€ <b>350 000</b>
+						</div>
+						<div class="horizontal-line"></div>
+						<div class="card-realty-more">
+							<a href="#" class="btn btn-success">
+								Lees verder
+								<i class="fa fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card-realty">
+						<div class="card-realty-image">
+							<a href="">
+								<img src="images/image-example.jpg" alt=""></a>
+						</div>
+						<div class="card-realty-legend">4 uuh delegen toegevoegd</div>
+						<div class="card-realty-title">SCHOTEN</div>
+						<div class="card-realty-address">Eksterdreef 23</div>
+						<div class="card-realty-info">3 slpk</div>
+						<div class="card-realty-price">
+							€
+							<b>350 000</b>
+						</div>
+						<div class="horizontal-line"></div>
+						<div class="card-realty-more">
+							<a href="#" class="btn btn-success">
+								Lees verder
+								<i class="fa fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="text-center">
+						<a href="#" class="btn btn-primary btn-lg">
+							Bekijk alle premiurs
+							<i class="fa fa-play"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Screen with 3 recent houses BEGIN -->
+
+		<!-- Screen with last news BEGIN -->
+		<div class="bg-grey">
+			<div class="container screen-box">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="text-center">Nieuws, heet van de naald</h2>
+						<div class="double-line">
+							<div class="double-line-inside"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="big-news-item">
+							<div class="news-item-date">29 february 2016</div>
+							<h2>To ipideles sum alibus eos nobitio rrores rumet faceat.</h2>
+							<div class="horizontal-line-small"></div>
+							<div class="news-item-text">
+								<span class="news-item-theme">Theme</span>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+							</div>
+							<div class="news-item-link">
+								<a class="btn btn-success" href="#">
+									Lees verder
+									<i class="fa fa-play"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="big-news-item">
+							<img src="images/image-example.jpg" alt="" class="img-responsive"></div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-3 col-sm-2 col-xs-6">
+						<div class="small-news-item">
+							<div class="news-item-date">29 february 2016</div>
+							<h2>To ipideles sum alibus eos nobitio</h2>
+							<div class="horizontal-line-small"></div>
+							<div class="news-item-text">
+								<span class="news-item-theme">Theme</span>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							</div>
+							<div class="news-item-link">
+								<a class="btn btn-success" href="#">
+									Lees verder
+									<i class="fa fa-play"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-2 col-xs-6">
+						<div class="small-news-item">
+							<div class="news-item-date">29 february 2016</div>
+							<h2>To ipideles sum alibus eos nobitio</h2>
+							<div class="horizontal-line-small"></div>
+							<div class="news-item-text">
+								<span class="news-item-theme">Theme</span>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							</div>
+							<div class="news-item-link">
+								<a class="btn btn-success" href="#">
+									Lees verder
+									<i class="fa fa-play"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-2 col-xs-6">
+						<div class="small-news-item">
+							<div class="news-item-date">29 february 2016</div>
+							<h2>To ipideles sum alibus eos nobitio</h2>
+							<div class="horizontal-line-small"></div>
+							<div class="news-item-text">
+								<span class="news-item-theme">Theme</span>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							</div>
+							<div class="news-item-link">
+								<a class="btn btn-success" href="#">
+									Lees verder
+									<i class="fa fa-play"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-2 col-xs-6">
+						<div class="small-news-item">
+							<div class="news-item-date">29 february 2016</div>
+							<h2>To ipideles sum alibus eos nobitio</h2>
+							<div class="horizontal-line-small"></div>
+							<div class="news-item-text">
+								<span class="news-item-theme">Theme</span>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							</div>
+							<div class="news-item-link">
+								<a class="btn btn-success" href="#">
+									Lees verder
+									<i class="fa fa-play"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- Screen with last news END -->
+
+		<!-- Screen with big image with mobile phones and download link BEGIN -->
+		<div class="screen-with-info">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="screen-with-info-media info-media-right">
+							<img src="images/img-mobiles.jpg" alt="">
+							<a href="#" class="btn btn-primary btn-lg">
+								Download de app
+								<i class="fa fa-play"></i>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<h2 class="big-title">Nam ad eumeniant faciae doluptatur sequo rehenectur?</h2>
+						<div class="horizontal-line-small"></div>
+						<p>
+							dio et et, officianis ratist omnim ipide est possit harcima gnatae iureped quatur re plabo. Itas ea platas eturent maximoditi quatus.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Screen with big image with mobile phones and download link END -->
+
+		<!-- Screen with big image with people and link BEGIN -->
+		<div class="screen-with-info bg-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1">
+						<h2 class="big-title">Nam ad eumeniant faciae doluptatur sequo expert?</h2>
+						<div class="horizontal-line-small"></div>
+						<p>
+							dio et et, officianis ratist omnim ipide est possit harcima gnatae iureped quatur re plabo. Itas ea platas eturent maximoditi quatus.
+						</p>
+					</div>
+					<div class="col-md-6">
+						<div class="screen-with-info-media info-media-left">
+							<img src="images/img-people.png" alt="">
+							<a href="#" class="btn btn-primary btn-lg">
+								Bekijk onze makelaars
+								<i class="fa fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Screen with big image with people and link END -->
+
+		<!-- Screen with cities list BEGIN -->
+		<div class="container screen-box">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-center">Nieuws, heet van de naald</h2>
+					<div class="double-line">
+						<div class="double-line-inside"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row links-list">
+				<div class="col-md-3 col-xs-6">
+					<a href="#">Aartselaar</a>
+					<a href="#">Antwerpen</a>
+					<a href="#">Arendonk</a>
+					<a href="#">Baarle-Hertog</a>
+					<a href="#">Balen</a>
+					<a href="#">Beerse</a>
+					<a href="#">Berlaar</a>
+					<a href="#">Boechout</a>
+					<a href="#">Bonheiden</a>
+					<a href="#">Boom</a>
+					<a href="#">Bornem</a>
+					<a href="#">Borsbeek</a>
+					<a href="#">Brasschaat</a>
+					<a href="#">Brecht</a>
+					<a href="#">Dessel</a>
+					<a href="#">Duffel</a>
+					<a href="#">Edegem</a>
+					<a href="#">Essen</a>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a href="#">Geel</a>
+					<a href="#">Grobbendonk</a>
+					<a href="#">Heist-op-den-Berg</a>
+					<a href="#">Hemiksem</a>
+					<a href="#">Herentals</a>
+					<a href="#">Herenthout</a>
+					<a href="#">Herselt</a>
+					<a href="#">Hoogstraten</a>
+					<a href="#">Hove</a>
+					<a href="#">Hulshout</a>
+					<a href="#">Kalmthout</a>
+					<a href="#">Kapellen</a>
+					<a href="#">Kasterlee</a>
+					<a href="#">Kontich</a>
+					<a href="#">Laakdal</a>
+					<a href="#">Lier</a>
+					<a href="#">Lilie</a>
+					<a href="#">Lint</a>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a href="#">Malle</a>
+					<a href="#">Mechelen</a>
+					<a href="#">Meerhout</a>
+					<a href="#">Merksplas</a>
+					<a href="#">Mol</a>
+					<a href="#">Motrsel</a>
+					<a href="#">Niel</a>
+					<a href="#">Nijlen</a>
+					<a href="#">Olen</a>
+					<a href="#">Oud-Turnhout</a>
+					<a href="#">Putte</a>
+					<a href="#">Puurs</a>
+					<a href="#">Ranst</a>
+					<a href="#">Ravels</a>
+					<a href="#">Retie</a>
+					<a href="#">Rijkevorsel</a>
+					<a href="#">Rumst</a>
+					<a href="#">Schelle</a>
+
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a href="#">Schilde</a>
+					<a href="#">Schoten</a>
+					<a href="#">Sint-Amands</a>
+					<a href="#">Sint-Katelijne-Waver</a>
+					<a href="#">Stabroek</a>
+					<a href="#">Turnhout</a>
+					<a href="#">Vorselaar</a>
+					<a href="#">Vosselaar</a>
+					<a href="#">Westerlo</a>
+					<a href="#">Wijnegem</a>
+					<a href="#">Willebroek</a>
+					<a href="#">Wommelgem</a>
+					<a href="#">Wuustwezel</a>
+					<a href="#">Zandhoven</a>
+					<a href="#">Zoersel</a>
+					<a href="#">Zwijndrecht</a>
+				</div>
+			</div>
+		</div>
+		<!-- Screen with cities list END -->
+
+		<!--  JavaScript Files -->
+		<script src="js/jquery-1.12.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.js"></script>
+		<script src="js/select2.min.js"></script>
+
+		<script src="js/scripts.js"></script>
+
+</body>
+
+	</html>
