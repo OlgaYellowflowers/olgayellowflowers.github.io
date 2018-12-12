@@ -189,6 +189,7 @@ body {
 .navbar-default {
     background: #eef2f3;
     border-color: #eef2f3;
+    background: #f4f7f9;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -236,4 +237,22 @@ body {
 .resume-desc-wrap {
     padding: 40px;
     background: #1496AD;
+    background: #3ebc7f;
+    border-radius: 5px;
+}
+
+body {
+    position: relative;
+}
+
+body:after,
+.navbar:before {
+    content: '';
+    display: block;
+    height: 8px;
+    background: #33bbed;
+    background: -moz-linear-gradient(left, #33bbed 0%, #33bbed 33%, #0db14b 33%, #0db14b 66%, #7db9e8 66%, #7db9e8 66%, #7db9e8 100%);
+    background: -webkit-linear-gradient(left, #33bbed 0%, #33bbed 33%, #0db14b 33%, #0db14b 66%, #7db9e8 66%, #7db9e8 66%, #7db9e8 100%);
+    background: linear-gradient(to right, #33bbed 0%, #33bbed 33%, #0db14b 33%, #0db14b 66%, #7db9e8 66%, #7db9e8 66%, #7db9e8 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#33bbed', endColorstr='#7db9e8', GradientType=1);
 }
