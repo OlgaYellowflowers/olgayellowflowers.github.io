@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display'); */
+
 
 /*
 font-family: 'Playfair Display', serif;
@@ -200,11 +201,10 @@ body {
 
 .resume {
     color: #fff;
-    margin: 20px 0;
+    background: #022943;
 }
 
 .resume-title {
-    font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -229,16 +229,16 @@ body {
 }
 
 .resume-skills-wrap {
+    margin: 40px 0;
     color: #141E30;
-    padding: 75px 40px 20px;
+    padding: 50px 40px;
     background: #fff;
 }
 
 .resume-desc-wrap {
     padding: 40px;
-    background: #1496AD;
-    background: #3ebc7f;
     border-radius: 5px;
+    margin: 50px 0 40px 0;
 }
 
 body {
