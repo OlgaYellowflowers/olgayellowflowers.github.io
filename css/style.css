@@ -200,20 +200,26 @@ body {
 }
 
 .resume {
-    color: #fff;
-    background: #022943;
+    color: #d4d4d4;
+    background: #1e1e1e;
 }
 
 .resume-title {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #93cea8;
 }
 
 .resume-subtitle {
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    color: #d7ba5e;
+}
+
+.highlight {
+    color: #9cdcf0;
 }
 
 .resume-desc {
@@ -229,16 +235,18 @@ body {
 }
 
 .resume-skills-wrap {
-    margin: 40px 0;
-    color: #141E30;
-    padding: 50px 40px;
-    background: #fff;
+    margin: 25px 0;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 50px 0;
+    /* background: #d4d4d4; */
+    font-size: 13px;
 }
 
 .resume-desc-wrap {
-    padding: 40px;
+    padding: 40px 40px 0 0;
     border-radius: 5px;
-    margin: 50px 0 40px 0;
+    margin: 25px 0 30px 0;
+    line-height: 1.8;
 }
 
 body {
@@ -250,9 +258,9 @@ body:after,
     content: '';
     display: block;
     height: 8px;
-    background: #33bbed;
-    background: -moz-linear-gradient(left, #33bbed 0%, #33bbed 33%, #0db14b 33%, #0db14b 66%, #7db9e8 66%, #7db9e8 66%, #7db9e8 100%);
+    background: rgba(1, 192, 225, 1);
+    /* background: -moz-linear-gradient(left, #33bbed 0%, #33bbed 33%, #0db14b 33%, #0db14b 66%, #7db9e8 66%, #7db9e8 66%, #7db9e8 100%);
     background: -webkit-linear-gradient(left, #33bbed 0%, #33bbed 33%, #0db14b 33%, #0db14b 66%, #7db9e8 66%, #7db9e8 66%, #7db9e8 100%);
     background: linear-gradient(to right, #33bbed 0%, #33bbed 33%, #0db14b 33%, #0db14b 66%, #7db9e8 66%, #7db9e8 66%, #7db9e8 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#33bbed', endColorstr='#7db9e8', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#33bbed', endColorstr='#7db9e8', GradientType=1); */
 }
