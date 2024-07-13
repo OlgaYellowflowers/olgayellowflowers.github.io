@@ -187,15 +187,15 @@ body {
     display: none;
 }
 .navbar-default {
-    background: #E4F0FB;
-    border-color: #E4F0FB;
+    background: #fff;
+    border-color: #fff;
 
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-    background: #CEE2F5;
+    background: transparent;
 }
 .navbar-default li a {
     font-size: 0.8em;
