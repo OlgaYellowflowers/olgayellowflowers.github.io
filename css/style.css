@@ -261,6 +261,7 @@ body {
 
 .highlight {
     color: #0095da;
+    font-weight: bold;
 }
 
 .resume-desc {
