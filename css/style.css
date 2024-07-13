@@ -75,12 +75,12 @@ body {
 }
 
 .project-pages .project-pages-total b {
-    background: #FF4F00;
+    background: #0095da;
     color: #fff;
 }
 
 .project-label span {
-    background: #FF4F00;
+    background: #0095da;
     display: inline-block;
     color: #fff;
     padding: 5px 10px;
@@ -115,7 +115,7 @@ body {
 }
 
 .grid-item:hover {
-    background: #FF4F00;
+    background: #0095da;
 }
 
 .grid-item img {
@@ -260,7 +260,7 @@ body {
 }
 
 .highlight {
-    color: #FF4F00;
+    color: #0095da;
 }
 
 .resume-desc {
