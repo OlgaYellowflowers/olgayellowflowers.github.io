@@ -1,6 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 /* 
 font-family: "Quicksand", sans-serif;
 font-family: "Open Sans", sans-serif; 
@@ -15,19 +15,23 @@ body {
     font-weight: 400;
     color: #333;
 }
-h1, 
+
+h1,
 .resume-title {
     font-family: "Quicksand", sans-serif;
     line-height: 1.25;
     font-weight: 700;
     font-size: 40px;
 }
+
 h1 {
     margin: 10px 0;
 }
+
 .resume-title {
     margin: 0 0 30px;
 }
+
 .wrapper {
     position: relative;
 }
@@ -54,7 +58,7 @@ h1 {
 }
 
 .project-title {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin: 0 auto;
     font-weight: bold;
 }
@@ -96,7 +100,7 @@ h1 {
 }
 
 .project-pages .project-pages-total b {
-    background: #1F65DB;
+    background: #D15F8B;
     color: #fff;
 }
 
@@ -133,17 +137,31 @@ h1 {
     display: block;
     padding: 10px;
     border-radius: 10px;
-    transition: background-image 0.3s ease-in-out;
-    background-image: #fff;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
 }
 
-.grid-item:hover {
+.grid-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(293deg, #ED355B 0%, #1F65DB 100%);
+    transition: all 0.6s cubic-bezier(0.25, 1.25, 0.5, 1.5);
+    z-index: 0;
+    opacity: 0;
+}
 
-    background-image: linear-gradient(293deg, #ED355B 0%, #1F65DB 100%);
-
+.grid-item:hover::before {
+    opacity: 1;
 }
 
 .grid-item img {
+    position: relative;
+    z-index: 1;
     display: none;
     max-width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -190,33 +208,40 @@ h1 {
     .project {
         display: block;
     }
+
     .project-desc,
     .project-images {
         width: 96%;
         padding: 2%;
     }
+
     .grid-item {
         width: 40%;
     }
+
     @media (max-width: 480px) {
         .grid-item {
             width: 100%;
         }
+
         .navbar-brand {
             width: 80%;
             padding: 6px 15px;
         }
     }
 }
+
 .navbar-brand {
     display: none;
 }
+
 .navbar-default {
     background: #fff;
     border-color: #fff;
     position: relative;
 
 }
+
 .navbar-default::before {
     content: "";
     display: block;
@@ -224,54 +249,66 @@ h1 {
     width: 100%;
     background-image: linear-gradient(293deg, #ED355B 0%, #1F65DB 100%);
 }
+
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
     background: #fff;
 }
+
 .navbar-default li a {
     font-size: 0.8em;
 }
+
 .resume {
 
-  -webkit-animation: movedown 2s linear forwards;
-  -moz-animation: movedown 2s linear forwards;
-  -ms-animation: movedown 2s linear forwards;
-  -o-animation: movedown 2s linear forwards;
-  animation: movedown 2s linear forwards;
+    -webkit-animation: movedown 2s linear forwards;
+    -moz-animation: movedown 2s linear forwards;
+    -ms-animation: movedown 2s linear forwards;
+    -o-animation: movedown 2s linear forwards;
+    animation: movedown 2s linear forwards;
 }
+
 @keyframes movedown {
     0% {
-        top:-100%;
+        top: -100%;
     }
+
     100% {
-        top:50%;
+        top: 50%;
     }
 }
+
 @-webkit-keyframes movedown {
     0% {
-        top:-100%;
+        top: -100%;
     }
+
     100% {
-        top:50%;
+        top: 50%;
     }
 }
+
 @-moz-keyframes movedown {
     0% {
-        top:-100%;
+        top: -100%;
     }
+
     100% {
-        top:50%;
+        top: 50%;
     }
 }
+
 @-ms-keyframes movedown {
     0% {
-        top:-100%;
+        top: -100%;
     }
+
     100% {
-        top:50%;
+        top: 50%;
     }
 }
+
 .resum .row {
     display: flex;
     align-items: center;
@@ -279,7 +316,7 @@ h1 {
 
 
 .resume-subtitle {
-  font-size: 2.8;
+    font-size: 2.8;
     margin-bottom: 10px;
     margin-top: 10px;
     font-weight: bold;
@@ -290,7 +327,7 @@ h1 {
 }
 
 .resume-desc {
-font-size: .9em;
+    font-size: .9em;
 }
 
 .resume-desc p {
@@ -299,11 +336,11 @@ font-size: .9em;
 
 .resume-skills {
     font-size: 0.9em;
-        margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .resume-skills-wrap {
-     margin: 60px 0;
+    margin: 60px 0;
 
 }
 
@@ -311,11 +348,12 @@ font-size: .9em;
     margin: 0 0 30px;
     border-radius: 5px;
 }
+
 .resume-desc-wrap .highlight {
     font-weight: 500;
     color: #333 !important;
 }
+
 body {
     position: relative;
 }
-
