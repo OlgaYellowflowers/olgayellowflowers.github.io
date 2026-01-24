@@ -4,19 +4,81 @@
 /* 
 font-family: "Quicksand", sans-serif;
 font-family: "Open Sans", sans-serif; 
+/* Container */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* Row */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+.row:after {
+  clear: both;
+}
+
+/* Columns */
+[class*="col-"] {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Medium devices (desktops, ≥992px) */
+@media (min-width: 992px) {
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-6 {
+    width: 50%;
+    float: left; 
+  }
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body {
-    padding-top: 0;
+    padding: 0; 
+    border: 0; 
+    margin: 0; 
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 1.7;
     letter-spacing: 0.01em;
     font-weight: 400;
     color: #333;
+
 }
 .top-line {
-        height: 2px;
+        height: 12px;
     width: 100%;
     background-image: linear-gradient(293deg, #ED355B 0%, #1F65DB 100%);
     margin-bottom: 60px;
@@ -158,7 +220,7 @@ h1 {
     padding: 10px;
     border-radius: 10px;
     position: relative;
-    background: #fff;
+    background: transparent;
     overflow: hidden;
     text-align: center; 
 }
@@ -207,7 +269,7 @@ h1 {
     font-size: 2.1em;
     padding: 0 10px;
     font-weight: bold;
-    background: #fff;
+    background: transparent;
 }
 
 .bg-colored {
@@ -258,7 +320,7 @@ h1 {
 }
 
 .navbar-default {
-    background: #fff;
+    background: transparent;
     border-color: #fff;
     position: relative;
 
@@ -376,6 +438,7 @@ h1 {
 .resume-desc-wrap .highlight {
     font-weight: 500;
     color: #333 !important;
+    
 }
 
 body {
